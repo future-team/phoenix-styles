@@ -1,0 +1,155 @@
+//input  checkbox/
+input,
+textarea,
+button,
+select {
+    font-family: @font-family-default;
+    font-size: @font-size-base;
+}
+
+select,
+textarea,
+.input,
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="color"] {
+    width: 100%;
+    height: @input-height;
+    -webkit-appearance: none;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    line-height: @line-height-default;
+    background-color: @white;
+    border: @border-default;
+    border-radius: 3px;
+    outline: none;
+}
+
+input[type="search"] {
+    padding: 0 10px;
+    border-radius: 20px;
+    .box-sizing(border-box);
+}
+input[type="search"]:focus {
+    text-align: left;
+}
+textarea {
+    height: auto;
+}
+
+select {
+    height: auto;
+    .box-shadow(inset 0 1px 1px rgba(0, 0, 0, .1));
+}
+
+.input-group input,
+.input-group textarea {
+    margin-bottom: 0;
+    background-color: transparent;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+    .box-shadow(none);
+}
+
+.input-row {
+    overflow: hidden;
+    height: @input-height; // Matches the height of inputs.
+    border-bottom: @border-default;
+}
+
+// Labels get floated left with a set percentage width
+.input-row label:not(.multi-group) {
+    float: left;
+    width: 35%;
+    padding: 12px 15px;
+    font-family: @font-family-default;
+    line-height: 1.1; // Put the text on the baseline.
+}
+
+// Actual inputs float to right of labels and also have a set percentage
+.input-row input,.input-row .input {
+    float: right;
+    width: 65%;
+    padding-left: 0;
+    margin-bottom: 0;
+    border: 0;
+}
+.input-row .input{
+    line-height: @input-height;
+}
+    //checkbox
+
+.ui-checkbox,.ui-radio{
+    position: relative;
+    .get-size(@ui-checkbox-sm);
+    input[type="checkbox"],
+    input[type="radio"]{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        cursor: pointer;
+        pointer-events: all;
+        opacity: 0;
+        z-index: 2;
+        left: 0;
+    }
+
+    input[type="checkbox"]{
+        &:checked + i:before{
+            content: "\e6d6";
+        }
+        &:disabled + i{
+            color: @ui-checkbox-disabled;
+        }
+    }
+
+    input[type="radio"]{
+        &:checked + i:before{
+            content: "\e6a8";
+        }
+        &:disabled + i{
+            color: @ui-checkbox-disabled;
+        }
+    }
+
+}
+
+.ui-checkbox.lg,.ui-radio.lg{
+    .get-size(@ui-checkbox-lg);
+}
+
+.multi-group{
+    span{
+        position: relative;
+        top: -3px;
+    }
+    .ui-radio,.ui-checkbox{
+        display: inline-block;
+    }
+}
+
+
+//radio
+
+//switch
+.label-switch {
+    .ui-switch(#4bd863);
+}
+
+//button
+
+//select
+

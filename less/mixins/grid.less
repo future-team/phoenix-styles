@@ -1,0 +1,147 @@
+
+// Flexbox Mixins
+// --------------------------------------------------
+// http://philipwalton.github.io/solved-by-flexbox/
+// https://github.com/philipwalton/solved-by-flexbox
+
+.display-flex() {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-direction(@value: row) when (@value = row-reverse){
+  -webkit-box-direction: reverse;
+  -webkit-box-orient: horizontal;
+}
+.flex-direction(@value: row) when (@value = column){
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+}
+.flex-direction(@value: row) when (@value = column-reverse){
+  -webkit-box-direction: reverse;
+  -webkit-box-orient: vertical;
+}
+.flex-direction(@value: row) when (default()){
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+}
+.flex-direction(@value: row) {
+  -webkit-flex-direction: @value;
+  -moz-flex-direction: @value;
+  -ms-flex-direction: @value;
+  flex-direction: @value;
+}
+
+.flex-wrap(@value: nowrap) when(@value = nowrap){
+  -ms-flex-wrap: none;
+
+}
+.flex-wrap(@value: nowrap) when(default()){
+  -ms-flex-wrap: @value;
+}
+.flex-wrap(@value: nowrap) {
+// No Webkit Box fallback.
+  -webkit-flex-wrap: @value;
+  -moz-flex-wrap: @value;
+  flex-wrap: @value;
+}
+
+.flex(@fg: 1, @fs: ~'', @fb: ~'') {
+  -webkit-box-flex: @fg;
+  -webkit-flex: @fg @fs @fb;
+  -moz-box-flex: @fg;
+  -moz-flex: @fg @fs @fb;
+  -ms-flex: @fg @fs @fb;
+  flex: @fg @fs @fb;
+}
+
+.flex-flow(@values: row nowrap) {
+// No Webkit Box fallback.
+  -webkit-flex-flow: @values;
+  -moz-flex-flow: @values;
+  -ms-flex-flow: @values;
+  flex-flow: @values;
+}
+
+.align-items(@value: stretch) when(@value = flex-start) {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+}
+.align-items(@value: stretch) when(@value = flex-end) {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+}
+.align-items(@value: stretch) when(default()) {
+  -webkit-box-align: @value;
+  -ms-flex-align: @value;
+}
+
+
+.align-items(@value: stretch) {
+  -webkit-align-items: @value;
+  -moz-align-items: @value;
+  align-items: @value;
+}
+.align-self(@value: auto) when(@value = flex-start){
+  -ms-flex-item-align: start;
+}
+.align-self(@value: auto) when(@value = flex-end){
+  -ms-flex-item-align: end;
+}
+.align-self(@value: auto) when(default()){
+  -ms-flex-item-align: @value;
+}
+.align-self(@value: auto) {
+  -webkit-align-self: @value;
+  -moz-align-self: @value;
+  align-self: @value;
+}
+
+
+
+.align-content(@value: stretch) when(@value = flex-start){
+  -ms-flex-line-pack: start;
+}
+.align-content(@value: stretch) when(@value = flex-end){
+  -ms-flex-line-pack: end;
+}
+.align-content(@value: stretch) when(default()){
+  -ms-flex-line-pack: @value;
+}
+.align-content(@value: stretch) {
+  -webkit-align-content: @value;
+  -moz-align-content: @value;
+  align-content: @value;
+}
+.justify-content(@value: stretch) when (@value = flex-start){
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+}
+.justify-content(@value: stretch) when (@value = flex-end){
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+}
+.justify-content(@value: stretch) when (@value = space-between){
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+}
+.justify-content(@value: stretch) when (default()){
+  -webkit-box-pack: @value;
+  -ms-flex-pack: @value;
+}
+.justify-content(@value: stretch) {
+  -webkit-justify-content: @value;
+  -moz-justify-content: @value;
+  justify-content: @value;
+}
+
+.flex-order(@n) {
+  -webkit-order: @n;
+  -ms-flex-order: @n;
+  order: @n;
+  -webkit-box-ordinal-group: @n;
+}

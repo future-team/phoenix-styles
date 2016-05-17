@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>表单</title>
+    <link rel="stylesheet" href="./../dist/unicorn.css"/>
+    <link rel="stylesheet" href="./../dist/skin.css"/>
+    <style>
+        body{
+            margin: 10px;;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" value="测试" placeholder="请输入值" class="form-input" />
+
+    <label class="label-switch">
+        <input id="js-room-selected" type="checkbox">
+        <div class="checkbox"></div>
+    </label>
+    <!--checkbox-->
+    <div class="ui-checkbox inline-block">
+        <input type="checkbox" checked disabled="disabled" />
+        <i class="icon icon-square"></i>
+    </div>
+    <div class="ui-checkbox inline-block">
+        <input type="checkbox" checked  />
+        <i class="icon icon-square"></i>
+    </div>
+    <div class="ui-checkbox inline-block">
+        <input type="checkbox"   />
+        <i class="icon icon-square"></i>
+    </div>
+    <div class="ui-checkbox lg inline-block">
+        <input type="checkbox" />
+        <i class="icon icon-square"></i>
+    </div>
+    <div class="ui-checkbox lg inline-block">
+        <input type="checkbox" checked />
+        <i class="icon icon-square"></i>
+    </div>
+    <div class="ui-checkbox lg inline-block">
+        <input type="checkbox" disabled="disabled" />
+        <i class="icon icon-square"></i>
+    </div>
+
+    <label class="multi-group" style="display:block;">
+        <div class="ui-checkbox lg ">
+            <input type="checkbox" name="" />
+            <i class="icon icon-square"></i>
+        </div>
+        <span>apple</span>
+    </label>
+
+    <div>
+        <p>radio</p>
+        <div class="ui-radio lg inline-block">
+            <input type="radio" name="type" />
+            <i class="icon icon-radio"></i>
+        </div>
+        <div class="ui-radio lg inline-block">
+            <input type="radio" name="type" />
+            <i class="icon icon-radio"></i>
+        </div>
+
+        <label class="multi-group">
+            <div class="ui-radio lg ">
+                <input type="radio" name="types" />
+                <i class="icon icon-radio"></i>
+            </div>
+            <span>apple</span>
+        </label>
+        <label class="multi-group">
+            <div class="ui-radio lg ">
+                <input type="radio" name="types" />
+                <i class="icon icon-radio"></i>
+            </div>
+            <span>apple</span>
+        </label>
+    </div>
+
+    <input type="text" />
+    <select name="">
+        <option value="">dsadasd</option>
+    </select>
+    <textarea name="" cols="30" rows="10">dsadasd</textarea>
+
+    <form class="input-group">
+        <input type="text" placeholder="Full name">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Username">
+    </form>
+
+    <form class="input-group">
+        <div class="input-row">
+            <label>Full name</label>
+            <input type="text" placeholder="Mister Ratchet">
+        </div>
+        <div class="input-row">
+            <label>Email</label>
+            <input type="email" placeholder="ratchetframework@gmail.com">
+        </div>
+        <div class="input-row">
+            <label>Username</label>
+            <input type="text" placeholder="goRatchet">
+        </div>
+    </form>
+
+    <div class="row">
+        <div class="col-50">
+            <div class="input-row">
+                <label>Username</label>
+                <input type="text" placeholder="goRatchet" style="padding-left: 15px">
+            </div>
+        </div>
+        <div class="col-50">
+            <div class="input-row">
+                <label>Username</label>
+                <input type="text" placeholder="goRatchet"  style="padding-left: 15px">
+            </div>
+        </div>
+    </div>
+    <div class="input-row">
+        <label>Username</label>
+        <div class="input">mixoa</div>
+    </div>
+    <div class="input-row">
+        <label>Username</label>
+        <div class="input">
+            <label class="multi-group">
+                <div class="ui-checkbox lg ">
+                    <input type="checkbox" name="" />
+                    <i class="icon icon-square"></i>
+                </div>
+                <span>apple</span>
+            </label>
+            <label class="multi-group">
+                <div class="ui-checkbox lg ">
+                    <input type="checkbox" name="" />
+                    <i class="icon icon-square"></i>
+                </div>
+                <span>apple</span>
+            </label>
+        </div>
+    </div>
+    <div class="input-row">
+        <label><span class="color-error">*</span>Username</label>
+        <div class="input" style="text-align: right">
+            <label class="multi-group">
+                <div class="ui-checkbox lg ">
+                    <input type="checkbox" name="" />
+                    <i class="icon icon-square"></i>
+                </div>
+                <span>apple</span>
+            </label>
+            <label class="multi-group">
+                <div class="ui-checkbox lg ">
+                    <input type="checkbox" name="" />
+                    <i class="icon icon-square"></i>
+                </div>
+                <span>apple</span>
+            </label>
+        </div>
+    </div>
+
+    <div>
+        icon
+        <div>
+            <i class="icon icon-right-fill color-success icon-lg"></i>
+        </div>
+    </div>
+    <button class="btn btn-primary">测试</button>
+    <button class="btn btn-info">测试</button>
+    <button class="btn btn-success">测试</button>
+    <button class="btn btn-error">测试</button>
+    <button class="btn btn-warning">测试</button>
+    <button class="btn btn-danger">测试</button>
+    <button class="btn btn-danger"><span class="icon icon-delete"></span>测试</button>
+    <button class="btn btn-link">测试</button>
+    <button class="btn btn-primary btn-block">测试</button>
+    <span class="label label-primary">惠</span>
+    <span class="label label-primary label-lg">惠</span>
+    <span class="label label-primary label-md">亲，赶紧下单立减10元</span>
+
+    <span class="badge">1</span>
+    <span class="badge badge-primary">2</span>
+    <span class="badge badge-success">3</span>
+    <span class="badge badge-info">4</span>
+    <span class="badge badge-inverted">1</span>
+</body>
+</html>

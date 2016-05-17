@@ -1,0 +1,30 @@
+//generate different btn
+.generate-diff-badge(@bg-color,@color:#fff){
+    color: @color;
+    background-color: @bg-color;
+
+    &.badge-inverted {
+        color: @bg-color;
+    }
+};
+
+.badges-skin(){
+    .badge-primary{
+        .generate-diff-badge(@brand-primary);
+    }
+    .badge-success{
+        .generate-diff-badge(@brand-success);
+    }
+    .badge-info{
+        .generate-diff-badge(@brand-info);
+    }
+    .badge-error{
+        .generate-diff-badge(@brand-error);
+    }
+    .badge-warning{
+        .generate-diff-badge(@brand-warning);
+    }
+    .badge--danger{
+        .generate-diff-badge(@brand-danger);
+    }
+};

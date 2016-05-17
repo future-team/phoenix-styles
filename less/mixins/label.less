@@ -1,0 +1,25 @@
+.generate-diff-label(@bg-color,@color:#fff){
+    color: @color;
+    background-color: @bg-color;
+};
+
+.label-skin(){
+    .label-primary{
+        .generate-diff-label(@brand-primary);
+    }
+    .label-success{
+        .generate-diff-label(@brand-success);
+    }
+    .label-info{
+        .generate-diff-label(@brand-info);
+    }
+    .label-warning{
+        .generate-diff-label(@brand-warning);
+    }
+    .label-danger{
+        .generate-diff-label(@brand-danger);
+    }
+    .label-error{
+        .generate-diff-label(@brand-error);
+    }
+};

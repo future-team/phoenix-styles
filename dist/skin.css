@@ -1,0 +1,181 @@
+.ui-checkbox .icon,
+.ui-radio .icon {
+  color: #ff6633;
+}
+.label-switch input[type="checkbox"]:checked + .checkbox {
+  background: #4bd863;
+}
+.color-white {
+  color: #fff;
+}
+.color-primary {
+  color: #ff6633;
+}
+.color-success {
+  color: #5cb85c;
+}
+.color-info {
+  color: #5bc0de;
+}
+.color-warning {
+  color: #e0690c;
+}
+.color-danger {
+  color: #d9534f;
+}
+.color-error {
+  color: #fc4e44;
+}
+.icon.color-gray {
+  color: #555;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #ff6633;
+  border: 1px solid #ff6633;
+}
+.btn-primary:active,
+.btn-primary.active {
+  color: #fff;
+  background-color: #ff4000;
+  border: 1px solid #ff4000;
+}
+.btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border: 1px solid #5cb85c;
+}
+.btn-success:active,
+.btn-success.active {
+  color: #fff;
+  background-color: #449d44;
+  border: 1px solid #449d44;
+}
+.btn-info {
+  color: #fff;
+  background-color: #5bc0de;
+  border: 1px solid #5bc0de;
+}
+.btn-info:active,
+.btn-info.active {
+  color: #fff;
+  background-color: #31b0d5;
+  border: 1px solid #31b0d5;
+}
+.btn-error {
+  color: #fff;
+  background-color: #fc4e44;
+  border: 1px solid #fc4e44;
+}
+.btn-error:active,
+.btn-error.active {
+  color: #fff;
+  background-color: #fb1e12;
+  border: 1px solid #fb1e12;
+}
+.btn-warning {
+  color: #fff;
+  background-color: #e0690c;
+  border: 1px solid #e0690c;
+}
+.btn-warning:active,
+.btn-warning.active {
+  color: #fff;
+  background-color: #b05209;
+  border: 1px solid #b05209;
+}
+.btn--danger {
+  color: #fff;
+  background-color: #d9534f;
+  border: 1px solid #d9534f;
+}
+.btn--danger:active,
+.btn--danger.active {
+  color: #fff;
+  background-color: #c9302c;
+  border: 1px solid #c9302c;
+}
+.btn-link {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #ff6633;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+.btn-link:active,
+.btn-link.active {
+  color: #ff6633;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.btn-link:active,
+.btn-link.active {
+  border-color: transparent;
+  background-color: transparent;
+}
+.label-primary {
+  color: #fff;
+  background-color: #ff6633;
+}
+.label-success {
+  color: #fff;
+  background-color: #5cb85c;
+}
+.label-info {
+  color: #fff;
+  background-color: #5bc0de;
+}
+.label-warning {
+  color: #fff;
+  background-color: #e0690c;
+}
+.label-danger {
+  color: #fff;
+  background-color: #d9534f;
+}
+.label-error {
+  color: #fff;
+  background-color: #fc4e44;
+}
+.badge-primary {
+  color: #fff;
+  background-color: #ff6633;
+}
+.badge-primary.badge-inverted {
+  color: #ff6633;
+}
+.badge-success {
+  color: #fff;
+  background-color: #5cb85c;
+}
+.badge-success.badge-inverted {
+  color: #5cb85c;
+}
+.badge-info {
+  color: #fff;
+  background-color: #5bc0de;
+}
+.badge-info.badge-inverted {
+  color: #5bc0de;
+}
+.badge-error {
+  color: #fff;
+  background-color: #fc4e44;
+}
+.badge-error.badge-inverted {
+  color: #fc4e44;
+}
+.badge-warning {
+  color: #fff;
+  background-color: #e0690c;
+}
+.badge-warning.badge-inverted {
+  color: #e0690c;
+}
+.badge--danger {
+  color: #fff;
+  background-color: #d9534f;
+}
+.badge--danger.badge-inverted {
+  color: #d9534f;
+}

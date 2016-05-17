@@ -1,0 +1,58 @@
+// 1px border
+.border-top(@color){
+    border-top:1px solid @color;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2) {
+        background-image: -webkit-linear-gradient(top, @color 50%, transparent 50%);
+        background-size: 100% 1px;
+        background-repeat: no-repeat;
+        background-position: top;
+        border: none;
+    }
+}
+.border-right(@color){
+    border-right:1px solid @color;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2) {
+        background-image: -webkit-linear-gradient(right, @color, @color 50%, transparent 50%);
+        background-size: 1px 100%;
+        background-repeat: no-repeat;
+        background-position: right;
+        border: none;
+    }
+}
+.border-bottom(@color){
+    border-bottom:1px solid @color;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2) {
+        background-image: -webkit-linear-gradient(bottom, @color 50%, transparent 50%);
+        background-size: 100% 1px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        border:none;
+    }
+}
+.border-left(@color){
+    border-left:1px solid @color;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2) {
+        background-image: -webkit-linear-gradient(left, @color, @color 50%, transparent 50%);
+        background-size: 1px 100%;
+        background-repeat: no-repeat;
+        background-position: left;
+        border:none;
+    }
+}
+.border-top-bottom(@color){
+    border-top:1px solid @color;
+    border-bottom:1px solid @color;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2) {
+        background-image: -webkit-linear-gradient(top, @color, @color 50%, transparent 50%),
+        -webkit-linear-gradient(bottom, @color, @color 50%, transparent 50%);
+        background-size: 100% 1px, 100% 1px;
+        background-repeat: no-repeat;
+        background-position: top, bottom;
+        border: none;
+    }
+}

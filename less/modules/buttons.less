@@ -1,0 +1,45 @@
+.btn{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: top;
+    cursor: pointer;
+    line-height: 1;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: @btn-bg-color;
+    padding: 6px 8px 7px;
+    outline: none;
+    font-size: @btn-font-size;
+    &:active,
+    &.active {
+        color: inherit;
+        background-color: #ccc;
+    }
+    &:disabled,
+    &.disabled {
+        opacity: .6;
+    }
+}
+
+.btn-skin();
+
+.btn-block {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    margin-bottom: 10px;
+    font-size: @font-size-base;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    width: 100%;
+}
+
+.btn .icon {
+    font-size: inherit;
+}

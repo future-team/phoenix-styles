@@ -1,0 +1,39 @@
+{
+  "name": "base-styles",
+  "version": "0.1.1",
+  "description": "",
+  "main": "lib",
+  "repository": "git://code.dianpingoa.com/min.xiao/module-template.git",
+  "keywords": [
+    "core"
+  ],
+  "scripts": {
+    "build": "node_modules/.bin/gulp",
+    "less": "node_modules/.bin/gulp less",
+    "dev": "node_modules/.bin/gulp dev"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "min.xiao@dianping.com",
+    "email": "min.xiao@dianping.com"
+  },
+  "dependencies": {
+    "gulp-plumber": "^1.1.0"
+  },
+  "devDependencies": {
+    "glob": "^5.0.14",
+    "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-less": "^3.0.3",
+    "gulp-load-plugins": "^1.0.0-rc.1",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.6",
+    "less": "^2.5.1"
+  },
+  "bugs": {
+    "url": "http://code.dianpingoa.com/min.xiao/module-template/issues"
+  },
+  "homepage": "http://code.dianpingoa.com/min.xiao/module-template"
+}

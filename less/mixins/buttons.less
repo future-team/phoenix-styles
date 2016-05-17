@@ -1,0 +1,43 @@
+//generate different btn
+.generate-diff-btn(@color,@bg-color,@border-color:transparent){
+    color: @color;
+    background-color: @bg-color;
+    border: 1px solid @border-color;
+    &:active,
+    &.active {
+        color: @color;
+        background-color: darken(@bg-color, 10%);
+        border: 1px solid darken(@bg-color, 10%);
+    }
+};
+
+.btn-skin(){
+    .btn-primary{
+        .generate-diff-btn(@white,@brand-primary,@brand-primary);
+    }
+    .btn-success{
+        .generate-diff-btn(@white,@brand-success,@brand-success);
+    }
+    .btn-info{
+        .generate-diff-btn(@white,@brand-info,@brand-info);
+    }
+    .btn-error{
+        .generate-diff-btn(@white,@brand-error,@brand-error);
+    }
+    .btn-warning{
+        .generate-diff-btn(@white,@brand-warning,@brand-warning);
+    }
+    .btn--danger{
+        .generate-diff-btn(@white,@brand-danger,@brand-danger);
+    }
+    .btn-link {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        .generate-diff-btn(@brand-primary,transparent);
+        &:active,
+        &.active {
+            border-color: transparent;
+            background-color: transparent;
+        }
+    }
+};

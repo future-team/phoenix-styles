@@ -1,0 +1,80 @@
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }
+/**清除浮动*/
+.clearfix:before, .clearfix:after {
+    display: table;
+    line-height: 0;
+    content:"";
+}
+.clearfix:after {
+    clear: both;
+}
+
+/**控制块级、内敛*/
+.inline-block{
+    display: inline-block !important;
+}
+.inline{
+    display: inline !important;
+}
+.block{
+    display: block !important;
+}
+.show {
+    .block;
+}
+.hidden,.hide,.eg-hide {
+    display: none !important;
+}
+.invisible {
+    visibility: hidden;
+}
+.float-l{
+    float: left;
+}
+.float-r{
+    float: right;
+}
+
+//color
+.color-white{
+    color: @white;
+}
+.color-primary{
+    color: @brand-primary;
+}
+.color-success{
+    color: @brand-success;
+}
+.color-info{
+    color: @brand-info;
+}
+.color-warning{
+    color: @brand-warning;
+}
+.color-danger{
+    color: @brand-danger;
+}
+.color-error{
+    color: @brand-error;
+}
+.icon.color-gray{
+    color: @gray;
+}
+
+.icon.icon-sm{
+    font-size: 16px !important;
+}
+.icon.icon-md{
+    font-size: 32px !important;;
+}
+.icon.icon-lg{
+    font-size: 50px !important;;
+}

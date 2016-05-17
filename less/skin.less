@@ -1,0 +1,53 @@
+@import "variable";
+@import "mixins/form";
+@import "mixins/buttons";
+@import "mixins/label";
+@import "mixins/badges";
+
+//input checkbox radio
+.ui-checkbox,.ui-radio{
+    .icon{
+        color: @ui-checkbox-border-color;
+    }
+}
+
+//switch
+.label-switch {
+    input[type="checkbox"]:checked + .checkbox {
+        background: #4bd863;
+    }
+}
+
+.color-white{
+    color: @white;
+}
+.color-primary{
+    color: @brand-primary;
+}
+.color-success{
+    color: @brand-success;
+}
+.color-info{
+    color: @brand-info;
+}
+.color-warning{
+    color: @brand-warning;
+}
+.color-danger{
+    color: @brand-danger;
+}
+.color-error{
+    color: @brand-error;
+}
+.icon.color-gray{
+    color: @gray;
+}
+
+//btn
+.btn-skin();
+
+//label
+.label-skin();
+
+//badge
+.badges-skin();
