@@ -9,6 +9,7 @@ html {
 * {
   padding: 0px;
   margin: 0px;
+  -webkit-backface-visibility: hidden;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -352,7 +353,7 @@ a {
   color: #333;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 address {
   font-style: normal;
@@ -732,7 +733,7 @@ small,
 .icon-yduizhuyexuanzhong:before {
   content: "\e6b1";
 }
-.icon-radio-fill:before {
+.icon-yduizhengquekongxin:before {
   content: "\e6a8";
 }
 .icon-yduishijian:before {
@@ -746,9 +747,6 @@ small,
 }
 .icon-yduihao:before {
   content: "\e68f";
-}
-.icon-yduihuai:before {
-  content: "\e690";
 }
 .icon-yduigerenzhongxinxuanzhong:before {
   content: "\e689";
@@ -780,41 +778,11 @@ small,
 .icon-yduigengduo:before {
   content: "\e68c";
 }
-.icon-mail:before {
-  content: "\e63d";
-}
-.icon-phone:before {
-  content: "\e623";
-}
 .icon-icon1460187815494:before {
   content: "\e607";
 }
-.icon-radio-button:before {
-  content: "\e6ab";
-}
-.icon-xinxi:before {
-  content: "\e649";
-}
-.icon-duanxin:before {
-  content: "\e647";
-}
-.icon-daohang:before {
-  content: "\e651";
-}
-.icon-dianping:before {
-  content: "\e653";
-}
 .icon-qian:before {
   content: "\e662";
-}
-.icon-less:before {
-  content: "\e6a5";
-}
-.icon-moreunfold:before {
-  content: "\e6a6";
-}
-.icon-more:before {
-  content: "\e6a7";
 }
 .icon-calendar:before {
   content: "\e6bf";
@@ -828,47 +796,131 @@ small,
 .icon-square:before {
   content: "\e6d5";
 }
-.icon-favor:before {
-  content: "\e64c";
-}
-.icon-favor-fill:before {
-  content: "\e64b";
-}
 .icon-like:before {
   content: "\e669";
 }
-.icon-like-fill:before {
+.icon-likefill:before {
   content: "\e668";
 }
 .icon-loading:before {
   content: "\e64f";
 }
-.icon-close:before {
-  content: "\e646";
-}
-.icon-check:before {
-  content: "\e645";
-}
-.icon-add:before {
-  content: "\e6da";
-}
 .icon-delete:before {
   content: "\e6b4";
 }
-.icon-question-fill:before {
+.icon-questionfill:before {
   content: "\e690";
 }
 .icon-camera:before {
   content: "\e665";
 }
-.icon-camera-fill:before {
+.icon-camerafill:before {
   content: "\e664";
 }
-.icon-sousuo:before {
-  content: "\e659";
-}
-.icon-saoma:before {
+.icon-0061saoma:before {
   content: "\e60f";
+}
+.icon-icchevronright:before {
+  content: "\e61a";
+}
+.icon-icchevronmore:before {
+  content: "\e619";
+}
+.icon-icchevronless:before {
+  content: "\e618";
+}
+.icon-icchevronleft:before {
+  content: "\e617";
+}
+.icon-iczoomout2:before {
+  content: "\e646";
+}
+.icon-icsearch:before {
+  content: "\e63a";
+}
+.icon-icadd:before {
+  content: "\e60e";
+}
+.icon-icarrowdropup:before {
+  content: "\e605";
+}
+.icon-icdropdown:before {
+  content: "\e650";
+}
+.icon-icclose:before {
+  content: "\e61e";
+}
+.icon-iccheck:before {
+  content: "\e614";
+}
+.icon-icretangleleft:before {
+  content: "\e638";
+}
+.icon-icretangleleft-copy:before {
+  content: "\e649";
+}
+.icon-icshowmore:before {
+  content: "\e640";
+}
+.icon-icvoice:before {
+  content: "\e65f";
+}
+.icon-icplay:before {
+  content: "\e656";
+}
+.icon-icleft:before {
+  content: "\e652";
+}
+.icon-icpause:before {
+  content: "\e655";
+}
+.icon-icarrowleft-copy:before {
+  content: "\e64a";
+}
+.icon-iczoomout:before {
+  content: "\e647";
+}
+.icon-iczommout:before {
+  content: "\e645";
+}
+.icon-icshare:before {
+  content: "\e63d";
+}
+.icon-icshare2:before {
+  content: "\e63c";
+}
+.icon-icshowall:before {
+  content: "\e63f";
+}
+.icon-icedit:before {
+  content: "\e651";
+}
+.icon-iclive:before {
+  content: "\e653";
+}
+.icon-icmore:before {
+  content: "\e654";
+}
+.icon-xiazai42:before {
+  content: "\e617";
+}
+.icon-xiazai16:before {
+  content: "\e610";
+}
+.icon-xiazai11:before {
+  content: "\e62a";
+}
+.icon-xiazai12:before {
+  content: "\e62b";
+}
+.icon-big-arrow-right:before {
+  content: "\e623";
+}
+.icon-big-arrow-left:before {
+  content: "\e622";
+}
+.icon-markunread:before {
+  content: "\e677";
 }
 /**
  * Grid
@@ -1330,6 +1382,7 @@ select {
   overflow: hidden;
   height: 40px;
   border-bottom: 1px solid #ddd;
+  position: relative;
 }
 .input-row label:not(.multi-group) {
   float: left;
@@ -1348,6 +1401,17 @@ select {
 }
 .input-row .input {
   line-height: 40px;
+}
+.input-row .navigate-right {
+  display: block;
+  height: 100%;
+}
+.input-row .navigate-right input {
+  text-align: right;
+  padding-right: 40px;
+}
+.input-row .navigate-right:active {
+  background-color: #eee;
 }
 .ui-checkbox,
 .ui-radio {
@@ -1711,4 +1775,74 @@ input[type="button"] {
 }
 .badge--danger.badge-inverted {
   color: #d9534f;
+}
+.table-view {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 15px;
+  list-style: none;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.table-view-cell {
+  position: relative;
+  padding: 11px 65px 11px 15px;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+}
+.table-view-cell:last-child {
+  border-bottom: 0;
+}
+.table-view-cell > a:not(.btn) {
+  position: relative;
+  display: block;
+  padding: inherit;
+  margin: -11px -65px -11px -15px;
+  overflow: hidden;
+  color: inherit;
+}
+.table-view-cell > a:not(.btn):active {
+  background-color: #eee;
+}
+.table-view-cell p {
+  margin-bottom: 0;
+}
+.navigate-right:after {
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  font-family: "iconfont";
+  line-height: 1;
+  color: #bbb;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.navigate-right:after {
+  right: 10px;
+  content: "\e623";
+}
+.table-view-cell > .btn,
+.table-view-cell > a > .btn,
+.table-view-cell > .badge,
+.table-view-cell > a > .badge,
+.table-view-cell > .label-switch,
+.table-view-cell > a > .label-switch {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.table-view-cell .navigate-right > .btn,
+.table-view-cell > a .navigate-right > .btn,
+.table-view-cell .navigate-right > .badge,
+.table-view-cell > a .navigate-right > .badge,
+.table-view-cell .navigate-right > .label-switch,
+.table-view-cell > a .navigate-right > .label-switch {
+  right: 35px;
 }

@@ -66,20 +66,19 @@ select {
 
 .input-row {
     overflow: hidden;
-    height: @input-height; // Matches the height of inputs.
+    height: @input-height;
     border-bottom: @border-default;
+    position: relative;
 }
 
-// Labels get floated left with a set percentage width
 .input-row label:not(.multi-group) {
     float: left;
     width: 35%;
     padding: 12px 15px;
     font-family: @font-family-default;
-    line-height: 1.1; // Put the text on the baseline.
+    line-height: 1.1;
 }
 
-// Actual inputs float to right of labels and also have a set percentage
 .input-row input,.input-row .input {
     float: right;
     width: 65%;
@@ -89,6 +88,19 @@ select {
 }
 .input-row .input{
     line-height: @input-height;
+}
+.input-row{
+    .navigate-right{
+        display: block;
+        height: 100%;
+        input{
+            text-align: right;
+            padding-right: 40px;
+        }
+        &:active {
+            background-color: #eee;
+        }
+    }
 }
     //checkbox
 
