@@ -727,61 +727,61 @@ small,
 .icon-right-fill:before {
   content: "\e6a9";
 }
-.icon-yduizhuye:before {
+.icon-home:before {
   content: "\e6a0";
 }
-.icon-yduizhuyexuanzhong:before {
+.icon-home-fill:before {
   content: "\e6b1";
 }
-.icon-yduizhengquekongxin:before {
+.icon-round-right:before {
   content: "\e6a8";
 }
-.icon-yduishijian:before {
+.icon-clock:before {
   content: "\e699";
 }
-.icon-yduishezhi:before {
+.icon-set:before {
   content: "\e697";
 }
-.icon-yduipaibanleixingdatu:before {
+.icon-picture:before {
   content: "\e693";
 }
-.icon-yduihao:before {
+.icon-thumb-up:before {
   content: "\e68f";
 }
-.icon-yduigerenzhongxinxuanzhong:before {
+.icon-personal-center-fill:before {
   content: "\e689";
 }
-.icon-yduigerenzhongxin:before {
+.icon-personal-center:before {
   content: "\e68a";
 }
-.icon-yduigantanhaoshixin:before {
+.icon-round-bang-fill:before {
   content: "\e688";
 }
-.icon-yduigantanhaokongxin:before {
+.icon-round-bang:before {
   content: "\e687";
 }
-.icon-yduidingwei:before {
+.icon-position:before {
   content: "\e67b";
 }
-.icon-yduicuowukongxin:before {
+.icon-round-error:before {
   content: "\e675";
 }
-.icon-yduicuowushixin:before {
+.icon-round-error-fill:before {
   content: "\e676";
 }
-.icon-yduidanxuankuangxuanzhong:before {
+.icon-sms:before {
   content: "\e677";
 }
 .icon-radio:before {
   content: "\e678";
 }
-.icon-yduigengduo:before {
+.icon-more-level:before {
   content: "\e68c";
 }
-.icon-icon1460187815494:before {
+.icon-list:before {
   content: "\e607";
 }
-.icon-qian:before {
+.icon-money:before {
   content: "\e662";
 }
 .icon-calendar:before {
@@ -799,7 +799,7 @@ small,
 .icon-like:before {
   content: "\e669";
 }
-.icon-likefill:before {
+.icon-like-fill:before {
   content: "\e668";
 }
 .icon-loading:before {
@@ -808,109 +808,106 @@ small,
 .icon-delete:before {
   content: "\e6b4";
 }
-.icon-questionfill:before {
+.icon-question-fill:before {
   content: "\e690";
 }
 .icon-camera:before {
   content: "\e665";
 }
-.icon-camerafill:before {
+.icon-camera-fill:before {
   content: "\e664";
 }
-.icon-0061saoma:before {
+.icon-sweep:before {
   content: "\e60f";
 }
-.icon-icchevronright:before {
+.icon-chevron-right:before {
   content: "\e61a";
 }
-.icon-icchevronmore:before {
+.icon-chevron-more:before {
   content: "\e619";
 }
-.icon-icchevronless:before {
+.icon-chevron-less:before {
   content: "\e618";
 }
-.icon-icchevronleft:before {
+.icon-chevron-left:before {
   content: "\e617";
 }
-.icon-iczoomout2:before {
+.icon-minus-sign:before {
   content: "\e646";
 }
-.icon-icsearch:before {
+.icon-search:before {
   content: "\e63a";
 }
-.icon-icadd:before {
+.icon-add:before {
   content: "\e60e";
 }
-.icon-icarrowdropup:before {
+.icon-arrow-dropup:before {
   content: "\e605";
 }
-.icon-icdropdown:before {
+.icon-dropdown:before {
   content: "\e650";
 }
-.icon-icclose:before {
+.icon-close:before {
   content: "\e61e";
 }
-.icon-iccheck:before {
+.icon-check:before {
   content: "\e614";
 }
-.icon-icretangleleft:before {
+.icon-retangle-left:before {
   content: "\e638";
 }
-.icon-icretangleleft-copy:before {
+.icon-retangle-left-copy:before {
   content: "\e649";
 }
-.icon-icshowmore:before {
+.icon-show-more:before {
   content: "\e640";
 }
-.icon-icvoice:before {
+.icon-voice:before {
   content: "\e65f";
 }
-.icon-icplay:before {
+.icon-play:before {
   content: "\e656";
 }
-.icon-icleft:before {
+.icon-left:before {
   content: "\e652";
 }
-.icon-icpause:before {
+.icon-pause:before {
   content: "\e655";
 }
-.icon-icarrowleft-copy:before {
+.icon-arrow-left-copy:before {
   content: "\e64a";
 }
-.icon-iczoomout:before {
+.icon-zoom-in:before {
   content: "\e647";
 }
-.icon-iczommout:before {
+.icon-zomm-out:before {
   content: "\e645";
 }
-.icon-icshare:before {
+.icon-share:before {
   content: "\e63d";
 }
-.icon-icshare2:before {
+.icon-share2:before {
   content: "\e63c";
 }
-.icon-icshowall:before {
+.icon-showall:before {
   content: "\e63f";
 }
-.icon-icedit:before {
+.icon-edit:before {
   content: "\e651";
 }
-.icon-iclive:before {
+.icon-live:before {
   content: "\e653";
 }
-.icon-icmore:before {
+.icon-more:before {
   content: "\e654";
 }
-.icon-xiazai42:before {
-  content: "\e617";
-}
-.icon-xiazai16:before {
+.icon-message:before {
   content: "\e610";
 }
-.icon-xiazai11:before {
+.icon-star:before {
   content: "\e62a";
 }
-.icon-xiazai12:before {
+.icon-star-fill:before {
   content: "\e62b";
 }
 .icon-big-arrow-right:before {
@@ -918,9 +915,6 @@ small,
 }
 .icon-big-arrow-left:before {
   content: "\e622";
-}
-.icon-markunread:before {
-  content: "\e677";
 }
 /**
  * Grid
@@ -1413,6 +1407,10 @@ select {
 .input-row .navigate-right:active {
   background-color: #eee;
 }
+.input-row .multi-group {
+  margin-top: 6px;
+  display: inline-block;
+}
 .ui-checkbox,
 .ui-radio {
   position: relative;
@@ -1436,34 +1434,99 @@ select {
   z-index: 2;
   left: 0;
 }
+.ui-checkbox i,
+.ui-radio i {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-clip: padding-box;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  position: relative;
+  display: block;
+  width: 24px;
+  margin-right: 8px;
+  margin-left: 0;
+  height: 24px;
+  border: 2px solid #bbb;
+  background: #fff;
+}
+.ui-checkbox input[type="radio"]:checked + i,
+.ui-radio input[type="radio"]:checked + i,
+.ui-checkbox input[type="checkbox"]:checked + i,
+.ui-radio input[type="checkbox"]:checked + i {
+  background: #fff1ed;
+  border-color: #ff6633;
+  position: relative;
+}
+.ui-checkbox input[type="radio"]:checked + i:before,
+.ui-radio input[type="radio"]:checked + i:before,
+.ui-checkbox input[type="checkbox"]:checked + i:before,
+.ui-radio input[type="checkbox"]:checked + i:before,
+.ui-checkbox input[type="radio"]:checked + i:after,
+.ui-radio input[type="radio"]:checked + i:after,
+.ui-checkbox input[type="checkbox"]:checked + i:after,
+.ui-radio input[type="checkbox"]:checked + i:after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 2px;
+  background: #ff6633;
+}
+.ui-checkbox input[type="radio"]:checked + i:before,
+.ui-radio input[type="radio"]:checked + i:before,
 .ui-checkbox input[type="checkbox"]:checked + i:before,
 .ui-radio input[type="checkbox"]:checked + i:before {
-  content: "\e6d6";
+  height: 7px;
+  left: 5px;
+  top: 8px;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.ui-checkbox input[type="radio"]:checked + i:after,
+.ui-radio input[type="radio"]:checked + i:after,
+.ui-checkbox input[type="checkbox"]:checked + i:after,
+.ui-radio input[type="checkbox"]:checked + i:after {
+  height: 11px;
+  left: 11px;
+  top: 4.5px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.ui-checkbox input[type="radio"]:disabled + i,
+.ui-radio input[type="radio"]:disabled + i,
+.ui-checkbox input[type="checkbox"]:disabled + i,
+.ui-radio input[type="checkbox"]:disabled + i {
+  border-color: #e2e2e2;
+}
+.ui-checkbox input[type="checkbox"] + i,
+.ui-radio input[type="checkbox"] + i {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-clip: padding-box;
+}
+.ui-checkbox input[type="checkbox"]:disabled,
+.ui-radio input[type="checkbox"]:disabled {
+  color: #e2e2e2;
 }
 .ui-checkbox input[type="checkbox"]:disabled + i,
 .ui-radio input[type="checkbox"]:disabled + i {
-  color: #ccc;
+  border-color: #e2e2e2;
 }
-.ui-checkbox input[type="radio"]:checked + i:before,
-.ui-radio input[type="radio"]:checked + i:before {
-  content: "\e6a8";
-}
-.ui-checkbox input[type="radio"]:disabled + i,
-.ui-radio input[type="radio"]:disabled + i {
-  color: #ccc;
-}
-.ui-checkbox.lg,
-.ui-radio.lg {
+.ui-checkbox,
+.ui-radio {
   width: 24px;
   height: 24px;
 }
-.ui-checkbox.lg .icon,
-.ui-radio.lg .icon {
+.ui-checkbox .icon,
+.ui-radio .icon {
   font-size: 24px;
 }
 .multi-group span {
   position: relative;
-  top: -3px;
+  top: -7px;
 }
 .multi-group .ui-radio,
 .multi-group .ui-checkbox {
@@ -1582,6 +1645,14 @@ select {
 .btn:disabled,
 .btn.disabled {
   opacity: .6;
+}
+.btn.md {
+  padding: 8px 8px;
+  font-size: 16px;
+}
+.btn.lg {
+  padding: 12px 8px;
+  font-size: 16px;
 }
 .btn-primary {
   color: #fff;
