@@ -51,3 +51,32 @@
 
 //badge
 .badges-skin();
+
+//checkbox radio
+.ui-checkbox,.ui-radio{
+    i{
+        border: 2px solid #bbb;
+        background: #fff;
+    }
+    input[type="radio"],input[type="checkbox"]{
+        &:checked + i{
+            background: #fff1ed;
+            border-color: @ui-checkbox-color;
+            &:before, &:after {
+                background: @ui-checkbox-color;
+            }
+        }
+        &:disabled + i{
+            border-color: @ui-checkbox-disabled;
+        }
+    }
+
+    input[type="checkbox"]{
+        &:disabled {
+            +i{
+                border-color:@ui-checkbox-disabled ;
+            }
+            color: @ui-checkbox-disabled;
+        }
+    }
+}

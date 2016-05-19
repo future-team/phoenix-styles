@@ -708,6 +708,42 @@ small,
 .badge--danger.badge-inverted {
   color: #d9534f;
 }
+.ui-checkbox i,
+.ui-radio i {
+  border: 2px solid #bbb;
+  background: #fff;
+}
+.ui-checkbox input[type="radio"]:checked + i,
+.ui-radio input[type="radio"]:checked + i,
+.ui-checkbox input[type="checkbox"]:checked + i,
+.ui-radio input[type="checkbox"]:checked + i {
+  background: #fff1ed;
+  border-color: #ff6633;
+}
+.ui-checkbox input[type="radio"]:checked + i:before,
+.ui-radio input[type="radio"]:checked + i:before,
+.ui-checkbox input[type="checkbox"]:checked + i:before,
+.ui-radio input[type="checkbox"]:checked + i:before,
+.ui-checkbox input[type="radio"]:checked + i:after,
+.ui-radio input[type="radio"]:checked + i:after,
+.ui-checkbox input[type="checkbox"]:checked + i:after,
+.ui-radio input[type="checkbox"]:checked + i:after {
+  background: #ff6633;
+}
+.ui-checkbox input[type="radio"]:disabled + i,
+.ui-radio input[type="radio"]:disabled + i,
+.ui-checkbox input[type="checkbox"]:disabled + i,
+.ui-radio input[type="checkbox"]:disabled + i {
+  border-color: #e2e2e2;
+}
+.ui-checkbox input[type="checkbox"]:disabled,
+.ui-radio input[type="checkbox"]:disabled {
+  color: #e2e2e2;
+}
+.ui-checkbox input[type="checkbox"]:disabled + i,
+.ui-radio input[type="checkbox"]:disabled + i {
+  border-color: #e2e2e2;
+}
 @font-face {
   font-family: "iconfont";
   src: url('fonts/iconfont.eot?t=1461658705');

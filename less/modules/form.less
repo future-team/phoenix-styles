@@ -141,14 +141,14 @@ select {
         &:checked + i{
             //content: "\e6a8";
             background: #fff1ed;
-            border-color: #ff6633;
+            border-color: @ui-checkbox-color;
             position: relative;
             &:before, &:after {
                 display: inline-block;
                 position: absolute;
                 content: "";
                 width: 2px;
-                background: #ff6633;
+                background: @ui-checkbox-color;
             }
             &:before {
                 height: 7px;
