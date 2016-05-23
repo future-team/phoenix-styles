@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     clean = require('gulp-clean');
 
-var cssName = "unicorn",
+var cssName = require('./package.json').name,
     dest = "./dist/";
 
 var error = function(e){
