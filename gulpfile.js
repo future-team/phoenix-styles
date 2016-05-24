@@ -46,7 +46,13 @@ gulp.task('min-styles',['less'], function() {
       .pipe(gulp.dest(dest)); // 输出all.min.css
 });
 
-gulp.task('default', ['fonts','min-styles']);
+gulp.task('js', function() {
+    gulp.src(['./js/*.js'])
+        .pipe(concat(cssName+'.js'))
+        .pipe(gulp.dest(dest));
+});
+
+gulp.task('default', ['fonts','min-styles','js']);
 gulp.task('dev',['fonts'], function() {
   gulp.watch('./less/**/*.less', ['less']);
 });
