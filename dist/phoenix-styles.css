@@ -2165,33 +2165,33 @@ input[type="button"] {
 .star-md .star-grey {
   background-position-y: -17px;
 }
-.star-10 .star-grey {
+.star-5 .star-grey {
   width: 10%;
 }
-.star-20 .star-grey {
+.star-10 .star-grey {
   width: 20%;
 }
-.star-30 .star-grey {
+.star-15 .star-grey {
   width: 30%;
 }
-.star-40 .star-grey {
+.star-20 .star-grey {
   width: 40%;
 }
-.star-50 .star-grey {
+.star-25 .star-grey {
   width: 50%;
 }
-.star-60 .star-grey {
+.star-30 .star-grey {
   width: 60%;
 }
-.star-70 .star-grey {
+.star-35 .star-grey {
   width: 70%;
 }
-.star-80 .star-grey {
+.star-40 .star-grey {
   width: 80%;
 }
-.star-90 .star-grey {
+.star-45 .star-grey {
   width: 90%;
 }
-.star-100 .star-grey {
+.star-50 .star-grey {
   width: 100%;
 }
