@@ -53,6 +53,6 @@ gulp.task('js', function() {
 });
 
 gulp.task('default', ['fonts','min-styles','js']);
-gulp.task('dev',['fonts'], function() {
+gulp.task('dev',['fonts','less'], function() {
   gulp.watch('./less/**/*.less', ['less']);
 });

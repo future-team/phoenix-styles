@@ -834,6 +834,13 @@ small,
 .ui-radio input[type="checkbox"]:disabled + i {
   border-color: #e2e2e2;
 }
+.ui-tabs .tab-nav {
+  background: #fff;
+}
+.ui-tabs .tab-nav.active {
+  color: #ff6633;
+  border-bottom-color: #ff6633;
+}
 @font-face {
   font-family: "iconfont";
   src: url('fonts/iconfont.eot?t=1461658705');
@@ -2194,4 +2201,40 @@ input[type="button"] {
 }
 .star-50 .star-grey {
   width: 100%;
+}
+.ui-tabs .tab-nav {
+  text-align: center;
+  background: #fff;
+  padding: 5px;
+  border-bottom: 2px solid #fff;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+.ui-tabs .tab-nav.active {
+  color: #ff6633;
+  border-bottom: 2px solid #ff6633;
+  margin-bottom: -2px;
+  margin-right: 0;
+}
+.ui-tabs .tab-panel {
+  display: none;
+  padding: 5px;
+}
+.ui-tabs .tab-panel.active {
+  display: block;
+}
+.vertical .tab-nav {
+  text-align: left;
+  border: 2px solid #fff;
+  line-height: 16px;
+  padding: 10px 5px;
+  position: relative;
+}
+.vertical .tab-nav.active {
+  border: 2px solid #ff6633;
+  border-right: 2px solid #fff;
+  margin-bottom: 0px;
+  margin-right: -2px;
 }
