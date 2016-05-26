@@ -1,15 +1,4 @@
-(function (factory) {
-    if (typeof define === 'function' && define.amd) {
-        // AMD
-        define(['jquery'], factory);
-    } else if (typeof exports === 'object') {
-        // CommonJS
-        factory(require('jquery'));
-    } else {
-        // Browser globals
-        factory(jQuery);
-    }
-}(function($){
+(function($){
     var lis = $('.ui-tabs li');
     lis.on('click',function(e){
         e.preventDefault();
@@ -25,5 +14,4 @@
             panel.eq(index-1).addClass('active');
         }
     });
-
-}));
+})(jQuery);
