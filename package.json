@@ -1,9 +1,9 @@
 {
   "name": "phoenix-styles",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "",
-  "main": "lib",
-  "repository": "git://code.dianpingoa.com/min.xiao/module-template.git",
+  "main": "dist/",
+  "repository": "git@github.com:future-team/phoenix-styles.git",
   "keywords": [
     "core"
   ],
@@ -34,7 +34,7 @@
     "less": "^2.5.1"
   },
   "bugs": {
-    "url": "http://code.dianpingoa.com/min.xiao/module-template/issues"
+    "url": "https://github.com/future-team/phoenix-styles/issues"
   },
-  "homepage": "http://code.dianpingoa.com/min.xiao/module-template"
+  "homepage": "https://github.com/future-team/phoenix-styles"
 }
