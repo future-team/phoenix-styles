@@ -28,14 +28,17 @@
 .vertical{
   .tab-nav{
     text-align: left;
-    border: 2px solid @white;
     line-height: 16px;
     padding: 10px 5px;
     position: relative;
+    border-left: 2px solid @white;
+    border-bottom: none;
+    border-right: 2px solid @brand-primary;
+    margin-right: -2px;
     &.active{
       border: 2px solid @brand-primary;
-      border-right: 2px solid #fff;
-      margin-bottom: 0px;
+      border-right: 2px solid @white;
+      margin-bottom: 0;
       margin-right: -2px;
     }
   }
