@@ -408,6 +408,24 @@ small,
   color: #777;
   font-size: 65%;
 }
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 12px;
+}
 .text-left {
   text-align: left;
 }
@@ -1058,6 +1076,12 @@ small,
  * available width, and the height of each .uc-col with take
  * up the height of the tallest .uc-col in the same .uc-row.
  */
+.grid-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1065,8 +1089,8 @@ small,
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 0px;
-  width: 100%;
+  margin: 0 -15px;
+  /*width: 100%;*/
 }
 .row-wrap {
   -ms-flex-wrap: wrap;
@@ -1074,16 +1098,16 @@ small,
   -moz-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-.row-no-padding {
+.row.no-padding {
   padding: 0;
 }
-.row-no-padding > .col {
+.row.no-padding > .col {
   padding: 0;
 }
-.row + .row {
-  margin-top: 0px;
+/*.row + .row {
+  margin-top: (@grid-padding-width / 2) * -1;
   padding-top: 0;
-}
+}*/
 .col {
   -moz-flex: 1;
   -ms-flex: 1;
@@ -1096,7 +1120,7 @@ small,
   -ms-flex: 1  ;
   flex: 1  ;
   display: block;
-  padding: 0px;
+  padding: 5px 15px;
   width: 100%;
 }
 /* Vertically Align Columns */
@@ -1507,7 +1531,7 @@ select {
 }
 .input-row {
   overflow: hidden;
-  height: 40px;
+  /*height: @input-height;*/
   border-bottom: 1px solid #ddd;
   position: relative;
 }
