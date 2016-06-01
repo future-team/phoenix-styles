@@ -1104,6 +1104,12 @@ h6 {
 .row.no-padding > .col {
   padding: 0;
 }
+.row-no-padding .row {
+  padding: 0;
+}
+.row-no-padding .row > .col {
+  padding: 0;
+}
 /*.row + .row {
   margin-top: (@grid-padding-width / 2) * -1;
   padding-top: 0;
