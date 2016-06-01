@@ -1076,6 +1076,9 @@ h6 {
  * available width, and the height of each .uc-col with take
  * up the height of the tallest .uc-col in the same .uc-row.
  */
+.grid {
+  overflow: hidden;
+}
 .grid-fluid {
   margin-right: auto;
   margin-left: auto;
