@@ -1546,15 +1546,6 @@ select {
   border-bottom: 1px solid #ddd;
   position: relative;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-  .input-row {
-    background-image: -webkit-linear-gradient(bottom, #ddd 50%, transparent 50%);
-    background-size: 100% 1px;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    border: none;
-  }
-}
 .input-row label:not(.multi-group) {
   float: left;
   width: 35%;
@@ -2124,19 +2115,8 @@ input[type="button"] {
   margin-bottom: 15px;
   list-style: none;
   background-color: #fff;
-  /*border-top: @border-default;
-    border-bottom: @border-default;*/
   border-bottom: 1px solid #ddd;
   border-top: 1px solid #ddd;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-  .table-view {
-    background-image: -webkit-linear-gradient(bottom, #ddd 50%, transparent 50%);
-    background-size: 100% 1px;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    border: none;
-  }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   .table-view {
@@ -2151,17 +2131,7 @@ input[type="button"] {
   position: relative;
   padding: 11px 65px 11px 15px;
   overflow: hidden;
-  /* border-bottom: @border-default;*/
   border-bottom: 1px solid #ddd;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-  .table-view-cell {
-    background-image: -webkit-linear-gradient(bottom, #ddd 50%, transparent 50%);
-    background-size: 100% 1px;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    border: none;
-  }
 }
 .table-view-cell:last-child {
   border-bottom: 0;
