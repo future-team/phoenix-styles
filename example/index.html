@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>doc</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, minimal-ui">
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="email=no">
     <link rel="stylesheet" href="../dist/phoenix-styles.css"/>
@@ -13,17 +14,109 @@
 </head>
 <body class="doc">
 
-    <div class="nav wapper">
-        <div class="logo"><a href="#">phoenix-styles</a></div>
-        <ul class="nav-list-box clearfix">
-            <li><a href="#" class="active">首页</a></li>
-            <li><a href="./doc.html">文档</a></li>
-        </ul>
-    </div>
+<div class="nav wapper">
+    <div class="logo"><a href="#">phoenix-styles</a></div>
+    <ul class="nav-list-box clearfix">
+        <li><a href="#" class="active">首页</a></li>
+        <li><a href="./doc.html">文档</a></li>
+    </ul>
+</div>
 
-    <div class="wapper container">
-        <h3>欢迎使用Phoenix-styles基础样式库</h3>
+<div class="wapper container">
+    <h3>欢迎使用Phoenix-styles基础样式库</h3>
+
+    <div class="block">
+        <div class="title">
+            <div class="red-tips"></div>
+            使用方式：
+        </div>
+        <div class="item">
+            <div class="item-name">1、简单粗暴直接引入:</div>
+            <div class="item-content">
+                git拉下来代码，直接项目引入css<br/><a href="https://github.com/future-team/phoenix-styles/tree/master">去git查看</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-name">2、通过bower安装:</div>
+            <div class="item-content">
+                <pre class="code">
+            $ sudo npm install bower -g
+            $ cd phoenix-styles
+            $ bower install phoenix-styles --save
+            //更新
+            $ bower update
+                </pre>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-name">3、通过git submodule依赖:</div>
+            <div class="item-content">
+                <pre class="code">
+
+        * 如果你只需要某一部分的样式，这样我们还是支持的：
+        ```
+        //首先通过git submodule的方式引入phoenix-styles
+        $ git submodule add https://github.com/future-team/phoenix-styles.git
+        ```
+        然后，如果想只引入部分less，你可以这样：
+        ```
+        @import '../../phoenix-styles/less/public.less';
+
+                </pre>
+            </div>
+        </div>
     </div>
+    <div class="block block2">
+        <div class="title">
+            <div class="red-tips"></div>
+            结构目录：
+        </div>
+        <div class="item">
+            <div class="item-name">
+                dist:
+            </div>
+            <div class="item-content">
+                生成文件目录：
+                包括phoenix-styles.css和phoenix-styles.min.css
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-name">
+                example:
+            </div>
+            <div class="item-content">
+                文档和示例：
+                  index.html打开即可查看
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-name">
+                js:
+            </div>
+            <div class="item-content">
+                某些动作所必须的js源文件
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-name">less:</div>
+            <div class="item-content">
+                不同模块的样式文件：如果只需要引入某些文件可以单独引入。
+
+                <div class="detail"><span>variable.less:</span>变量定义，例如颜色变量</div>
+                <div class="detail"> <span>skin.less:</span>皮肤，自定义不同组件颜色</div>
+                 <div class="detail"><span>public.less:</span>引入了所有公共方法的less</div>
+                 <div class="detail"><span>phoenix-styles.less:</span>引入所有相关文件</div>
+                 <div class="detail"><span>mixins.less:</span>引入mixins下所有文件</div>
+                 <div class="detail"><span>fonts.less:</span>字体样式</div>
+
+            </div>
+        </div>
+        <div class="bottom-tip">
+            接下来就开始感受phoenix-styles带来的便利吧<br/>
+            <a href="./doc.html">let`s get start</a>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

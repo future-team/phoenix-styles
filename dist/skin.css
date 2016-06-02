@@ -312,3 +312,11 @@
   color: #ff6633;
   border-bottom-color: #ff6633;
 }
+.vertical .tab-nav {
+  background: #fff;
+}
+.vertical .tab-nav.active {
+  color: #ff6633;
+  border: #ff6633;
+  border-right-color: #ff6633;
+}
