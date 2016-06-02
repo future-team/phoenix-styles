@@ -18,8 +18,8 @@ var error = function(e){
 };
 
 gulp.task('clean', function () {
-    return gulp.src(['./lib/*','./dist/**/*'], {read: false})
-        .pipe(clean());
+    return gulp.src(['./dist/*'], {read: false})
+        .pipe(clean()).on('error', error );
 });
 
 gulp.task('less',['clean'], function(){
@@ -52,7 +52,7 @@ gulp.task('js', function() {
         .pipe(gulp.dest(dest));
 });
 
-gulp.task('default', ['clean','fonts','min-styles','js']);
+gulp.task('default', ['fonts','min-styles','js']);
 gulp.task('dev',['fonts','less'], function() {
   gulp.watch('./less/**/*.less', ['less']);
 });
