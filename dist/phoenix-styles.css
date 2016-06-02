@@ -1619,7 +1619,7 @@ select {
   margin-right: 8px;
   margin-left: 0;
   height: 24px;
-  border: 2px solid #bbb;
+  border: 1px solid #bbb;
   background: #fff;
 }
 .ui-checkbox input[type="radio"]:checked + i,
@@ -1648,9 +1648,9 @@ select {
 .ui-radio input[type="radio"]:checked + i:before,
 .ui-checkbox input[type="checkbox"]:checked + i:before,
 .ui-radio input[type="checkbox"]:checked + i:before {
-  height: 7px;
-  left: 5px;
-  top: 8px;
+  height: 8px;
+  left: 6px;
+  top: 9px;
   -webkit-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
@@ -1660,8 +1660,8 @@ select {
 .ui-checkbox input[type="checkbox"]:checked + i:after,
 .ui-radio input[type="checkbox"]:checked + i:after {
   height: 11px;
-  left: 11px;
-  top: 4.5px;
+  left: 12px;
+  top: 6px;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -1698,6 +1698,8 @@ select {
 }
 .multi-group {
   margin-right: 10px;
+  height: 24px;
+  display: inline-block;
 }
 .multi-group span {
   position: relative;
