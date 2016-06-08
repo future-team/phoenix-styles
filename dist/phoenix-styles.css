@@ -859,6 +859,14 @@ h6 {
   color: #ff6633;
   border-bottom-color: #ff6633;
 }
+.vertical .tab-nav {
+  background: #fff;
+}
+.vertical .tab-nav.active {
+  color: #ff6633;
+  border: #ff6633;
+  border-right-color: #ff6633;
+}
 @font-face {
   font-family: "iconfont";
   src: url('fonts/iconfont.eot?t=1461658705');
@@ -2257,7 +2265,6 @@ input[type="button"] {
 }
 .ui-tabs .tab-nav {
   text-align: center;
-  background: #fff;
   padding: 5px;
   border-bottom: 2px solid #fff;
   font-size: 16px;
@@ -2609,4 +2616,12 @@ input[type="button"] {
 .ui-tabs .tab-nav.active {
   color: #ff6633;
   border-bottom-color: #ff6633;
+}
+.vertical .tab-nav {
+  background: #fff;
+}
+.vertical .tab-nav.active {
+  color: #ff6633;
+  border: #ff6633;
+  border-right-color: #ff6633;
 }
