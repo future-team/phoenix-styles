@@ -127,3 +127,14 @@
 .flex(0, 0, 66.6666%);
   max-width: 66.6666%;
 }
+
+.grid-row{
+  .display-flex();
+  margin-top: 10px;
+  &:first-child{
+    margin-top:0;
+  }
+  label{
+    .flex(1);
+  }
+}
