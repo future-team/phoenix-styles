@@ -2054,6 +2054,7 @@ input[type="button"] {
   display: block;
   margin-left: 0;
   margin-top: -1px;
+  margin-bottom: 1px;
 }
 .btn-group-tacked .btn:first-child:not(:last-child) {
   border-top-right-radius: 0;
