@@ -159,30 +159,56 @@
 .btn-warning.hollow.active {
   background: rgba(226, 226, 226, 0.4);
 }
-.btn--danger {
+.btn-danger {
   color: #fff;
   background-color: #d9534f;
   border: 1px solid #d9534f;
 }
-.btn--danger:active,
-.btn--danger.active {
+.btn-danger:active,
+.btn-danger.active {
   color: #fff;
   background-color: #c9302c;
   border: 1px solid #c9302c;
 }
-.btn--danger.hollow {
+.btn-danger.hollow {
   color: #333;
   background-color: #fff;
   border: 1px solid #d9534f;
 }
-.btn--danger.hollow:active,
-.btn--danger.hollow.active {
+.btn-danger.hollow:active,
+.btn-danger.hollow.active {
   color: #333;
   background-color: #e6e6e6;
   border: 1px solid #c9302c;
 }
-.btn--danger.hollow:active,
-.btn--danger.hollow.active {
+.btn-danger.hollow:active,
+.btn-danger.hollow.active {
+  background: rgba(226, 226, 226, 0.4);
+}
+.btn-gray {
+  color: #fff;
+  background-color: #ccc;
+  border: 1px solid #ccc;
+}
+.btn-gray:active,
+.btn-gray.active {
+  color: #fff;
+  background-color: #b3b3b3;
+  border: 1px solid #b3b3b3;
+}
+.btn-gray.hollow {
+  color: #666;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.btn-gray.hollow:active,
+.btn-gray.hollow.active {
+  color: #666;
+  background-color: #e6e6e6;
+  border: 1px solid #b3b3b3;
+}
+.btn-gray.hollow:active,
+.btn-gray.hollow.active {
   background: rgba(226, 226, 226, 0.4);
 }
 .btn-link {

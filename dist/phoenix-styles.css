@@ -706,30 +706,56 @@ h6 {
 .btn-warning.hollow.active {
   background: rgba(226, 226, 226, 0.4);
 }
-.btn--danger {
+.btn-danger {
   color: #fff;
   background-color: #d9534f;
   border: 1px solid #d9534f;
 }
-.btn--danger:active,
-.btn--danger.active {
+.btn-danger:active,
+.btn-danger.active {
   color: #fff;
   background-color: #c9302c;
   border: 1px solid #c9302c;
 }
-.btn--danger.hollow {
+.btn-danger.hollow {
   color: #333;
   background-color: #fff;
   border: 1px solid #d9534f;
 }
-.btn--danger.hollow:active,
-.btn--danger.hollow.active {
+.btn-danger.hollow:active,
+.btn-danger.hollow.active {
   color: #333;
   background-color: #e6e6e6;
   border: 1px solid #c9302c;
 }
-.btn--danger.hollow:active,
-.btn--danger.hollow.active {
+.btn-danger.hollow:active,
+.btn-danger.hollow.active {
+  background: rgba(226, 226, 226, 0.4);
+}
+.btn-gray {
+  color: #fff;
+  background-color: #ccc;
+  border: 1px solid #ccc;
+}
+.btn-gray:active,
+.btn-gray.active {
+  color: #fff;
+  background-color: #b3b3b3;
+  border: 1px solid #b3b3b3;
+}
+.btn-gray.hollow {
+  color: #666;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.btn-gray.hollow:active,
+.btn-gray.hollow.active {
+  color: #666;
+  background-color: #e6e6e6;
+  border: 1px solid #b3b3b3;
+}
+.btn-gray.hollow:active,
+.btn-gray.hollow.active {
   background: rgba(226, 226, 226, 0.4);
 }
 .btn-link {
@@ -1553,6 +1579,7 @@ input[type="search"]:focus {
 }
 textarea {
   height: auto;
+  resize: none;
 }
 select {
   height: auto;
@@ -1564,7 +1591,8 @@ select {
   background: #fff;
 }
 .input-group input,
-.input-group textarea {
+.input-group textarea,
+textarea.form-textarea {
   margin-bottom: 0;
   background-color: transparent;
   border-top: 0;
@@ -1613,6 +1641,32 @@ select {
 .input-row .multi-group {
   margin-top: 8px;
   display: inline-block;
+}
+.textarea-field {
+  position: relative;
+}
+textarea.form-textarea {
+  padding: 15px;
+  border-bottom: 0;
+  font-size: 15px;
+  color: #333;
+}
+textarea::-webkit-input-placeholder {
+  font-size: 15px;
+  color: #ccc;
+}
+.textarea-count {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  font-size: 12px;
+  color: #ccc;
+}
+.textarea-count > b {
+  font-weight: normal;
+}
+.textarea-count > b.input-length {
+  color: #333;
 }
 .ui-checkbox,
 .ui-radio {
@@ -1993,30 +2047,56 @@ select {
 .btn-warning.hollow.active {
   background: rgba(226, 226, 226, 0.4);
 }
-.btn--danger {
+.btn-danger {
   color: #fff;
   background-color: #d9534f;
   border: 1px solid #d9534f;
 }
-.btn--danger:active,
-.btn--danger.active {
+.btn-danger:active,
+.btn-danger.active {
   color: #fff;
   background-color: #c9302c;
   border: 1px solid #c9302c;
 }
-.btn--danger.hollow {
+.btn-danger.hollow {
   color: #333;
   background-color: #fff;
   border: 1px solid #d9534f;
 }
-.btn--danger.hollow:active,
-.btn--danger.hollow.active {
+.btn-danger.hollow:active,
+.btn-danger.hollow.active {
   color: #333;
   background-color: #e6e6e6;
   border: 1px solid #c9302c;
 }
-.btn--danger.hollow:active,
-.btn--danger.hollow.active {
+.btn-danger.hollow:active,
+.btn-danger.hollow.active {
+  background: rgba(226, 226, 226, 0.4);
+}
+.btn-gray {
+  color: #fff;
+  background-color: #ccc;
+  border: 1px solid #ccc;
+}
+.btn-gray:active,
+.btn-gray.active {
+  color: #fff;
+  background-color: #b3b3b3;
+  border: 1px solid #b3b3b3;
+}
+.btn-gray.hollow {
+  color: #666;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.btn-gray.hollow:active,
+.btn-gray.hollow.active {
+  color: #666;
+  background-color: #e6e6e6;
+  border: 1px solid #b3b3b3;
+}
+.btn-gray.hollow:active,
+.btn-gray.hollow.active {
   background: rgba(226, 226, 226, 0.4);
 }
 .btn-link {
@@ -2378,6 +2458,109 @@ input[type="button"] {
   margin-bottom: 0;
   margin-right: -2px;
 }
+.swipe-action {
+  position: relative;
+  overflow: hidden;
+}
+.swipe-action .swipe-content {
+  position: relative;
+  z-index: 1;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: transform .2s;
+}
+.swipe-btns {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+.swipe-btns .btn {
+  height: 100%;
+  border-radius: 0;
+}
+.modal,
+.modal-shadow {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.modal {
+  position: fixed;
+  z-index: 99;
+}
+.modal-shadow {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-main {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+}
+.modal-content {
+  margin: 0 auto;
+}
+.modal-content {
+  width: 90.625%;
+  padding: 9.82758621% 5.17241379% 10.34482759%;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+.modal-content .modal-title {
+  line-height: 1;
+  font-size: 20px;
+  color: #333;
+}
+.modal-content .modal-body {
+  margin: 4.23076923% 0 8.07692308%;
+  line-height: 1.57em;
+  font-size: 14px;
+  color: #666;
+}
+.modal-content .btn {
+  width: 48%;
+  margin-left: 2%;
+}
+.modal-content .btn:first-child {
+  margin-left: 0;
+}
+.toast,
+.toast-shadow {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.toast {
+  position: fixed;
+  z-index: 99;
+}
+.toast-shadow {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+}
+.toast-main {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+.toast-content {
+  display: inline-block;
+  padding: 12px 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  color: #fff;
+}
 
 .ui-checkbox .icon,
 .ui-radio .icon {
@@ -2540,30 +2723,56 @@ input[type="button"] {
 .btn-warning.hollow.active {
   background: rgba(226, 226, 226, 0.4);
 }
-.btn--danger {
+.btn-danger {
   color: #fff;
   background-color: #d9534f;
   border: 1px solid #d9534f;
 }
-.btn--danger:active,
-.btn--danger.active {
+.btn-danger:active,
+.btn-danger.active {
   color: #fff;
   background-color: #c9302c;
   border: 1px solid #c9302c;
 }
-.btn--danger.hollow {
+.btn-danger.hollow {
   color: #333;
   background-color: #fff;
   border: 1px solid #d9534f;
 }
-.btn--danger.hollow:active,
-.btn--danger.hollow.active {
+.btn-danger.hollow:active,
+.btn-danger.hollow.active {
   color: #333;
   background-color: #e6e6e6;
   border: 1px solid #c9302c;
 }
-.btn--danger.hollow:active,
-.btn--danger.hollow.active {
+.btn-danger.hollow:active,
+.btn-danger.hollow.active {
+  background: rgba(226, 226, 226, 0.4);
+}
+.btn-gray {
+  color: #fff;
+  background-color: #ccc;
+  border: 1px solid #ccc;
+}
+.btn-gray:active,
+.btn-gray.active {
+  color: #fff;
+  background-color: #b3b3b3;
+  border: 1px solid #b3b3b3;
+}
+.btn-gray.hollow {
+  color: #666;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.btn-gray.hollow:active,
+.btn-gray.hollow.active {
+  color: #666;
+  background-color: #e6e6e6;
+  border: 1px solid #b3b3b3;
+}
+.btn-gray.hollow:active,
+.btn-gray.hollow.active {
   background: rgba(226, 226, 226, 0.4);
 }
 .btn-link {

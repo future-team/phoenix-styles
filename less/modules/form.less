@@ -46,6 +46,7 @@ input[type="search"]:focus {
 }
 textarea {
     height: auto;
+    resize: none;
 }
 
 select {
@@ -58,7 +59,8 @@ select {
 }
 
 .input-group input,
-.input-group textarea {
+.input-group textarea,
+textarea.form-textarea {
     margin-bottom: 0;
     background-color: transparent;
     border-top: 0;
@@ -110,8 +112,35 @@ select {
         display: inline-block;
     }
 }
-    //checkbox
+// textarea
+.textarea-field{
+    position: relative;
+}
+textarea.form-textarea{
+    padding: 15px;
+    border-bottom: 0;
+    font-size: 15px;
+    color: @gray-dark;
+}
+textarea::-webkit-input-placeholder{
+    font-size: 15px;
+    color: @ui-radio-disabled;
+}
+.textarea-count{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    font-size: @btn-font-size;
+    color: @ui-radio-disabled;
+}
+.textarea-count>b{
+    font-weight: normal;
+}
+.textarea-count>b.input-length{
+    color: @gray-dark;
+}
 
+//checkbox
 .ui-checkbox,.ui-radio{
     position: relative;
     .get-size(@ui-checkbox-sm);
