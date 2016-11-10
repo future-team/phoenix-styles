@@ -1,0 +1,22 @@
+.swipe-action{
+    position: relative;
+    overflow: hidden;
+    .swipe-content{
+        position: relative;
+        z-index: 1;
+        -webkit-transition: -webkit-transform .2s;
+        transition: transform .2s;
+    }
+}
+
+.swipe-btns{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    .btn{
+        height: 100%;
+        border-radius: 0;
+    }
+}
