@@ -1,0 +1,26 @@
+.accordion{
+    padding: @accordion-padding;
+    background-color: @white;
+    .border(@accordion-header-border);
+}
+
+.accordion-header{
+    padding: @accordion-header-padding;
+    .border-bottom(@border-color);
+    font-size: @font-size-base;
+    color: @accordion-header-color;
+    .iconfont{
+        color: @arrow-color;
+        &.active{
+            .transform(rotate(180deg));
+        }
+    }
+}
+
+.accordion-body{
+    overflow: hidden;
+    .accordion-item{
+        padding: @accordion-item-padding;
+        .border-bottom(@accordion-item-border);
+    }
+}

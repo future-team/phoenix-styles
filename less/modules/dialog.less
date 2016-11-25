@@ -1,0 +1,56 @@
+.dialog-shadow,
+.dialog-main,
+.toast-shadow,
+.toast-main{
+	position: fixed;
+	left: 0;
+	width: 100%;
+}
+
+.dialog-shadow,
+.toast-shadow{
+	top: 0;
+	height: 100%;
+	z-index: 99;
+}
+
+.dialog-shadow{
+	background-color: rgba(0,0,0,.4);
+}
+
+.dialog-main,
+.toast-main{
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 100;
+}
+
+.dialog-content{
+	width: @dialog-content-width;
+	padding: @dialog-content-padding;
+	margin: 0 auto;
+	background-color: #fff;
+	border-radius: @dialog-content-radius;
+	text-align: center;
+	.dialog-title{
+		line-height: 1;
+		font-size: @dialog-title-font-size;
+		color: @dialog-title-color;
+	}
+	.dialog-body{
+		margin: @dialog-body-margin;
+		line-height: @dialog-body-line-height;
+		font-size: @dialog-body-font-size;
+		color: @dialog-body-color;
+	}
+	.btn{
+		width: @dialog-btn-width;
+		margin-left: @dialog-btn-margin;
+		&:first-child{
+			margin-left: 0;
+		}
+	}
+}
+

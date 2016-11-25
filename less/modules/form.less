@@ -25,20 +25,20 @@ input[type="url"],
 input[type="tel"],
 input[type="color"] {
     width: 100%;
-    height: @input-height;
+    height: @input-default-height;
     -webkit-appearance: none;
-    padding: 0 15px;
-    margin-bottom: 15px;
+    padding: @input-default-padding;
+    margin: @input-default-margin;
     line-height: @line-height-default;
     background-color: @white;
     border: @border-default;
-    border-radius: 3px;
+    border-radius: @input-default-radius;
     outline: none;
 }
 
 input[type="search"] {
-    padding: 0 10px;
-    border-radius: 20px;
+    padding: @input-search-padding;
+    border-radius: @input-search-radius;
     .box-sizing(border-box);
 }
 input[type="search"]:focus {
@@ -51,11 +51,11 @@ textarea {
 
 select {
     height: auto;
-    .box-shadow(inset 0 1px 1px rgba(0, 0, 0, .1));
+    .box-shadow(@select-box-shadow);
 }
 
 .input-group{
-    background: #fff;
+    background: @white;
 }
 
 .input-group input,
@@ -72,7 +72,7 @@ textarea.form-textarea {
 
 .input-row {
     overflow: hidden;
-    /*height: @input-height;*/
+    /*height: @input-default-height;*/
     border-bottom: @border-default;
     position: relative;
 }
@@ -93,7 +93,7 @@ textarea.form-textarea {
     border: 0;
 }
 .input-row .input{
-    line-height: @input-height;
+    line-height: @input-default-height;
 }
 .input-row{
     .navigate-right{
@@ -115,28 +115,30 @@ textarea.form-textarea {
 // textarea
 .textarea-field{
     position: relative;
+    padding: @textarea-padding;
+    background-color: @white;
 }
 textarea.form-textarea{
-    padding: 15px;
+    padding: 0;
     border-bottom: 0;
-    font-size: 15px;
-    color: @gray-dark;
+    font-size: @font-size-normal;
+    color: @textarea-color;
 }
 textarea::-webkit-input-placeholder{
-    font-size: 15px;
+    font-size: @font-size-normal;
     color: @ui-radio-disabled;
 }
 .textarea-count{
     position: absolute;
-    right: 15px;
-    bottom: 15px;
-    font-size: @btn-font-size;
-    color: @ui-radio-disabled;
+    right: @textarea-count-position-right;
+    bottom: @textarea-count-position-bottom;
+    font-size: @font-size-smaller;
+    color: @textarea-count-color;
 }
 .textarea-count>b{
     font-weight: normal;
 }
-.textarea-count>b.input-length{
+.textarea-count>.input-length{
     color: @gray-dark;
 }
 

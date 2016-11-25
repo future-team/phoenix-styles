@@ -1,19 +1,18 @@
 
 .badge {
     display: inline-block;
-    padding: 2px 9px 3px;
-    font-size: 12px;
+    padding: @badges-padding;
+    font-size: @font-size-smaller;
     line-height: 1;
-    color: #333;
-    background-color: rgba(0,0,0,.15);
-    border-radius: 100px;
+    color: @badges-default-color;
+    background-color: @badges-default-background;
+    border-radius: @badges-radius;
 
     // Inverted badges have no background.
     &.badge-inverted {
-        padding: 0 5px 0 0;
+        padding: @badge-inverted-padding;
         background-color: transparent;
     }
 }
-
 
 .badges-skin();

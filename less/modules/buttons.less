@@ -7,16 +7,16 @@
     vertical-align: top;
     cursor: pointer;
     line-height: 1;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    border: @btn-default-border;
+    border-radius: @btn-default-radius;
     background-color: @btn-bg-color;
-    padding: 6px 8px 7px;
+    padding: @btn-default-padding;
     outline: none;
     font-size: @btn-font-size;
     &:active,
     &.active {
         color: inherit;
-        background-color: #ccc;
+        background-color: @btn-active-background;
     }
     &:disabled,
     &.disabled {
@@ -24,11 +24,11 @@
     }
 
     &.md{
-        padding: 8px 8px;
+        padding: @btn-md-padding;
         font-size: @font-size-base;
     }
     &.lg{
-        padding: 12px 8px;
+        padding: @btn-lg-padding;
         font-size: @font-size-base;
     }
 }
@@ -38,8 +38,8 @@
 .btn-block {
     display: block;
     width: 100%;
-    padding: 12px 0;
-    margin-bottom: 10px;
+    padding: @btn-block-padding;
+    margin: @btn-block-margin;
     font-size: @font-size-base;
 }
 

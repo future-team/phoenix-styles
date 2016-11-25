@@ -2,23 +2,23 @@
   .tab-nav {
     text-align: center;
     //background: @white;
-    padding: 5px;
-    border-bottom: 2px solid @white;
-    font-size: 16px;
+    padding: @tab-nav-padding;
+    border-bottom: @tab-nav-border;
+    font-size: @font-size-base;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
     position: relative;
 
     &.active {
-      color: @brand-primary;
-      border-bottom: 2px solid @brand-primary;
-      margin-bottom: -2px;
+      color: @tab-nav-active-color;
+      border-bottom: @tab-nav-active-border;
+      margin-bottom: @tab-nav-margin;
       margin-right: 0;
     }
   }
   .tab-panel {
     display: none;
-    padding: 5px;
+    padding: @tab-panel-padding;
     width: 100%;
     &.active {
       display: block;
@@ -28,18 +28,18 @@
 .vertical{
   .tab-nav{
     text-align: left;
-    line-height: 16px;
-    padding: 10px 5px;
+    line-height: @vertical-tab-nav-line-height;
+    padding: @vertical-tab-nav-padding;
     position: relative;
-    border-left: 2px solid @white;
+    border-left: @tab-nav-border;
     border-bottom: none;
-    border-right: 2px solid @brand-primary;
-    margin-right: -2px;
+    border-right: @tab-nav-active-border;
+    margin-right: @tab-nav-margin;
     &.active{
-      border: 2px solid @brand-primary;
-      border-right: 2px solid @white;
+      border: @tab-nav-active-border;
+      border-right: @tab-nav-border;
       margin-bottom: 0;
-      margin-right: -2px;
+      margin-right: @tab-nav-margin;
     }
   }
 }

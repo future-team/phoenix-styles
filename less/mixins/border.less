@@ -1,4 +1,19 @@
 // 1px border
+.border(@color){
+    border:1px solid @color;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2) {
+        background-image:
+            -webkit-linear-gradient(top, @color, @color 50%, transparent 50%),
+            -webkit-linear-gradient(right, @color, @color 50%, transparent 50%),
+            -webkit-linear-gradient(bottom, @color, @color 50%, transparent 50%),
+            -webkit-linear-gradient(left, @color, @color 50%, transparent 50%);
+        background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
+        background-repeat: no-repeat;
+        background-position: top, right top,  bottom, left top;
+        border: none;
+    }
+}
 .border-top(@color){
     border-top:1px solid @color;
     @media only screen and (-webkit-min-device-pixel-ratio: 2),
