@@ -480,6 +480,12 @@ h6 {
 .eg-hide {
   display: none !important;
 }
+.show-opacity {
+  opacity: 1 !important;
+}
+.hide-opacity {
+  opacity: 0.01 !important;
+}
 .invisible {
   visibility: hidden;
 }
@@ -2713,6 +2719,81 @@ input[type="button"] {
   margin-top: 5px;
   border-radius: 5px;
   color: #0ba4db;
+}
+.popover {
+  position: absolute;
+  z-index: 9;
+  background-color: #fff;
+  border: 1px solid #dedede;
+  border-radius: 3px;
+}
+.center-x {
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.center-y {
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.popover-top .popover-arrow {
+  bottom: -0.3rem;
+  -webkit-transform: translateX(-50%) rotate(225deg);
+  -ms-transform: translateX(-50%) rotate(225deg);
+  transform: translateX(-50%) rotate(225deg);
+}
+.popover-bottom .popover-arrow {
+  top: -0.3rem;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
+}
+.popover-left .popover-arrow {
+  right: -0.3rem;
+  -webkit-transform: translateY(-50%) rotate(135deg);
+  -ms-transform: translateY(-50%) rotate(135deg);
+  transform: translateY(-50%) rotate(135deg);
+}
+.popover-right .popover-arrow {
+  left: -0.3rem;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+  -ms-transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+}
+.center-x .popover-arrow {
+  left: 50%;
+}
+.center-y .popover-arrow {
+  top: 50%;
+}
+.left-x .popover-arrow {
+  left: 25%;
+}
+.right-x .popover-arrow {
+  left: 75%;
+}
+.popover-arrow {
+  position: absolute;
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: #fff;
+  border-left: 1px solid #dedede;
+  border-top: 1px solid #dedede;
+}
+.popover-content {
+  position: relative;
+  z-index: 1;
+}
+.popover-list {
+  white-space: nowrap;
+}
+.popover-item {
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+}
+.popover-item:last-child {
+  border-bottom: none;
 }
 .accordion {
   padding: 0 0 0 1rem;
