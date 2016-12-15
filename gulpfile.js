@@ -23,7 +23,7 @@ gulp.task('clean', function () {
 });
 
 gulp.task('less',['clean'], function(){
-  return gulp.src(['./less/'+cssName+'.less','./less/skin.less'])
+  return gulp.src(['./less/'+cssName+'.less','./less/'+cssName+'-grid.less','./less/skin.less'])
       .pipe(less({ compress: false }))
       .pipe(plumber())
       //.on('error', error )
@@ -39,7 +39,7 @@ gulp.task('fonts',['clean'], function(){
 
 gulp.task('min-styles',['less'], function() {
   gulp.src(['./dist/*.css'])
-      .pipe(concat(cssName+'.css')) // 合并文件为all.css
+      // .pipe(concat(cssName+'.css') // 合并文件为all.css
       .pipe(gulp.dest(dest)) // 输出all.css文件
       .pipe(rename({ suffix: '.min' })) // 重命名all.css为 all.min.css
       .pipe(minifycss()) // 压缩css文件

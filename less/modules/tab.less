@@ -1,4 +1,7 @@
 .ui-tabs {
+  .row{
+    margin: 0;
+  }
   .tab-nav {
     text-align: center;
     //background: @white;
@@ -26,6 +29,12 @@
   }
 }
 .vertical{
+  &.ui-tabs{
+    margin: 0;
+    .col{
+      padding: 0;
+    }
+  }
   .tab-nav{
     text-align: left;
     line-height: @vertical-tab-nav-line-height;

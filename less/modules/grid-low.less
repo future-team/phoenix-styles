@@ -1,0 +1,107 @@
+/**
+ * Grid
+ * --------------------------------------------------
+ * Using flexbox for the grid, inspired by Philip Walton:
+ * http://philipwalton.github.io/solved-by-flexbox/demos/grids/
+ * By default each .uc-col within a .uc-row will evenly take up
+ * available width, and the height of each .uc-col with take
+ * up the height of the tallest .uc-col in the same .uc-row.
+ */
+.grid{
+  overflow: hidden;
+}
+.grid-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: @grid-fluid-padding;
+  padding-right: @grid-fluid-padding;
+}
+
+.row{
+  margin: 0  -(@grid-padding-width + 5);
+  /*width: 100%;*/
+  &:after{ // 清浮动
+    content:" ";
+    display:block;
+    height:0;
+    clear:both;
+  }
+}
+
+.row.no-padding {
+  padding: 0;
+  margin:0;
+  > .col {
+    padding: 0;
+  }
+}
+.row-no-padding{
+  .row{
+    padding: 0;
+    margin:0;
+    > .col {
+      padding: 0;
+    }
+  }
+}
+
+.col{
+  float: left;
+  width: 100%;
+  padding: (@grid-padding-width / 2) @grid-padding-width + 5;
+}
+
+/* Column Offsets */
+
+.generate-columns-offsets(100);
+
+.generate-columns-offsets(@n, @i: 5) when (@i =< @n) {
+  .col-offset-@{i} {
+    margin-left: @i * 100% / @n;
+    width: auto;
+  }
+  .generate-columns-offsets(@n, (@i + 5));
+}
+.col-offset-33, .col-offset-34 {
+  margin-left: 33.3333%;
+  width: auto;
+}
+.col-offset-66, .col-offset-67 {
+  margin-left: 66.6666%;
+  width: auto;
+}
+/* Explicit Column Percent Sizes */
+/* By default each grid column will evenly distribute */
+/* across the grid. However, you can specify individual */
+/* columns to take up a certain size of the available area */
+
+.generate-columns(100);
+
+.generate-columns(@n, @i: 5) when (@i =< @n) {
+  .col-@{i}{
+    float: left;
+    width: (@i * 100% / @n);
+  }
+  .generate-columns(@n, (@i + 5));
+}
+
+.col-33, .col-34 {
+  float: left;
+  width: 33.3333%;
+}
+
+.col-66, .col-67 {
+  float: left;
+  width: 66.6666%;
+}
+
+.grid-row{
+  .display-flex();
+  margin-top: 10px;
+  &:first-child{
+    margin-top:0;
+  }
+  label{
+    .flex(1);
+  }
+}

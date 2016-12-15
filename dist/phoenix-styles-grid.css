@@ -2597,20 +2597,14 @@ input[type="button"] {
   padding-right: 15px;
 }
 .row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0 -15px;
   /*width: 100%;*/
 }
-.row-wrap {
-  -ms-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  flex-wrap: wrap;
+.row:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
 }
 .row.no-padding {
   padding: 0;
@@ -2626,364 +2620,195 @@ input[type="button"] {
 .row-no-padding .row > .col {
   padding: 0;
 }
-/*.row + .row {
-  margin-top: (@grid-padding-width / 2) * -1;
-  padding-top: 0;
-}*/
 .col {
-  -moz-flex: 1;
-  -ms-flex: 1;
-  -webkit-flex: 1;
-  flex: 1;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1  ;
-  -moz-box-flex: 1;
-  -moz-flex: 1  ;
-  -ms-flex: 1  ;
-  flex: 1  ;
-  display: block;
-  padding: 5px 15px;
+  float: left;
   width: 100%;
-}
-/* Vertically Align Columns */
-/* .row-* vertically aligns every .col in the .row */
-.row-top {
-  -webkit-box-align: flex-start;
-  -moz-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  -webkit-align-items: flex-start;
-  -moz-align-items: flex-start;
-  align-items: flex-start;
-}
-.row-bottom {
-  -webkit-box-align: flex-end;
-  -moz-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  -webkit-align-items: flex-end;
-  -moz-align-items: flex-end;
-  align-items: flex-end;
-}
-.row-center {
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  align-items: center;
-}
-.row-stretch {
-  -webkit-box-align: stretch;
-  -moz-box-align: stretch;
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -moz-align-items: stretch;
-  align-items: stretch;
-}
-.row-baseline {
-  -webkit-box-align: baseline;
-  -moz-box-align: baseline;
-  -ms-flex-align: baseline;
-  -webkit-align-items: baseline;
-  -moz-align-items: baseline;
-  align-items: baseline;
-}
-/* .col-* vertically aligns an individual .col */
-.col-top {
-  -ms-align-self: flex-start;
-  -ms-flex-item-align: start;
-  -webkit-align-self: flex-start;
-  -moz-align-self: flex-start;
-  align-self: flex-start;
-}
-.col-bottom {
-  -ms-align-self: flex-end;
-  -ms-flex-item-align: end;
-  -webkit-align-self: flex-end;
-  -moz-align-self: flex-end;
-  align-self: flex-end;
-}
-.col-center {
-  -ms-align-self: center;
-  -webkit-align-self: center;
-  -moz-align-self: center;
-  align-self: center;
+  padding: 5px 15px;
 }
 /* Column Offsets */
 .col-offset-5 {
   margin-left: 5%;
+  width: auto;
 }
 .col-offset-10 {
   margin-left: 10%;
+  width: auto;
 }
 .col-offset-15 {
   margin-left: 15%;
+  width: auto;
 }
 .col-offset-20 {
   margin-left: 20%;
+  width: auto;
 }
 .col-offset-25 {
   margin-left: 25%;
+  width: auto;
 }
 .col-offset-30 {
   margin-left: 30%;
+  width: auto;
 }
 .col-offset-35 {
   margin-left: 35%;
+  width: auto;
 }
 .col-offset-40 {
   margin-left: 40%;
+  width: auto;
 }
 .col-offset-45 {
   margin-left: 45%;
+  width: auto;
 }
 .col-offset-50 {
   margin-left: 50%;
+  width: auto;
 }
 .col-offset-55 {
   margin-left: 55%;
+  width: auto;
 }
 .col-offset-60 {
   margin-left: 60%;
+  width: auto;
 }
 .col-offset-65 {
   margin-left: 65%;
+  width: auto;
 }
 .col-offset-70 {
   margin-left: 70%;
+  width: auto;
 }
 .col-offset-75 {
   margin-left: 75%;
+  width: auto;
 }
 .col-offset-80 {
   margin-left: 80%;
+  width: auto;
 }
 .col-offset-85 {
   margin-left: 85%;
+  width: auto;
 }
 .col-offset-90 {
   margin-left: 90%;
+  width: auto;
 }
 .col-offset-95 {
   margin-left: 95%;
+  width: auto;
 }
 .col-offset-100 {
   margin-left: 100%;
+  width: auto;
 }
 .col-offset-33,
 .col-offset-34 {
   margin-left: 33.3333%;
+  width: auto;
 }
 .col-offset-66,
 .col-offset-67 {
   margin-left: 66.6666%;
+  width: auto;
 }
 /* Explicit Column Percent Sizes */
 /* By default each grid column will evenly distribute */
 /* across the grid. However, you can specify individual */
 /* columns to take up a certain size of the available area */
 .col-5 {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 5%;
-  -moz-box-flex: 0;
-  -moz-flex: 0 0 5%;
-  -ms-flex: 0 0 5%;
-  flex: 0 0 5%;
-  max-width: 5%;
+  float: left;
+  width: 5%;
 }
 .col-10 {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 10%;
-  -moz-box-flex: 0;
-  -moz-flex: 0 0 10%;
-  -ms-flex: 0 0 10%;
-  flex: 0 0 10%;
-  max-width: 10%;
+  float: left;
+  width: 10%;
 }
 .col-15 {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 15%;
-  -moz-box-flex: 0;
-  -moz-flex: 0 0 15%;
-  -ms-flex: 0 0 15%;
-  flex: 0 0 15%;
-  max-width: 15%;
+  float: left;
+  width: 15%;
 }
 .col-20 {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 20%;
-  -moz-box-flex: 0;
-  -moz-flex: 0 0 20%;
-  -ms-flex: 0 0 20%;
-  flex: 0 0 20%;
-  max-width: 20%;
+  float: left;
+  width: 20%;
 }
 .col-25 {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 25%;
-  -moz-box-flex: 0;
-  -moz-flex: 0 0 25%;
-  -ms-flex: 0 0 25%;
-  flex: 0 0 25%;
-  max-width: 25%;
+  float: left;
+  width: 25%;
 }
 .col-30 {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 30%;
-  -moz-box-flex: 0;
-  -moz-flex: 0 0 30%;
-  -ms-flex: 0 0 30%;
-  flex: 0 0 30%;
-  max-width: 30%;
+  float: left;
+  width: 30%;
 }
 .col-35 {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 35%;
-  -moz-box-flex: 0;
-  -moz-flex: 0 0 35%;
-  -ms-flex: 0 0 35%;
-  flex: 0 0 35%;
-  max-width: 35%;
+  float: left;
+  width: 35%;
 }
 .col-40 {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 40%;
-  -moz-box-flex: 0;
-  -moz-flex: 0 0 40%;
-  -ms-flex: 0 0 40%;
-  flex: 0 0 40%;
-  max-width: 40%;
+  float: left;
+  width: 40%;
 }
 .col-45 {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 45%;
-  -moz-box-flex: 0;
-  -moz-flex: 0 0 45%;
-  -ms-flex: 0 0 45%;
-  flex: 0 0 45%;
-  max-width: 45%;
+  float: left;
+  width: 45%;
 }
 .col-50 {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 50%;
-  -moz-box-flex: 0;
-  -moz-flex: 0 0 50%;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  max-width: 50%;
+  float: left;
+  width: 50%;
 }
 .col-55 {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 55%;
-  -moz-box-flex: 0;
-  -moz-flex: 0 0 55%;
-  -ms-flex: 0 0 55%;
-  flex: 0 0 55%;
-  max-width: 55%;
+  float: left;
+  width: 55%;
 }
 .col-60 {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 60%;
-  -moz-box-flex: 0;
-  -moz-flex: 0 0 60%;
-  -ms-flex: 0 0 60%;
-  flex: 0 0 60%;
-  max-width: 60%;
+  float: left;
+  width: 60%;
 }
 .col-65 {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 65%;
-  -moz-box-flex: 0;
-  -moz-flex: 0 0 65%;
-  -ms-flex: 0 0 65%;
-  flex: 0 0 65%;
-  max-width: 65%;
+  float: left;
+  width: 65%;
 }
 .col-70 {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 70%;
-  -moz-box-flex: 0;
-  -moz-flex: 0 0 70%;
-  -ms-flex: 0 0 70%;
-  flex: 0 0 70%;
-  max-width: 70%;
+  float: left;
+  width: 70%;
 }
 .col-75 {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 75%;
-  -moz-box-flex: 0;
-  -moz-flex: 0 0 75%;
-  -ms-flex: 0 0 75%;
-  flex: 0 0 75%;
-  max-width: 75%;
+  float: left;
+  width: 75%;
 }
 .col-80 {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 80%;
-  -moz-box-flex: 0;
-  -moz-flex: 0 0 80%;
-  -ms-flex: 0 0 80%;
-  flex: 0 0 80%;
-  max-width: 80%;
+  float: left;
+  width: 80%;
 }
 .col-85 {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 85%;
-  -moz-box-flex: 0;
-  -moz-flex: 0 0 85%;
-  -ms-flex: 0 0 85%;
-  flex: 0 0 85%;
-  max-width: 85%;
+  float: left;
+  width: 85%;
 }
 .col-90 {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 90%;
-  -moz-box-flex: 0;
-  -moz-flex: 0 0 90%;
-  -ms-flex: 0 0 90%;
-  flex: 0 0 90%;
-  max-width: 90%;
+  float: left;
+  width: 90%;
 }
 .col-95 {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 95%;
-  -moz-box-flex: 0;
-  -moz-flex: 0 0 95%;
-  -ms-flex: 0 0 95%;
-  flex: 0 0 95%;
-  max-width: 95%;
+  float: left;
+  width: 95%;
 }
 .col-100 {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 100%;
-  -moz-box-flex: 0;
-  -moz-flex: 0 0 100%;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  max-width: 100%;
+  float: left;
+  width: 100%;
 }
 .col-33,
 .col-34 {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 33.3333%;
-  -moz-box-flex: 0;
-  -moz-flex: 0 0 33.3333%;
-  -ms-flex: 0 0 33.3333%;
-  flex: 0 0 33.3333%;
-  max-width: 33.3333%;
+  float: left;
+  width: 33.3333%;
 }
 .col-66,
 .col-67 {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 66.6666%;
-  -moz-box-flex: 0;
-  -moz-flex: 0 0 66.6666%;
-  -ms-flex: 0 0 66.6666%;
-  flex: 0 0 66.6666%;
-  max-width: 66.6666%;
+  float: left;
+  width: 66.6666%;
 }
 .grid-row {
   display: -webkit-box;
