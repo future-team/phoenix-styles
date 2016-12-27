@@ -18,7 +18,7 @@
 @brand-danger:              #d9534f;
 @brand-error:               #fc4e44;
 @brand-gray:                #ccc;
-@brand-await:               #ffc2ad;
+@brand-await:               lighten(@brand-primary,25%);
 
 // Common
 // --------------------------------------------------
@@ -58,10 +58,10 @@
 
 // Accordion
 // --------------------------------------------------
-@accordion-padding:         0 0 0 1rem;
+@accordion-padding:         0 0 0 .9375rem;
 
 @accordion-header-color:    @gray-normal;
-@accordion-header-padding:  1rem 1rem 1rem 0;
+@accordion-header-padding:  .6875rem .9375rem .6875rem 0;
 @accordion-header-border:   @border-color;
 
 @accordion-item-padding:    @accordion-header-padding;
@@ -105,7 +105,7 @@
 @dialog-body-font-size:     @font-size-small;
 @dialog-body-color:         @gray-normal;
 
-@dialog-btn-width:          48%;
+@dialog-btn-width:          auto;
 @dialog-btn-margin:         2%;
 
 
@@ -180,17 +180,17 @@
 @popup-main-list-padding:   0 0 0 1rem;
 
 @popup-list-color:          @gray-normal;
-@popup-list-padding:        1rem 0;
+@popup-list-padding:        .6875rem 0;
 @popup-list-border:         #e1e1e1;
 @popup-list-active-color:   @brand-primary;
-@popup-list-active-border:  #ee5511;
+@popup-list-active-border:  @brand-primary;
 
 // Action Sheet
 @action-sheet-width:        92%;
 @action-sheet-margin:       4% auto;
 
-@action-item-padding:       1rem;
-@action-item-radius:        5px;
+@action-item-padding:       .6875rem 1rem;
+@action-item-radius:        3px;
 
 @action-tip-color:          #93999e;
 @action-operate-color:      #0ba4db;

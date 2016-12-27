@@ -16,12 +16,19 @@
 .tab-skin2() {
   .vertical {
     .tab-nav {
-      background: @white;
+      background-color: @white;
+      border: @tab-nav-border;
       &.active {
+        z-index: 2;
         color: @brand-primary;
-        border: @brand-primary;
-        border-right-color: @brand-primary;
+        border: @tab-nav-active-border;
+        border-right-color: @white;
       }
+    }
+    .tab-bd{
+      position: relative;
+      z-index: 1;
+      border-left: @tab-nav-active-border;
     }
   }
 }

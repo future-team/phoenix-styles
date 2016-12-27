@@ -1,0 +1,180 @@
+@import "variable";
+
+@import "mixins/animation";
+@import "mixins/border";
+@import "mixins/gradients";
+
+@import "mixins/form";
+@import "mixins/buttons";
+@import "mixins/label";
+@import "mixins/badges";
+@import "mixins/tab";
+@import "mixins/dialog";
+@import "mixins/popup";
+@import "mixins/slider";
+
+// common
+@brand-primary: #007aff;
+@brand-info:    #0ba4db;
+@brand-success: #4cd964;
+@brand-error:   #ff3b30;
+
+// grid
+.row{
+    margin: 0;
+}
+.col{
+    padding: 5px 0;
+}
+
+.table-view{
+    margin: 0;
+}
+
+// form
+select,
+textarea,
+.input,
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="color"] {
+    margin: 0;
+}
+
+//input checkbox radio
+.ui-checkbox,.ui-radio{
+    .icon{
+        color: @ui-checkbox-border-color;
+    }
+}
+
+//switch
+.label-switch {
+    input[type="checkbox"]:checked + .checkbox {
+        background: #4bd863;
+    }
+}
+
+.color-white{
+    color: @white;
+}
+.color-primary{
+    color: @brand-primary;
+}
+.color-success{
+    color: @brand-success;
+}
+.color-info{
+    color: @brand-info;
+}
+.color-warning{
+    color: @brand-warning;
+}
+.color-danger{
+    color: @brand-danger;
+}
+.color-error{
+    color: @brand-error;
+}
+.icon.color-gray{
+    color: @gray;
+}
+
+//btn
+.btn-skin();
+
+//label
+.label-skin();
+
+//badge
+.badges-skin();
+
+//checkbox radio
+.ui-checkbox,.ui-radio{
+    i{
+        border: 1px solid #bbb;
+        background: #fff;
+    }
+    input[type="radio"],input[type="checkbox"]{
+        &:checked + i{
+            background: @white;
+            border-color: @ui-checkbox-color;
+            &:before, &:after {
+                width: 1px;
+                background: @ui-checkbox-color;
+            }
+        }
+        &:disabled + i{
+            border-color: @ui-checkbox-disabled;
+        }
+    }
+
+    input[type="checkbox"]{
+        &:disabled {
+            +i{
+                border-color:@ui-checkbox-disabled ;
+            }
+            color: @ui-checkbox-disabled;
+        }
+    }
+}
+//tab
+.tab-skin();
+//竖排
+.tab-skin2();
+
+// dialog
+@dialog-content-width:      84.375%;
+@dialog-content-padding:    1.4rem 0 0;
+@dialog-content-radius:     3px;
+
+@dialog-title-font-size:    @font-size-large; // 18px
+@dialog-title-color:        @gray-base;
+
+@dialog-body-margin:        0.75rem 1rem 1.125rem;
+@dialog-body-color:         @gray-base;
+
+@dialog-btn-width:          auto;
+@dialog-btn-margin:         0;
+.dialog-skin();
+
+.ph-dialog-content{
+    .btn, .btn:active{
+        border-color: @white;
+        border-top-color: @border-default-color;
+        border-left-color: @border-default-color;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        &:first-child{
+            border-left-color: @white;
+        }
+    }
+}
+
+// popup
+.popup-skin();
+
+// slider
+@slider-line-height: 2px;
+@slider-line-color: #b2b3b2;
+@slider-btn-border: 1px solid rgba(0,0,0,.1);
+@slider-btn-disabled-border: 1px solid rgba(0,0,0,.1);
+.slider-skin();
+
+.slider-btn{
+    box-shadow: 0 2px 5px rgba(0,0,0,.05);
+}
+
+
+

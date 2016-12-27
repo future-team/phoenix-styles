@@ -54,13 +54,19 @@ select {
     .box-shadow(@select-box-shadow);
 }
 
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{
+    font-size: @font-size-normal;
+    color: @ui-radio-disabled;
+}
+
 .input-group{
     background: @white;
 }
 
 .input-group input,
 .input-group textarea,
-textarea.form-textarea {
+textarea.ph-textarea {
     margin-bottom: 0;
     background-color: transparent;
     border-top: 0;
@@ -113,32 +119,28 @@ textarea.form-textarea {
     }
 }
 // textarea
-.textarea-field{
+.ph-textarea-field{
     position: relative;
     padding: @textarea-padding;
     background-color: @white;
 }
-textarea.form-textarea{
+textarea.ph-textarea{
     padding: 0;
     border-bottom: 0;
     font-size: @font-size-normal;
     color: @textarea-color;
 }
-textarea::-webkit-input-placeholder{
-    font-size: @font-size-normal;
-    color: @ui-radio-disabled;
-}
-.textarea-count{
+.ph-textarea-count{
     position: absolute;
     right: @textarea-count-position-right;
     bottom: @textarea-count-position-bottom;
     font-size: @font-size-smaller;
     color: @textarea-count-color;
 }
-.textarea-count>b{
+.ph-textarea-count>b{
     font-weight: normal;
 }
-.textarea-count>.input-length{
+.ph-textarea-length{
     color: @gray-dark;
 }
 

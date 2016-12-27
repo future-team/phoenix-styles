@@ -36,17 +36,12 @@
     }
   }
   .tab-nav{
+    position: relative;
+    padding: @vertical-tab-nav-padding;
+    margin-right: @tab-nav-margin;
     text-align: left;
     line-height: @vertical-tab-nav-line-height;
-    padding: @vertical-tab-nav-padding;
-    position: relative;
-    border-left: @tab-nav-border;
-    border-bottom: none;
-    border-right: @tab-nav-active-border;
-    margin-right: @tab-nav-margin;
     &.active{
-      border: @tab-nav-active-border;
-      border-right: @tab-nav-border;
       margin-bottom: 0;
       margin-right: @tab-nav-margin;
     }

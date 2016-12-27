@@ -6,575 +6,534 @@
           content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, minimal-ui">
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="email=no">
-    <title>doc</title>
-    <link rel="stylesheet" href="../dist/phoenix-styles.min.css"/>
+    <title>Phoenix-styles</title>
+    <link rel="stylesheet" href="../dist/phoenix-styles.css"/>
     <link rel="stylesheet" href="./src/index.css"/>
     <link rel="stylesheet" href="./src/prism.css"/>
-    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body class="doc">
 
-<div class="nav wapper">
-    <div class="logo"><a href="#">phoenix-styles</a></div>
-    <ul class="nav-list-box clearfix">
-        <li><a href="./index.html">首页</a></li>
-        <li><a href="#" class="active">文档</a></li>
-    </ul>
-</div>
-<div class="wapper container clearfix">
-    <div class="left-box">
-
-        <div class="doc-menu">
-            <ul>
-                <li>
-                    <a href="#icon">icon fonts</a>
-                    <a href="#form">表单</a>
-
-                    <div class="sub-menu">
-                        <a href="#button"><i></i>按钮</a>
-                        <a href="#input"><i></i>文本框</a>
-                        <a href="#checkbox"><i></i>多选框</a>
-                        <a href="#radio"><i></i>单选框</a>
-                        <a href="#switch"><i></i>开关按钮</a>
-                        <a href="#list-form"><i></i>列表形式的表单元素布局</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="#grid">布局</a>
-                </li>
-                <li>
-                    <a href="#table-view">列表</a>
-                </li>
-                <li>
-                    <a href="#label">标签</a>
-                </li>
-                <li>
-                    <a href="#star">星星</a>
-                </li>
-                <li>
-                    <a href="#tab">选项卡</a>
-                </li>
+    <div class="header">
+        <div class="wrapper nav">
+            <div class="logo"><a href="#">phoenix-styles</a></div>
+            <ul class="nav-list clearfix">
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="#" class="active">文档</a></li>
             </ul>
+            <div class="github"><a href="https://github.com/future-team/phoenix-styles">Github</a></div>
         </div>
     </div>
 
-
-    <div class="right-box">
-
-        <div id="icon">
-            <div class="module">
-                <h3>icon fonts</h3>
-                <div class="grid">
-                    <div class="grid-row">
-                        <label>
-                            <div class="icon icon-right-fill"></div>
-                            <h5>icon-right-fill</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-home"></div>
-                            <h5>icon-home</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-home-fill"></div>
-                            <h5>icon-home-fill</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-round-right"></div>
-                            <h5>icon-round-right</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-clock"></div>
-                            <h5>icon-clock</h5>
-                        </label>
+    <div class="wrapper container document clearfix">
+        <div class="left-box">
+            <ul class="doc-menu">
+                <li><a href="#icon">iconfonts</a></li>
+                <li>
+                    <a href="#form">表单</a>
+                    <div class="sub-menu">
+                        <a href="#button">按钮</a>
+                        <a href="#input">文本框</a>
+                        <a href="#checkbox">多选框</a>
+                        <a href="#radio">单选框</a>
+                        <a href="#switch">开关按钮</a>
+                        <a href="#list-form">表单元素布局</a>
                     </div>
-                    <div class="grid-row">
-                        <label>
-                            <div class="icon icon-set"></div>
-                            <h5>icon-set</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-picture"></div>
-                            <h5>icon-picture</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-thumb-up"></div>
-                            <h5>icon-thumb-up</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-personal-center-fill"></div>
-                            <h5>icon-personal-center-fill</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-personal-center"></div>
-                            <h5>icon-personal-center</h5>
-                        </label>
-                    </div>
-                    <div class="grid-row">
-                        <label>
-                            <div class="icon icon-round-bang-fill"></div>
-                            <h5>icon-round-bang-fill</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-round-bang"></div>
-                            <h5>icon-round-bang</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-position"></div>
-                            <h5>icon-position</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-round-error"></div>
-                            <h5>icon-round-error</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-round-error-fill"></div>
-                            <h5>icon-round-error-fill</h5>
-                        </label>
-                    </div>
-                    <div class="grid-row">
-                        <label>
-                            <div class="icon icon-sms"></div>
-                            <h5>icon-sms</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-radio"></div>
-                            <h5>icon-radio</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-more-level"></div>
-                            <h5>icon-more-level</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-list"></div>
-                            <h5>icon-list</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-money"></div>
-                            <h5>icon-money</h5>
-                        </label>
-                    </div>
-                    <div class="grid-row">
-                        <label>
-                            <div class="icon icon-calendar"></div>
-                            <h5>icon-calendar</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-square-check"></div>
-                            <h5>icon-square-check</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-square-check-fill"></div>
-                            <h5>icon-square-check-fill</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-square"></div>
-                            <h5>icon-square</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-like"></div>
-                            <h5>icon-like</h5>
-                        </label>
-                    </div>
-                    <div class="grid-row">
-                        <label>
-                            <div class="icon icon-like-fill"></div>
-                            <h5>icon-like-fill</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-loading"></div>
-                            <h5>icon-loading</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-delete"></div>
-                            <h5>icon-delete</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-question-fill"></div>
-                            <h5>icon-question-fill</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-camera"></div>
-                            <h5>icon-camera</h5>
-                        </label>
-                    </div>
-                    <div class="grid-row">
-                        <label>
-                            <div class="icon icon-camera-fill"></div>
-                            <h5>icon-camera-fill</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-sweep"></div>
-                            <h5>icon-sweep</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-chevron-right"></div>
-                            <h5>icon-chevron-right</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-chevron-more"></div>
-                            <h5>icon-chevron-more</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-chevron-less"></div>
-                            <h5>icon-chevron-less</h5>
-                        </label>
-                    </div>
-                    <div class="grid-row">
-                        <label>
-                            <div class="icon icon-chevron-left"></div>
-                            <h5>icon-chevron-left</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-minus-sign"></div>
-                            <h5>icon-minus-sign</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-search"></div>
-                            <h5>icon-search</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-add"></div>
-                            <h5>icon-add</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-arrow-dropup"></div>
-                            <h5>icon-arrow-dropup</h5>
-                        </label>
-                    </div>
-                    <div class="grid-row">
-                        <label>
-                            <div class="icon icon-dropdown"></div>
-                            <h5>icon-dropdown</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-close"></div>
-                            <h5>icon-close</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-check"></div>
-                            <h5>icon-check</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-retangle-left"></div>
-                            <h5>icon-retangle-left</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-retangle-left-copy"></div>
-                            <h5>icon-retangle-left-copy</h5>
-                        </label>
-                    </div>
-                    <div class="grid-row">
-                        <label>
-                            <div class="icon icon-show-more"></div>
-                            <h5>icon-show-more</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-voice"></div>
-                            <h5>icon-voice</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-play"></div>
-                            <h5>icon-play</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-left"></div>
-                            <h5>icon-left</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-pause"></div>
-                            <h5>icon-pause</h5>
-                        </label>
-                    </div>
-                    <div class="grid-row">
-                        <label>
-                            <div class="icon icon-arrow-left-copy"></div>
-                            <h5>icon-arrow-left-copy</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-zoom-in"></div>
-                            <h5>icon-zoom-in</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-zomm-out"></div>
-                            <h5>icon-zomm-out</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-share"></div>
-                            <h5>icon-share</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-share2"></div>
-                            <h5>icon-share2</h5>
-                        </label>
-                    </div>
-                    <div class="grid-row">
-                        <label>
-                            <div class="icon icon-showall"></div>
-                            <h5>icon-showall</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-edit"></div>
-                            <h5>icon-edit</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-live"></div>
-                            <h5>icon-live</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-more"></div>
-                            <h5>icon-more</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-message"></div>
-                            <h5>icon-message</h5>
-                        </label>
-                    </div>
-                    <div class="grid-row">
-                        <label>
-                            <div class="icon icon-star"></div>
-                            <h5>icon-star</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-star-fill"></div>
-                            <h5>icon-star-fill</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-big-arrow-right"></div>
-                            <h5>icon-big-arrow-right</h5>
-                        </label>
-                        <label>
-                            <div class="icon icon-big-arrow-left"></div>
-                            <h5>icon-big-arrow-left</h5>
-                        </label>
-                        <label></label>
-                    </div>
-                </div>
-            </div>
+                </li>
+                <li><a href="#grid">布局</a></li>
+                <li><a href="#table-view">列表</a></li>
+                <li><a href="#label">标签</a></li>
+                <li><a href="#star">星星</a></li>
+                <li><a href="#tab">选项卡</a></li>
+            </ul>
         </div>
 
-        <div id="form">
-
-            <div id="button">
+        <div class="right-box">
+            <!-- iconfont -->
+            <div id="icon">
                 <div class="module">
-                    <h3>按钮</h3>
-
-                    <div>
-                        <button class="btn btn-primary lg">测试</button>
-                        <button class="btn btn-primary lg" disabled>被禁用</button>
-                        <button class="btn btn-info md">测试</button>
-                        <button class="btn btn-success">测试</button>
-                        <button class="btn btn-error">测试</button>
-                        <button class="btn btn-warning">测试</button>
-                        <button class="btn btn-danger">测试</button>
-                        <button class="btn btn-danger"><span class="icon icon-delete"></span>测试</button>
-                        <button class="btn btn-link">测试</button>
-                        <button class="btn btn-gray">测试</button>
-                        <button class="btn btn-primary btn-block">测试</button>
-
-
-                        <button class="btn btn-primary hollow lg">测试</button>
-                        <button class="btn btn-primary hollow lg" disabled>被禁用</button>
-                        <button class="btn btn-info hollow md">测试</button>
-                        <button class="btn btn-success hollow">测试</button>
-                        <button class="btn btn-error hollow">测试</button>
-                        <button class="btn btn-warning hollow">测试</button>
-                        <button class="btn btn-danger hollow">测试</button>
-                        <button class="btn btn-danger hollow"><span class="icon icon-delete"></span>测试</button>
-                        <button class="btn btn-gray hollow">测试</button>
-                        <button class="btn btn-primary btn-block hollow">测试</button>
+                    <h3>iconfonts</h3>
+                    <div class="module-content grid">
+                        <div class="grid-row">
+                            <label>
+                                <div class="icon icon-right-fill"></div>
+                                <h5>icon-right-fill</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-home"></div>
+                                <h5>icon-home</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-home-fill"></div>
+                                <h5>icon-home-fill</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-round-right"></div>
+                                <h5>icon-round-right</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-clock"></div>
+                                <h5>icon-clock</h5>
+                            </label>
+                        </div>
+                        <div class="grid-row">
+                            <label>
+                                <div class="icon icon-set"></div>
+                                <h5>icon-set</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-picture"></div>
+                                <h5>icon-picture</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-thumb-up"></div>
+                                <h5>icon-thumb-up</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-personal-center-fill"></div>
+                                <h5>icon-personal-center-fill</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-personal-center"></div>
+                                <h5>icon-personal-center</h5>
+                            </label>
+                        </div>
+                        <div class="grid-row">
+                            <label>
+                                <div class="icon icon-round-bang-fill"></div>
+                                <h5>icon-round-bang-fill</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-round-bang"></div>
+                                <h5>icon-round-bang</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-position"></div>
+                                <h5>icon-position</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-round-error"></div>
+                                <h5>icon-round-error</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-round-error-fill"></div>
+                                <h5>icon-round-error-fill</h5>
+                            </label>
+                        </div>
+                        <div class="grid-row">
+                            <label>
+                                <div class="icon icon-sms"></div>
+                                <h5>icon-sms</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-radio"></div>
+                                <h5>icon-radio</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-more-level"></div>
+                                <h5>icon-more-level</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-list"></div>
+                                <h5>icon-list</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-money"></div>
+                                <h5>icon-money</h5>
+                            </label>
+                        </div>
+                        <div class="grid-row">
+                            <label>
+                                <div class="icon icon-calendar"></div>
+                                <h5>icon-calendar</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-square-check"></div>
+                                <h5>icon-square-check</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-square-check-fill"></div>
+                                <h5>icon-square-check-fill</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-square"></div>
+                                <h5>icon-square</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-like"></div>
+                                <h5>icon-like</h5>
+                            </label>
+                        </div>
+                        <div class="grid-row">
+                            <label>
+                                <div class="icon icon-like-fill"></div>
+                                <h5>icon-like-fill</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-loading"></div>
+                                <h5>icon-loading</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-delete"></div>
+                                <h5>icon-delete</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-question-fill"></div>
+                                <h5>icon-question-fill</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-camera"></div>
+                                <h5>icon-camera</h5>
+                            </label>
+                        </div>
+                        <div class="grid-row">
+                            <label>
+                                <div class="icon icon-camera-fill"></div>
+                                <h5>icon-camera-fill</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-sweep"></div>
+                                <h5>icon-sweep</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-chevron-right"></div>
+                                <h5>icon-chevron-right</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-chevron-more"></div>
+                                <h5>icon-chevron-more</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-chevron-less"></div>
+                                <h5>icon-chevron-less</h5>
+                            </label>
+                        </div>
+                        <div class="grid-row">
+                            <label>
+                                <div class="icon icon-chevron-left"></div>
+                                <h5>icon-chevron-left</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-minus-sign"></div>
+                                <h5>icon-minus-sign</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-search"></div>
+                                <h5>icon-search</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-add"></div>
+                                <h5>icon-add</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-arrow-dropup"></div>
+                                <h5>icon-arrow-dropup</h5>
+                            </label>
+                        </div>
+                        <div class="grid-row">
+                            <label>
+                                <div class="icon icon-dropdown"></div>
+                                <h5>icon-dropdown</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-close"></div>
+                                <h5>icon-close</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-check"></div>
+                                <h5>icon-check</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-retangle-left"></div>
+                                <h5>icon-retangle-left</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-retangle-left-copy"></div>
+                                <h5>icon-retangle-left-copy</h5>
+                            </label>
+                        </div>
+                        <div class="grid-row">
+                            <label>
+                                <div class="icon icon-show-more"></div>
+                                <h5>icon-show-more</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-voice"></div>
+                                <h5>icon-voice</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-play"></div>
+                                <h5>icon-play</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-left"></div>
+                                <h5>icon-left</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-pause"></div>
+                                <h5>icon-pause</h5>
+                            </label>
+                        </div>
+                        <div class="grid-row">
+                            <label>
+                                <div class="icon icon-arrow-left-copy"></div>
+                                <h5>icon-arrow-left-copy</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-zoom-in"></div>
+                                <h5>icon-zoom-in</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-zomm-out"></div>
+                                <h5>icon-zomm-out</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-share"></div>
+                                <h5>icon-share</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-share2"></div>
+                                <h5>icon-share2</h5>
+                            </label>
+                        </div>
+                        <div class="grid-row">
+                            <label>
+                                <div class="icon icon-showall"></div>
+                                <h5>icon-showall</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-edit"></div>
+                                <h5>icon-edit</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-live"></div>
+                                <h5>icon-live</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-more"></div>
+                                <h5>icon-more</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-message"></div>
+                                <h5>icon-message</h5>
+                            </label>
+                        </div>
+                        <div class="grid-row">
+                            <label>
+                                <div class="icon icon-star"></div>
+                                <h5>icon-star</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-star-fill"></div>
+                                <h5>icon-star-fill</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-big-arrow-right"></div>
+                                <h5>icon-big-arrow-right</h5>
+                            </label>
+                            <label>
+                                <div class="icon icon-big-arrow-left"></div>
+                                <h5>icon-big-arrow-left</h5>
+                            </label>
+                            <label></label>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <!-- form -->
+            <div id="form">
+                <!-- button -->
+                <div id="button">
+                    <div class="module">
+                        <h3>按钮</h3>
+                        <div class="module-content">
+                            <button class="btn btn-primary lg">primary</button>
+                            <button class="btn btn-primary lg" disabled>disabled</button>
+                            <button class="btn btn-info md">info</button>
+                            <button class="btn btn-success">success</button>
+                            <button class="btn btn-error">error</button>
+                            <button class="btn btn-warning">warning</button>
+                            <button class="btn btn-danger">danger</button>
+                            <button class="btn btn-danger"><span class="icon icon-delete"></span>danger</button>
+                            <button class="btn btn-link">link</button>
+                            <button class="btn btn-gray">gray</button>
+                            <button class="btn btn-primary btn-block">block</button>
+                            <button class="btn btn-primary hollow lg">primary</button>
+                            <button class="btn btn-primary hollow lg" disabled>disabled</button>
+                            <button class="btn btn-info hollow md">info</button>
+                            <button class="btn btn-success hollow">success</button>
+                            <button class="btn btn-error hollow">error</button>
+                            <button class="btn btn-warning hollow">warning</button>
+                            <button class="btn btn-danger hollow">danger</button>
+                            <button class="btn btn-danger hollow"><span class="icon icon-delete"></span>danger</button>
+                            <button class="btn btn-gray hollow">gray</button>
+                            <button class="btn btn-primary btn-block hollow">block</button>
+                        </div>
+                        <div class="module-code">
+                            <pre><code class="language-html">
+                                <xmp>
+                                    <button class="btn btn-primary lg">primary</button>
+                                    <button class="btn btn-primary lg" disabled>disabled</button>
+                                    <button class="btn btn-info md">info</button>
+                                    <button class="btn btn-success">success</button>
+                                    <button class="btn btn-error">error</button>
+                                    <button class="btn btn-warning">warning</button>
+                                    <button class="btn btn-danger">danger</button>
+                                    <button class="btn btn-danger"><span class="icon icon-delete"></span>danger</button>
+                                    <button class="btn btn-link">link</button>
+                                    <button class="btn btn-gray">gray</button>
+                                    <button class="btn btn-primary btn-block">block</button>
+                                    <button class="btn btn-primary hollow lg">primary</button>
+                                    <button class="btn btn-primary hollow lg" disabled>disabled</button>
+                                    <button class="btn btn-info hollow md">info</button>
+                                    <button class="btn btn-success hollow">success</button>
+                                    <button class="btn btn-error hollow">error</button>
+                                    <button class="btn btn-warning hollow">warning</button>
+                                    <button class="btn btn-danger hollow">danger</button>
+                                    <button class="btn btn-danger hollow"><span class="icon icon-delete"></span>danger</button>
+                                    <button class="btn btn-gray hollow">gray</button>
+                                    <button class="btn btn-primary btn-block hollow">block</button>
+                                </xmp>
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- input -->
+                <div id="input" class="module">
+                    <h3>文本框</h3>
+                    <div class="module-content">
+                        <input type="text" value="测试" placeholder="请输入值" class="form-input"/>
+                        <input type="date" value="测试" placeholder="datetime" class="form-input"/>
+                        <input type="number" value="测试" placeholder="number" class="form-input"/>
+                    </div>
+                    <div class="module-code">
                         <pre><code class="language-html">
                             <xmp>
-                                <button class="btn btn-primary lg">测试</button>
-                                <button class="btn btn-primary lg" disabled>被禁用</button>
-                                <button class="btn btn-info md">测试</button>
-                                <button class="btn btn-success">测试</button>
-                                <button class="btn btn-error">测试</button>
-                                <button class="btn btn-warning">测试</button>
-                                <button class="btn btn-danger">测试</button>
-                                <button class="btn btn-danger"><span class="icon icon-delete"></span>测试</button>
-                                <button class="btn btn-link">测试</button>
-                                <button class="btn btn-primary btn-block">测试</button>
-
-                                <button class="btn btn-primary hollow lg">测试</button>
-                                <button class="btn btn-primary hollow lg" disabled>被禁用</button>
-                                <button class="btn btn-info hollow md">测试</button>
-                                <button class="btn btn-success hollow">测试</button>
-                                <button class="btn btn-error hollow">测试</button>
-                                <button class="btn btn-warning hollow">测试</button>
-                                <button class="btn btn-danger hollow">测试</button>
-                                <button class="btn btn-danger hollow"><span class="icon icon-delete"></span>测试</button>
-                                <button class="btn btn-primary btn-block hollow">测试</button>
+                                <input type="text" value="测试" placeholder="请输入值" class="form-input"/>
+                                <input type="date" value="测试" placeholder="datetime" class="form-input"/>
+                                <input type="number" value="测试" placeholder="number" class="form-input"/>
                             </xmp>
                         </code></pre>
+                    </div>                    
                 </div>
-            </div>
-
-            <div id="input" class="module">
-                <h3>文本框</h3>
-
-                <div>
-                    <input type="text" value="测试" placeholder="请输入值" class="form-input"/>
-                    <input type="date" value="测试" placeholder="datetime" class="form-input"/>
-                    <input type="number" value="测试" placeholder="number" class="form-input"/>
+                <!-- checkbox -->
+                <div id="checkbox" class="module">
+                    <h3>多选框</h3>
+                    <div class="module-content">
+                        <label class="multi-group">
+                            <div class="ui-checkbox ">
+                                <input type="checkbox" name=""/>
+                                <i></i>
+                            </div>
+                            <span>苹果</span>
+                        </label>
+                        <label class="multi-group">
+                            <div class="ui-checkbox ">
+                                <input type="checkbox" name=""/>
+                                <i></i>
+                            </div>
+                            <span>香蕉</span>
+                        </label>
+                    </div>
+                    <div class="module-code">
+                        <pre><code class="language-html">
+                            <xmp>
+                                <label class="multi-group">
+                                    <div class="ui-checkbox ">
+                                        <input type="checkbox" name=""/>
+                                        <i></i>
+                                    </div>
+                                    <span>苹果</span>
+                                </label>
+                                <label class="multi-group">
+                                    <div class="ui-checkbox ">
+                                        <input type="checkbox" name=""/>
+                                        <i></i>
+                                    </div>
+                                    <span>香蕉</span>
+                                </label>
+                            </xmp>
+                        </code></pre>
+                    </div>                    
+                </div>
+                <!-- radio -->
+                <div id="radio" class="module">
+                    <h3>单选框</h3>
+                    <div class="module-content">
+                        <label class="multi-group">
+                            <div class="ui-radio lg ">
+                                <input type="radio" name="types"/>
+                                <i></i>
+                            </div>
+                            <span>苹果</span>
+                        </label>
+                        <label class="multi-group">
+                            <div class="ui-radio lg ">
+                                <input type="radio" name="types"/>
+                                <i></i>
+                            </div>
+                            <span>香蕉</span>
+                        </label>
+                    </div>
+                    <div class="module-code">
+                        <pre><code class="language-html">
+                            <xmp>
+                                <label class="multi-group">
+                                    <div class="ui-radio lg ">
+                                        <input type="radio" name="types"/>
+                                        <i></i>
+                                    </div>
+                                    <span>苹果</span>
+                                </label>
+                                <label class="multi-group">
+                                    <div class="ui-radio lg ">
+                                        <input type="radio" name="types"/>
+                                        <i></i>
+                                    </div>
+                                    <span>香蕉</span>
+                                </label>
+                            </xmp>
+                        </code></pre>
+                    </div>                    
+                </div>
+                <!-- switch -->
+                <div id="switch" class="module">
+                    <h3>开关按钮</h3>
+                    <div class="module-content">
+                        <label class="label-switch">
+                            <input id="js-room-selected" type="checkbox">
+                            <div class="checkbox"></div>
+                        </label>
+                    </div>
+                    <div class="module-code">
+                        <pre><code class="language-html">
+                            <xmp>
+                                <label class="label-switch">
+                                    <input id="js-room-selected" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </xmp>
+                        </code></pre>
+                    </div>                    
                 </div>
 
-                    <pre><code class="language-html">
-                        <xmp>
-                            <input type="text" value="测试" placeholder="请输入值" class="form-input"/>
-                            <input type="date" value="测试" placeholder="datetime" class="form-input"/>
-                            <input type="number" value="测试" placeholder="number" class="form-input"/>
-                        </xmp>
-                    </code></pre>
-            </div>
-            <div id="checkbox" class="module">
-                <h3>多选框</h3>
-
-                <div>
-                    <label class="multi-group">
-                        <div class="ui-checkbox ">
-                            <input type="checkbox" name=""/>
-                            <i></i>
-                        </div>
-                        <span>苹果</span>
-                    </label>
-                    <label class="multi-group">
-                        <div class="ui-checkbox ">
-                            <input type="checkbox" name=""/>
-                            <i></i>
-                        </div>
-                        <span>香蕉</span>
-                    </label>
-                    <label class="multi-group">
-                        <div class="ui-checkbox ">
-                            <input type="checkbox" name=""/>
-                            <i></i>
-                        </div>
-                        <span>梨</span>
-                    </label>
-                    <label class="multi-group">
-                        <div class="ui-checkbox ">
-                            <input type="checkbox" name=""/>
-                            <i></i>
-                        </div>
-                        <span>凤梨</span>
-                    </label>
-                </div>
-                    <pre><code class="language-html">
-                        <xmp>
-                            <label class="multi-group">
-                                <div class="ui-checkbox ">
-                                    <input type="checkbox" name=""/>
-                                    <i></i>
-                                </div>
-                                <span>苹果</span>
-                            </label>
-
-                            <label class="multi-group">
-                                <div class="ui-checkbox ">
-                                    <input type="checkbox" name=""/>
-                                    <i></i>
-                                </div>
-                                <span>香蕉</span>
-                            </label>
-
-                            <label class="multi-group">
-                                <div class="ui-checkbox ">
-                                    <input type="checkbox" name=""/>
-                                    <i></i>
-                                </div>
-                                <span>梨</span>
-                            </label>
-
-                            <label class="multi-group">
-                                <div class="ui-checkbox ">
-                                    <input type="checkbox" name=""/>
-                                    <i></i>
-                                </div>
-                                <span>凤梨</span>
-                            </label>
-                        </xmp>
-                    </code></pre>
-            </div>
-            <div id="radio" class="module">
-                <h3>单选框</h3>
-
-                <div>
-                    <label class="multi-group">
-                        <div class="ui-radio lg ">
-                            <input type="radio" name="types"/>
-                            <i></i>
-                        </div>
-                        <span>凤梨</span>
-                    </label>
-                    <label class="multi-group">
-                        <div class="ui-radio lg ">
-                            <input type="radio" name="types"/>
-                            <i></i>
-                        </div>
-                        <span>苹果</span>
-                    </label>
-                </div>
-                     <pre><code class="language-html">
-                         <xmp>
-                             <label class="multi-group">
-                                 <div class="ui-radio ">
-                                     <input type="radio" name="types"/>
-                                     <i></i>
-                                 </div>
-                                 <span>凤梨</span>
-                             </label>
-                             <label class="multi-group">
-                                 <div class="ui-radio ">
-                                     <input type="radio" name="types"/>
-                                     <i></i>
-                                 </div>
-                                 <span>苹果</span>
-                             </label>
-                         </xmp>
-                     </code></pre>
-            </div>
-
-            <div id="switch" class="module">
-                <h3>开关按钮</h3>
-
-                <div>
-                    <label class="label-switch">
-                        <input id="js-room-selected" type="checkbox">
-
-                        <div class="checkbox"></div>
-                    </label>
-                </div>
-                    <pre><code class="language-html">
-                        <xmp>
-                            <label class="label-switch">
-                                <input id="js-room-selected" type="checkbox">
-
-                                <div class="checkbox"></div>
-                            </label>
-                        </xmp>
-                    </code></pre>
-            </div>
-
-            <div id="list-form" class="module">
-                <h3>列表元素形式的表单布局</h3>
-
-                <div>
-                    <form class="input-group">
-                        <input type="text" placeholder="姓名">
-                        <input type="email" placeholder="邮箱地址">
-                        <input type="text" placeholder="用户名">
-                    </form>
-
+                <div id="list-form" class="module">
+                    <h3>列表元素形式的表单布局</h3>
+                    <div class="module-content">
+                        <form class="input-group">
+                            <input type="text" placeholder="用户名">
+                            <input type="email" placeholder="邮箱地址">                            
+                        </form>
+                    </div>
+                    <div class="module-code">
                         <pre><code class="language-html">
                             <xmp>
                                 <form class="input-group">
-                                    <input type="text" placeholder="姓名">
-                                    <input type="email" placeholder="邮箱地址">
                                     <input type="text" placeholder="用户名">
+                                    <input type="email" placeholder="邮箱地址">                            
                                 </form>
                             </xmp>
                         </code></pre>
+                    </div>
 
                     <form class="input-group">
                         <div class="input-row">
@@ -596,53 +555,55 @@
                             </a>
                         </div>
                     </form>
-
-                         <pre><code class="language-html">
-                             <xmp>
-                                 <form class="input-group">
-                                     <div class="input-row">
-                                         <label>地址</label>
-                                         <input type="text" placeholder="address">
-                                     </div>
-                                     <div class="input-row">
-                                         <label>兴趣爱好</label>
-                                         <input type="email" placeholder="篮球...">
-                                     </div>
-                                     <div class="input-row">
-                                         <label>密码</label>
-                                         <input type="password" placeholder="password">
-                                     </div>
-                                     <div class="input-row">
-                                         <a href="###" class="navigate-right">
-                                             <label>性别</label>
-                                             <input type="text" placeholder="男/女" disabled/>
-                                         </a>
-                                     </div>
-                                 </form>
-                             </xmp>
-                         </code></pre>
-
-                    <div class="row">
-                        <div class="col-50">
-                            <div class="input-row">
-                                <label>姓</label>
-                                <input type="text" placeholder="姓" style="padding-left: 15px">
-                            </div>
-                        </div>
-                        <div class="col-50">
-                            <div class="input-row">
-                                <label>名</label>
-                                <input type="text" placeholder="名" style="padding-left: 15px">
-                            </div>
-                        </div>
+                    <div class="module-code">
+                        <pre><code class="language-html">
+                            <xmp>
+                                <form class="input-group">
+                                    <div class="input-row">
+                                        <label>地址</label>
+                                        <input type="text" placeholder="address">
+                                    </div>
+                                    <div class="input-row">
+                                        <label>兴趣爱好</label>
+                                        <input type="email" placeholder="篮球...">
+                                    </div>
+                                    <div class="input-row">
+                                        <label>密码</label>
+                                        <input type="password" placeholder="password">
+                                    </div>
+                                    <div class="input-row">
+                                        <a href="###" class="navigate-right">
+                                            <label>性别</label>
+                                            <input type="text" placeholder="男/女" disabled/>
+                                        </a>
+                                    </div>
+                                </form>
+                            </xmp>
+                        </code></pre>
                     </div>
+
+                    <div class="row-no-padding">
+                        <div class="row">
+                            <div class="col-50">
+                                <div class="input-row">
+                                    <label>姓</label>
+                                    <input type="text" placeholder="姓" style="padding-left: 15px">
+                                </div>
+                            </div>
+                            <div class="col-50">
+                                <div class="input-row">
+                                    <label>名</label>
+                                    <input type="text" placeholder="名" style="padding-left: 15px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>                        
                     <div class="input-row">
                         <label>省份证</label>
                         <input type="text" class="input" placeholder="身份证"/>
                     </div>
                     <div class="input-row">
                         <label>喜欢的水果</label>
-
                         <div class="input">
                             <label class="multi-group">
                                 <div class="ui-checkbox ">
@@ -662,7 +623,6 @@
                     </div>
                     <div class="input-row">
                         <label><span class="color-error">*</span>喜欢的运动</label>
-
                         <div class="input" style="text-align: right">
                             <label class="multi-group">
                                 <div class="ui-checkbox lg ">
@@ -680,307 +640,264 @@
                             </label>
                         </div>
                     </div>
+                    <div class="module-code">
+                        <pre><code class="language-html">
+                            <xmp>
+                                <div class="row">
+                                    <div class="col-50">
+                                        <div class="input-row">
+                                            <label>姓</label>
+                                            <input type="text" placeholder="姓" style="padding-left: 15px">
+                                        </div>
+                                    </div>
+                                    <div class="col-50">
+                                        <div class="input-row">
+                                            <label>名</label>
+                                            <input type="text" placeholder="名" style="padding-left: 15px">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-row">
+                                    <label>省份证</label>
+                                    <input type="text" class="input" placeholder="身份证"/>
+                                </div>
+                                <div class="input-row">
+                                    <label>喜欢的水果</label>
+                                    <div class="input">
+                                        <label class="multi-group">
+                                            <div class="ui-checkbox ">
+                                                <input checked type="checkbox" name=""/>
+                                                <i></i>
+                                            </div>
+                                            <span>橘子</span>
+                                        </label>
+                                        <label class="multi-group">
+                                            <div class="ui-checkbox ">
+                                                <input type="checkbox" name=""/>
+                                                <i></i>
+                                            </div>
+                                            <span>苹果</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="input-row">
+                                    <label><span class="color-error">*</span>喜欢的运动</label>
+                                    <div class="input" style="text-align: right">
+                                        <label class="multi-group">
+                                            <div class="ui-checkbox lg ">
+                                                <input type="checkbox" name=""/>
+                                                <i></i>
+                                            </div>
+                                            <span>篮球</span>
+                                        </label>
+                                        <label class="multi-group">
+                                            <div class="ui-checkbox lg ">
+                                                <input checked type="checkbox" name=""/>
+                                                <i></i>
+                                            </div>
+                                            <span>足球</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </xmp>
+                        </code></pre>
+                    </div>
+                    
                 </div>
-                    <pre><code class="language-html">
-                        <xmp>
-                            <div class="row">
-                                <div class="col-50">
-                                    <div class="input-row">
-                                        <label>姓</label>
-                                        <input type="text" placeholder="姓" style="padding-left: 15px">
-                                    </div>
-                                </div>
-                                <div class="col-50">
-                                    <div class="input-row">
-                                        <label>名</label>
-                                        <input type="text" placeholder="名" style="padding-left: 15px">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="input-row">
-                                <label>省份证</label>
-                                <input type="text" class="input" placeholder="身份证"/>
-                            </div>
-                            <div class="input-row">
-                                <label>喜欢的水果</label>
-
-                                <div class="input">
-                                    <label class="multi-group">
-                                        <div class="ui-checkbox ">
-                                            <input checked type="checkbox" name=""/>
-                                            <i></i>
-                                        </div>
-                                        <span>橘子</span>
-                                    </label>
-                                    <label class="multi-group">
-                                        <div class="ui-checkbox ">
-                                            <input type="checkbox" name=""/>
-                                            <i></i>
-                                        </div>
-                                        <span>苹果</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="input-row">
-                                <label><span class="color-error">*</span>喜欢的运动</label>
-
-                                <div class="input" style="text-align: right">
-                                    <label class="multi-group">
-                                        <div class="ui-checkbox lg ">
-                                            <input type="checkbox" name=""/>
-                                            <i></i>
-                                        </div>
-                                        <span>篮球</span>
-                                    </label>
-                                    <label class="multi-group">
-                                        <div class="ui-checkbox lg ">
-                                            <input checked type="checkbox" name=""/>
-                                            <i></i>
-                                        </div>
-                                        <span>足球</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </xmp>
-                    </code></pre>
             </div>
-
-        </div>
-        <!-- grid 布局-->
-        <div id="grid">
-            <div class="module">
-                <h3>布局</h3>
-
-                <div>
-                    <div class="row">
-                        <div class="col col-50">col-50</div>
-                        <div class="col col-50">col-50</div>
-                    </div>
-                    <div class="row">
-                        <div class="col">col-100</div>
-                    </div>
-                    <div class="row">
-                        <div class="col col-20 col-top">col-top</div>
-                        <div class="col col-20 col-center">col-center</div>
-                        <div class="col col-20 col-bottom">col-bottom</div>
-                        <div class="col col-20">col-20</div>
-                        <div class="col col-20">
-                            <p>col-20</p>
-
-                            <p>col-20</p>
-
-                            <p>col-20</p>
-
-                            <p>col-20</p>
+            <!-- grid 布局-->
+            <div id="grid">
+                <div class="module">
+                    <h3>布局</h3>
+                    <div class="module-content row-no-padding">
+                        <div class="row">
+                            <div class="col col-50">col-50</div>
+                            <div class="col col-50">col-50</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">col-100</div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-20 col-top">col-top</div>
+                            <div class="col col-20 col-center">col-center</div>
+                            <div class="col col-20 col-bottom">col-bottom</div>
+                            <div class="col col-20">col-20</div>
+                            <div class="col col-20">
+                                col-20<br/>col-20<br/>col-20<br/>col-20
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-offset-20">col-offset-50</div>
+                            <div class="col col-offset-30">col-offset-30</div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col col-offset-20">col-offset-50</div>
-                        <div class="col col-offset-30">col-offset-30</div>
-                    </div>
-                </div>
-                    <pre><code class="language-html">
-                        <xmp>
-                            <div class="row">
-                                <div class="col col-50">col-50</div>
-                                <div class="col col-50">col-50</div>
-                            </div>
-                            <div class="row">
-                                <div class="col">col-100</div>
-                            </div>
-                            <div class="row">
-                                <div class="col col-20 col-top">col-top</div>
-                                <div class="col col-20 col-center">col-center</div>
-                                <div class="col col-20 col-bottom">col-bottom</div>
-                                <div class="col col-20">col-20</div>
-                                <div class="col col-20">
-                                    <p>col-20</p>
-
-                                    <p>col-20</p>
-
-                                    <p>col-20</p>
-
-                                    <p>col-20</p>
+                    <div class="module-code">
+                        <pre><code class="language-html">
+                            <xmp>
+                                <div class="row">
+                                    <div class="col col-50">col-50</div>
+                                    <div class="col col-50">col-50</div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col col-offset-20">col-offset-50</div>
-                                <div class="col col-offset-30">col-offset-30</div>
-                            </div>
-                        </xmp>
-                    </code></pre>
-            </div>
-        </div>
-
-        <!-- table view list -->
-        <div id="table-view">
-            <div class="module">
-                <h3>列表（table view）</h3>
-
-                <div>
-                    <ul class="table-view">
-                        <li class="table-view-cell">
-                            <a href="###" class="navigate-right">列表 1</a>
-                        </li>
-                        <li class="table-view-cell">
-                            <a href="###" class="navigate-right">列表 1</a>
-                        </li>
-                        <li class="table-view-cell">
-                            <a href="###" class="navigate-right">列表 1</a>
-                        </li>
-                        <li class="table-view-cell">
-                            <a href="###" class="navigate-right">列表 1</a>
-                        </li>
-                        <li class="table-view-cell">
-                            <a href="###" class="navigate-right">列表 1</a>
-                        </li>
-                        <li class="table-view-cell">
-                            列表 2
-                            <span class="badge badge-primary">2</span>
-                        </li>
-
-                        <li class="table-view-cell">
-                            <a class="navigate-right">
-                                <span class="badge">5</span>
-                                Item 1
-                            </a>
-                        </li>
-                        <li class="table-view-cell">Item 1
-                            <button class="btn">Button</button>
-                        </li>
-
-                        <li class="table-view-cell">
-                            Item 2
-                            <label class="label-switch">
-                                <input id="js-room-selected" type="checkbox">
-
-                                <div class="checkbox"></div>
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-                    <pre><code class="language-html">
-                        <xmp>
-                            <ul class="table-view">
-                                <li class="table-view-cell">
-                                    <a href="###" class="navigate-right">列表 1</a>
-                                </li>
-                                <li class="table-view-cell">
-                                    <a href="###" class="navigate-right">列表 1</a>
-                                </li>
-                                <li class="table-view-cell">
-                                    <a href="###" class="navigate-right">列表 1</a>
-                                </li>
-                                <li class="table-view-cell">
-                                    <a href="###" class="navigate-right">列表 1</a>
-                                </li>
-                                <li class="table-view-cell">
-                                    <a href="###" class="navigate-right">列表 1</a>
-                                </li>
-                                <li class="table-view-cell">
-                                    列表 2
-                                    <span class="badge badge-primary">2</span>
-                                </li>
-
-                                <li class="table-view-cell">
-                                    <a class="navigate-right">
-                                        <span class="badge">5</span>
-                                        Item 1
-                                    </a>
-                                </li>
-                                <li class="table-view-cell">Item 1
-                                    <button class="btn">Button</button>
-                                </li>
-
-                                <li class="table-view-cell">
-                                    Item 2
-                                    <label class="label-switch">
-                                        <input id="js-room-selected" type="checkbox">
-
-                                        <div class="checkbox"></div>
-                                    </label>
-                                </li>
-                            </ul>
-                        </xmp>
-                    </code></pre>
-            </div>
-        </div>
-
-        <!-- 标签 -->
-        <div id="label">
-            <div class="module">
-                <h3>标签</h3>
-
-                <div>
-                    <span class="label label-primary">惠</span>
-                    <span class="label label-primary label-lg">惠</span>
-                    <span class="label label-primary label-md">亲，赶紧下单立减10元</span>
-
-                    <span class="badge">1</span>
-                    <span class="badge badge-primary">2</span>
-                    <span class="badge badge-success">3</span>
-                    <span class="badge badge-info">4</span>
-                    <span class="badge badge-inverted">1</span>
-                </div>
-                    <pre><code class="language-html">
-                        <xmp>
-                            <span class="label label-primary">惠</span>
-                            <span class="label label-primary label-lg">惠</span>
-                            <span class="label label-primary label-md">亲，赶紧下单立减10元</span>
-
-                            <span class="badge">1</span>
-                            <span class="badge badge-primary">2</span>
-                            <span class="badge badge-success">3</span>
-                            <span class="badge badge-info">4</span>
-                            <span class="badge badge-inverted">1</span>
-                        </xmp>
-                    </code></pre>
-            </div>
-        </div>
-        <!-- 星星 -->
-
-
-        <div id="star">
-            <div class="module">
-                <h3>星星</h3>
-
-                <div>
-                    <div class="star">
-                        <div class="star-grey"></div>
-                    </div>
-                    <div class="star star-5">
-                        <div class="star-grey"></div>
-                    </div>
-                    <div class="star star-10 star-md">
-                        <div class="star-grey"></div>
-                    </div>
-                    <div class="star star-15 star-md">
-                        <div class="star-grey"></div>
-                    </div>
-                    <div class="star star-20 star-md">
-                        <div class="star-grey"></div>
-                    </div>
-                    <div class="star star-25 star-md">
-                        <div class="star-grey"></div>
-                    </div>
-                    <div class="star star-30 star-lg">
-                        <div class="star-grey"></div>
-                    </div>
-                    <div class="star star-35 star-lg">
-                        <div class="star-grey"></div>
-                    </div>
-                    <div class="star star-40 star-lg">
-                        <div class="star-grey"></div>
-                    </div>
-                    <div class="star star-45 star-lg">
-                        <div class="star-grey"></div>
-                    </div>
-                    <div class="star star-50 star-lg">
-                        <div class="star-grey"></div>
+                                <div class="row">
+                                    <div class="col">col-100</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-20 col-top">col-top</div>
+                                    <div class="col col-20 col-center">col-center</div>
+                                    <div class="col col-20 col-bottom">col-bottom</div>
+                                    <div class="col col-20">col-20</div>
+                                    <div class="col col-20">
+                                        col-20<br/>col-20<br/>col-20<br/>col-20
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-offset-20">col-offset-50</div>
+                                    <div class="col col-offset-30">col-offset-30</div>
+                                </div>
+                            </xmp>
+                        </code></pre>
                     </div>
                 </div>
-                    <pre>
-                        <code class="language-html">
+            </div>
+
+            <!-- table view list -->
+            <div id="table-view">
+                <div class="module">
+                    <h3>列表（table view）</h3>
+                    <div class="module-content">
+                        <ul class="table-view">
+                            <li class="table-view-cell">
+                                <a href="###" class="navigate-right">列表 1</a>
+                            </li>
+                            <li class="table-view-cell">
+                                列表 2
+                                <span class="badge badge-primary">2</span>
+                            </li>
+                            <li class="table-view-cell">
+                                <a class="navigate-right">
+                                    <span class="badge">5</span>
+                                    列表 3
+                                </a>
+                            </li>
+                            <li class="table-view-cell">列表 4
+                                <button class="btn">Button</button>
+                            </li>
+                            <li class="table-view-cell">
+                                列表 5
+                                <label class="label-switch">
+                                    <input id="js-room-selected" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="module-code">
+                        <pre><code class="language-html">
+                            <xmp>
+                                <ul class="table-view">
+                                    <li class="table-view-cell">
+                                        <a href="###" class="navigate-right">列表 1</a>
+                                    </li>
+                                    <li class="table-view-cell">
+                                        列表 2
+                                        <span class="badge badge-primary">2</span>
+                                    </li>
+                                    <li class="table-view-cell">
+                                        <a class="navigate-right">
+                                            <span class="badge">5</span>
+                                            列表 3
+                                        </a>
+                                    </li>
+                                    <li class="table-view-cell">列表 4
+                                        <button class="btn">Button</button>
+                                    </li>
+                                    <li class="table-view-cell">
+                                        列表 5
+                                        <label class="label-switch">
+                                            <input id="js-room-selected" type="checkbox">
+                                            <div class="checkbox"></div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </xmp>
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+            <!-- 标签 -->
+            <div id="label">
+                <div class="module">
+                    <h3>标签</h3>
+                    <div class="module-content">
+                        <span class="label label-primary">惠</span>
+                        <span class="label label-primary label-md">惠</span>
+                        <span class="label label-primary label-lg">亲，赶紧下单立减10元</span>
+                        <br/>
+                        <span class="badge">default</span>
+                        <span class="badge badge-primary">primary</span>
+                        <span class="badge badge-success">success</span>
+                        <span class="badge badge-info">info</span>
+                        <span class="badge badge-inverted">inverted</span>
+                    </div>
+                    <div class="module-code">
+                        <pre><code class="language-html">
+                            <xmp>
+                                <span class="label label-primary">惠</span>
+                                <span class="label label-primary label-md">惠</span>
+                                <span class="label label-primary label-lg">亲，赶紧下单立减10元</span>
+                                
+                                <span class="badge">default</span>
+                                <span class="badge badge-primary">primary</span>
+                                <span class="badge badge-success">success</span>
+                                <span class="badge badge-info">info</span>
+                                <span class="badge badge-inverted">inverted</span>
+                            </xmp>
+                        </code></pre>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- 星星 -->
+            <div id="star">
+                <div class="module">
+                    <h3>星星</h3>
+                    <div class="module-content">
+                        <div class="star">
+                            <div class="star-grey"></div>
+                        </div>
+                        <div class="star star-5">
+                            <div class="star-grey"></div>
+                        </div>
+                        <div class="star star-10 star-md">
+                            <div class="star-grey"></div>
+                        </div>
+                        <div class="star star-15 star-md">
+                            <div class="star-grey"></div>
+                        </div>
+                        <div class="star star-20 star-md">
+                            <div class="star-grey"></div>
+                        </div>
+                        <div class="star star-25 star-md">
+                            <div class="star-grey"></div>
+                        </div>
+                        <div class="star star-30 star-lg">
+                            <div class="star-grey"></div>
+                        </div>
+                        <div class="star star-35 star-lg">
+                            <div class="star-grey"></div>
+                        </div>
+                        <div class="star star-40 star-lg">
+                            <div class="star-grey"></div>
+                        </div>
+                        <div class="star star-45 star-lg">
+                            <div class="star-grey"></div>
+                        </div>
+                        <div class="star star-50 star-lg">
+                            <div class="star-grey"></div>
+                        </div>
+                    </div>
+                    <div class="module-code">
+                        <pre><code class="language-html">
                             <xmp>
                                 <div class="star">
                                     <div class="star-grey"></div>
@@ -1015,98 +932,109 @@
                                 <div class="star star-50 star-lg">
                                     <div class="star-grey"></div>
                                 </div>
-
                             </xmp>
                         </code></pre>
-            </div>
-        </div>
-        <!-- tab选项卡-->
-        <div id="tab">
-            <div class="module">
-            <h3>tab选项卡(默认横向)</h3>
-
-            <div class="ui-tabs">
-                <ul class="row">
-                    <li class="col tab-nav active" data-index="1"> 切换1</li>
-                    <li class="col tab-nav" data-index="2">切换2</li>
-                    <li class="col tab-nav" data-index="3">切换3</li>
-                </ul>
-                <div class="tab-bd" style="height: 100px;border: 1px solid #ddd;">
-                    <div class="tab-panel active">
-                        这是横排tab内容tab1
-                    </div>
-                    <div class="tab-panel">
-                        这是横排tab内容tab2
-                    </div>
-                    <div class="tab-panel">
-                        这是横排tab内容tab3
                     </div>
                 </div>
             </div>
-            <h3>竖排</h3>
-
-            <div class="ui-tabs vertical row">
-                <ul class="col-20">
-                    <li class=" tab-nav " data-index="1"> 切换1</li>
-                    <li class=" tab-nav active" data-index="2">切换2</li>
-                    <li class=" tab-nav" data-index="3">切换3</li>
-                </ul>
-                <div class="col tab-bd" style="height: 200px;border: 1px solid #ddd;">
-                    <div class="tab-panel active">
-                        这是竖排tab内容1
-                    </div>
-                    <div class="tab-panel">
-                        这是竖排tab内容2
-                    </div>
-                    <div class="tab-panel">
-                        这是竖排tab内容3
-                    </div>
-                </div>
-            </div>
-            <pre>
-                <code class="language-html">
-                    <xmp>
+            <!-- tab选项卡-->
+            <div id="tab">
+                <div class="module">
+                    <h3>tab选项卡(默认横向)</h3>
+                    <div class="module-content">
                         <div class="ui-tabs">
                             <ul class="row">
-                                <li class="col tab-nav"> 切换1</li>
-                                <li class="col tab-nav active">切换2</li>
-                                <li class="col tab-nav">切换3</li>
+                                <li class="col tab-nav active" data-index="1"> 切换1</li>
+                                <li class="col tab-nav" data-index="2">切换2</li>
+                                <li class="col tab-nav" data-index="3">切换3</li>
                             </ul>
-                            <div class="row tab-bd" style="height: 100px;border: 1px solid #ddd;">
-                                <div class=" tab-panel active">
-                                    这是1
+                            <div class="tab-bd" style="height: 100px;border: 1px solid #ddd;">
+                                <div class="tab-panel active">
+                                    这是横排tab内容tab1
                                 </div>
                                 <div class="tab-panel">
-                                    这是2
+                                    这是横排tab内容tab2
                                 </div>
-                                <div class="col tab-panel">
-                                    这是3
+                                <div class="tab-panel">
+                                    这是横排tab内容tab3
                                 </div>
                             </div>
                         </div>
-                        <div class="ui-tabs vertical row">
+                    </div>   
+                    <div class="module-code">
+                        <pre><code class="language-html">
+                            <xmp>
+                                <div class="ui-tabs">
+                                <ul class="row">
+                                    <li class="col tab-nav active" data-index="1"> 切换1</li>
+                                    <li class="col tab-nav" data-index="2">切换2</li>
+                                    <li class="col tab-nav" data-index="3">切换3</li>
+                                </ul>
+                                <div class="tab-bd" style="height: 100px;border: 1px solid #ddd;">
+                                    <div class="tab-panel active">
+                                        这是横排tab内容tab1
+                                    </div>
+                                    <div class="tab-panel">
+                                        这是横排tab内容tab2
+                                    </div>
+                                    <div class="tab-panel">
+                                        这是横排tab内容tab3
+                                    </div>
+                                </div>
+                            </xmp>
+                        </code></pre>
+                    </div>
+
+                    <h3>tab选项卡(竖排)</h3>
+                    <div class="module-content">
+                        <div class="ui-tabs vertical row" style="margin:15px 0;">
                             <ul class="col-20">
-                                <li class=" tab-nav " data-index="1"> 切换1</li>
-                                <li class=" tab-nav active" data-index="2">切换2</li>
-                                <li class=" tab-nav" data-index="3">切换3</li>
+                                <li class="tab-nav" data-index="1"> 切换1</li>
+                                <li class="tab-nav active" data-index="2">切换2</li>
+                                <li class="tab-nav" data-index="3">切换3</li>
                             </ul>
-                            <div class="col-80 tab-bd" style="height: 200px;border: 1px solid #ddd;">
-                                <div class="row tab-panel active">
-                                    1
+                            <div class="col tab-bd" style="height: 200px;">
+                                <div class="tab-panel active">
+                                    这是竖排tab内容1
                                 </div>
-                                <div class="row tab-panel">
-                                    2
+                                <div class="tab-panel">
+                                    这是竖排tab内容2
                                 </div>
-                                <div class="row tab-panel">
-                                    3
+                                <div class="tab-panel">
+                                    这是竖排tab内容3
                                 </div>
                             </div>
-                    </xmp>
-                </code></pre>
+                        </div>
+                    </div>      
+                    <div class="module-code">
+                        <pre><code class="language-html">
+                            <xmp>
+                                <div class="ui-tabs vertical row" style="margin:15px 0;">
+                                    <ul class="col-20">
+                                        <li class="tab-nav" data-index="1"> 切换1</li>
+                                        <li class="tab-nav active" data-index="2">切换2</li>
+                                        <li class="tab-nav" data-index="3">切换3</li>
+                                    </ul>
+                                    <div class="col tab-bd" style="height: 200px;">
+                                        <div class="tab-panel active">
+                                            这是竖排tab内容1
+                                        </div>
+                                        <div class="tab-panel">
+                                            这是竖排tab内容2
+                                        </div>
+                                        <div class="tab-panel">
+                                            这是竖排tab内容3
+                                        </div>
+                                    </div>
+                                </div>
+                            </xmp>
+                        </code></pre>
+                    </div>
+            </div>
         </div>
     </div>
-</div>
-<script src="src/prism.js"></script>
-<script src="../dist/phoenix-styles.js"></script>
+    <p class="copy-right">Powered by <a href="https://github.com/future-team">Future Team</a></p>
 </body>
+<script src="src/prism.js"></script>
+<!-- <script src="../dist/phoenix-styles.js"></script> -->
 </html>

@@ -1,0 +1,29 @@
+// dialog skin
+.dialog-skin(){
+	.ph-dialog-content{
+		width: @dialog-content-width;
+		padding: @dialog-content-padding;
+		margin: 0 auto;
+		background-color: @white;
+		border-radius: @dialog-content-radius;
+		text-align: center;
+		.ph-dialog-title{
+			line-height: 1;
+			font-size: @dialog-title-font-size;
+			color: @dialog-title-color;
+		}
+		.ph-dialog-body{
+			margin: @dialog-body-margin;
+			line-height: @dialog-body-line-height;
+			font-size: @dialog-body-font-size;
+			color: @dialog-body-color;
+		}
+		.btn{
+			width: @dialog-btn-width;
+			margin-left: @dialog-btn-margin;
+			&:first-child{
+				margin-left: 0;
+			}
+		}
+	}
+}

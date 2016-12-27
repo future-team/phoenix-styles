@@ -18,12 +18,12 @@ var error = function(e){
 };
 
 gulp.task('clean', function () {
-    return gulp.src(['./dist/*'], {read: false})
+    return gulp.src(['./dist/*.css'], {read: false})
         .pipe(clean()).on('error', error );
 });
 
 gulp.task('less',['clean'], function(){
-  return gulp.src(['./less/'+cssName+'.less','./less/'+cssName+'-grid.less','./less/skin.less'])
+  return gulp.src(['./less/'+cssName+'.less','./less/ios-skin.less'])
       .pipe(less({ compress: false }))
       .pipe(plumber())
       //.on('error', error )
@@ -52,7 +52,7 @@ gulp.task('js', function() {
         .pipe(gulp.dest(dest));
 });
 
-gulp.task('default', ['fonts','min-styles','js']);
+gulp.task('default', ['fonts','min-styles']);
 gulp.task('dev',['fonts','less'], function() {
   gulp.watch('./less/**/*.less', ['less']);
 });
