@@ -7,17 +7,17 @@
  * available width, and the height of each .uc-col with take
  * up the height of the tallest .uc-col in the same .uc-row.
  */
-.grid{
+.ph-grid{
   overflow: hidden;
 }
-.grid-fluid {
+.ph-grid-fluid {
   margin-right: auto;
   margin-left: auto;
   padding-left: @grid-fluid-padding;
   padding-right: @grid-fluid-padding;
 }
 
-.row{
+.ph-row{
   margin: 0  -(@grid-padding-width + 5);
   /*width: 100%;*/
   &:after{ // 清浮动
@@ -28,24 +28,24 @@
   }
 }
 
-.row.no-padding {
+.ph-row.ph-no-padding {
   padding: 0;
   margin:0;
-  > .col {
+  > .ph-col {
     padding: 0;
   }
 }
-.row-no-padding{
-  .row{
+.ph-row-no-padding{
+  .ph-row{
     padding: 0;
     margin:0;
-    > .col {
+    > .ph-col {
       padding: 0;
     }
   }
 }
 
-.col{
+.ph-col{
   float: left;
   width: 100%;
   padding: (@grid-padding-width / 2) @grid-padding-width + 5;
@@ -56,17 +56,17 @@
 .generate-columns-offsets(100);
 
 .generate-columns-offsets(@n, @i: 5) when (@i =< @n) {
-  .col-offset-@{i} {
+  .ph-col-offset-@{i} {
     margin-left: @i * 100% / @n;
     width: auto;
   }
   .generate-columns-offsets(@n, (@i + 5));
 }
-.col-offset-33, .col-offset-34 {
+.ph-col-offset-33, .ph-col-offset-34 {
   margin-left: 33.3333%;
   width: auto;
 }
-.col-offset-66, .col-offset-67 {
+.ph-col-offset-66, .ph-col-offset-67 {
   margin-left: 66.6666%;
   width: auto;
 }
@@ -78,24 +78,24 @@
 .generate-columns(100);
 
 .generate-columns(@n, @i: 5) when (@i =< @n) {
-  .col-@{i}{
+  .ph-col-@{i}{
     float: left;
     width: (@i * 100% / @n);
   }
   .generate-columns(@n, (@i + 5));
 }
 
-.col-33, .col-34 {
+.ph-col-33, .ph-col-34 {
   float: left;
   width: 33.3333%;
 }
 
-.col-66, .col-67 {
+.ph-col-66, .ph-col-67 {
   float: left;
   width: 66.6666%;
 }
 
-.grid-row{
+.ph-grid-row{
   .display-flex();
   margin-top: 10px;
   &:first-child{

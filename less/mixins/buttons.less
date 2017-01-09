@@ -1,5 +1,5 @@
-//generate different btn
-.generate-diff-btn(@color,@bg-color,@border-color:transparent){
+//generate different button
+.generate-diff-button(@color,@bg-color,@border-color:transparent){
     color: @color;
     background-color: @bg-color;
     border: 1px solid @border-color;
@@ -11,61 +11,61 @@
     }
 };
 
-.generate-hollow-btn(@color,@bg-color,@border-color){
-    .generate-diff-btn(@color,@bg-color,@border-color);
+.generate-hollow-button(@color,@bg-color,@border-color){
+    .generate-diff-button(@color,@bg-color,@border-color);
     &:active,
     &.active {
         background: rgba(226,226,226,0.4);
     }
 };
 
-.btn-skin(){
-    .btn-primary{
-        .generate-diff-btn(@white,@brand-primary,@brand-primary);
+.button-skin(){
+    .ph-button-primary{
+        .generate-diff-button(@white,@brand-primary,@brand-primary);
     }
-    .btn-primary.hollow{
-        .generate-hollow-btn(@brand-primary,@white,@brand-primary);
+    .ph-button-primary.ph-button-hollow{
+        .generate-hollow-button(@brand-primary,@white,@brand-primary);
     }
-    .btn-success{
-        .generate-diff-btn(@white,@brand-success,@brand-success);
+    .ph-button-success{
+        .generate-diff-button(@white,@brand-success,@brand-success);
     }
-    .btn-success.hollow{
-        .generate-hollow-btn(@brand-success,@white,@brand-success);
+    .ph-button-success.ph-button-hollow{
+        .generate-hollow-button(@brand-success,@white,@brand-success);
     }
-    .btn-info{
-        .generate-diff-btn(@white,@brand-info,@brand-info);
+    .ph-button-info{
+        .generate-diff-button(@white,@brand-info,@brand-info);
     }
-    .btn-info.hollow{
-        .generate-hollow-btn(@brand-info,@white,@brand-info);
+    .ph-button-info.ph-button-hollow{
+        .generate-hollow-button(@brand-info,@white,@brand-info);
     }
-    .btn-error{
-        .generate-diff-btn(@white,@brand-error,@brand-error);
+    .ph-button-error{
+        .generate-diff-button(@white,@brand-error,@brand-error);
     }
-    .btn-error.hollow{
-        .generate-hollow-btn(@brand-error,@white,@brand-error);
+    .ph-button-error.ph-button-hollow{
+        .generate-hollow-button(@brand-error,@white,@brand-error);
     }
-    .btn-warning{
-        .generate-diff-btn(@white,@brand-warning,@brand-warning);
+    .ph-button-warning{
+        .generate-diff-button(@white,@brand-warning,@brand-warning);
     }
-    .btn-warning.hollow{
-        .generate-hollow-btn(@brand-warning,@white,@brand-warning);
+    .ph-button-warning.ph-button-hollow{
+        .generate-hollow-button(@brand-warning,@white,@brand-warning);
     }
-    .btn-danger{
-        .generate-diff-btn(@white,@brand-danger,@brand-danger);
+    .ph-button-danger{
+        .generate-diff-button(@white,@brand-danger,@brand-danger);
     }
-    .btn-danger.hollow{
-        .generate-hollow-btn(@brand-danger,@white,@brand-danger);
+    .ph-button-danger.ph-button-hollow{
+        .generate-hollow-button(@brand-danger,@white,@brand-danger);
     }
-    .btn-gray{
-        .generate-diff-btn(@white,@brand-gray,@brand-gray);
+    .ph-button-gray{
+        .generate-diff-button(@white,@brand-gray,@brand-gray);
     }
-    .btn-gray.hollow{
-        .generate-hollow-btn(@gray-dark,@white,@brand-gray);
+    .ph-button-gray.ph-button-hollow{
+        .generate-hollow-button(@gray-dark,@white,@brand-gray);
     }
-    .btn-link {
+    .ph-button-link {
         padding-top: 5px;
         padding-bottom: 5px;
-        .generate-diff-btn(@brand-primary,transparent);
+        .generate-diff-button(@brand-primary,transparent);
         &:active,
         &.active {
             border-color: transparent;

@@ -1,4 +1,4 @@
-.table-view {
+.ph-table-view {
     padding-left: 0;
     margin: @table-margin;
     list-style: none;
@@ -6,7 +6,7 @@
     .border-top-bottom(@table-border);
 }
 
-.table-view-cell {
+.ph-table-view-cell {
     position: relative;
     padding: @table-cell-padding;
     overflow: hidden;
@@ -14,7 +14,7 @@
     &:last-child {
         border-bottom: 0;
     }
-    > a:not(.btn) {
+    > a:not(.ph-button) {
         position: relative;
         display: block;
         padding: inherit;
@@ -31,7 +31,7 @@
     }
 }
 
-.navigate-right {
+.ph-navigate-right {
     &:after {
         position: absolute;
         top: 50%;
@@ -44,25 +44,25 @@
         .transform(translateY(-50%) );
     }
 }
-.navigate-right:after{
+.ph-navigate-right:after{
     right: 10px;
     content: "\e623";
 }
 
-.table-view-cell,
-.table-view-cell > a {
-    > .btn,
-    > .badge,
-    > .label-switch {
+.ph-table-view-cell,
+.ph-table-view-cell > a {
+    > .ph-button,
+    > .ph-badge,
+    > .ph-switch {
         position: absolute;
         top: 50%;
         right: 15px;
         .transform(translateY(-50%) );
     }
-    .navigate-right {
-        > .btn,
-        > .badge,
-        > .label-switch {
+    .ph-navigate-right {
+        > .ph-button,
+        > .ph-badge,
+        > .ph-switch {
             right: 35px;
         }
     }

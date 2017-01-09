@@ -125,13 +125,14 @@
 .module-content{
     margin: 25px 0;
 }
-.module-content .btn,
-.module-content .label,
-.module-content .badge,
-.module-content .star{
+.module-content .ph-button,
+.module-content .ph-label,
+.module-content .ph-badge,
+.module-content .ph-star{
     margin: 0 8px 8px 0;
 }
 .module-code{
+    overflow-x: hidden;
     background-color: #f7f7f7;
 }
 .module pre[class*="language-"]{

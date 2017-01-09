@@ -9,7 +9,6 @@ select {
 
 select,
 textarea,
-.input,
 input[type="text"],
 input[type="search"],
 input[type="password"],
@@ -23,7 +22,8 @@ input[type="number"],
 input[type="email"],
 input[type="url"],
 input[type="tel"],
-input[type="color"] {
+input[type="color"],
+.ph-input {
     width: 100%;
     height: @input-default-height;
     -webkit-appearance: none;
@@ -60,12 +60,12 @@ textarea::-webkit-input-placeholder{
     color: @ui-radio-disabled;
 }
 
-.input-group{
+.ph-form-group{
     background: @white;
 }
 
-.input-group input,
-.input-group textarea,
+.ph-form-group input,
+.ph-form-group textarea,
 textarea.ph-textarea {
     margin-bottom: 0;
     background-color: transparent;
@@ -76,14 +76,14 @@ textarea.ph-textarea {
     .box-shadow(none);
 }
 
-.input-row {
+.ph-form-row {
     overflow: hidden;
     /*height: @input-default-height;*/
     border-bottom: @border-default;
     position: relative;
 }
 
-.input-row label:not(.multi-group) {
+.ph-form-row label:not(.ph-multi-group) {
     float: left;
     width: 35%;
     padding: 12px 15px;
@@ -91,18 +91,18 @@ textarea.ph-textarea {
     line-height: 1.1;
 }
 
-.input-row input,.input-row .input {
+.ph-form-row input,.ph-form-row .ph-input {
     float: right;
     width: 65%;
     padding-left: 0;
     margin-bottom: 0;
     border: 0;
 }
-.input-row .input{
+.ph-form-row .ph-input{
     line-height: @input-default-height;
 }
-.input-row{
-    .navigate-right{
+.ph-form-row{
+    .ph-navigate-right{
         display: block;
         height: 100%;
         input{
@@ -113,7 +113,7 @@ textarea.ph-textarea {
             background-color: #eee;
         }
     }
-    .multi-group{
+    .ph-multi-group{
         margin-top: 8px;
         display: inline-block;
     }
@@ -145,7 +145,7 @@ textarea.ph-textarea{
 }
 
 //checkbox
-.ui-checkbox,.ui-radio{
+.ph-checkbox,.ph-radio{
     position: relative;
     .get-size(@ui-checkbox-sm);
     margin-right: 5px;
@@ -210,8 +210,6 @@ textarea.ph-textarea{
         & + i{
             .border-radius(3px);
         }
-
-
         &:disabled {
             +i{
                 border-color:@ui-checkbox-disabled ;
@@ -222,11 +220,11 @@ textarea.ph-textarea{
 
 }
 
-.ui-checkbox,.ui-radio{
+.ph-checkbox,.ph-radio{
     .get-size(@ui-checkbox-lg);
 }
 
-.multi-group{
+.ph-multi-group{
     margin-right: 10px;
     height: 24px;
     display: inline-block;
@@ -234,7 +232,7 @@ textarea.ph-textarea{
         position: relative;
         top: -6px;
     }
-    .ui-radio,.ui-checkbox{
+    .ph-radio,.ph-checkbox{
         display: inline-block;
     }
 }
@@ -243,7 +241,7 @@ textarea.ph-textarea{
 //radio
 
 //switch
-.label-switch {
+.ph-switch {
     .ui-switch(#4bd863);
 }
 

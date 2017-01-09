@@ -20,21 +20,21 @@
 @brand-error:   #ff3b30;
 
 // grid
-.row{
+.ph-row{
     margin: 0;
 }
-.col{
+.ph-col{
     padding: 5px 0;
 }
 
-.table-view{
+.ph-table-view{
     margin: 0;
 }
 
 // form
 select,
 textarea,
-.input,
+.ph-input,
 input[type="text"],
 input[type="search"],
 input[type="password"],
@@ -59,40 +59,33 @@ input[type="color"] {
     }
 }
 
-//switch
-.label-switch {
-    input[type="checkbox"]:checked + .checkbox {
-        background: #4bd863;
-    }
-}
-
-.color-white{
+.ph-color-white{
     color: @white;
 }
-.color-primary{
+.ph-color-primary{
     color: @brand-primary;
 }
-.color-success{
+.ph-color-success{
     color: @brand-success;
 }
-.color-info{
+.ph-color-info{
     color: @brand-info;
 }
-.color-warning{
+.ph-color-warning{
     color: @brand-warning;
 }
-.color-danger{
+.ph-color-danger{
     color: @brand-danger;
 }
-.color-error{
+.ph-color-error{
     color: @brand-error;
 }
-.icon.color-gray{
+.ph-color-gray{
     color: @gray;
 }
 
-//btn
-.btn-skin();
+//button
+.button-skin();
 
 //label
 .label-skin();
@@ -101,7 +94,7 @@ input[type="color"] {
 .badges-skin();
 
 //checkbox radio
-.ui-checkbox,.ui-radio{
+.ph-checkbox,.ph-radio{
     i{
         border: 1px solid #bbb;
         background: #fff;
@@ -150,7 +143,7 @@ input[type="color"] {
 .dialog-skin();
 
 .ph-dialog-content{
-    .btn, .btn:active{
+    .ph-button, .ph-button:active{
         border-color: @white;
         border-top-color: @border-default-color;
         border-left-color: @border-default-color;
@@ -172,7 +165,7 @@ input[type="color"] {
 @slider-btn-disabled-border: 1px solid rgba(0,0,0,.1);
 .slider-skin();
 
-.slider-btn{
+.ph-slider-btn{
     box-shadow: 0 2px 5px rgba(0,0,0,.05);
 }
 
