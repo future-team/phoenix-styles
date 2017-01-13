@@ -36,6 +36,7 @@
 
 ## Repair
 
-`version 0.3.8` 样式参数化 <br/>
-`version 1.0.0` 增加phoenix-styles-grid.less兼容Android4.4以下布局方案 <br/>
+`version 1.1.1` 样式统一加ph前缀，配合Phoenix-ui@v1.1.1使用 <br/>
 `version 1.1.0` 增加IOS样式(ios-skin) <br/>
+`version 1.0.0` 增加phoenix-styles-grid.less兼容Android4.4以下布局方案 <br/>
+`version 0.3.8` 样式参数化 <br/>
