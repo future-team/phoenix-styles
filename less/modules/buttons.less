@@ -14,13 +14,16 @@
     outline: none;
     font-size: @btn-font-size;
     &:active,
-    &.active {
+    &.active,
+    &.ph-button-active {
         color: inherit;
         background-color: @btn-active-background;
     }
     &:disabled,
-    &.disabled {
+    &.disabled,
+    &.ph-button-disabled{
         opacity: .6;
+        pointer-events: none;
     }
     
     &.ph-button-md{
@@ -49,6 +52,6 @@ input[type="button"] {
     width: 100%;
 }
 
-.ph-button .icon {
+.ph-button .ph-icon {
     font-size: inherit;
 }

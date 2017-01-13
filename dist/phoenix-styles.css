@@ -553,11 +553,11 @@ h6 {
   }
 }
 /**晃动*/
-.ui-checkbox .icon,
-.ui-radio .icon {
+.ph-checkbox .ph-icon,
+.ph-radio .ph-icon {
   color: #ff6633;
 }
-.label-switch input[type="checkbox"]:checked + .checkbox {
+.ph-switch input[type="checkbox"]:checked + .checkbox {
   background: #4bd863;
 }
 .ph-color-white {
@@ -590,7 +590,8 @@ h6 {
   border: 1px solid #ff6633;
 }
 .ph-button-primary:active,
-.ph-button-primary.active {
+.ph-button-primary.active,
+.ph-button-primary.ph-button-active {
   color: #fff;
   background-color: #ff4000;
   border: 1px solid #ff4000;
@@ -601,13 +602,15 @@ h6 {
   border: 1px solid #ff6633;
 }
 .ph-button-primary.ph-button-hollow:active,
-.ph-button-primary.ph-button-hollow.active {
+.ph-button-primary.ph-button-hollow.active,
+.ph-button-primary.ph-button-hollow.ph-button-active {
   color: #ff6633;
   background-color: #e6e6e6;
   border: 1px solid #ff4000;
 }
 .ph-button-primary.ph-button-hollow:active,
-.ph-button-primary.ph-button-hollow.active {
+.ph-button-primary.ph-button-hollow.active,
+.ph-button-primary.ph-button-hollow.ph-button-active {
   background: rgba(226, 226, 226, 0.4);
 }
 .ph-button-success {
@@ -616,7 +619,8 @@ h6 {
   border: 1px solid #5cb85c;
 }
 .ph-button-success:active,
-.ph-button-success.active {
+.ph-button-success.active,
+.ph-button-success.ph-button-active {
   color: #fff;
   background-color: #449d44;
   border: 1px solid #449d44;
@@ -627,13 +631,15 @@ h6 {
   border: 1px solid #5cb85c;
 }
 .ph-button-success.ph-button-hollow:active,
-.ph-button-success.ph-button-hollow.active {
+.ph-button-success.ph-button-hollow.active,
+.ph-button-success.ph-button-hollow.ph-button-active {
   color: #5cb85c;
   background-color: #e6e6e6;
   border: 1px solid #449d44;
 }
 .ph-button-success.ph-button-hollow:active,
-.ph-button-success.ph-button-hollow.active {
+.ph-button-success.ph-button-hollow.active,
+.ph-button-success.ph-button-hollow.ph-button-active {
   background: rgba(226, 226, 226, 0.4);
 }
 .ph-button-info {
@@ -642,7 +648,8 @@ h6 {
   border: 1px solid #5bc0de;
 }
 .ph-button-info:active,
-.ph-button-info.active {
+.ph-button-info.active,
+.ph-button-info.ph-button-active {
   color: #fff;
   background-color: #31b0d5;
   border: 1px solid #31b0d5;
@@ -653,13 +660,15 @@ h6 {
   border: 1px solid #5bc0de;
 }
 .ph-button-info.ph-button-hollow:active,
-.ph-button-info.ph-button-hollow.active {
+.ph-button-info.ph-button-hollow.active,
+.ph-button-info.ph-button-hollow.ph-button-active {
   color: #5bc0de;
   background-color: #e6e6e6;
   border: 1px solid #31b0d5;
 }
 .ph-button-info.ph-button-hollow:active,
-.ph-button-info.ph-button-hollow.active {
+.ph-button-info.ph-button-hollow.active,
+.ph-button-info.ph-button-hollow.ph-button-active {
   background: rgba(226, 226, 226, 0.4);
 }
 .ph-button-error {
@@ -668,7 +677,8 @@ h6 {
   border: 1px solid #fc4e44;
 }
 .ph-button-error:active,
-.ph-button-error.active {
+.ph-button-error.active,
+.ph-button-error.ph-button-active {
   color: #fff;
   background-color: #fb1e12;
   border: 1px solid #fb1e12;
@@ -679,13 +689,15 @@ h6 {
   border: 1px solid #fc4e44;
 }
 .ph-button-error.ph-button-hollow:active,
-.ph-button-error.ph-button-hollow.active {
+.ph-button-error.ph-button-hollow.active,
+.ph-button-error.ph-button-hollow.ph-button-active {
   color: #fc4e44;
   background-color: #e6e6e6;
   border: 1px solid #fb1e12;
 }
 .ph-button-error.ph-button-hollow:active,
-.ph-button-error.ph-button-hollow.active {
+.ph-button-error.ph-button-hollow.active,
+.ph-button-error.ph-button-hollow.ph-button-active {
   background: rgba(226, 226, 226, 0.4);
 }
 .ph-button-warning {
@@ -694,7 +706,8 @@ h6 {
   border: 1px solid #e0690c;
 }
 .ph-button-warning:active,
-.ph-button-warning.active {
+.ph-button-warning.active,
+.ph-button-warning.ph-button-active {
   color: #fff;
   background-color: #b05209;
   border: 1px solid #b05209;
@@ -705,13 +718,15 @@ h6 {
   border: 1px solid #e0690c;
 }
 .ph-button-warning.ph-button-hollow:active,
-.ph-button-warning.ph-button-hollow.active {
+.ph-button-warning.ph-button-hollow.active,
+.ph-button-warning.ph-button-hollow.ph-button-active {
   color: #e0690c;
   background-color: #e6e6e6;
   border: 1px solid #b05209;
 }
 .ph-button-warning.ph-button-hollow:active,
-.ph-button-warning.ph-button-hollow.active {
+.ph-button-warning.ph-button-hollow.active,
+.ph-button-warning.ph-button-hollow.ph-button-active {
   background: rgba(226, 226, 226, 0.4);
 }
 .ph-button-danger {
@@ -720,7 +735,8 @@ h6 {
   border: 1px solid #d9534f;
 }
 .ph-button-danger:active,
-.ph-button-danger.active {
+.ph-button-danger.active,
+.ph-button-danger.ph-button-active {
   color: #fff;
   background-color: #c9302c;
   border: 1px solid #c9302c;
@@ -731,13 +747,15 @@ h6 {
   border: 1px solid #d9534f;
 }
 .ph-button-danger.ph-button-hollow:active,
-.ph-button-danger.ph-button-hollow.active {
+.ph-button-danger.ph-button-hollow.active,
+.ph-button-danger.ph-button-hollow.ph-button-active {
   color: #d9534f;
   background-color: #e6e6e6;
   border: 1px solid #c9302c;
 }
 .ph-button-danger.ph-button-hollow:active,
-.ph-button-danger.ph-button-hollow.active {
+.ph-button-danger.ph-button-hollow.active,
+.ph-button-danger.ph-button-hollow.ph-button-active {
   background: rgba(226, 226, 226, 0.4);
 }
 .ph-button-gray {
@@ -746,7 +764,8 @@ h6 {
   border: 1px solid #ccc;
 }
 .ph-button-gray:active,
-.ph-button-gray.active {
+.ph-button-gray.active,
+.ph-button-gray.ph-button-active {
   color: #fff;
   background-color: #b3b3b3;
   border: 1px solid #b3b3b3;
@@ -757,13 +776,15 @@ h6 {
   border: 1px solid #ccc;
 }
 .ph-button-gray.ph-button-hollow:active,
-.ph-button-gray.ph-button-hollow.active {
+.ph-button-gray.ph-button-hollow.active,
+.ph-button-gray.ph-button-hollow.ph-button-active {
   color: #333;
   background-color: #e6e6e6;
   border: 1px solid #b3b3b3;
 }
 .ph-button-gray.ph-button-hollow:active,
-.ph-button-gray.ph-button-hollow.active {
+.ph-button-gray.ph-button-hollow.active,
+.ph-button-gray.ph-button-hollow.ph-button-active {
   background: rgba(226, 226, 226, 0.4);
 }
 .ph-button-link {
@@ -774,13 +795,15 @@ h6 {
   border: 1px solid transparent;
 }
 .ph-button-link:active,
-.ph-button-link.active {
+.ph-button-link.active,
+.ph-button-link.ph-button-active {
   color: #ff6633;
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid rgba(0, 0, 0, 0);
 }
 .ph-button-link:active,
-.ph-button-link.active {
+.ph-button-link.active,
+.ph-button-link.ph-button-active {
   border-color: transparent;
   background-color: transparent;
 }
@@ -1529,13 +1552,16 @@ textarea.ph-textarea {
   font-size: 12px;
 }
 .ph-button:active,
-.ph-button.active {
+.ph-button.active,
+.ph-button.ph-button-active {
   color: inherit;
   background-color: #ccc;
 }
 .ph-button:disabled,
-.ph-button.disabled {
+.ph-button.disabled,
+.ph-button.ph-button-disabled {
   opacity: .6;
+  pointer-events: none;
 }
 .ph-button.ph-button-md {
   padding: 8px 8px;
@@ -1551,7 +1577,8 @@ textarea.ph-textarea {
   border: 1px solid #ff6633;
 }
 .ph-button-primary:active,
-.ph-button-primary.active {
+.ph-button-primary.active,
+.ph-button-primary.ph-button-active {
   color: #fff;
   background-color: #ff4000;
   border: 1px solid #ff4000;
@@ -1562,13 +1589,15 @@ textarea.ph-textarea {
   border: 1px solid #ff6633;
 }
 .ph-button-primary.ph-button-hollow:active,
-.ph-button-primary.ph-button-hollow.active {
+.ph-button-primary.ph-button-hollow.active,
+.ph-button-primary.ph-button-hollow.ph-button-active {
   color: #ff6633;
   background-color: #e6e6e6;
   border: 1px solid #ff4000;
 }
 .ph-button-primary.ph-button-hollow:active,
-.ph-button-primary.ph-button-hollow.active {
+.ph-button-primary.ph-button-hollow.active,
+.ph-button-primary.ph-button-hollow.ph-button-active {
   background: rgba(226, 226, 226, 0.4);
 }
 .ph-button-success {
@@ -1577,7 +1606,8 @@ textarea.ph-textarea {
   border: 1px solid #5cb85c;
 }
 .ph-button-success:active,
-.ph-button-success.active {
+.ph-button-success.active,
+.ph-button-success.ph-button-active {
   color: #fff;
   background-color: #449d44;
   border: 1px solid #449d44;
@@ -1588,13 +1618,15 @@ textarea.ph-textarea {
   border: 1px solid #5cb85c;
 }
 .ph-button-success.ph-button-hollow:active,
-.ph-button-success.ph-button-hollow.active {
+.ph-button-success.ph-button-hollow.active,
+.ph-button-success.ph-button-hollow.ph-button-active {
   color: #5cb85c;
   background-color: #e6e6e6;
   border: 1px solid #449d44;
 }
 .ph-button-success.ph-button-hollow:active,
-.ph-button-success.ph-button-hollow.active {
+.ph-button-success.ph-button-hollow.active,
+.ph-button-success.ph-button-hollow.ph-button-active {
   background: rgba(226, 226, 226, 0.4);
 }
 .ph-button-info {
@@ -1603,7 +1635,8 @@ textarea.ph-textarea {
   border: 1px solid #5bc0de;
 }
 .ph-button-info:active,
-.ph-button-info.active {
+.ph-button-info.active,
+.ph-button-info.ph-button-active {
   color: #fff;
   background-color: #31b0d5;
   border: 1px solid #31b0d5;
@@ -1614,13 +1647,15 @@ textarea.ph-textarea {
   border: 1px solid #5bc0de;
 }
 .ph-button-info.ph-button-hollow:active,
-.ph-button-info.ph-button-hollow.active {
+.ph-button-info.ph-button-hollow.active,
+.ph-button-info.ph-button-hollow.ph-button-active {
   color: #5bc0de;
   background-color: #e6e6e6;
   border: 1px solid #31b0d5;
 }
 .ph-button-info.ph-button-hollow:active,
-.ph-button-info.ph-button-hollow.active {
+.ph-button-info.ph-button-hollow.active,
+.ph-button-info.ph-button-hollow.ph-button-active {
   background: rgba(226, 226, 226, 0.4);
 }
 .ph-button-error {
@@ -1629,7 +1664,8 @@ textarea.ph-textarea {
   border: 1px solid #fc4e44;
 }
 .ph-button-error:active,
-.ph-button-error.active {
+.ph-button-error.active,
+.ph-button-error.ph-button-active {
   color: #fff;
   background-color: #fb1e12;
   border: 1px solid #fb1e12;
@@ -1640,13 +1676,15 @@ textarea.ph-textarea {
   border: 1px solid #fc4e44;
 }
 .ph-button-error.ph-button-hollow:active,
-.ph-button-error.ph-button-hollow.active {
+.ph-button-error.ph-button-hollow.active,
+.ph-button-error.ph-button-hollow.ph-button-active {
   color: #fc4e44;
   background-color: #e6e6e6;
   border: 1px solid #fb1e12;
 }
 .ph-button-error.ph-button-hollow:active,
-.ph-button-error.ph-button-hollow.active {
+.ph-button-error.ph-button-hollow.active,
+.ph-button-error.ph-button-hollow.ph-button-active {
   background: rgba(226, 226, 226, 0.4);
 }
 .ph-button-warning {
@@ -1655,7 +1693,8 @@ textarea.ph-textarea {
   border: 1px solid #e0690c;
 }
 .ph-button-warning:active,
-.ph-button-warning.active {
+.ph-button-warning.active,
+.ph-button-warning.ph-button-active {
   color: #fff;
   background-color: #b05209;
   border: 1px solid #b05209;
@@ -1666,13 +1705,15 @@ textarea.ph-textarea {
   border: 1px solid #e0690c;
 }
 .ph-button-warning.ph-button-hollow:active,
-.ph-button-warning.ph-button-hollow.active {
+.ph-button-warning.ph-button-hollow.active,
+.ph-button-warning.ph-button-hollow.ph-button-active {
   color: #e0690c;
   background-color: #e6e6e6;
   border: 1px solid #b05209;
 }
 .ph-button-warning.ph-button-hollow:active,
-.ph-button-warning.ph-button-hollow.active {
+.ph-button-warning.ph-button-hollow.active,
+.ph-button-warning.ph-button-hollow.ph-button-active {
   background: rgba(226, 226, 226, 0.4);
 }
 .ph-button-danger {
@@ -1681,7 +1722,8 @@ textarea.ph-textarea {
   border: 1px solid #d9534f;
 }
 .ph-button-danger:active,
-.ph-button-danger.active {
+.ph-button-danger.active,
+.ph-button-danger.ph-button-active {
   color: #fff;
   background-color: #c9302c;
   border: 1px solid #c9302c;
@@ -1692,13 +1734,15 @@ textarea.ph-textarea {
   border: 1px solid #d9534f;
 }
 .ph-button-danger.ph-button-hollow:active,
-.ph-button-danger.ph-button-hollow.active {
+.ph-button-danger.ph-button-hollow.active,
+.ph-button-danger.ph-button-hollow.ph-button-active {
   color: #d9534f;
   background-color: #e6e6e6;
   border: 1px solid #c9302c;
 }
 .ph-button-danger.ph-button-hollow:active,
-.ph-button-danger.ph-button-hollow.active {
+.ph-button-danger.ph-button-hollow.active,
+.ph-button-danger.ph-button-hollow.ph-button-active {
   background: rgba(226, 226, 226, 0.4);
 }
 .ph-button-gray {
@@ -1707,7 +1751,8 @@ textarea.ph-textarea {
   border: 1px solid #ccc;
 }
 .ph-button-gray:active,
-.ph-button-gray.active {
+.ph-button-gray.active,
+.ph-button-gray.ph-button-active {
   color: #fff;
   background-color: #b3b3b3;
   border: 1px solid #b3b3b3;
@@ -1718,13 +1763,15 @@ textarea.ph-textarea {
   border: 1px solid #ccc;
 }
 .ph-button-gray.ph-button-hollow:active,
-.ph-button-gray.ph-button-hollow.active {
+.ph-button-gray.ph-button-hollow.active,
+.ph-button-gray.ph-button-hollow.ph-button-active {
   color: #333;
   background-color: #e6e6e6;
   border: 1px solid #b3b3b3;
 }
 .ph-button-gray.ph-button-hollow:active,
-.ph-button-gray.ph-button-hollow.active {
+.ph-button-gray.ph-button-hollow.active,
+.ph-button-gray.ph-button-hollow.ph-button-active {
   background: rgba(226, 226, 226, 0.4);
 }
 .ph-button-link {
@@ -1735,13 +1782,15 @@ textarea.ph-textarea {
   border: 1px solid transparent;
 }
 .ph-button-link:active,
-.ph-button-link.active {
+.ph-button-link.active,
+.ph-button-link.ph-button-active {
   color: #ff6633;
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid rgba(0, 0, 0, 0);
 }
 .ph-button-link:active,
-.ph-button-link.active {
+.ph-button-link.active,
+.ph-button-link.ph-button-active {
   border-color: transparent;
   background-color: transparent;
 }
@@ -1757,7 +1806,7 @@ input[type="reset"],
 input[type="button"] {
   width: 100%;
 }
-.ph-button .icon {
+.ph-button .ph-icon {
   font-size: inherit;
 }
 .ph-button-group {
@@ -1780,6 +1829,9 @@ input[type="button"] {
 .ph-button-group .ph-button:last-child:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
+}
+.ph-button-group-tacked {
+  width: 100%;
 }
 .ph-button-group-tacked .ph-button {
   float: none;
@@ -2585,10 +2637,12 @@ input[type="button"] {
     border: none;
   }
 }
-.ph-accordion-header .iconfont {
+.ph-accordion-header .ph-iconfont,
+.ph-accordion-header .ph-icon {
   color: #bbb;
 }
-.ph-accordion-header .iconfont.active {
+.ph-accordion-header .ph-iconfont.active,
+.ph-accordion-header .ph-icon.active {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
