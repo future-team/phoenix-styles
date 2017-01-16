@@ -11,9 +11,9 @@
 
 ```
     // Global
-    <link rel="stylesheet" href="../dist/phoenix-styles.min.css" />
+    <link rel="stylesheet" href="http://future-team.github.io/phoenix-styles/dist/phoenix-styles.min.css" />
     // add IOS skin
-    <link rel="stylesheet" href="../dist/skin-ios.min.css" />
+    <link rel="stylesheet" href="http://future-team.github.io/phoenix-styles/dist/skin-ios.min.css" />
 
     // ES6
     import 'phoenix-styles/less/public.less';
@@ -24,7 +24,7 @@
 
 ## Documentation
 
-[http://uedfamily.com/documents/phoenix-styles/doc/](http://uedfamily.com/documents/phoenix-styles/doc/)
+[http://future-team.github.io/phoenix-styles/example/index.html](http://future-team.github.io/phoenix-styles/example/index.html)
 
 ## Command
 
