@@ -866,11 +866,11 @@ h6 {
 .ph-badge-warning.ph-badge-inverted {
   color: #e0690c;
 }
-.ph-badge--danger {
+.ph-badge-danger {
   color: #fff;
   background-color: #d9534f;
 }
-.ph-badge--danger.ph-badge-inverted {
+.ph-badge-danger.ph-badge-inverted {
   color: #d9534f;
 }
 .ph-checkbox i,
@@ -1949,11 +1949,11 @@ input[type="button"] {
 .ph-badge-warning.ph-badge-inverted {
   color: #e0690c;
 }
-.ph-badge--danger {
+.ph-badge-danger {
   color: #fff;
   background-color: #d9534f;
 }
-.ph-badge--danger.ph-badge-inverted {
+.ph-badge-danger.ph-badge-inverted {
   color: #d9534f;
 }
 .ph-table-view {
@@ -2149,6 +2149,7 @@ input[type="button"] {
   -webkit-transition: transform 0.2s;
   -moz-transition: transform 0.2s;
   transition: transform 0.2s;
+  background-color: #fff;
 }
 .ph-swipe-btns {
   position: absolute;
@@ -2276,6 +2277,9 @@ input[type="button"] {
   transform: translateY(-50%);
   z-index: 100;
 }
+.ph-dialog-content {
+  position: relative;
+}
 .ph-dialog-footer {
   width: 100%;
   display: -webkit-box;
@@ -2297,6 +2301,13 @@ input[type="button"] {
   background-color: #fff;
   border-radius: 0.5rem;
   text-align: center;
+}
+.ph-dialog-content .ph-dialog-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 125%;
+  color: #bbb;
 }
 .ph-dialog-content .ph-dialog-title {
   line-height: 1;

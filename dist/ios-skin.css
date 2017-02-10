@@ -361,11 +361,11 @@ input[type="color"] {
 .ph-badge-warning.ph-badge-inverted {
   color: #e0690c;
 }
-.ph-badge--danger {
+.ph-badge-danger {
   color: #fff;
   background-color: #d9534f;
 }
-.ph-badge--danger.ph-badge-inverted {
+.ph-badge-danger.ph-badge-inverted {
   color: #d9534f;
 }
 .ph-checkbox i,
@@ -434,6 +434,13 @@ input[type="color"] {
   background-color: #fff;
   border-radius: 3px;
   text-align: center;
+}
+.ph-dialog-content .ph-dialog-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 125%;
+  color: #bbb;
 }
 .ph-dialog-content .ph-dialog-title {
   line-height: 1;

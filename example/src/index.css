@@ -11,7 +11,7 @@
 .header{
     margin-bottom: 15px;
     background-color: #ff6633;
-}
+} 
 .logo, .nav-list, .nav-list>li{
     float: left;
 }
