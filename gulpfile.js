@@ -32,7 +32,7 @@ gulp.task('less',['clean'], function(){
 });
 
 gulp.task('fonts',['clean'], function(){
-    return gulp.src('./less/fonts/*')
+    return gulp.src('./less/gfs-icons/iconfont/*')
         .pipe(gulp.dest(dest+'/fonts'));
 
 });
