@@ -31,12 +31,13 @@ var lessFunc = function(){
 }
 
 gulp.task('clean', function () {
-    return gulp.src(['./dist/*', './less/iconfont.less'], {read: false})
+    return gulp.src(['./dist/*', './less/iconfont/*','./less/iconfont.less'], {read: false})
         .pipe(clean()).on('error', error );
 });
 
 gulp.task('fonts', ['clean'],function(){ // 将字体文件拷贝到dist文件夹下
     copy('./node_modules/gfs-icons/iconfont/*', dest+'/iconfont');
+    copy('./node_modules/gfs-icons/iconfont/*', './less/iconfont');
     copy('./node_modules/gfs-icons/*.less', './less');
 });
 
