@@ -1,0 +1,48 @@
+// menu skin
+.menu-skin(){
+	// header
+	.ph-menu-header{
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+		height: @menu-header-height;
+		padding-right: @menu-header-padding;
+		background-color: @brand-primary;
+		line-height: @menu-header-height;
+		color: @white;
+		.gfs-icon{
+			padding: @menu-icon-padding;
+			font-size: @menu-icon-size; 
+			font-weight: 800;
+		}
+	}
+	.ph-menu-header-left>*{
+		float: left;
+	}
+	.ph-menu-header-right{
+		padding-right: 0;
+		padding-left: @menu-header-padding;
+		.gfs-icon{
+			float: right;
+		}
+		.ph-menu-header-content{
+			float: left;
+		}		
+	}
+
+	// body
+	.ph-menu-body{
+		padding: @menu-body-padding;
+		background-color: @white; 
+	}
+
+	// close button
+	.ph-menu-close-button{
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding: @menu-close-button-padding;
+		font-size: @menu-close-button-size;
+		color: @menu-close-button-color;
+	}
+}

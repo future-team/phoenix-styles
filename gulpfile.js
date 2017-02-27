@@ -1,13 +1,13 @@
 var gulp = require('gulp'),
-    less = require('gulp-less'),
+    webpack = require('webpack'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
+    gutil = require('gulp-util'),
     minifycss = require('gulp-minify-css'),
-    plumber = require('gulp-plumber'),
-    clean = require('gulp-clean');
+    clean = require('gulp-clean'),
+    webpackConfig = require('./webpack.config.js');
 
-var cssName = require('./package.json').name,
-    dest = "./dist/";
+var dest = "./dist/";
 
 var error = function(e){
   console.error(e);
@@ -17,35 +17,20 @@ var error = function(e){
   //process.exit(1);
 };
 
-var copy = function(source, destination){
-  return gulp.src(source)
-        .pipe(gulp.dest(destination));
-}
-
-var lessFunc = function(){
-  return gulp.src(['./less/'+cssName+'.less','./less/ios-skin.less'])
-      .pipe(less({ compress: false }))
-      .pipe(plumber())
-      //.on('error', error )
-      .pipe(gulp.dest(dest));
-}
-
 gulp.task('clean', function () {
-    return gulp.src(['./dist/*', './less/iconfont/*','./less/iconfont.less'], {read: false})
+    return gulp.src(['./dist/*'], {read: false})
         .pipe(clean()).on('error', error );
 });
 
-gulp.task('fonts', ['clean'],function(){ // 将字体文件拷贝到dist文件夹下
-    copy('./node_modules/gfs-icons/iconfont/*', dest+'/iconfont');
-    copy('./node_modules/gfs-icons/iconfont/*', './less/iconfont');
-    copy('./node_modules/gfs-icons/*.less', './less');
+gulp.task('webpack', ['clean'], function (done) {
+    webpack(webpackConfig).run(function (err, stats) {
+        if (err) throw new gutil.PluginError("webpack", err);
+        gutil.log("[webpack]", stats.toString({}));
+        done();
+    });
 });
 
-gulp.task('less', ['fonts'], lessFunc);
-
-gulp.task('lessc', lessFunc);
-
-gulp.task('min-styles', ['less'], function() {
+gulp.task('min-styles', ['webpack'], function() {
   gulp.src(['./dist/*.css'])
       // .pipe(concat(cssName+'.css') // 合并文件为all.css
       .pipe(gulp.dest(dest)) // 输出all.css文件
@@ -60,7 +45,7 @@ gulp.task('min-styles', ['less'], function() {
         .pipe(gulp.dest(dest));
 }); */
 
-gulp.task('default', ['fonts','min-styles']);
-gulp.task('dev',['fonts','less'], function() {
-  gulp.watch('./less/**/*.less', ['lessc']);
+gulp.task('default', ['min-styles']);
+gulp.task('dev',['webpack'], function() {
+  gulp.watch('./less/**/*.less', ['webpack']);
 });
