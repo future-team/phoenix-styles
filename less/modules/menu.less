@@ -1,0 +1,41 @@
+// 占位元素
+.ph-menu-placeholder{
+	position: relative;
+	z-index: 99;
+	.ph-menu-ceiling{
+		position: fixed;
+		width: 100%;
+	}
+}
+
+// body
+.ph-menu-body{
+	overflow: hidden;
+	position: fixed;
+	z-index: 2;
+	height: 100%;
+}
+.ph-menu-body-top{
+	position: absolute;
+	z-index: 0;
+	width: 100%;
+	height: auto;
+}
+.ph-menu-body-left,
+.ph-menu-body-left-full{
+	left: 0;
+}
+.ph-menu-body-right,
+.ph-menu-body-right-full{
+	right: 0;
+}
+.ph-menu-body-left-full, 
+.ph-menu-body-right-full,
+.ph-menu-body-full-screen{
+	top: 0;
+}
+.ph-menu-body-full-screen{
+	width: 100%;
+}
+
+.menu-skin();

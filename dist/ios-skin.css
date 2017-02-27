@@ -688,3 +688,43 @@ input[type="color"] {
 .ph-slider-btn {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
+.ph-menu-header {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  height: 2.75rem;
+  padding-right: 0.9375rem;
+  background-color: #007aff;
+  line-height: 2.75rem;
+  color: #fff;
+}
+.ph-menu-header .gfs-icon {
+  padding: 0 0.9375rem;
+  font-size: 24px;
+  font-weight: 800;
+}
+.ph-menu-header-left > * {
+  float: left;
+}
+.ph-menu-header-right {
+  padding-right: 0;
+  padding-left: 0.9375rem;
+}
+.ph-menu-header-right .gfs-icon {
+  float: right;
+}
+.ph-menu-header-right .ph-menu-header-content {
+  float: left;
+}
+.ph-menu-body {
+  padding: 0;
+  background-color: #fff;
+}
+.ph-menu-close-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.5rem;
+  font-size: 125%;
+  color: #007aff;
+}
