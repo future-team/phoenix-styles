@@ -18,8 +18,8 @@
     // ES6
     import 'phoenix-styles/less/public.less';
 
-    // Less
-    @import 'phoenix-styles/less/public.less';
+    // Less(packaging by less-loader)
+    @import '~phoenix-styles/less/public.less';
 ```
 
 ## Documentation
@@ -36,6 +36,7 @@
 
 ## Repair
 
+`version 1.4.1` 新增menu组件样式 <br/>
 `version 1.1.3` 引入gfs-icons <br/>
 `version 1.1.1` 样式统一加ph前缀，配合Phoenix-ui@v1.1.1使用 <br/>
 `version 1.1.0` 增加IOS样式(ios-skin) <br/>
