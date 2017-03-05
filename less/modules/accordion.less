@@ -9,8 +9,10 @@
     .border-bottom(@border-color);
     font-size: @font-size-base;
     color: @accordion-header-color;
-    .ph-iconfont,
-    .ph-icon{
+    .gfs-icon{
+        float: right;
+        line-height: @accordion-icon-line-height;
+        font-size: @accordion-icon-size;
         color: @arrow-color;
         &.active{
             .transform(rotate(180deg));

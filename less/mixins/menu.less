@@ -35,6 +35,10 @@
 		padding: @menu-body-padding;
 		background-color: @white; 
 	}
+	.ph-menu-body-left,
+	.ph-menu-body-right{
+		height: calc(~"100% - "@menu-header-height);
+	}
 
 	// close button
 	.ph-menu-close-button{
@@ -44,5 +48,29 @@
 		padding: @menu-close-button-padding;
 		font-size: @menu-close-button-size;
 		color: @menu-close-button-color;
+	}
+
+	// menu nav
+	.ph-menu-nav{
+		padding: @menu-list-padding;
+		margin: @menu-list-margin;
+		.ph-menu-item{
+			a{
+				display: block;
+				padding: @menu-item-padding;
+				.border-bottom(@popup-list-border);
+				font-size: @menu-item-font-size;
+				color: @menu-item-color;
+			}
+			.gfs-icon{
+				margin: @menu-item-icon-margin;
+			}
+		}
+		.ph-menu-item.active{
+			a{
+				.border-bottom(@popup-list-active-border);
+				color: @menu-item-active-color;
+			}
+		}
 	}
 }
