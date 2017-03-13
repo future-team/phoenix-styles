@@ -453,23 +453,141 @@ input[type="color"] {
   font-size: 87.5%;
   color: #000;
 }
-.ph-dialog-content .ph-button {
-  width: auto;
+.ph-dialog-content .ph-button:not(.ph-button-block) {
   margin-left: 0;
 }
-.ph-dialog-content .ph-button:first-child {
+.ph-dialog-content .ph-button:not(.ph-button-block):first-child {
   margin-left: 0;
 }
-.ph-dialog-content .ph-button,
-.ph-dialog-content .ph-button:active {
+.ph-dialog-footer .ph-button-primary {
+  color: #007aff;
+  background-color: #fff;
+  border: 1px solid #007aff;
+}
+.ph-dialog-footer .ph-button-primary:active,
+.ph-dialog-footer .ph-button-primary.active,
+.ph-dialog-footer .ph-button-primary.ph-button-active {
+  color: #007aff;
+  background-color: #e6e6e6;
+  border: 1px solid #0062cc;
+}
+.ph-dialog-footer .ph-button-primary:active,
+.ph-dialog-footer .ph-button-primary.active,
+.ph-dialog-footer .ph-button-primary.ph-button-active {
+  background: rgba(226, 226, 226, 0.4);
+}
+.ph-dialog-footer .ph-button-success {
+  color: #4cd964;
+  background-color: #fff;
+  border: 1px solid #4cd964;
+}
+.ph-dialog-footer .ph-button-success:active,
+.ph-dialog-footer .ph-button-success.active,
+.ph-dialog-footer .ph-button-success.ph-button-active {
+  color: #4cd964;
+  background-color: #e6e6e6;
+  border: 1px solid #2ac845;
+}
+.ph-dialog-footer .ph-button-success:active,
+.ph-dialog-footer .ph-button-success.active,
+.ph-dialog-footer .ph-button-success.ph-button-active {
+  background: rgba(226, 226, 226, 0.4);
+}
+.ph-dialog-footer .ph-button-info {
+  color: #0ba4db;
+  background-color: #fff;
+  border: 1px solid #0ba4db;
+}
+.ph-dialog-footer .ph-button-info:active,
+.ph-dialog-footer .ph-button-info.active,
+.ph-dialog-footer .ph-button-info.ph-button-active {
+  color: #0ba4db;
+  background-color: #e6e6e6;
+  border: 1px solid #0980aa;
+}
+.ph-dialog-footer .ph-button-info:active,
+.ph-dialog-footer .ph-button-info.active,
+.ph-dialog-footer .ph-button-info.ph-button-active {
+  background: rgba(226, 226, 226, 0.4);
+}
+.ph-dialog-footer .ph-button-error {
+  color: #ff3b30;
+  background-color: #fff;
+  border: 1px solid #ff3b30;
+}
+.ph-dialog-footer .ph-button-error:active,
+.ph-dialog-footer .ph-button-error.active,
+.ph-dialog-footer .ph-button-error.ph-button-active {
+  color: #ff3b30;
+  background-color: #e6e6e6;
+  border: 1px solid #fc0d00;
+}
+.ph-dialog-footer .ph-button-error:active,
+.ph-dialog-footer .ph-button-error.active,
+.ph-dialog-footer .ph-button-error.ph-button-active {
+  background: rgba(226, 226, 226, 0.4);
+}
+.ph-dialog-footer .ph-button-warning {
+  color: #e0690c;
+  background-color: #fff;
+  border: 1px solid #e0690c;
+}
+.ph-dialog-footer .ph-button-warning:active,
+.ph-dialog-footer .ph-button-warning.active,
+.ph-dialog-footer .ph-button-warning.ph-button-active {
+  color: #e0690c;
+  background-color: #e6e6e6;
+  border: 1px solid #b05209;
+}
+.ph-dialog-footer .ph-button-warning:active,
+.ph-dialog-footer .ph-button-warning.active,
+.ph-dialog-footer .ph-button-warning.ph-button-active {
+  background: rgba(226, 226, 226, 0.4);
+}
+.ph-dialog-footer .ph-button-danger {
+  color: #d9534f;
+  background-color: #fff;
+  border: 1px solid #d9534f;
+}
+.ph-dialog-footer .ph-button-danger:active,
+.ph-dialog-footer .ph-button-danger.active,
+.ph-dialog-footer .ph-button-danger.ph-button-active {
+  color: #d9534f;
+  background-color: #e6e6e6;
+  border: 1px solid #c9302c;
+}
+.ph-dialog-footer .ph-button-danger:active,
+.ph-dialog-footer .ph-button-danger.active,
+.ph-dialog-footer .ph-button-danger.ph-button-active {
+  background: rgba(226, 226, 226, 0.4);
+}
+.ph-dialog-footer .ph-button-gray {
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.ph-dialog-footer .ph-button-gray:active,
+.ph-dialog-footer .ph-button-gray.active,
+.ph-dialog-footer .ph-button-gray.ph-button-active {
+  color: #333;
+  background-color: #e6e6e6;
+  border: 1px solid #b3b3b3;
+}
+.ph-dialog-footer .ph-button-gray:active,
+.ph-dialog-footer .ph-button-gray.active,
+.ph-dialog-footer .ph-button-gray.ph-button-active {
+  background: rgba(226, 226, 226, 0.4);
+}
+.ph-dialog-footer .ph-button,
+.ph-dialog-footer .ph-button:active {
   border-color: #fff;
   border-top-color: #ddd;
   border-left-color: #ddd;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
-.ph-dialog-content .ph-button:first-child,
-.ph-dialog-content .ph-button:active:first-child {
+.ph-dialog-footer .ph-button:first-child,
+.ph-dialog-footer .ph-button:active:first-child {
   border-left-color: #fff;
 }
 .ph-popup-list {

@@ -12,5 +12,31 @@
 	padding: @toast-padding;
 	background-color: @toast-background;
 	border-radius: @toast-radius;
-	color: @toast-color;
+	font-size: @font-size-small;
+	color: @white;
+}
+
+.ph-toast-content:before{
+	display: block;
+	margin: @toast-icon-margin;
+	font-family:"iconfont" !important;
+	font-size:@toast-icon-font-size;
+	color: @white;
+	-webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ph-toast-success .ph-toast-content:before{
+	content: "\e65a";
+}
+
+.ph-toast-fail .ph-toast-content:before{
+	content: "\e659";
+}
+
+.ph-toast-loading .ph-toast-content:before{
+	content: "\e64d";
+	.animation(rotate 1s linear infinite);
+	.transform-origin(center 47%);
 }
