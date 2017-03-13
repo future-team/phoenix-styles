@@ -1148,6 +1148,54 @@ h6 {
 .icon-tip:before {
   content: "\E64A";
 }
+.icon-arrow-up:before {
+  content: "\E64B";
+}
+.icon-arrow-down:before {
+  content: "\E64C";
+}
+.icon-loading:before {
+  content: "\E64D";
+}
+.icon-font:before {
+  content: "\E64E";
+}
+.icon-sort:before {
+  content: "\E64F";
+}
+.icon-id:before {
+  content: "\E650";
+}
+.icon-scale:before {
+  content: "\E651";
+}
+.icon-clear:before {
+  content: "\E652";
+}
+.icon-cancel:before {
+  content: "\E653";
+}
+.icon-success-fill:before {
+  content: "\E654";
+}
+.icon-strategy:before {
+  content: "\E655";
+}
+.icon-add-circle:before {
+  content: "\E656";
+}
+.icon-add-circle-fill:before {
+  content: "\E657";
+}
+.icon-fail-fill:before {
+  content: "\E658";
+}
+.icon-fail:before {
+  content: "\E659";
+}
+.icon-success:before {
+  content: "\E65A";
+}
 .animated {
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
@@ -1882,12 +1930,12 @@ input[type="button"] {
   margin-bottom: 1px;
 }
 .ph-button-group-tacked .ph-button:first-child:not(:last-child) {
-  border-top-right-radius: 0;
+  border-top-right-radius: 3px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 .ph-button-group-tacked .ph-button:last-child:not(:first-child) {
-  border-bottom-left-radius: 0;
+  border-bottom-left-radius: 3px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
@@ -2321,19 +2369,8 @@ input[type="button"] {
 .ph-dialog-content {
   position: relative;
 }
-.ph-dialog-footer {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-.ph-dialog-footer .ph-button {
-  float: none;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+.ph-dialog-body input {
+  margin-bottom: 0;
 }
 .ph-dialog-content {
   width: 90.625%;
@@ -2361,11 +2398,10 @@ input[type="button"] {
   font-size: 87.5%;
   color: #666;
 }
-.ph-dialog-content .ph-button {
-  width: auto;
+.ph-dialog-content .ph-button:not(.ph-button-block) {
   margin-left: 2%;
 }
-.ph-dialog-content .ph-button:first-child {
+.ph-dialog-content .ph-button:not(.ph-button-block):first-child {
   margin-left: 0;
 }
 .ph-toast-shadow {
@@ -2377,10 +2413,35 @@ input[type="button"] {
 }
 .ph-toast-content {
   display: inline-block;
-  padding: 12px 8px;
+  padding: 0.75rem;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
+  font-size: 87.5%;
   color: #fff;
+}
+.ph-toast-content:before {
+  display: block;
+  margin: 0 auto 0.5rem;
+  font-family: "iconfont" !important;
+  font-size: 200%;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.ph-toast-success .ph-toast-content:before {
+  content: "\E65A";
+}
+.ph-toast-fail .ph-toast-content:before {
+  content: "\E659";
+}
+.ph-toast-loading .ph-toast-content:before {
+  content: "\E64D";
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
+  -webkit-transform-origin: center 47%;
+  -ms-transform-origin: center 47%;
+  transform-origin: center 47%;
 }
 .ph-popup-shadow {
   top: 0;
