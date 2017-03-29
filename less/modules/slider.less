@@ -1,5 +1,26 @@
 .ph-slider{
+    position: relative;
     padding: @slider-padding;
+}
+.ph-slider.ph-keep-range{
+    padding: @slider-range-padding;
+}
+
+.ph-slider-range-start, .ph-slider-range-end{
+    position: absolute;
+    top: 50%;
+    .transform(translateY(-50%));
+    width: 1rem;
+    text-align: center;
+    font-weight: normal;
+    font-size: @font-size-smaller;
+    color: @brand-gray;
+}
+.ph-slider-range-start{
+    left: 0;
+}
+.ph-slider-range-end{
+    right: 0;
 }
 
 .ph-slider-line{
