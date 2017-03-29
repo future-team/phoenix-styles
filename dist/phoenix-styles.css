@@ -2964,13 +2964,13 @@ input[type="button"] {
 .ph-image-list dd p {
   margin-bottom: 0.4rem;
   line-height: 1;
-  font-size: 75%;
+  font-size: 87.5%;
 }
-.ph-image-list dd p.ph-image-name {
+.ph-image-list dd p.ph-image-title {
   font-weight: 800;
 }
 .ph-image-list dd p.ph-image-desp {
-  font-size: 62.5%;
+  font-size: 75%;
   color: #999;
 }
 .ph-image-list dd p:last-child {
