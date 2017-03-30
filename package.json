@@ -1,11 +1,13 @@
 {
   "name": "phoenix-styles",
-  "version": "1.4.3",
+  "version": "1.5.0",
   "description": "",
   "main": "dist/",
   "repository": "git@github.com:future-team/phoenix-styles.git",
   "keywords": [
-    "core"
+    "phoenix",
+    "styles",
+    "phoenix-styles"
   ],
   "scripts": {
     "build": "node_modules/.bin/gulp",
