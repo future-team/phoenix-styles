@@ -1,6 +1,6 @@
 {
   "name": "phoenix-styles",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "",
   "main": "dist/",
   "repository": "git@github.com:future-team/phoenix-styles.git",
@@ -20,6 +20,7 @@
     "email": "min.xiao@dianping.com"
   },
   "dependencies": {
+    "gfs-doc": "^0.1.35",
     "gfs-icons": "^0.3.3"
   },
   "devDependencies": {
