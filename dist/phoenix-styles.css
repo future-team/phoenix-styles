@@ -947,6 +947,9 @@ h6 {
   -moz-osx-font-smoothing: grayscale;
 }
 /* 更新时覆盖以下内容，以上内容如果覆盖使用时会报错 */
+.icon-zuoxuanzhuan:before {
+  content: "\E604";
+}
 .icon-more:before {
   content: "\E608";
 }
@@ -1195,6 +1198,21 @@ h6 {
 }
 .icon-success:before {
   content: "\E65A";
+}
+.icon-youxuanzhuan:before {
+  content: "\E65B";
+}
+.icon-eraser:before {
+  content: "\E65C";
+}
+.icon-zan-fill:before {
+  content: "\E65D";
+}
+.icon-modify:before {
+  content: "\E65E";
+}
+.icon-zan:before {
+  content: "\E65F";
 }
 .animated {
   -webkit-animation-duration: 0.3s;
@@ -1895,7 +1913,8 @@ input[type="reset"],
 input[type="button"] {
   width: 100%;
 }
-.ph-button .ph-icon {
+.ph-button .gfs-icon {
+  margin-right: .3rem;
   font-size: inherit;
 }
 .ph-button-group {
