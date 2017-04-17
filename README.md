@@ -36,6 +36,8 @@
 
 ## Repair
 
+`version 1.5.2` button新增icon属性调整 <br/>
+`version 1.5.1` 新增image-list等组件的样式 <br/>
 `version 1.4.1` 新增menu组件样式 <br/>
 `version 1.1.3` 引入gfs-icons <br/>
 `version 1.1.1` 样式统一加ph前缀，配合Phoenix-ui@v1.1.1使用 <br/>
