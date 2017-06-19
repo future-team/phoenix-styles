@@ -1,0 +1,35 @@
+.toolbar-skin(){
+	.ph-toolbar{
+		background-color: @toolbar-background;
+		box-shadow: @toolbar-box-shadow;
+		font-size: @toolbar-font-size;
+		color: @toolbar-color;
+
+		.ph-col{
+			height: @toolbar-height;
+			line-height: @toolbar-height;
+
+			.gfs-icon{
+				font-size: @toolbar-icon-size;
+			}
+			.icon-chevron-left{
+				margin-left: -@toolbar-icon-size/4;
+			}
+		}
+
+		.ph-toolbar-left{
+			padding-left: @toolbar-padding;
+		}
+
+		.ph-toolbar-center{
+			.ph-toolbar-title{
+				font-size: @font-size-headline;
+				color: @toolbar-title-color;
+			}
+		}
+
+		.ph-toolbar-right{
+			padding-right: @toolbar-padding;
+		}
+	}
+}

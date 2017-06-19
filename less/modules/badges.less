@@ -1,13 +1,16 @@
 .ph-badge {
     display: inline-block;
-    padding: @badges-padding;
-    font-size: @font-size-smaller;
-    line-height: 1;
-    color: @badges-default-color;
-    background-color: @badges-default-background;
-    border-radius: @badges-radius;
+    min-width: @badge-min-width;
+    height: @badge-height;
+    padding: @badge-padding;
+    background-color: @badge-default-background;
+    border-radius: @badge-radius;
+    line-height: @badge-height;
+    text-align: center;
+    font-size: @badge-font-size;
+    color: @badge-default-color;
 
-    // Inverted badges have no background.
+    // Inverted badge have no background.
     &.ph-badge-inverted {
         padding: @badge-inverted-padding;
         background-color: transparent;

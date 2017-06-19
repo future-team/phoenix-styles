@@ -1,12 +1,13 @@
 .ph-loading-page-tip{
-    padding: .5rem 0;
+    padding: @loading-list-padding;
     text-align: center;
-    font-size: 87.5%;
-    color: #999;
-    .icon-loading:before{
+    font-size: @loading-list-font-size;
+    color: @loading-list-color;
+
+    .gfs-icon-loading:before{
     	display: inline-block;
-    	margin-right: .3rem;
+        font-size: @loading-list-icon-size;
         .animation(rotate 1s linear infinite);
-        .transform-origin(center 47.8%);
+        // .transform-origin(center 47.8%);
     }
 }

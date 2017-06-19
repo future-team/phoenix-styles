@@ -1,16 +1,38 @@
-.ph-button-group{
+@buttonGroupPrefixCls: ph-button-group;
+
+.@{buttonGroupPrefixCls}{
     position: relative;
     display: inline-block;
     vertical-align: middle;
     .ph-button{
         position: relative;
         float: left;
-        margin-left: -1px;
+        // margin-left: -1PX;
+        &.ph-button-lg{
+            min-width: @btn-lg-min-width;
+            margin-right: @btn-lg-margin;
+            &:nth-child(even){
+                margin-right: 0;
+            }
+        }
+    }
+}
 
-        &:not(:first-child):not(:last-child) {
+.@{buttonGroupPrefixCls}-justify{
+    // width: 100%;
+    // .display-flex();
+    .ph-button{
+        // .flex(1);
+        width: @button-group-justify-width;
+        height: @button-group-justify-height;
+        border-radius: @button-group-justify-radius;
+        
+        &:not(:first-child){
+            border-left: none;
+        }
+        &:not(:first-child):not(:last-child){
             border-radius: 0;
         }
-
         &:first-child:not(:last-child){
             border-bottom-right-radius: 0;
             border-top-right-radius: 0;
@@ -20,39 +42,32 @@
             border-top-left-radius: 0;
         }
     }
-
 }
-.ph-button-group-tacked{
+
+.@{buttonGroupPrefixCls}-tacked{
     width: 100%;
     .ph-button{
         float: none;
         display: block;
         margin-left: 0;
-        margin-top: -1px;
-        margin-bottom: 1px;
+        // margin-top: -1PX;
+        // margin-bottom: 1PX;
+        
+        &:not(:first-child){
+            border-top: none;
+        }
+        &:not(:first-child):not(:last-child){
+            border-radius: 0;
+        }
         &:first-child:not(:last-child) {
-            border-top-right-radius: 3px;
+            // border-top-right-radius: 4px;
             border-bottom-right-radius: 0;
             border-bottom-left-radius: 0;
         }
         &:last-child:not(:first-child) {
-            border-bottom-left-radius: 3px;
+            // border-bottom-left-radius: 4px;
             border-top-right-radius: 0;
             border-top-left-radius: 0;
         }
-    }
-}
-.ph-button-group-justify{
-    width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    .ph-button{
-        float: none;
-        -webkit-box-flex: 1;
-        -webkit-flex: 1;
-        -ms-flex: 1;
-        flex: 1;
     }
 }

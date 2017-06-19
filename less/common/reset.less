@@ -1,11 +1,5 @@
 @import "../variable.less";
 
-html {
-    font-family: sans-serif; /* 1 */
-    -ms-text-size-adjust: 100%; /* 2 */
-    -webkit-text-size-adjust: 100%; /* 2 */
-    font-size: 16px;
-}
 *{
     padding: 0px;
     margin: 0px;
@@ -16,12 +10,17 @@ html {
     box-sizing: border-box;
 }
 
-/**
- * Remove default margin.
- */
+html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    font-size: 50PX;
+}
 
 body {
     margin: 0;
+    font-size: 32px;
+    font-family: @font-family-default;
 }
 
 article,
@@ -402,8 +401,8 @@ th {
 }
 
 body {
-    font: normal @font-size-base  @font-family-base;
-    color: @gray-dark;
+    font: normal @font-family-default;
+    color: @gray-33;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
     background-color:@body-bg;
@@ -415,7 +414,7 @@ ul, ol {
 a {
     text-decoration: none;
     outline: none;
-    color: @gray-dark;
+    color: @gray-33;
     &:hover{
         text-decoration: @link-hover-decoration;
     }
@@ -443,7 +442,7 @@ small,
     font-weight: normal;
     color: #777;
     font-size: 65%;
-    //font-size: floor((100% * @font-size-small / @font-size-base));
+    //font-size: floor((100% * @font-size-text / @font-size-subtitle));
 }
 
 h1{

@@ -2,7 +2,7 @@
 @import "mixins/animation";
 @import "mixins/border";
 @import "mixins/gradients";
-
+@import "mixins/prefix.less";
 @import "mixins/form";
 @import "mixins/buttons";
 @import "mixins/label";
@@ -15,16 +15,16 @@
 
 // common
 @brand-primary: #007aff;
-@brand-info:    #0ba4db;
-@brand-success: #4cd964;
-@brand-error:   #ff3b30;
+// @brand-info:    #0ba4db;
+// @brand-success: #4cd964;
+// @brand-error:   #ff3b30;
 
 // grid
 .ph-row{
     margin: 0;
 }
 .ph-col{
-    padding: 5px 0;
+    padding: 0;
 }
 
 .ph-table-view{
@@ -52,13 +52,6 @@ input[type="color"] {
     margin: 0;
 }
 
-//input checkbox radio
-.ph-checkbox,.ph-radio{
-    .ph-icon{
-        color: @ui-checkbox-border-color;
-    }
-}
-
 .ph-color-white{
     color: @white;
 }
@@ -81,7 +74,7 @@ input[type="color"] {
     color: @brand-error;
 }
 .ph-color-gray{
-    color: @gray;
+    color: @gray-66;
 }
 
 //button
@@ -94,49 +87,28 @@ input[type="color"] {
 .badges-skin();
 
 //checkbox radio
-.ph-checkbox,.ph-radio{
-    i{
-        border: 1px solid #bbb;
-        background: #fff;
-    }
-    input[type="radio"],input[type="checkbox"]{
-        &:checked + i{
-            background: @white;
-            border-color: @ui-checkbox-color;
-            &:before, &:after {
-                width: 1px;
-                background: @ui-checkbox-color;
-            }
-        }
-        &:disabled + i{
-            border-color: @ui-checkbox-disabled;
-        }
-    }
-
-    input[type="checkbox"]{
-        &:disabled {
-            +i{
-                border-color:@ui-checkbox-disabled ;
-            }
-            color: @ui-checkbox-disabled;
-        }
-    }
+@checkbox-checked-background: @white;
+.ph-checkbox{
+    .ui-checkbox(@checkbox-size);
 }
+
+.ph-radio{
+    .ui-radio(@radio-size);
+}
+
 //tab
 .tab-skin();
-//竖排
-.tab-skin2();
 
 // dialog
 @dialog-content-width:      84.375%;
 @dialog-content-padding:    1.4rem 0 0;
 @dialog-content-radius:     3px;
 
-@dialog-title-font-size:    @font-size-large; // 18px
-@dialog-title-color:        @gray-base;
+@dialog-title-font-size:    @font-size-headline; // 18px
+@dialog-title-color:        @black;
 
 @dialog-body-margin:        0.75rem 1rem 1.125rem;
-@dialog-body-color:         @gray-base;
+@dialog-body-color:         @black;
 
 @dialog-btn-width:          auto;
 @dialog-btn-margin:         0;
@@ -162,7 +134,7 @@ input[type="color"] {
         .generate-hollow-button(@brand-danger,@white,@brand-danger);
     }
     .ph-button-gray{
-        .generate-hollow-button(@gray-dark,@white,@brand-gray);
+        .generate-hollow-button(@gray-33,@white,@gray-cc);
     }
     .ph-button, .ph-button:active{
         border-color: @white;

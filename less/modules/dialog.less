@@ -1,25 +1,20 @@
-.ph-dialog-shadow,
-.ph-dialog-main,
-.ph-toast-shadow,
-.ph-toast-main{
+@dialogPrefixCls: ph-dialog;
+
+.@{dialogPrefixCls}-shadow,
+.@{dialogPrefixCls}-main{
 	position: fixed;
 	left: 0;
 	width: 100%;
 }
 
-.ph-dialog-shadow,
-.ph-toast-shadow{
+.@{dialogPrefixCls}-shadow{
 	top: 0;
 	height: 100%;
 	z-index: 99;
+	background-color: @default-shadow-color;
 }
 
-.ph-dialog-shadow{
-	background-color: rgba(0,0,0,.4);
-}
-
-.ph-dialog-main,
-.ph-toast-main{
+.@{dialogPrefixCls}-main{
 	top: 50%;
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
@@ -27,23 +22,14 @@
 	z-index: 100;
 }
 
-.ph-dialog-content{
+.@{dialogPrefixCls}-content{
 	position: relative;
 }
 
-.ph-dialog-body{
+.@{dialogPrefixCls}-body{
 	input{
 		margin-bottom: 0;
 	}
 }
-
-// .ph-dialog-footer{
-// 	width: 100%;
-//     .display-flex();
-//     .ph-button{
-//         float: none;
-//         .flex(1);
-//     }
-// }
 
 .dialog-skin();

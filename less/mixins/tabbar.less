@@ -1,0 +1,50 @@
+.tabbar-skin(){
+	.ph-tabbar{
+		overflow: hidden;
+		height: @tabbar-height;
+		background-color: @tabbar-background;
+		border-top: @tabbar-border;
+		padding-top: @tabbar-padding;
+
+		.ph-tabbar-item{
+			.gfs-icon{
+				position: relative;
+				display: inline-block;
+				font-size: @tabbar-icon-size;
+				margin-bottom: @tabbar-icon-margin;
+				color: @tabbar-icon-color;
+			}
+
+			p{
+				line-height: 1;
+				font-size: @tabbar-text-font-size;
+				color: @tabbar-text-color;
+			}
+
+			.ph-badge{
+				position: absolute;
+				top: @tabbar-badge-top;
+				left: @tabbar-badge-left;
+			}
+		}
+
+		.ph-tabbar-active{
+			.gfs-icon, p{
+				color: @tabbar-active-color;
+			}
+		}
+
+		.ph-tabbar-dynamic{
+			.gfs-icon:after{
+				content: "";
+				position: absolute;
+				top: @tabbar-dynamic-top;
+				left: @tabbar-dynamic-left;
+				width: @tabbar-dynamic-size;
+				height: @tabbar-dynamic-size;
+				background-color: @tabbar-dynamic-color;
+				border-radius: 50%;
+			}
+		}
+	}
+}

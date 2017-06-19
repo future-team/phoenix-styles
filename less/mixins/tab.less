@@ -1,34 +1,89 @@
-//tab skin
-.tab-skin() {
-  .ph-tabs {
-    .ph-tab-nav {
-      background: @white;
-      &.active {
-        color: @brand-primary;
-        border-bottom-color: @brand-primary;
-      }
-    }
-  }
+.tab-skin(){
+	.ph-tabs{
+		background-color: @white;
 
-}
+		.ph-tab-navs{
+			overflow-y: auto;
+			margin: 0;
+			border-bottom: @tab-row-border;
 
-//竖排
-.tab-skin2() {
-  .vertical {
-    .ph-tab-nav {
-      background-color: @white;
-      border: @tab-nav-border;
-      &.active {
-        z-index: 2;
-        color: @brand-primary;
-        border: @tab-nav-active-border;
-        border-right-color: @white;
-      }
-    }
-    .ph-tab-bd{
-      position: relative;
-      z-index: 1;
-      border-left: @tab-nav-active-border;
-    }
-  }
+			&::-webkit-scrollbar{
+			    display:none;
+			}
+		}
+
+		.ph-tab-nav{
+			padding: 0;
+			text-align: center;
+	    	a{
+	    		display: block;
+	    		min-width: @tab-nav-min-width;
+				height: @tab-nav-height;
+				padding: @tab-nav-padding;
+				border-bottom-width: @tab-nav-border-width;
+				border-bottom-style: solid;
+				border-bottom-color: @tab-nav-border-color;
+				line-height: @tab-nav-line-height;
+				white-space: nowrap;
+		    	font-size: @font-size-text;
+	    	}
+
+			&.active{
+				a{
+					border-bottom-color: @tab-nav-active-border-color;
+					margin-bottom: @tab-nav-margin;
+					margin-right: 0;
+					color: @tab-nav-active-color;
+				}				
+			}
+		}
+
+		.ph-tab-panel{
+			padding: @tab-panel-padding;
+		}
+	}
+	
+	.ph-tabs-short{
+		.ph-tab-nav{
+			padding: @tab-nav-padding;
+			a{
+				display: inline-block;
+				padding: @tab-nav-item-padding;
+			}
+		} 
+	}
+
+	.ph-tabs-vertical{
+		.ph-tab-navs{
+			background-color: @vertical-tab-nav-background;
+			border-bottom: none;
+		}
+
+		.ph-tab-nav{
+			position: relative;
+			text-align: left;
+
+			a{
+				padding: 0 32px;
+				border: none;
+				line-height: @tab-nav-height;
+			}
+
+			&.active{
+				a{
+					background-color: @white;
+					border: none;
+				}				
+			}
+
+			&.active {
+				z-index: 2;
+				color: @brand-primary;
+				border: none;
+				border-right-color: @white;
+				margin-bottom: 0;
+				margin-right: @tab-nav-margin;
+			}
+		}
+	}
 }

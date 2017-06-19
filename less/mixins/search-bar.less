@@ -1,0 +1,32 @@
+.search-bar-skin(){
+	// Basic
+	.ph-search-bar{
+		overflow: hidden;
+		height: @search-bar-height;
+		padding: @search-bar-padding;
+		background-color: @search-bar-background;
+		white-space: nowrap;
+
+		.ph-input{
+			display: inline-block;
+			width: 100%;
+			.transition(all .3s);
+		}
+		input[type="search"]{
+			background-color: @search-bar-input-background;
+		}
+
+		.ph-button{
+			font-size: @search-bar-button-font-size;
+		}
+
+		.ph-input-placeholder,
+		.ph-input-placeholder .gfs-icon{
+			color: @search-bar-placeholder-color;
+		}
+	}
+
+	.ph-search-bar-focus .ph-input{
+		width: @search-bar-input-focus-width;
+	}
+}

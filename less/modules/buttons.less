@@ -1,58 +1,56 @@
-.ph-button{
+@buttonPrefixCls: ph-button;
+
+.@{buttonPrefixCls}{
     position: relative;
     display: inline-block;
+    min-width: @btn-sm-min-width;
+    height: @btn-sm-height;
+    padding: @btn-default-padding;
     margin-bottom: 0;
     text-align: center;
     white-space: nowrap;
-    vertical-align: top;
-    cursor: pointer;
-    line-height: 1;
     border: @btn-default-border;
     border-radius: @btn-default-radius;
-    background-color: @btn-bg-color;
-    padding: @btn-default-padding;
+    background-color: @white;
+    vertical-align: top;
+    font-size: @font-size-text;
+    font-weight: 400;
     outline: none;
-    font-size: @btn-font-size;
-    &:active,
-    &.active,
-    &.ph-button-active {
-        color: inherit;
-        background-color: @btn-active-background;
-    }
-    &:disabled,
-    &.disabled,
-    &.ph-button-disabled{
-        opacity: .6;
-        pointer-events: none;
-    }
+    cursor: pointer;
     
-    &.ph-button-md{
-        padding: @btn-md-padding;
-        font-size: @font-size-base;
+    &.@{buttonPrefixCls}-md{
+        height: @btn-md-height;
+        min-width: @btn-md-min-width;
+        font-size: @font-size-subtitle;
     }
-    &.ph-button-lg{
-        padding: @btn-lg-padding;
-        font-size: @font-size-base;
+
+    &.@{buttonPrefixCls}-lg,
+    &.@{buttonPrefixCls}-block{
+        height: @btn-lg-height;
+        border-radius: @btn-lg-radius;
+        font-size: @font-size-subtitle;
+    }
+
+    &.@{buttonPrefixCls}-lg{
+        min-width: @btn-lg-min-width;
+    }
+
+    &.@{buttonPrefixCls}-block{
+        display: block;
+        width: 100%;
     }
 }
 
-.button-skin();
-
-.ph-button-block {
-    display: block;
-    width: 100%;
-    padding: @btn-block-padding;
-    margin: @btn-block-margin;
-    font-size: @font-size-base;
-}
-
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-    width: 100%;
-}
-
-.ph-button .gfs-icon {
-    margin-right: .3rem;
+// 带图标的按钮
+.@{buttonPrefixCls} .gfs-icon {
+    margin-right: @btn-icon-margin;
     font-size: inherit;
 }
+
+// input[type="submit"],
+// input[type="reset"],
+// input[type="button"] {
+//     width: 100%;
+// }
+
+.button-skin();
