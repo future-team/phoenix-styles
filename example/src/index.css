@@ -59,6 +59,10 @@ nav li.active a{
     color: #1d8fe3;
 }
 
+.main-nav{
+    margin-bottom: 32px;
+}
+
 .main{
     margin-left: 160PX;
     padding: 0 20px;
@@ -115,6 +119,9 @@ nav li.active a{
 .demo-frame.large-height{
     height: 400PX;
 }
+.demo-frame.full-height{
+    height: 599PX; /* 667-68 */
+}
 
 .content{
     min-height: 80PX;
@@ -135,7 +142,7 @@ nav li.active a{
 }
 
 /* extra */
-.ph-page{
+.ph-page-white{
     background-color: #fff;
 }
 .content>.ph-button:not(.ph-button-block){
@@ -150,7 +157,7 @@ nav li.active a{
     margin-right: 0;
 }
 
-.content .ph-button-block,
+.content>.ph-button-block,
 .content .ph-row,
 .content .ph-input,
 .content .ph-textarea-field,
@@ -169,8 +176,14 @@ nav li.active a{
 .ph-toast-main,
 .ph-popup-shadow,
 .ph-popup-main,
-.ph-tabbar{
+.ph-tabbar,
+.ph-filter-container-fixed,
+.ph-filter-container-shadow{
     position: absolute;
+}
+
+.ph-filter-selector{
+    height: calc(100% - 90px);
 }
 
 .ph-dialog-body ul{

@@ -4,12 +4,17 @@
     position: relative;
     display: inline-block;
     vertical-align: middle;
+}
+
+.@{buttonGroupPrefixCls}-default,
+.@{buttonGroupPrefixCls}-footer{
     .ph-button{
         position: relative;
         float: left;
         // margin-left: -1PX;
         &.ph-button-lg{
-            min-width: @btn-lg-min-width;
+            min-width: 0;
+            width: @button-group-default-width;
             margin-right: @btn-lg-margin;
             &:nth-child(even){
                 margin-right: 0;
@@ -18,15 +23,9 @@
     }
 }
 
-.@{buttonGroupPrefixCls}-justify{
-    // width: 100%;
-    // .display-flex();
+.@{buttonGroupPrefixCls}-justify,
+.@{buttonGroupPrefixCls}-segmente{
     .ph-button{
-        // .flex(1);
-        width: @button-group-justify-width;
-        height: @button-group-justify-height;
-        border-radius: @button-group-justify-radius;
-        
         &:not(:first-child){
             border-left: none;
         }
@@ -44,14 +43,21 @@
     }
 }
 
+.@{buttonGroupPrefixCls}-justify{
+    width: 100%;
+    .display-flex();
+
+    .ph-button{
+        .flex(1);
+    }
+}
+
 .@{buttonGroupPrefixCls}-tacked{
     width: 100%;
     .ph-button{
         float: none;
         display: block;
         margin-left: 0;
-        // margin-top: -1PX;
-        // margin-bottom: 1PX;
         
         &:not(:first-child){
             border-top: none;
@@ -60,14 +66,27 @@
             border-radius: 0;
         }
         &:first-child:not(:last-child) {
-            // border-top-right-radius: 4px;
             border-bottom-right-radius: 0;
             border-bottom-left-radius: 0;
         }
         &:last-child:not(:first-child) {
-            // border-bottom-left-radius: 4px;
             border-top-right-radius: 0;
             border-top-left-radius: 0;
         }
+    }
+}
+
+.@{buttonGroupPrefixCls}-footer{
+    width: 100%;
+    padding: @button-group-footer-padding;
+    border-top: @button-group-footer-border;
+    background-color: @button-group-footer-background;
+}
+
+.@{buttonGroupPrefixCls}-segmente{
+    .ph-button{
+        width: @button-group-justify-width;
+        height: @button-group-justify-height;
+        border-radius: @button-group-justify-radius;
     }
 }

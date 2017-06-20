@@ -52,34 +52,36 @@
 			}
 		}
 
-		.ph-button-group-justify{
-			border-top: @dialog-btn-border;
-		}
-		.ph-button-group-tacked{
-			border-top: 0;
-		}
-
-		.ph-button-group{
-			.ph-button{
-				min-width: 0;
-				margin-left: 0;
-				margin-right: 0;
-				border: none;
-			}
-			.ph-button:not(.ph-button-block){
-				border-right: @dialog-btn-border;
-				&:first-child{
-					border-bottom-left-radius: @dialog-content-radius;
-				}
-				&:last-child{
-					border-right: none;
-					border-bottom-right-radius: @dialog-content-radius;
-				}
-			}
-			.ph-button-block{
+		.@{dialogPrefixCls}-footer{
+			.ph-button-group-justify{
 				border-top: @dialog-btn-border;
-				&:last-child{
-					border-radius: 0 0 @dialog-content-radius @dialog-content-radius;
+			}
+			.ph-button-group-tacked{
+				border-top: 0;
+			}
+
+			.ph-button-group{
+				.ph-button{
+					min-width: 0;
+					margin-left: 0;
+					margin-right: 0;
+					border: none;
+				}
+				.ph-button:not(.ph-button-block){
+					border-right: @dialog-btn-border;
+					&:first-child{
+						border-bottom-left-radius: @dialog-content-radius;
+					}
+					&:last-child{
+						border-right: none;
+						border-bottom-right-radius: @dialog-content-radius;
+					}
+				}
+				.ph-button-block{
+					border-top: @dialog-btn-border;
+					&:last-child{
+						border-radius: 0 0 @dialog-content-radius @dialog-content-radius;
+					}
 				}
 			}
 		}

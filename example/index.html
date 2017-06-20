@@ -58,7 +58,6 @@
                     <li><a href="#button">按钮</a></li>
                     <li><a href="#buttonGroup">按钮组</a></li>
                     <li><a href="#badge">标记</a></li>
-                    <li><a href="#tab">Tabs</a></li>
 
                     <li><a href="#input">单行输入框</a></li>
                     <li><a href="#textarea">多行输入框</a></li>
@@ -70,7 +69,8 @@
                     <li><a href="#dialog">弹框</a></li>
                     <li><a href="#popover">气泡</a></li>
                     <li><a href="#popup">弹层</a></li>
-
+                    
+                    <li><a href="#tab">Tabs</a></li>
                     <li><a href="#steps">步骤</a></li>
                     <li><a href="#search">搜索</a></li>
                     <li><a href="#toolbar">顶部导航</a></li>
@@ -1172,23 +1172,14 @@
                         <div class="demo-frame">
                             <div class="ph-page">
                                 <div class="content">
-                                    <button class="ph-button ph-button-block ph-button-primary">按钮</button>
-                                    <div class="ph-button-group">
-                                        <button class="ph-button ph-button-lg ph-button-primary">按钮</button>
-                                        <button class="ph-button ph-button-lg ph-button-hollow ph-button-gray">按钮</button>
-                                    </div>                    
+                                    <button class="ph-button ph-button-block ph-button-primary">按钮</button>                  
                                 </div>
                             </div>
                         </div>
                         <div class="module-code code-frame">
                             <pre>
                                 <code data-language="html">
-                                    <button class="ph-button ph-button-block ph-button-primary">按钮</button>
-
-                                    <div class="ph-button-group">
-                                        <button class="ph-button ph-button-lg ph-button-primary">按钮</button>
-                                        <button class="ph-button ph-button-lg ph-button-hollow ph-button-gray">按钮</button>
-                                    </div>  
+                                    <button class="ph-button ph-button-block ph-button-primary">按钮</button> 
                                 </code>
                             </pre>
                         </div>
@@ -1200,6 +1191,78 @@
                 <h2>按钮组 buttonGroup</h2>
                 <ul class="demo-list">
                     <li>
+                        <h3>default</h3>
+                        <div class="demo-frame">
+                            <div class="ph-page">
+                                <div class="content">
+                                    <div class="ph-button-group ph-button-group-default">
+                                        <button class="ph-button ph-button-lg ph-button-primary">按钮</button>
+                                        <button class="ph-button ph-button-lg ph-button-hollow ph-button-gray">按钮</button>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module-code code-frame">
+                            <pre>
+                                <code data-language="html">
+                                    <div class="ph-button-group ph-button-group-default">
+                                        <button class="ph-button ph-button-lg ph-button-primary">按钮</button>
+                                        <button class="ph-button ph-button-lg ph-button-hollow ph-button-gray">按钮</button>
+                                    </div> 
+                                </code>
+                            </pre>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>footer</h3>
+                        <div class="demo-frame">
+                            <div class="ph-page full-line">
+                                <div class="content">
+                                    <div class="ph-button-group ph-button-group-footer">
+                                        <button class="ph-button ph-button-lg ph-button-primary">按钮</button>
+                                        <button class="ph-button ph-button-lg ph-button-hollow ph-button-gray">按钮</button>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module-code code-frame">
+                            <pre>
+                                <code data-language="html">
+                                    <div class="ph-button-group ph-button-group-footer">
+                                        <button class="ph-button ph-button-lg ph-button-primary">按钮</button>
+                                        <button class="ph-button ph-button-lg ph-button-hollow ph-button-gray">按钮</button>
+                                    </div> 
+                                </code>
+                            </pre>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>segmente</h3>
+                        <div class="demo-frame">
+                            <div class="ph-page">
+                                <div class="content">
+                                    <div class="ph-button-group ph-button-group-segmente clearfix">
+                                        <button class="ph-button ph-button-primary">按钮</button><!--
+                                        --><button class="ph-button ph-button-hollow ph-button-primary">按钮</button><!--
+                                        --><button class="ph-button ph-button-hollow ph-button-primary">按钮</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module-code code-frame">
+                            <pre>
+                                <code data-language="html">
+                                    <div class="ph-button-group ph-button-group-segmente clearfix">
+                                        <button class="ph-button ph-button-primary">按钮</button><!--
+                                        --><button class="ph-button ph-button-hollow ph-button-primary">按钮</button><!--
+                                        --><button class="ph-button ph-button-hollow ph-button-primary">按钮</button>
+                                    </div>
+                                </code>
+                            </pre>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>justify</h3>
                         <div class="demo-frame">
                             <div class="ph-page">
                                 <div class="content">
@@ -1218,6 +1281,31 @@
                                         <button class="ph-button ph-button-primary">按钮</button><!--
                                         --><button class="ph-button ph-button-hollow ph-button-primary">按钮</button><!--
                                         --><button class="ph-button ph-button-hollow ph-button-primary">按钮</button>
+                                    </div>
+                                </code>
+                            </pre>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>tacked</h3>
+                        <div class="demo-frame">
+                            <div class="ph-page">
+                                <div class="content">
+                                    <div class="ph-button-group ph-button-group-tacked clearfix">
+                                        <button class="ph-button ph-button-block ph-button-primary">按钮</button><!--
+                                        --><button class="ph-button ph-button-block ph-button-hollow ph-button-primary">按钮</button><!--
+                                        --><button class="ph-button ph-button-block ph-button-hollow ph-button-primary">按钮</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module-code code-frame">
+                            <pre>
+                                <code data-language="html">
+                                    <div class="ph-button-group ph-button-group-tacked clearfix">
+                                        <button class="ph-button ph-button-block ph-button-primary">按钮</button><!--
+                                        --><button class="ph-button ph-button-block ph-button-hollow ph-button-primary">按钮</button><!--
+                                        --><button class="ph-button ph-button-block ph-button-hollow ph-button-primary">按钮</button>
                                     </div>
                                 </code>
                             </pre>
@@ -1254,193 +1342,13 @@
                 </ul>
             </section>
 
-            <section id="tab">
-                <h2>Tabs</h2>
-                <ul class="demo-list">
-                    <li>
-                        <h3>横排 样式1</h3>
-                        <div class="demo-frame">
-                            <div class="ph-page full-line">
-                                <div class="ph-tabs">
-                                    <ul class="ph-row ph-tab-navs">
-                                        <li class="ph-col ph-tab-nav active"><a href="javascript:;">标题一</a></li>
-                                        <li class="ph-col ph-tab-nav"><a href="javascript:;">标题二</a></li>
-                                        <li class="ph-col ph-tab-nav"><a href="javascript:;">标题三</a></li>
-                                    </ul>
-                                    <div class="ph-tab-bd">
-                                        <div class="ph-tab-panel active">内容一</div>
-                                        <div class="ph-tab-panel">内容二</div>
-                                        <div class="ph-tab-panel">内容三</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="module-code code-frame">
-                            <pre>
-                                <code data-language="html">
-                                    <div class="ph-tabs">
-                                        <ul class="ph-row ph-tab-navs">
-                                            <li class="ph-col ph-tab-nav active"><a href="javascript:;">标题一</a></li>
-                                            <li class="ph-col ph-tab-nav"><a href="javascript:;">标题二</a></li>
-                                            <li class="ph-col ph-tab-nav"><a href="javascript:;">标题三</a></li>
-                                        </ul>
-                                        <div class="ph-tab-bd">
-                                            <div class="ph-tab-panel active">内容一</div>
-                                            <div class="ph-tab-panel">内容二</div>
-                                            <div class="ph-tab-panel">内容三</div>
-                                        </div>
-                                    </div>
-                                </code>
-                            </pre>
-                        </div>
-                    </li>
-                    <li>
-                        <h3>横排 样式2</h3>
-                        <div class="demo-frame">
-                            <div class="ph-page full-line">
-                                <div class="ph-tabs ph-tabs-short">
-                                    <ul class="ph-row ph-tab-navs">
-                                        <li class="ph-col ph-tab-nav"><a href="javascript:;">标题一</a></li>
-                                        <li class="ph-col ph-tab-nav"><a href="javascript:;">标题二</a></li>
-                                        <li class="ph-col ph-tab-nav active"><a href="javascript:;">标题标题</a></li>
-                                    </ul>
-                                    <div class="ph-tab-bd">
-                                        <div class="ph-tab-panel">内容一</div>
-                                        <div class="ph-tab-panel">内容二</div>
-                                        <div class="ph-tab-panel active">内容三</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="module-code code-frame">
-                            <pre>
-                                <code data-language="html">
-                                    <div class="ph-tabs ph-tabs-short">
-                                        <ul class="ph-row ph-tab-navs">
-                                            <li class="ph-col ph-tab-nav"><a href="javascript:;">标题一</a></li>
-                                            <li class="ph-col ph-tab-nav"><a href="javascript:;">标题二</a></li>
-                                            <li class="ph-col ph-tab-nav active"><a href="javascript:;">标题标题</a></li>
-                                        </ul>
-                                        <div class="ph-tab-bd">
-                                            <div class="ph-tab-panel">内容一</div>
-                                            <div class="ph-tab-panel">内容二</div>
-                                            <div class="ph-tab-panel active">内容三</div>
-                                        </div>
-                                    </div>
-                                </code>
-                            </pre>
-                        </div>
-                    </li>
-                    <li>
-                        <h3>横排 样式2 多余内容可滑动</h3>
-                        <div class="demo-frame">
-                            <div class="ph-page full-line">
-                                <div class="ph-tabs ph-tabs-short">
-                                    <ul class="ph-row ph-tab-navs">
-                                        <li class="ph-col ph-tab-nav active"><a href="javascript:;">标题一</a></li>
-                                        <li class="ph-col ph-tab-nav"><a href="javascript:;">标题二</a></li>
-                                        <li class="ph-col ph-tab-nav"><a href="javascript:;">标题三</a></li>
-                                        <li class="ph-col ph-tab-nav"><a href="javascript:;">标题四</a></li>
-                                        <li class="ph-col ph-tab-nav"><a href="javascript:;">标题五</a></li>
-                                    </ul>
-                                    <div class="ph-tab-bd">
-                                        <div class="ph-tab-panel active">内容一</div>
-                                        <div class="ph-tab-panel">内容二</div>
-                                        <div class="ph-tab-panel">内容三</div>
-                                        <div class="ph-tab-panel">内容四</div>
-                                        <div class="ph-tab-panel">内容五</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="module-code code-frame">
-                            <pre>
-                                <code data-language="html">
-                                    <div class="ph-tabs ph-tabs-short">
-                                        <ul class="ph-row ph-tab-navs">
-                                            <li class="ph-col ph-tab-nav active"><a href="javascript:;">标题一</a></li>
-                                            <li class="ph-col ph-tab-nav"><a href="javascript:;">标题二</a></li>
-                                            <li class="ph-col ph-tab-nav"><a href="javascript:;">标题三</a></li>
-                                            <li class="ph-col ph-tab-nav"><a href="javascript:;">标题四</a></li>
-                                            <li class="ph-col ph-tab-nav"><a href="javascript:;">标题五</a></li>
-                                        </ul>
-                                        <div class="ph-tab-bd">
-                                            <div class="ph-tab-panel active">内容一</div>
-                                            <div class="ph-tab-panel">内容二</div>
-                                            <div class="ph-tab-panel">内容三</div>
-                                            <div class="ph-tab-panel">内容四</div>
-                                            <div class="ph-tab-panel">内容五</div>
-                                        </div>
-                                    </div>
-                                </code>
-                            </pre>
-                        </div>
-                    </li>
-                    <li>
-                        <h3>竖排</h3>
-                        <div class="demo-frame">
-                            <div class="ph-page full-line">
-                                <div class=" ph-row ph-tabs ph-tabs-vertical">
-                                    <ul class="ph-col ph-col-30 ph-tab-navs">
-                                        <li class="ph-tab-nav active"><a href="javascript:;">标题一</a></li>
-                                        <li class="ph-tab-nav"><a href="javascript:;">标题二</a></li>
-                                        <li class="ph-tab-nav"><a href="javascript:;">标题标题</a></li>
-                                    </ul>
-                                    <div class="ph-col ph-tab-bd">
-                                        <div class="ph-tab-panel active">
-                                            <ul class="ph-list">
-                                                <li class="ph-list-item">
-                                                    <div class="ph-col">列表1</div>
-                                                </li>
-                                                <li class="ph-list-item">
-                                                    <div class="ph-col">列表2</div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="ph-tab-panel">内容二</div>
-                                        <div class="ph-tab-panel">内容三</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="module-code code-frame">
-                            <pre>
-                                <code data-language="html">
-                                    <div class=" ph-row ph-tabs ph-tabs-vertical">
-                                        <ul class="ph-col ph-col-33 ph-tab-navs">
-                                            <li class="ph-tab-nav active"><a href="javascript:;">标题一</a></li>
-                                            <li class="ph-tab-nav"><a href="javascript:;">标题二</a></li>
-                                            <li class="ph-tab-nav"><a href="javascript:;">标题标题</a></li>
-                                        </ul>
-                                        <div class="ph-col ph-tab-bd">
-                                            <div class="ph-tab-panel active">
-                                                <ul class="ph-list">
-                                                    <li class="ph-list-item">
-                                                        <div class="ph-col">列表1</div>
-                                                    </li>
-                                                    <li class="ph-list-item">
-                                                        <div class="ph-col">列表2</div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="ph-tab-panel">内容二</div>
-                                            <div class="ph-tab-panel">内容三</div>
-                                        </div>
-                                    </div>
-                                </code>
-                            </pre>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-
             <section id="input">
                 <h2>文本框 Input</h2>
                 <ul class="demo-list">
                     <li>
                         <h3>text</h3>
                         <div class="demo-frame">
-                            <div class="ph-page">
+                            <div class="ph-page ph-page-white">
                                 <div class="content">
                                     <div class="ph-input">
                                         <input type="text"/>
@@ -1505,7 +1413,7 @@
                     <li>
                         <h3>password</h3>
                         <div class="demo-frame">
-                            <div class="ph-page">
+                            <div class="ph-page ph-page-white">
                                 <div class="content">
                                     <div class="ph-input ph-input-clear ph-input-see">
                                         <input type="password" value='12345'/>
@@ -1552,7 +1460,7 @@
                     <li>
                         <h3>search</h3>
                         <div class="demo-frame">
-                            <div class="ph-page">
+                            <div class="ph-page ph-page-white">
                                 <div class="content">
                                     <div class="ph-input">
                                         <input type="search" />
@@ -2573,6 +2481,186 @@
                 </ul>
             </section>
 
+            <section id="tab">
+                <h2>Tabs</h2>
+                <ul class="demo-list">
+                    <li>
+                        <h3>横排 样式1</h3>
+                        <div class="demo-frame">
+                            <div class="ph-page full-line">
+                                <div class="ph-tabs">
+                                    <ul class="ph-row ph-tab-navs">
+                                        <li class="ph-col ph-tab-nav active"><a href="javascript:;">标题一</a></li>
+                                        <li class="ph-col ph-tab-nav"><a href="javascript:;">标题二</a></li>
+                                        <li class="ph-col ph-tab-nav"><a href="javascript:;">标题三</a></li>
+                                    </ul>
+                                    <div class="ph-tab-bd">
+                                        <div class="ph-tab-panel active">内容一</div>
+                                        <div class="ph-tab-panel">内容二</div>
+                                        <div class="ph-tab-panel">内容三</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module-code code-frame">
+                            <pre>
+                                <code data-language="html">
+                                    <div class="ph-tabs">
+                                        <ul class="ph-row ph-tab-navs">
+                                            <li class="ph-col ph-tab-nav active"><a href="javascript:;">标题一</a></li>
+                                            <li class="ph-col ph-tab-nav"><a href="javascript:;">标题二</a></li>
+                                            <li class="ph-col ph-tab-nav"><a href="javascript:;">标题三</a></li>
+                                        </ul>
+                                        <div class="ph-tab-bd">
+                                            <div class="ph-tab-panel active">内容一</div>
+                                            <div class="ph-tab-panel">内容二</div>
+                                            <div class="ph-tab-panel">内容三</div>
+                                        </div>
+                                    </div>
+                                </code>
+                            </pre>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>横排 样式2</h3>
+                        <div class="demo-frame">
+                            <div class="ph-page full-line">
+                                <div class="ph-tabs ph-tabs-short">
+                                    <ul class="ph-row ph-tab-navs">
+                                        <li class="ph-col ph-tab-nav"><a href="javascript:;">标题一</a></li>
+                                        <li class="ph-col ph-tab-nav"><a href="javascript:;">标题二</a></li>
+                                        <li class="ph-col ph-tab-nav active"><a href="javascript:;">标题标题</a></li>
+                                    </ul>
+                                    <div class="ph-tab-bd">
+                                        <div class="ph-tab-panel">内容一</div>
+                                        <div class="ph-tab-panel">内容二</div>
+                                        <div class="ph-tab-panel active">内容三</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module-code code-frame">
+                            <pre>
+                                <code data-language="html">
+                                    <div class="ph-tabs ph-tabs-short">
+                                        <ul class="ph-row ph-tab-navs">
+                                            <li class="ph-col ph-tab-nav"><a href="javascript:;">标题一</a></li>
+                                            <li class="ph-col ph-tab-nav"><a href="javascript:;">标题二</a></li>
+                                            <li class="ph-col ph-tab-nav active"><a href="javascript:;">标题标题</a></li>
+                                        </ul>
+                                        <div class="ph-tab-bd">
+                                            <div class="ph-tab-panel">内容一</div>
+                                            <div class="ph-tab-panel">内容二</div>
+                                            <div class="ph-tab-panel active">内容三</div>
+                                        </div>
+                                    </div>
+                                </code>
+                            </pre>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>横排 样式2 多余内容可滑动</h3>
+                        <div class="demo-frame">
+                            <div class="ph-page full-line">
+                                <div class="ph-tabs ph-tabs-short">
+                                    <ul class="ph-row ph-tab-navs">
+                                        <li class="ph-col ph-tab-nav active"><a href="javascript:;">标题一</a></li>
+                                        <li class="ph-col ph-tab-nav"><a href="javascript:;">标题二</a></li>
+                                        <li class="ph-col ph-tab-nav"><a href="javascript:;">标题三</a></li>
+                                        <li class="ph-col ph-tab-nav"><a href="javascript:;">标题四</a></li>
+                                        <li class="ph-col ph-tab-nav"><a href="javascript:;">标题五</a></li>
+                                    </ul>
+                                    <div class="ph-tab-bd">
+                                        <div class="ph-tab-panel active">内容一</div>
+                                        <div class="ph-tab-panel">内容二</div>
+                                        <div class="ph-tab-panel">内容三</div>
+                                        <div class="ph-tab-panel">内容四</div>
+                                        <div class="ph-tab-panel">内容五</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module-code code-frame">
+                            <pre>
+                                <code data-language="html">
+                                    <div class="ph-tabs ph-tabs-short">
+                                        <ul class="ph-row ph-tab-navs">
+                                            <li class="ph-col ph-tab-nav active"><a href="javascript:;">标题一</a></li>
+                                            <li class="ph-col ph-tab-nav"><a href="javascript:;">标题二</a></li>
+                                            <li class="ph-col ph-tab-nav"><a href="javascript:;">标题三</a></li>
+                                            <li class="ph-col ph-tab-nav"><a href="javascript:;">标题四</a></li>
+                                            <li class="ph-col ph-tab-nav"><a href="javascript:;">标题五</a></li>
+                                        </ul>
+                                        <div class="ph-tab-bd">
+                                            <div class="ph-tab-panel active">内容一</div>
+                                            <div class="ph-tab-panel">内容二</div>
+                                            <div class="ph-tab-panel">内容三</div>
+                                            <div class="ph-tab-panel">内容四</div>
+                                            <div class="ph-tab-panel">内容五</div>
+                                        </div>
+                                    </div>
+                                </code>
+                            </pre>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>竖排</h3>
+                        <div class="demo-frame">
+                            <div class="ph-page full-line">
+                                <div class=" ph-row ph-tabs ph-tabs-vertical">
+                                    <ul class="ph-col ph-col-30 ph-tab-navs">
+                                        <li class="ph-tab-nav active"><a href="javascript:;">标题一</a></li>
+                                        <li class="ph-tab-nav"><a href="javascript:;">标题二</a></li>
+                                        <li class="ph-tab-nav"><a href="javascript:;">标题标题</a></li>
+                                    </ul>
+                                    <div class="ph-col ph-tab-bd">
+                                        <div class="ph-tab-panel active">
+                                            <ul class="ph-list">
+                                                <li class="ph-list-item">
+                                                    <div class="ph-col">列表1</div>
+                                                </li>
+                                                <li class="ph-list-item">
+                                                    <div class="ph-col">列表2</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="ph-tab-panel">内容二</div>
+                                        <div class="ph-tab-panel">内容三</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module-code code-frame">
+                            <pre>
+                                <code data-language="html">
+                                    <div class=" ph-row ph-tabs ph-tabs-vertical">
+                                        <ul class="ph-col ph-col-33 ph-tab-navs">
+                                            <li class="ph-tab-nav active"><a href="javascript:;">标题一</a></li>
+                                            <li class="ph-tab-nav"><a href="javascript:;">标题二</a></li>
+                                            <li class="ph-tab-nav"><a href="javascript:;">标题标题</a></li>
+                                        </ul>
+                                        <div class="ph-col ph-tab-bd">
+                                            <div class="ph-tab-panel active">
+                                                <ul class="ph-list">
+                                                    <li class="ph-list-item">
+                                                        <div class="ph-col">列表1</div>
+                                                    </li>
+                                                    <li class="ph-list-item">
+                                                        <div class="ph-col">列表2</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="ph-tab-panel">内容二</div>
+                                            <div class="ph-tab-panel">内容三</div>
+                                        </div>
+                                    </div>
+                                </code>
+                            </pre>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
             <section id="steps">
                 <h2>步骤 Steps</h2>
                 <ul class="demo-list">
@@ -2796,9 +2884,8 @@
                                         <span class="gfs-icon icon-chevron-left"></span>
                                     </div>
                                     <div class="ph-col ph-toolbar-center">
-                                        <div class="ph-button-group ph-button-group-justify clearfix">
+                                        <div class="ph-button-group ph-button-group-segmente clearfix">
                                             <button class="ph-button ph-button-primary">按钮</button><!--
-                                            --><button class="ph-button ph-button-hollow ph-button-primary">按钮</button><!--
                                             --><button class="ph-button ph-button-hollow ph-button-primary">按钮</button>
                                         </div>
                                     </div>
@@ -2816,9 +2903,8 @@
                                             <span class="gfs-icon icon-chevron-left"></span>
                                         </div>
                                         <div class="ph-col ph-toolbar-center">
-                                            <div class="ph-button-group ph-button-group-justify clearfix">
+                                            <div class="ph-button-group ph-button-group-segmente clearfix">
                                                 <button class="ph-button ph-button-primary">按钮</button><!--
-                                                --><button class="ph-button ph-button-hollow ph-button-primary">按钮</button><!--
                                                 --><button class="ph-button ph-button-hollow ph-button-primary">按钮</button>
                                             </div>
                                         </div>
@@ -3036,31 +3122,31 @@
                             <pre>
                                 <code data-language="html">
                                     <div class="ph-slider ph-slider-tip-top ph-keep-range">
-                                    <div class="ph-slider-range">
-                                        <strong class="ph-slider-range-start">0</strong>
-                                        <strong class="ph-slider-range-end">100</strong>
-                                    </div>
-                                    <div class="ph-slider-line">
-                                        <div class="ph-slider-progress"></div>
-                                        <div class="ph-slider-content">
-                                            <div class="ph-slider-tip">0</div>
-                                            <div class="ph-drag-action ph-slider-btn"></div>
+                                        <div class="ph-slider-range">
+                                            <strong class="ph-slider-range-start">0</strong>
+                                            <strong class="ph-slider-range-end">100</strong>
+                                        </div>
+                                        <div class="ph-slider-line">
+                                            <div class="ph-slider-progress"></div>
+                                            <div class="ph-slider-content">
+                                                <div class="ph-slider-tip">0</div>
+                                                <div class="ph-drag-action ph-slider-btn"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="ph-slider ph-slider-tip-bottom ph-keep-range">
-                                    <div class="ph-slider-range">
-                                        <strong class="ph-slider-range-start">0</strong>
-                                        <strong class="ph-slider-range-end">100</strong>
-                                    </div>
-                                    <div class="ph-slider-line">
-                                        <div class="ph-slider-progress"></div>
-                                        <div class="ph-slider-content">
-                                            <div class="ph-slider-tip">0</div>
-                                            <div class="ph-drag-action ph-slider-btn"></div>
+                                    <div class="ph-slider ph-slider-tip-bottom ph-keep-range">
+                                        <div class="ph-slider-range">
+                                            <strong class="ph-slider-range-start">0</strong>
+                                            <strong class="ph-slider-range-end">100</strong>
+                                        </div>
+                                        <div class="ph-slider-line">
+                                            <div class="ph-slider-progress"></div>
+                                            <div class="ph-slider-content">
+                                                <div class="ph-slider-tip">0</div>
+                                                <div class="ph-drag-action ph-slider-btn"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
                                 </code>
                             </pre>
                         </div>
@@ -3070,6 +3156,471 @@
 
             <section id="phfilter">
                 <h2>筛选</h2>
+                <ul class="demo-list">
+                    <li>
+                        <h3>简单筛选</h3>
+                        <div class="demo-frame full-height">
+                            <div class="ph-page full-line">
+                                <div class="ph-filter-container ph-filter-container-shadow">
+                                    <div class="ph-filter-shadow"></div>
+                                    <ul class="cat ph-row ph-filter-header">
+                                        <li class="ph-col ph-filter-header-item active">
+                                            <a href="javascript:;">
+                                                <span class="ph-filter-header-text">陆家嘴</span><!--
+                                                --><span class="gfs-icon icon-expand-more"></span>
+                                            </a>
+                                        </li>
+                                        <li class="ph-col ph-filter-header-item">
+                                            <a href="javascript:;">
+                                                <span class="ph-filter-header-text">筛选</span><!--
+                                                --><span class="gfs-icon icon-expand-more"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="ph-filter-selector">
+                                        <div class="ph-list">
+                                            <div class="ph-list-item active">
+                                                <div class="ph-col">陆家嘴</div>
+                                            </div>
+                                            <div class="ph-list-item">
+                                                <div class="ph-col">浦东机场</div>
+                                            </div>
+                                            <div class="ph-list-item">
+                                                <div class="ph-col">肇嘉浜</div>
+                                            </div>
+                                            <div class="ph-list-item">
+                                                <div class="ph-col">木湖</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module-code code-frame">
+                            <pre>
+                                <code data-language="html">
+                                    <div class="ph-filter-container ph-filter-container-shadow">
+                                        <div class="ph-filter-shadow"></div>
+                                        <ul class="cat ph-row ph-filter-header">
+                                            <li class="ph-col ph-filter-header-item active">
+                                                <a href="javascript:;">
+                                                    <span class="ph-filter-header-text">陆家嘴</span><!--
+                                                    --><span class="gfs-icon icon-expand-more"></span>
+                                                </a>
+                                            </li>
+                                            <li class="ph-col ph-filter-header-item">
+                                                <a href="javascript:;">
+                                                    <span class="ph-filter-header-text">筛选</span><!--
+                                                    --><span class="gfs-icon icon-expand-more"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="ph-filter-selector">
+                                            <div class="ph-list">
+                                                <div class="ph-list-item active">
+                                                    <div class="ph-col">陆家嘴</div>
+                                                </div>
+                                                <div class="ph-list-item">
+                                                    <div class="ph-col">浦东机场</div>
+                                                </div>
+                                                <div class="ph-list-item">
+                                                    <div class="ph-col">肇嘉浜</div>
+                                                </div>
+                                                <div class="ph-list-item">
+                                                    <div class="ph-col">木湖</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </code>
+                            </pre>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>多重筛选</h3>
+                        <div class="demo-frame full-height">
+                            <div class="ph-page full-line">
+                                <div class="ph-filter-container ph-filter-container-shadow">
+                                    <div class="ph-filter-shadow"></div>
+                                    <ul class="ph-row ph-filter-header">
+                                        <li class="ph-col ph-filter-header-item">
+                                            <a href="javascript:;">
+                                                <span class="ph-filter-header-text">陆家嘴</span><!--
+                                                --><span class="gfs-icon icon-expand-more"></span>
+                                            </a>
+                                        </li>
+                                        <li class="ph-col ph-filter-header-item">
+                                            <a href="javascript:;">
+                                                <span class="ph-filter-header-text">日韩料理</span><!--
+                                                --><span class="gfs-icon icon-expand-more"></span>
+                                            </a>
+                                        </li>
+                                        <li class="ph-col ph-filter-header-item">
+                                            <a href="javascript:;">
+                                                <span class="ph-filter-header-text">筛选</span><!--
+                                                --><span class="gfs-icon icon-expand-more"></span>
+                                            </a>
+                                        </li>
+                                        <li class="ph-col ph-filter-header-item active">
+                                            <a href="javascript:;">
+                                                <span class="ph-filter-header-text">本帮江浙菜</span><!--
+                                                --><span class="gfs-icon icon-expand-more"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="ph-filter-selector">
+                                        <div class="ph-row ph-tabs ph-tabs-vertical">
+                                            <div class="ph-col ph-col-33 ph-tab-navs">
+                                                <div class="ph-tab-nav active">
+                                                    <a href="javascript:;">美食</a>
+                                                </div>
+                                                <div class="ph-tab-nav">
+                                                    <a href="javascript:;">电影</a>
+                                                </div>
+                                                <div class="ph-tab-nav">
+                                                    <a href="javascript:;">购物</a>
+                                                </div>
+                                            </div>
+                                            <div class="ph-col ph-tab-bd">
+                                                <div class="ph-list-item active">
+                                                    <div class="ph-col">本帮江浙菜</div>
+                                                </div>
+                                                <div class="ph-list-item">
+                                                    <div class="ph-col">日韩料理</div>
+                                                </div>
+                                                <div class="ph-list-item">
+                                                    <div class="ph-col">火锅</div>
+                                                </div>
+                                                <div class="ph-list-item">
+                                                    <div class="ph-col">东北菜</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module-code code-frame">
+                            <pre>
+                                <code data-language="html">
+                                    <div class="ph-filter-container ph-filter-container-shadow">
+                                        <div class="ph-filter-shadow"></div>
+                                        <ul class="ph-row ph-filter-header">
+                                            <li class="ph-col ph-filter-header-item">
+                                                <a href="javascript:;">
+                                                    <span class="ph-filter-header-text">陆家嘴</span><!--
+                                                    --><span class="gfs-icon icon-expand-more"></span>
+                                                </a>
+                                            </li>
+                                            <li class="ph-col ph-filter-header-item">
+                                                <a href="javascript:;">
+                                                    <span class="ph-filter-header-text">日韩料理</span><!--
+                                                    --><span class="gfs-icon icon-expand-more"></span>
+                                                </a>
+                                            </li>
+                                            <li class="ph-col ph-filter-header-item">
+                                                <a href="javascript:;">
+                                                    <span class="ph-filter-header-text">筛选</span><!--
+                                                    --><span class="gfs-icon icon-expand-more"></span>
+                                                </a>
+                                            </li>
+                                            <li class="ph-col ph-filter-header-item active">
+                                                <a href="javascript:;">
+                                                    <span class="ph-filter-header-text">本帮江浙菜</span><!--
+                                                    --><span class="gfs-icon icon-expand-more"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="ph-row ph-tabs ph-tabs-vertical ph-filter-selector">
+                                            <div class="ph-col ph-col-33 ph-tab-navs">
+                                                <div class="ph-tab-nav active">
+                                                    <a href="javascript:;">美食</a>
+                                                </div>
+                                                <div class="ph-tab-nav">
+                                                    <a href="javascript:;">电影</a>
+                                                </div>
+                                                <div class="ph-tab-nav">
+                                                    <a href="javascript:;">购物</a>
+                                                </div>
+                                            </div>
+                                            <div class="ph-col ph-tab-bd">
+                                                <div class="ph-list-item active">
+                                                    <div class="ph-col">本帮江浙菜</div>
+                                                </div>
+                                                <div class="ph-list-item">
+                                                    <div class="ph-col">日韩料理</div>
+                                                </div>
+                                                <div class="ph-list-item">
+                                                    <div class="ph-col">火锅</div>
+                                                </div>
+                                                <div class="ph-list-item">
+                                                    <div class="ph-col">东北菜</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </code>
+                            </pre>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>带按钮</h3>
+                        <div class="demo-frame full-height">
+                            <div class="ph-page full-line">
+                                <div class="ph-filter-container ph-filter-container-shadow">
+                                    <div class="ph-filter-shadow"></div>
+                                    <ul class="ph-row ph-filter-header">
+                                        <li class="ph-col ph-filter-header-item">
+                                            <a href="javascript:;">
+                                                <span class="ph-filter-header-text">陆家嘴</span><!--
+                                                --><span class="gfs-icon icon-expand-more"></span>
+                                            </a>
+                                        </li>
+                                        <li class="ph-col ph-filter-header-item">
+                                            <a href="javascript:;">
+                                                <span class="ph-filter-header-text">筛选</span><!--
+                                                --><span class="gfs-icon icon-expand-more"></span>
+                                            </a>
+                                        </li>
+                                        <li class="ph-col ph-filter-header-item active">
+                                            <a href="javascript:;">
+                                                <span class="ph-filter-header-text">本帮江浙菜</span><!--
+                                                --><span class="gfs-icon icon-expand-more"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="ph-filter-selector ph-filter-selector-buttons">
+                                        <div class="ph-row ph-tabs ph-tabs-vertical">
+                                            <div class="ph-col ph-col-33 ph-tab-navs">
+                                                <div class="ph-tab-nav active">
+                                                    <a href="javascript:;">美食</a>
+                                                </div>
+                                                <div class="ph-tab-nav">
+                                                    <a href="javascript:;">电影</a>
+                                                </div>
+                                                <div class="ph-tab-nav">
+                                                    <a href="javascript:;">购物</a>
+                                                </div>
+                                                <div class="ph-tab-nav">
+                                                    <a href="javascript:;">亲子</a>
+                                                </div>
+                                                <div class="ph-tab-nav">
+                                                    <a href="javascript:;">丽人</a>
+                                                </div>
+                                                <div class="ph-tab-nav">
+                                                    <a href="javascript:;">休闲</a>
+                                                </div>
+                                                <div class="ph-tab-nav">
+                                                    <a href="javascript:;">娱乐</a>
+                                                </div>
+                                                <div class="ph-tab-nav">
+                                                    <a href="javascript:;">旅行</a>
+                                                </div>
+                                                <div class="ph-tab-nav">
+                                                    <a href="javascript:;">外卖</a>
+                                                </div>
+                                                <div class="ph-tab-nav">
+                                                    <a href="javascript:;">医疗健康</a>
+                                                </div>
+                                            </div>
+                                            <div class="ph-col ph-tab-bd">
+                                                <div class="ph-list-item active">
+                                                    <div class="ph-col">本帮江浙菜</div>
+                                                </div>
+                                                <div class="ph-list-item">
+                                                    <div class="ph-col">日韩料理</div>
+                                                </div>
+                                                <div class="ph-list-item">
+                                                    <div class="ph-col">火锅</div>
+                                                </div>
+                                                <div class="ph-list-item">
+                                                    <div class="ph-col">东北菜</div>
+                                                </div>
+                                                <div class="ph-list-item active">
+                                                    <div class="ph-col">粤菜</div>
+                                                </div>
+                                                <div class="ph-list-item">
+                                                    <div class="ph-col">北京烤鸭</div>
+                                                </div>
+                                                <div class="ph-list-item">
+                                                    <div class="ph-col">烤肉</div>
+                                                </div>
+                                                <div class="ph-list-item">
+                                                    <div class="ph-col">夜宵</div>
+                                                </div>
+                                                <div class="ph-list-item">
+                                                    <div class="ph-col">异国料理</div>
+                                                </div>
+                                                <div class="ph-list-item">
+                                                    <div class="ph-col">小众料理</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ph-button-group ph-button-group-footer">
+                                            <button class="ph-button ph-button-lg ph-button-hollow ph-button-gray">重置</button><!--
+                                            --><button class="ph-button ph-button-lg ph-button-primary">确定</button>
+                                        </div> 
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module-code code-frame">
+                            <pre>
+                                <code data-language="html">
+                                    <div class="ph-filter-container ph-filter-container-shadow">
+                                        <div class="ph-filter-shadow"></div>
+                                        <ul class="ph-row ph-filter-header">
+                                            <li class="ph-col ph-filter-header-item">
+                                                <a href="javascript:;">
+                                                    <span class="ph-filter-header-text">陆家嘴</span><!--
+                                                    --><span class="gfs-icon icon-expand-more"></span>
+                                                </a>
+                                            </li>
+                                            <li class="ph-col ph-filter-header-item">
+                                                <a href="javascript:;">
+                                                    <span class="ph-filter-header-text">筛选</span><!--
+                                                    --><span class="gfs-icon icon-expand-more"></span>
+                                                </a>
+                                            </li>
+                                            <li class="ph-col ph-filter-header-item active">
+                                                <a href="javascript:;">
+                                                    <span class="ph-filter-header-text">本帮江浙菜</span><!--
+                                                    --><span class="gfs-icon icon-expand-more"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="ph-filter-selector ph-filter-selector-buttons">
+                                            <div class="ph-row ph-tabs ph-tabs-vertical">
+                                                <div class="ph-col ph-col-33 ph-tab-navs">
+                                                    <div class="ph-tab-nav active">
+                                                        <a href="javascript:;">美食</a>
+                                                    </div>
+                                                    <div class="ph-tab-nav">
+                                                        <a href="javascript:;">电影</a>
+                                                    </div>
+                                                    <div class="ph-tab-nav">
+                                                        <a href="javascript:;">购物</a>
+                                                    </div>
+                                                    <div class="ph-tab-nav">
+                                                        <a href="javascript:;">亲子</a>
+                                                    </div>
+                                                    ...
+                                                </div>
+                                                <div class="ph-col ph-tab-bd">
+                                                    <div class="ph-list-item active">
+                                                        <div class="ph-col">本帮江浙菜</div>
+                                                    </div>
+                                                    <div class="ph-list-item">
+                                                        <div class="ph-col">日韩料理</div>
+                                                    </div>
+                                                    <div class="ph-list-item">
+                                                        <div class="ph-col">火锅</div>
+                                                    </div>
+                                                    <div class="ph-list-item">
+                                                        <div class="ph-col">东北菜</div>
+                                                    </div>
+                                                    ...
+                                                </div>
+                                            </div>
+                                            <div class="ph-button-group ph-button-group-footer">
+                                                <button class="ph-button ph-button-lg ph-button-hollow ph-button-gray">重置</button><!--
+                                                --><button class="ph-button ph-button-lg ph-button-primary">确定</button>
+                                            </div> 
+                                        </div>                                    
+                                    </div>
+                                </code>
+                            </pre>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="tip">
+                <h2>提示 Tip</h2>
+                <ul class="demo-list">
+                    <li>
+                        <h3>列表提示 tip</h3>
+                        <div class="demo-frame">
+                            <div class="ph-page full-line">
+                                <div class="ph-loading-list">
+                                    <div class="ph-loading-page-main">
+                                        <div class="ph-loading-page-content">
+                                            <ul class="ph-list">
+                                                <li class="ph-list-item">
+                                                    <div class="ph-col">1</div>
+                                                </li>
+                                                <li class="ph-list-item">
+                                                    <div class="ph-col">2</div>
+                                                </li>
+                                                <li class="ph-list-item">
+                                                    <div class="ph-col">3</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="ph-loading-page-tip">
+                                            <div class="ph-loading-page-text">没有更多</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module-code code-frame">
+                            <pre>
+                                <code data-language="html">
+                                    <div class="ph-loading-list">
+                                        <div class="ph-loading-page-main">
+                                            <div class="ph-loading-page-content">
+                                                <ul class="ph-list">
+                                                    <li class="ph-list-item">
+                                                        <div class="ph-col">1</div>
+                                                    </li>
+                                                    <li class="ph-list-item">
+                                                        <div class="ph-col">2</div>
+                                                    </li>
+                                                    <li class="ph-list-item">
+                                                        <div class="ph-col">3</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="ph-loading-page-tip">
+                                                <div class="ph-loading-page-text">没有更多</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </code>
+                            </pre>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>没有内容的提示 Tip</h3>
+                        <div class="demo-frame middle-height">
+                            <div class="ph-page full-line">
+                                <div class="ph-tip">
+                                    <div class="ph-tip-main">
+                                        <div class="ph-tip-content">
+                                            <span class="gfs-icon icon-tip-fill"></span>
+                                            没有信息
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module-code code-frame">
+                            <pre>
+                                <code data-language="html">
+                                    <div class="ph-tip">
+                                        <div class="ph-tip-main">
+                                            <div class="ph-tip-content">
+                                                <span class="gfs-icon icon-tip-fill"></span>
+                                                没有信息
+                                            </div>
+                                        </div>
+                                    </div>
+                                </code>
+                            </pre>
+                        </div>
+                    </li>
+                </ul>
             </section>
 
             <section id="skin">
