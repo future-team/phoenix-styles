@@ -37,6 +37,16 @@
     }
 }
 
+.ph-navigate-right:after{
+    display: inline-block;
+    position: absolute;
+    right: @list-navigate-right-interval;
+    top: 50%;
+    line-height:1;
+    .transform(translateY(-50%));
+    .icon-navigate-right();
+}
+
 .@{listPrefixCls}-item.ph-navigate-right{
 	.ph-col-tail{
         padding-right: @list-col-tail-padding;

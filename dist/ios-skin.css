@@ -1585,8 +1585,14 @@ input[type="color"] {
   border-width: 0 8px 8px;
   border-bottom-color: #666;
 }
+.ph-slider-disabled .ph-slider-text {
+  color: #ffb299;
+}
+.ph-slider-disabled .ph-slider-line {
+  background-color: #f0f0f0;
+}
 .ph-slider-disabled .ph-slider-progress {
-  background-color: #ffc2ad;
+  background-color: #ffb299;
 }
 .ph-slider-disabled .ph-slider-btn {
   pointer-events: none;

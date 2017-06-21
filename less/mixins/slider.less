@@ -105,11 +105,16 @@
     }
 
     .ph-slider-disabled{
+        .ph-slider-text{
+            color: @slider-progress-disabled-color;
+        }
+        .ph-slider-line{
+            background-color: @slider-line-disabled-color;
+        }
         .ph-slider-progress{
             background-color: @slider-progress-disabled-color;
         }
         .ph-slider-btn{
-            // border: @slider-btn-disabled-border;
             pointer-events: none;
         }
     }
