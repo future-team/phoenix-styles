@@ -1,21 +1,7 @@
 .popup-skin(){
 	// Filter
-	.ph-popup-list{
-		padding: @popup-main-list-padding;
-		background-color: @white;
-		.border(@border-color);
-		.ph-popup-item{
-			padding: @popup-list-padding;
-			.border-bottom(@popup-list-border);
-			font-size: @font-size-small;
-			color: @popup-list-color;
-			&:last-child{
-				.border-bottom(transparent);
-			}
-		}
-		.ph-popup-item.active,
-		.ph-popup-item:active{
-			.border-bottom(@popup-list-active-border);
+	.ph-list{
+		.ph-list-item-active{
 			color: @popup-list-active-color;
 		}
 	}
@@ -26,30 +12,37 @@
 		margin: @action-sheet-margin;
 		.ph-popup-item,
 		.ph-popup-operate{
-			padding: @action-item-padding;
+			height: @action-sheet-height;
+			line-height: @action-sheet-height;
 			background-color: @white;
-			font-size: @font-size-base;
+			font-size: @action-item-font-size;
 			text-align: center;
+			color: @action-item-color;
+			&:active{
+				background-color: @default-active-color;
+			}
 		}
 		.ph-popup-item{
-			.border-bottom(@gray-lighter);
+			border-bottom: @action-item-border;
 			&:first-child{
-				border-radius: @action-item-radius @action-item-radius 0 0;
+				.border-radius(@action-item-radius @action-item-radius 0 0);
 			}
 			&:last-child{
-				.border-bottom(transparent);
-				border-radius: 0 0 @action-item-radius @action-item-radius;
+				border-bottom: none;
+				.border-radius(0 0 @action-item-radius @action-item-radius);
 			}
 		}
 		.ph-popup-tip{
+			font-size: @action-tip-font-size;
 			color: @action-tip-color;
+			pointer-events: none;
 		}
 		.ph-popup-delete{
-			color: @brand-error;
+			color: @action-delete-color;
 		}
 		.ph-popup-operate{
 			margin-top: @action-operate-margin;
-			border-radius: @action-item-radius;
+			.border-radius(@action-item-radius);
 			color: @action-operate-color;
 		}
 	}
@@ -65,11 +58,11 @@
 		.border-bottom(@border-default-color);
 		text-align: center;
 		.ph-picker-title{
-			font-size: @font-size-large;
+			font-size: @font-size-headline;
 		}
 		.ph-picker-cancel, .ph-picker-confirm{
 			line-height: 1.25;
-			font-size: @font-size-base;
+			font-size: @font-size-subtitle;
 			color: @picker-btn-color;
 		}
 		.ph-picker-cancel{
@@ -107,10 +100,10 @@
 				text-align: center;
 				li{
 					line-height: @picker-item-line-height;
-					font-size: @font-size-small;
+					font-size: @font-size-text;
 				}
 				li.selected{
-					font-size: @font-size-base;
+					font-size: @font-size-subtitle;
 				}
 			}
 		}

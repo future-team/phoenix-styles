@@ -5,17 +5,10 @@
 @import "mixins/badges";
 @import "mixins/tab";
 
-//input checkbox radio
-.ph-checkbox,.ph-radio{
-    .ph-icon{
-        color: @ui-checkbox-border-color;
-    }
-}
-
-//switch
+/*switch*/
 .ph-switch {
     input[type="checkbox"]:checked + .checkbox {
-        background: #4bd863;
+        background-color: #49cb67;
     }
 }
 
@@ -41,47 +34,17 @@
     color: @brand-error;
 }
 .ph-color-gray{
-    color: @gray;
+    color: @gray-66;
 }
 
-//button
+/*button*/
 .button-skin();
 
-//label
+/*label*/
 .label-skin();
 
-//badge
+/*badge*/
 .badges-skin();
 
-//checkbox radio
-.ph-checkbox,.ph-radio{
-    i{
-        border: 2px solid #bbb;
-        background: #fff;
-    }
-    input[type="radio"],input[type="checkbox"]{
-        &:checked + i{
-            background: #fff1ed;
-            border-color: @ui-checkbox-color;
-            &:before, &:after {
-                background: @ui-checkbox-color;
-            }
-        }
-        &:disabled + i{
-            border-color: @ui-checkbox-disabled;
-        }
-    }
-
-    input[type="checkbox"]{
-        &:disabled {
-            +i{
-                border-color:@ui-checkbox-disabled ;
-            }
-            color: @ui-checkbox-disabled;
-        }
-    }
-}
-//tab
+/*tab*/
 .tab-skin();
-//竖排
-.tab-skin2();

@@ -31,28 +31,28 @@ header::-webkit-scrollbar{
 }
 
 .logo{
-    padding: 32px 0;
-    margin-bottom: 24px;
-    font-size: 36px;
+    padding: 0.32rem 0;
+    margin-bottom: 0.24rem;
+    font-size: 0.36rem;
     background-color: #1d8fe3;
     text-align: center;
     color: #fff;
 }
 
 nav h2, nav h3, nav li{
-    padding-right: 48px;
+    padding-right: 0.48rem;
 }
 
 nav h2{
-    font-size: 36px;
+    font-size: 0.36rem;
 }
 
 nav li{
-    line-height: 60px;
-    font-size: 28px;
+    line-height: 0.6rem;
+    font-size: 0.28rem;
 }
 nav li.active{
-    border-right: 6px solid #1d8fe3;
+    border-right: 0.06rem solid #1d8fe3;
 }
 nav li:hover a,
 nav li.active a{
@@ -60,28 +60,28 @@ nav li.active a{
 }
 
 .main-nav{
-    margin-bottom: 32px;
+    margin-bottom: 0.32rem;
 }
 
 .main{
     margin-left: 160PX;
-    padding: 0 20px;
+    padding: 0 0.2rem;
 }
 
 .main > section{
-    padding: 20px;
+    padding: 0.2rem;
     border-bottom: 1PX solid #ccc;
-    font-size: 28px;
+    font-size: 0.28rem;
 }
 
 .main > section > h2{
     border-bottom: 1PX solid #ececec;
-    line-height: 48px;
-    font-size: 32px;
+    line-height: 0.48rem;
+    font-size: 0.32rem;
 }
 
 .main > section a.link{
-    line-height: 60px;
+    line-height: 0.6rem;
     text-decoration: underline;
     color: #4ea3d4;
 }
@@ -89,17 +89,17 @@ nav li.active a{
 .demo-list > li{
     overflow: hidden;
     // position: relative;
-    margin-top: 20px;
+    margin-top: 0.2rem;
 }
 
 .demo-list > li h3,
 .main > section > h3{
-    line-height: 48px;
-    font-size: 28px;
+    line-height: 0.48rem;
+    font-size: 0.28rem;
 }
 
 .main > section > p{
-    line-height: 60px;
+    line-height: 0.6rem;
     color: #666;
 }
 
@@ -125,7 +125,7 @@ nav li.active a{
 
 .content{
     min-height: 80PX;
-    padding: 20px 0 1px;
+    padding: 0.2rem 0 0.01rem;
 }
 
 .code-frame{
@@ -137,7 +137,7 @@ nav li.active a{
  .code-frame pre{
     margin-left: -240PX;
     padding: 0;
-    font-size: 24px;
+    font-size: 0.24rem;
     // background-color: #f7f7f7;
 }
 
@@ -146,7 +146,7 @@ nav li.active a{
     background-color: #fff;
 }
 .content>.ph-button:not(.ph-button-block){
-    margin: 0 20px 20px 0;
+    margin: 0 0.2rem 0.2rem 0;
 }
 
 .content .ph-button-lg,
@@ -162,7 +162,7 @@ nav li.active a{
 .content .ph-input,
 .content .ph-textarea-field,
 .ph-search-bar{
-    margin-bottom: 20px;
+    margin-bottom: 0.2rem;
 }
 
 .col-demo{
@@ -183,11 +183,11 @@ nav li.active a{
 }
 
 .ph-filter-selector{
-    height: calc(100% - 90px);
+    height: calc(100% - 0.9rem);
 }
 
 .ph-dialog-body ul{
-    padding-left: 32px;
+    padding-left: 0.32rem;
 }
 .ph-dialog-body li{
     list-style: outside decimal;
@@ -207,7 +207,7 @@ nav li.active a{
 @media (max-width: 885px){
     .demo-frame{
         float: none;
-        margin-bottom: 20px;
+        margin-bottom: 0.2rem;
     }
     .code-frame{
         float: none;
@@ -223,9 +223,9 @@ nav li.active a{
         min-width: 320PX;
     }
     .main > section > h2, .demo-list > li h3{
-        padding-left: 20px;
+        padding-left: 0.2rem;
     }
     .content{
-        min-height: 100px;
+        min-height: 1rem;
     }
 }
