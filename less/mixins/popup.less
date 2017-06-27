@@ -25,11 +25,11 @@
 		.ph-popup-item{
 			border-bottom: @action-item-border;
 			&:first-child{
-				border-radius: @action-item-radius @action-item-radius 0 0;
+				.border-radius(@action-item-radius @action-item-radius 0 0);
 			}
 			&:last-child{
 				border-bottom: none;
-				border-radius: 0 0 @action-item-radius @action-item-radius;
+				.border-radius(0 0 @action-item-radius @action-item-radius);
 			}
 		}
 		.ph-popup-tip{
@@ -42,7 +42,7 @@
 		}
 		.ph-popup-operate{
 			margin-top: @action-operate-margin;
-			border-radius: @action-item-radius;
+			.border-radius(@action-item-radius);
 			color: @action-operate-color;
 		}
 	}

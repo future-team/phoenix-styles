@@ -1,10 +1,12 @@
+@import "../mixins/badges";
+
 .ph-badge {
     display: inline-block;
     min-width: @badge-min-width;
     height: @badge-height;
     padding: @badge-padding;
     background-color: @badge-default-background;
-    border-radius: @badge-radius;
+    .border-radius(@badge-radius);
     line-height: @badge-height;
     text-align: center;
     font-size: @badge-font-size;

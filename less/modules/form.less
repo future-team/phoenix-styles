@@ -1,3 +1,5 @@
+@import "../mixins/form";
+
 // form reset
 input,
 textarea,
@@ -33,7 +35,7 @@ input[type="tel"]{
     line-height: 1;
     background-color: @white;
     border: @border-default;
-    border-radius: @input-default-radius;
+    .border-radius(@input-default-radius);
     font-size: @input-default-font-size;
     -webkit-appearance: none;
     outline: none;
@@ -176,7 +178,7 @@ input[type="search"] + .ph-input-placeholder-hide{
     padding: @textarea-padding;
     background-color: @white;
     // border: @textarea-border;
-    border-radius: @textarea-border-radius;
+    .border-radius(@textarea-border-radius);
     line-height: @textarea-line-height;
     font-size: @textarea-font-size;
     color: @textarea-color;

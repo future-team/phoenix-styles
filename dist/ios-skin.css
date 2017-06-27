@@ -767,7 +767,10 @@ input[type="color"] {
   height: 40px;
 }
 .ph-checkbox i {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
   border-radius: 4px;
+  background-clip: padding-box;
   position: relative;
   display: block;
   width: 40px;
@@ -827,7 +830,10 @@ input[type="color"] {
   height: 42px;
 }
 .ph-radio i {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
   border-radius: 4px;
+  background-clip: padding-box;
   position: relative;
   display: block;
   width: 42px;
@@ -882,7 +888,10 @@ input[type="color"] {
   border-color: #e1e1e1;
 }
 .ph-radio i {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
+  background-clip: padding-box;
 }
 .ph-tabs {
   background-color: #fff;
@@ -957,7 +966,10 @@ input[type="color"] {
   padding: 1.4rem 0 0;
   margin: 0 auto;
   background-color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
+  background-clip: padding-box;
   text-align: center;
 }
 .ph-dialog-content .ph-dialog-close {
@@ -1022,7 +1034,10 @@ input[type="color"] {
   border-top: 1PX solid #e1e1e1;
 }
 .ph-dialog-content .ph-dialog-footer .ph-button-group .ph-button-block:last-child {
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
   border-radius: 0 0 3px 3px;
+  background-clip: padding-box;
 }
 .ph-dialog-prompt .ph-dialog-title {
   margin: 0 40px;
@@ -1400,11 +1415,17 @@ input[type="color"] {
   border-bottom: 1PX solid #e1e1e1;
 }
 .ph-action-sheet .ph-popup-item:first-child {
+  -webkit-border-radius: 12px 12px 0 0;
+  -moz-border-radius: 12px 12px 0 0;
   border-radius: 12px 12px 0 0;
+  background-clip: padding-box;
 }
 .ph-action-sheet .ph-popup-item:last-child {
   border-bottom: none;
+  -webkit-border-radius: 0 0 12px 12px;
+  -moz-border-radius: 0 0 12px 12px;
   border-radius: 0 0 12px 12px;
+  background-clip: padding-box;
 }
 .ph-action-sheet .ph-popup-tip {
   font-size: 32px;
@@ -1416,7 +1437,10 @@ input[type="color"] {
 }
 .ph-action-sheet .ph-popup-operate {
   margin-top: 16px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
   border-radius: 12px;
+  background-clip: padding-box;
   color: #333;
 }
 .ph-popup-picker {
@@ -1557,7 +1581,10 @@ input[type="color"] {
   height: 40px;
   background-color: #fff;
   box-shadow: 0 0 4PX rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
+  background-clip: padding-box;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -1566,7 +1593,10 @@ input[type="color"] {
   position: absolute;
   padding: 12px 18px;
   background-color: #666;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
   border-radius: 8px;
+  background-clip: padding-box;
   color: #fff;
 }
 .ph-slider-tip-top .ph-slider-tip {
@@ -1660,7 +1690,11 @@ input[type="color"] {
 .ph-menu-nav .ph-menu-item.active a {
   color: #007aff;
 }
-
+(100% -  2.75rem);
+}
+.ph-menu-close-button {
+  position: absolute;
+  right: 0;
   top: 0;
   padding: 0.5rem;
   font-size: 0.36rem;

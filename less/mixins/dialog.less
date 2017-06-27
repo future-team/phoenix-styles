@@ -7,7 +7,7 @@
 		padding: @dialog-content-padding;
 		margin: 0 auto;
 		background-color: @white;
-		border-radius: @dialog-content-radius;
+		.border-radius(@dialog-content-radius);
 		text-align: center;
 
 		.@{dialogPrefixCls}-close{
@@ -80,7 +80,7 @@
 				.ph-button-block{
 					border-top: @dialog-btn-border;
 					&:last-child{
-						border-radius: 0 0 @dialog-content-radius @dialog-content-radius;
+						.border-radius(0 0 @dialog-content-radius @dialog-content-radius);
 					}
 				}
 			}

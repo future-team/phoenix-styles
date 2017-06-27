@@ -26,6 +26,7 @@
 .@{buttonGroupPrefixCls}-justify,
 .@{buttonGroupPrefixCls}-segmente{
     .ph-button{
+        min-width: 0;
         &:not(:first-child){
             border-left: none;
         }
@@ -87,6 +88,7 @@
     .ph-button{
         width: @button-group-justify-width;
         height: @button-group-justify-height;
-        border-radius: @button-group-justify-radius;
+        .border-radius(@button-group-justify-radius);
+        line-height: @button-group-justify-height;
     }
 }

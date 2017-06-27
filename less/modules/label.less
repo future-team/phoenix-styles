@@ -1,9 +1,11 @@
+@import "../mixins/label";
+
 .ph-label{
     display: inline-block;
     vertical-align: middle;
     padding: @label-padding;
     font-size: @font-size-tip;
-    border-radius: @label-radius;
+    .border-radius(@label-radius);
 }
 .ph-label-md{
     font-size: @font-size-text;

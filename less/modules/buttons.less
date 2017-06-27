@@ -1,3 +1,5 @@
+@import "../mixins/buttons";
+
 @buttonPrefixCls: ph-button;
 
 .@{buttonPrefixCls}{
@@ -10,9 +12,10 @@
     text-align: center;
     white-space: nowrap;
     border: @btn-default-border;
-    border-radius: @btn-default-radius;
+    .border-radius(@btn-default-radius);
     background-color: @white;
     vertical-align: top;
+    line-height: @btn-sm-height;
     font-size: @font-size-text;
     font-weight: 400;
     outline: none;
@@ -21,13 +24,15 @@
     &.@{buttonPrefixCls}-md{
         height: @btn-md-height;
         min-width: @btn-md-min-width;
+        line-height: @btn-md-height;
         font-size: @font-size-subtitle;
     }
 
     &.@{buttonPrefixCls}-lg,
     &.@{buttonPrefixCls}-block{
         height: @btn-lg-height;
-        border-radius: @btn-lg-radius;
+        .border-radius(@btn-lg-radius);
+        line-height: @btn-lg-height;
         font-size: @font-size-subtitle;
     }
 
@@ -42,10 +47,17 @@
 }
 
 // 带图标的按钮
-.@{buttonPrefixCls} .gfs-icon {
+.@{buttonPrefixCls} .gfs-icon{
     margin-right: @btn-icon-margin;
     font-size: inherit;
 }
+
+.@{buttonPrefixCls}-stable .gfs-icon{
+    position: absolute;
+    margin-right: 0;
+    margin-left: -44px;
+}
+
 
 // input[type="submit"],
 // input[type="reset"],
