@@ -3222,19 +3222,39 @@ input[type="search"] + .ph-input-placeholder-hide {
   display: inline-block;
   vertical-align: middle;
 }
+.ph-button-group-default,
+.ph-button-group-footer,
+.ph-button-group-justify {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.ph-button-group-default .ph-button,
+.ph-button-group-footer .ph-button,
+.ph-button-group-justify .ph-button {
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1  ;
+  -moz-box-flex: 1;
+  -moz-flex: 1  ;
+  -ms-flex: 1  ;
+  flex: 1  ;
+  min-width: 0;
+}
 .ph-button-group-default .ph-button,
 .ph-button-group-footer .ph-button {
   position: relative;
-  float: left;
-}
-.ph-button-group-default .ph-button.ph-button-lg,
-.ph-button-group-footer .ph-button.ph-button-lg {
-  min-width: 0;
-  width: 3.31rem;
   margin-right: 0.24rem;
 }
-.ph-button-group-default .ph-button.ph-button-lg:nth-child(even),
-.ph-button-group-footer .ph-button.ph-button-lg:nth-child(even) {
+.ph-button-group-default .ph-button:nth-child(even),
+.ph-button-group-footer .ph-button:nth-child(even) {
   margin-right: 0;
 }
 .ph-button-group-justify .ph-button,
@@ -3258,27 +3278,6 @@ input[type="search"] + .ph-input-placeholder-hide {
 .ph-button-group-segmente .ph-button:last-child:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
-}
-.ph-button-group-justify {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-.ph-button-group-justify .ph-button {
-  -moz-flex: 1;
-  -ms-flex: 1;
-  -webkit-flex: 1;
-  flex: 1;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1  ;
-  -moz-box-flex: 1;
-  -moz-flex: 1  ;
-  -ms-flex: 1  ;
-  flex: 1  ;
 }
 .ph-button-group-tacked {
   width: 100%;

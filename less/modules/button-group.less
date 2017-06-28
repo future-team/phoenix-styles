@@ -7,18 +7,24 @@
 }
 
 .@{buttonGroupPrefixCls}-default,
+.@{buttonGroupPrefixCls}-footer,
+.@{buttonGroupPrefixCls}-justify{
+    width: 100%;
+    .display-flex();
+
+    .ph-button{
+        .flex(1);
+        min-width: 0;
+    }
+}
+
+.@{buttonGroupPrefixCls}-default,
 .@{buttonGroupPrefixCls}-footer{
     .ph-button{
         position: relative;
-        float: left;
-        // margin-left: -1PX;
-        &.ph-button-lg{
-            min-width: 0;
-            width: @button-group-default-width;
-            margin-right: @btn-lg-margin;
-            &:nth-child(even){
-                margin-right: 0;
-            }
+        margin-right: @btn-lg-margin;
+        &:nth-child(even){
+            margin-right: 0;
         }
     }
 }
@@ -41,15 +47,6 @@
             border-bottom-left-radius: 0;
             border-top-left-radius: 0;
         }
-    }
-}
-
-.@{buttonGroupPrefixCls}-justify{
-    width: 100%;
-    .display-flex();
-
-    .ph-button{
-        .flex(1);
     }
 }
 
