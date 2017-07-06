@@ -1,3 +1,6 @@
+@import "../public";
+@import "iconfont";
+
 @listPrefixCls: ph-list;
 
 .@{listPrefixCls}{
@@ -22,10 +25,11 @@
 .@{listPrefixCls}-header{
 	padding: @list-header-padding;
     background-color: @list-header-bg;
+    font-size: @list-item-font-size;
     color: @list-header-color;
 }
 
-.@{listPrefixCls}-item{
+.@{listPrefixCls}-item.ph-row{
 	position: relative;
 	margin: 0;
 	margin-left: @list-item-margin;
@@ -48,7 +52,7 @@
 }
 
 .@{listPrefixCls}-item.ph-navigate-right{
-	.ph-col-tail{
+	.@{listPrefixCls}-col-tail{
         padding-right: @list-col-tail-padding;
     }
     &:before{
@@ -70,8 +74,8 @@
 }
 
 .@{listPrefixCls}-item-disabled{
-	.ph-col-heading, 
-    .ph-col input{
+	.@{listPrefixCls}-col-heading, 
+    .@{listPrefixCls}-col input{
         color: @list-item-disabled-color;
         pointer-events: none;
     }
@@ -83,7 +87,7 @@
 }
 
 .@{listPrefixCls}-item-error{
-	.ph-col input{
+	.@{listPrefixCls}-col input{
         color: @list-item-error-color;
     }
     .gfs-icon-error{
@@ -109,14 +113,14 @@
     }
 }
 
-.@{listPrefixCls}-item .ph-col{
+.@{listPrefixCls}-item .@{listPrefixCls}-col{
 	padding: @list-col-padding;
     & > * {
         vertical-align: top;
     }
 }
 
-.@{listPrefixCls}-item .ph-col-heading{
+.@{listPrefixCls}-item .@{listPrefixCls}-col-heading{
 	.flex-inline();
     .flex(none);
     .flex-direction(column);
@@ -129,12 +133,13 @@
     }
 }
 
-.@{listPrefixCls}-item .ph-col-tail{
+.@{listPrefixCls}-item .@{listPrefixCls}-col-tail{
 	text-align: right;
     input{
         text-align: right;
     }
     input:disabled{
+        background-color: transparent;
         color: @gray-33;
     }
 }

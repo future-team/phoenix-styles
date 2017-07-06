@@ -1,8 +1,12 @@
-@loadingListPrefixCls: ph-loading-page;
+@import "../public";
+@pullUpPrefixCls: ph-pullup;
 
-.@{loadingListPrefixCls}-tip{
+.@{pullUpPrefixCls}{
+	text-align: center;
+}
+
+.@{pullUpPrefixCls}-tip{
     padding: @loading-list-padding;
-    text-align: center;
     font-size: @loading-list-font-size;
     color: @loading-list-color;
 
@@ -10,7 +14,6 @@
     	display: inline-block;
         font-size: @loading-list-icon-size;
         .animation(rotate 1s linear infinite);
-        // .transform-origin(center 47.8%);
     }
 }
 

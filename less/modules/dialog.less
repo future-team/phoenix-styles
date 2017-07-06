@@ -1,3 +1,4 @@
+@import "../public";
 @import "../mixins/dialog";
 
 @dialogPrefixCls: ph-dialog;
@@ -29,8 +30,14 @@
 }
 
 .@{dialogPrefixCls}-body{
-	input{
-		margin-bottom: 0;
+	.@{dialogPrefixCls}-prompt-text{
+		margin-bottom: 16px;
+	}
+	.ph-input{
+		margin-bottom: 16px;
+		&:last-child{
+			margin-bottom: 0;
+		}
 	}
 }
 

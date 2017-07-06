@@ -1,78 +1,73 @@
+@import "../public";
+
 @popoverPrefixCls: ph-popover;
 
 .@{popoverPrefixCls}{
-	position: absolute;
-	z-index: 9;
-	padding: @popover-padding;
+	height: 0;
+	visibility: hidden;
 	font-size: @popover-font-size;
 	color: @popover-color;
+	pointer-events: none;
 }
 
-// .@{popoverPrefixCls}-center-x{
-// 	.transform(translateX(-50%));
-// }
-// .@{popoverPrefixCls}-center-y{
-// 	.transform(translateY(-50%));
-// }
+.@{popoverPrefixCls}.show{
+	position: static;
+	visibility: visible;
+	pointer-events: auto;
+}
 
 .@{popoverPrefixCls}-top{
 	.@{popoverPrefixCls}-arrow{
-		bottom: -@popover-arrow-size/2;
+		margin-top: -@popover-arrow-size;
 		.transform(translateX(-50%) rotate(225deg));
 	}
 }
 .@{popoverPrefixCls}-bottom{
 	.@{popoverPrefixCls}-arrow{
-		top: -@popover-arrow-size/2;
+		margin-top: 1px;
 		.transform(translateX(-50%) rotate(45deg));
 	}
 }
 .@{popoverPrefixCls}-left{
 	.@{popoverPrefixCls}-arrow{
-		right: -@popover-arrow-size/2+@popover-padding-value;
+		margin-left: -@popover-arrow-size;
 		.transform(translateY(-50%) rotate(135deg));
+	}
+	.@{popoverPrefixCls}-main{
+		margin-left: @popover-arrow-size/2;
 	}
 }
 .@{popoverPrefixCls}-right{
 	.@{popoverPrefixCls}-arrow{
-		left: -@popover-arrow-size/2+@popover-padding-value;
+		margin-left: 1px;
 		.transform(translateY(-50%) rotate(-45deg));
 	}
-}
-
-.@{popoverPrefixCls}-center-x{
-	.@{popoverPrefixCls}-arrow{
-		left: 50%;
-	}
-}
-.@{popoverPrefixCls}-center-y{
-	.@{popoverPrefixCls}-arrow{
-		top: 50%;
-	}
-}
-.@{popoverPrefixCls}-left-x{
-	.@{popoverPrefixCls}-arrow{
-		left: 25%;
-	}
-}
-.@{popoverPrefixCls}-right-x{
-	.@{popoverPrefixCls}-arrow{
-		left: 75%;
+	.@{popoverPrefixCls}-main{
+		margin-left: calc(@popover-arrow-size/2 - @popover-padding-value);
 	}
 }
 
 .@{popoverPrefixCls}-arrow{
 	position: absolute;
+	top:0;
+	left:0;
+	z-index: 99;
 	width: @popover-arrow-size;
 	height: @popover-arrow-size;
 	background-color: @popover-background;
 	.border-radius(@popover-arrow-radius);
 }
 
+.@{popoverPrefixCls}-main{
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 99;
+	padding: @popover-padding;
+}
+
 .@{popoverPrefixCls}-content{
-	position: relative;
-	z-index: 1;
-	min-width: @popover-min-width;
+	min-width: @popover-min-width;	
 	background-color: @popover-background;
 	.border-radius(@popover-radius);
 }

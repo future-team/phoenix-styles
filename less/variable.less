@@ -363,8 +363,8 @@
 // --------------------------------------------------
 @popover-position:          10%;
 @popover-min-width:         160px;
-@popover-padding-value:     32;
-@popover-padding:           0 32px;
+@popover-padding-value:     32px;
+@popover-padding:           @popover-arrow-size/2 @popover-padding-value;
 @popover-background:        @gray-33;
 @popover-radius:            8px;
 @popover-font-size:         28px;
@@ -451,7 +451,7 @@
 @slider-progress-disabled-color: #ffb299;
 
 @slider-btn-size:           40px;
-@slider-btn-box-shadow:     0 0 4PX rgba(0,0,0,.1);
+@slider-btn-box-shadow:     0 1px 8PX rgba(0,0,0,.2); //设计：0 0 4PX rgba(0,0,0,.1)
 @slider-btn-disabled-border: 4px solid @brand-primary-await;
 
 @slider-tip-padding:        12px 18px;
