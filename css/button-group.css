@@ -1,0 +1,106 @@
+/*30pt*/
+/*18pt*/
+/*17pt*/
+/*16pt*/
+/*15pt*/
+/*14pt*/
+/*12pt*/
+.ph-button-group {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.ph-button-group-default,
+.ph-button-group-footer,
+.ph-button-group-justify {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.ph-button-group-default .ph-button,
+.ph-button-group-footer .ph-button,
+.ph-button-group-justify .ph-button {
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1  ;
+  -moz-box-flex: 1;
+  -moz-flex: 1  ;
+  -ms-flex: 1  ;
+  flex: 1  ;
+  min-width: 0;
+}
+.ph-button-group-default .ph-button,
+.ph-button-group-footer .ph-button {
+  position: relative;
+  margin-right: 0.24rem;
+}
+.ph-button-group-default .ph-button:nth-child(even),
+.ph-button-group-footer .ph-button:nth-child(even) {
+  margin-right: 0;
+}
+.ph-button-group-justify .ph-button,
+.ph-button-group-segmente .ph-button {
+  min-width: 0;
+}
+.ph-button-group-justify .ph-button:not(:first-child),
+.ph-button-group-segmente .ph-button:not(:first-child) {
+  border-left: none;
+}
+.ph-button-group-justify .ph-button:not(:first-child):not(:last-child),
+.ph-button-group-segmente .ph-button:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.ph-button-group-justify .ph-button:first-child:not(:last-child),
+.ph-button-group-segmente .ph-button:first-child:not(:last-child) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.ph-button-group-justify .ph-button:last-child:not(:first-child),
+.ph-button-group-segmente .ph-button:last-child:not(:first-child) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.ph-button-group-tacked {
+  width: 100%;
+}
+.ph-button-group-tacked .ph-button {
+  float: none;
+  display: block;
+  margin-left: 0;
+}
+.ph-button-group-tacked .ph-button:not(:first-child) {
+  border-top: none;
+}
+.ph-button-group-tacked .ph-button:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.ph-button-group-tacked .ph-button:first-child:not(:last-child) {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.ph-button-group-tacked .ph-button:last-child:not(:first-child) {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.ph-button-group-footer {
+  width: 100%;
+  padding: 0.2rem 0.32rem;
+  border-top: 1PX solid #e1e1e1;
+  background-color: #fff;
+}
+.ph-button-group-segmente .ph-button {
+  width: 1.52rem;
+  height: 0.56rem;
+  -webkit-border-radius: 0.08rem;
+  -moz-border-radius: 0.08rem;
+  border-radius: 0.08rem;
+  background-clip: padding-box;
+  line-height: 0.56rem;
+}

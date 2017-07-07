@@ -1,0 +1,422 @@
+/*30pt*/
+/*18pt*/
+/*17pt*/
+/*16pt*/
+/*15pt*/
+/*14pt*/
+/*12pt*/
+.ph-grid {
+  overflow: hidden;
+}
+.ph-grid-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0.16rem;
+  padding-right: 0.16rem;
+}
+.ph-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -0.08rem;
+  /*width: 100%;*/
+}
+.ph-row-wrap {
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.ph-row.ph-no-padding {
+  padding: 0;
+  margin: 0;
+}
+.ph-row.ph-no-padding > .ph-col {
+  padding: 0;
+}
+/*.row + .row {
+  margin-top: (@grid-padding-width / 2) * -1;
+  padding-top: 0;
+}*/
+.ph-col {
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1  ;
+  -moz-box-flex: 1;
+  -moz-flex: 1  ;
+  -ms-flex: 1  ;
+  flex: 1  ;
+  display: block;
+  padding: 0 0.08rem;
+  width: 100%;
+}
+/* Vertically Align Columns */
+/* .row-* vertically aligns every .col in the .row */
+.ph-row-top {
+  -webkit-box-align: flex-start;
+  -moz-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start;
+}
+.ph-row-bottom {
+  -webkit-box-align: flex-end;
+  -moz-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  align-items: flex-end;
+}
+.ph-row-center {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+}
+.ph-row-stretch {
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  align-items: stretch;
+}
+.ph-row-baseline {
+  -webkit-box-align: baseline;
+  -moz-box-align: baseline;
+  -ms-flex-align: baseline;
+  -webkit-align-items: baseline;
+  -moz-align-items: baseline;
+  align-items: baseline;
+}
+/* .col-* vertically aligns an individual .col */
+.ph-col-top {
+  -ms-align-self: flex-start;
+  -ms-flex-item-align: start;
+  -webkit-align-self: flex-start;
+  -moz-align-self: flex-start;
+  align-self: flex-start;
+}
+.ph-col-bottom {
+  -ms-align-self: flex-end;
+  -ms-flex-item-align: end;
+  -webkit-align-self: flex-end;
+  -moz-align-self: flex-end;
+  align-self: flex-end;
+}
+.ph-col-center {
+  -ms-align-self: center;
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  align-self: center;
+}
+/* Column Offsets */
+.ph-col-offset-5 {
+  margin-left: 5%;
+}
+.ph-col-offset-10 {
+  margin-left: 10%;
+}
+.ph-col-offset-15 {
+  margin-left: 15%;
+}
+.ph-col-offset-20 {
+  margin-left: 20%;
+}
+.ph-col-offset-25 {
+  margin-left: 25%;
+}
+.ph-col-offset-30 {
+  margin-left: 30%;
+}
+.ph-col-offset-35 {
+  margin-left: 35%;
+}
+.ph-col-offset-40 {
+  margin-left: 40%;
+}
+.ph-col-offset-45 {
+  margin-left: 45%;
+}
+.ph-col-offset-50 {
+  margin-left: 50%;
+}
+.ph-col-offset-55 {
+  margin-left: 55%;
+}
+.ph-col-offset-60 {
+  margin-left: 60%;
+}
+.ph-col-offset-65 {
+  margin-left: 65%;
+}
+.ph-col-offset-70 {
+  margin-left: 70%;
+}
+.ph-col-offset-75 {
+  margin-left: 75%;
+}
+.ph-col-offset-80 {
+  margin-left: 80%;
+}
+.ph-col-offset-85 {
+  margin-left: 85%;
+}
+.ph-col-offset-90 {
+  margin-left: 90%;
+}
+.ph-col-offset-95 {
+  margin-left: 95%;
+}
+.ph-col-offset-100 {
+  margin-left: 100%;
+}
+.ph-col-offset-33,
+.ph-col-offset-34 {
+  margin-left: 33.3333%;
+}
+.ph-col-offset-66,
+.ph-col-offset-67 {
+  margin-left: 66.6666%;
+}
+/* Explicit Column Percent Sizes */
+/* By default each grid column will evenly distribute */
+/* across the grid. However, you can specify individual */
+/* columns to take up a certain size of the available area */
+.ph-col-5 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 5%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 5%;
+  -ms-flex: 0 0 5%;
+  flex: 0 0 5%;
+  max-width: 5%;
+}
+.ph-col-10 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 10%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 10%;
+  -ms-flex: 0 0 10%;
+  flex: 0 0 10%;
+  max-width: 10%;
+}
+.ph-col-15 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 15%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 15%;
+  -ms-flex: 0 0 15%;
+  flex: 0 0 15%;
+  max-width: 15%;
+}
+.ph-col-20 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 20%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 20%;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+.ph-col-25 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 25%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 25%;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.ph-col-30 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 30%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 30%;
+  -ms-flex: 0 0 30%;
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+.ph-col-35 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 35%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 35%;
+  -ms-flex: 0 0 35%;
+  flex: 0 0 35%;
+  max-width: 35%;
+}
+.ph-col-40 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 40%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 40%;
+  -ms-flex: 0 0 40%;
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+.ph-col-45 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 45%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 45%;
+  -ms-flex: 0 0 45%;
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+.ph-col-50 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.ph-col-55 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 55%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 55%;
+  -ms-flex: 0 0 55%;
+  flex: 0 0 55%;
+  max-width: 55%;
+}
+.ph-col-60 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 60%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 60%;
+  -ms-flex: 0 0 60%;
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+.ph-col-65 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 65%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 65%;
+  -ms-flex: 0 0 65%;
+  flex: 0 0 65%;
+  max-width: 65%;
+}
+.ph-col-70 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 70%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 70%;
+  -ms-flex: 0 0 70%;
+  flex: 0 0 70%;
+  max-width: 70%;
+}
+.ph-col-75 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 75%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 75%;
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+.ph-col-80 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 80%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 80%;
+  -ms-flex: 0 0 80%;
+  flex: 0 0 80%;
+  max-width: 80%;
+}
+.ph-col-85 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 85%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 85%;
+  -ms-flex: 0 0 85%;
+  flex: 0 0 85%;
+  max-width: 85%;
+}
+.ph-col-90 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 90%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 90%;
+  -ms-flex: 0 0 90%;
+  flex: 0 0 90%;
+  max-width: 90%;
+}
+.ph-col-95 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 95%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 95%;
+  -ms-flex: 0 0 95%;
+  flex: 0 0 95%;
+  max-width: 95%;
+}
+.ph-col-100 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.ph-col-33,
+.ph-col-34 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 33.3333%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 33.3333%;
+  -ms-flex: 0 0 33.3333%;
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+}
+.ph-col-66,
+.ph-col-67 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 66.6666%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 66.6666%;
+  -ms-flex: 0 0 66.6666%;
+  flex: 0 0 66.6666%;
+  max-width: 66.6666%;
+}
+.ph-grid-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0.1rem;
+}
+.ph-grid-row:first-child {
+  margin-top: 0;
+}
+.ph-grid-row label {
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1  ;
+  -moz-box-flex: 1;
+  -moz-flex: 1  ;
+  -ms-flex: 1  ;
+  flex: 1  ;
+}

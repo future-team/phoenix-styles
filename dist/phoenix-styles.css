@@ -6,8 +6,8 @@
 /*14pt*/
 /*12pt*/
 * {
-  padding: 0;
-  margin: 0;
+  padding: 0rem;
+  margin: 0rem;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-backface-visibility: hidden;
   -webkit-box-sizing: border-box;
@@ -533,31 +533,6 @@ h6 {
 .icon.icon-lg {
   font-size: 0.5rem !important;
 }
-@-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-/**晃动*/
 .animated {
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
@@ -2764,6 +2739,7 @@ input[type="search"] + .ph-input-placeholder-hide {
 }
 .ph-slider {
   position: relative;
+  background-color: #fff;
 }
 .ph-slider-content {
   position: absolute;
@@ -2850,7 +2826,7 @@ input[type="search"] + .ph-input-placeholder-hide {
   width: 0.4rem;
   height: 0.4rem;
   background-color: #fff;
-  box-shadow: 0 0 4PX rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.01rem 0.08rem rgba(0, 0, 0, 0.2);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -2870,7 +2846,7 @@ input[type="search"] + .ph-input-placeholder-hide {
   color: #fff;
 }
 .ph-slider-tip-top .ph-slider-tip {
-  bottom: calc(100% +  0.2rem);
+  bottom: calc(100% + 0.2rem);
 }
 .ph-slider-tip-top .ph-slider-tip:after {
   bottom: -0.08rem;
@@ -2878,7 +2854,7 @@ input[type="search"] + .ph-input-placeholder-hide {
   border-top-color: #666;
 }
 .ph-slider-tip-bottom .ph-slider-tip {
-  top: calc(100% +  0.2rem);
+  top: calc(100% + 0.2rem);
 }
 .ph-slider-tip-bottom .ph-slider-tip:after {
   top: -0.08rem;
@@ -2919,7 +2895,13 @@ input[type="search"] + .ph-input-placeholder-hide {
 .ph-dialog-content {
   position: relative;
 }
-.ph-dialog-body input {
+.ph-dialog-body .ph-dialog-prompt-text {
+  margin-bottom: 0.16rem;
+}
+.ph-dialog-body .ph-input {
+  margin-bottom: 0.16rem;
+}
+.ph-dialog-body .ph-input:last-child {
   margin-bottom: 0;
 }
 .ph-dialog-content {
@@ -3516,60 +3498,84 @@ input[type="search"] + .ph-input-placeholder-hide {
 }
 .ph-image-list {
   overflow: hidden;
-  padding-top: 2%;
-  margin: 0 auto;
+  padding-top: 0.16rem;
+  margin: 0 0.32rem;
 }
-.ph-image-list dl {
+.ph-image-list > * {
   float: left;
-  margin: 0 0 2% 2%;
+  margin: 0 0.16rem 0.16rem 0;
   background-color: #fff;
 }
-.ph-image-list dt img {
+dl.ph-image-item dt img {
   display: block;
   width: 100%;
   border: none;
 }
-.ph-image-list dd {
-  padding: 0.4rem;
+dl.ph-image-item dd {
+  padding: 0.16rem;
 }
-.ph-image-list dd p {
-  margin-bottom: 0.4rem;
+dl.ph-image-item dd p {
+  margin-bottom: 0.16rem;
   line-height: 1;
   font-size: 0.28rem;
 }
-.ph-image-list dd p.ph-image-title {
+dl.ph-image-item dd p.ph-image-title {
   font-weight: 800;
 }
-.ph-image-list dd p.ph-image-desp {
+dl.ph-image-item dd p.ph-image-desp {
   font-size: 0.24rem;
   color: #999;
 }
-.ph-image-list dd p:last-child {
+dl.ph-image-item dd p:last-child {
   margin-bottom: 0;
 }
-.ph-image-list.ph-column-1 dl {
-  width: 96%;
+.ph-image-list.ph-column-1 > * {
+  width: calc((100% + @image-item-margin)/@i -  @image-item-margin);
 }
-.ph-image-list.ph-column-2 dl {
-  width: 47%;
+.ph-image-list.ph-column-1 > *:nth-child(1n) {
+  margin-right: 0;
 }
-.ph-image-list.ph-column-3 dl {
-  width: 30.66666667%;
+.ph-image-list.ph-column-2 > * {
+  width: calc((100% + @image-item-margin)/@i -  @image-item-margin);
 }
-.ph-image-list.ph-column-4 dl {
-  width: 22.5%;
+.ph-image-list.ph-column-2 > *:nth-child(2n) {
+  margin-right: 0;
 }
-.ph-image-list.ph-column-5 dl {
-  width: 17.6%;
+.ph-image-list.ph-column-3 > * {
+  width: calc((100% + @image-item-margin)/@i -  @image-item-margin);
 }
-.ph-image-list.ph-column-6 dl {
-  width: 14.33333333%;
+.ph-image-list.ph-column-3 > *:nth-child(3n) {
+  margin-right: 0;
 }
-.ph-image-list.ph-column-7 dl {
-  width: 12%;
+.ph-image-list.ph-column-4 > * {
+  width: calc((100% + @image-item-margin)/@i -  @image-item-margin);
 }
-.ph-image-list.ph-column-8 dl {
-  width: 10.25%;
+.ph-image-list.ph-column-4 > *:nth-child(4n) {
+  margin-right: 0;
+}
+.ph-image-list.ph-column-5 > * {
+  width: calc((100% + @image-item-margin)/@i -  @image-item-margin);
+}
+.ph-image-list.ph-column-5 > *:nth-child(5n) {
+  margin-right: 0;
+}
+.ph-image-list.ph-column-6 > * {
+  width: calc((100% + @image-item-margin)/@i -  @image-item-margin);
+}
+.ph-image-list.ph-column-6 > *:nth-child(6n) {
+  margin-right: 0;
+}
+.ph-image-list.ph-column-7 > * {
+  width: calc((100% + @image-item-margin)/@i -  @image-item-margin);
+}
+.ph-image-list.ph-column-7 > *:nth-child(7n) {
+  margin-right: 0;
+}
+.ph-image-list.ph-column-8 > * {
+  width: calc((100% + @image-item-margin)/@i -  @image-item-margin);
+}
+.ph-image-list.ph-column-8 > *:nth-child(8n) {
+  margin-right: 0;
 }
 .ph-steps {
   width: 100%;
@@ -3879,7 +3885,7 @@ input[type="search"] + .ph-input-placeholder-hide {
   color: #999;
 }
 .ph-search-bar-focus .ph-input {
-  width: calc(100% -  0.92rem);
+  width: calc(100% - 0.92rem);
 }
 .ph-toolbar {
   overflow: hidden;
@@ -3974,7 +3980,7 @@ input[type="search"] + .ph-input-placeholder-hide {
 .ph-tabbar .ph-tabbar-item .ph-badge {
   position: absolute;
   top: -0.08rem;
-  left: calc(50% +  0.08rem);
+  left: calc(50% + 0.08rem);
 }
 .ph-tabbar .ph-tabbar-active .gfs-icon,
 .ph-tabbar .ph-tabbar-active p {
@@ -3984,7 +3990,7 @@ input[type="search"] + .ph-input-placeholder-hide {
   content: "";
   position: absolute;
   top: -0.08rem;
-  left: calc(50% +  0.12rem);
+  left: calc(50% + 0.12rem);
   width: 0.24rem;
   height: 0.24rem;
   background-color: #f64e2d;
@@ -3992,6 +3998,11 @@ input[type="search"] + .ph-input-placeholder-hide {
   -moz-border-radius: 50%;
   border-radius: 50%;
   background-clip: padding-box;
+}
+.ph-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .ph-filter-container {
   position: relative;

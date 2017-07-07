@@ -1,0 +1,15 @@
+/*30pt*/
+/*18pt*/
+/*17pt*/
+/*16pt*/
+/*15pt*/
+/*14pt*/
+/*12pt*/
+.ph-page {
+  overflow: auto;
+  height: 100%;
+  padding: 0 0.32rem;
+}
+.ph-page.full-line {
+  padding: 0;
+}

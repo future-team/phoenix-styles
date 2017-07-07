@@ -1,0 +1,80 @@
+/*30pt*/
+/*18pt*/
+/*17pt*/
+/*16pt*/
+/*15pt*/
+/*14pt*/
+/*12pt*/
+.animated {
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.fade-enter,
+.fade-leave.fade-leave-active {
+  opacity: 0.01;
+}
+.fade-enter.fade-enter-active,
+.fade-leave {
+  opacity: 1;
+}
+.slide-top-enter,
+.slide-top-leave.slide-top-leave-active {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.slide-top-enter.slide-top-enter-active,
+.slide-top-leave {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+.slide-bottom-enter,
+.slide-bottom-leave.slide-bottom-leave-active {
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+}
+.slide-bottom-enter.slide-bottom-enter-active,
+.slide-bottom-leave {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+.slide-left-enter,
+.slide-left-leave.slide-left-leave-active,
+.slide-left-full-enter,
+.slide-left-full-leave.slide-left-full-leave-active {
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.slide-left-enter.slide-left-enter-active,
+.slide-left-leave,
+.slide-left-full-enter.slide-left-full-enter-active,
+.slide-left-full-leave {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+.slide-right-enter,
+.slide-right-leave.slide-right-leave-active,
+.slide-right-full-enter,
+.slide-right-full-leave.slide-right-full-leave-active {
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.slide-right-enter.slide-right-enter-active,
+.slide-right-leave,
+.slide-right-full-enter.slide-right-full-enter-active,
+.slide-right-full-leave {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}

@@ -1,0 +1,95 @@
+/*30pt*/
+/*18pt*/
+/*17pt*/
+/*16pt*/
+/*15pt*/
+/*14pt*/
+/*12pt*/
+.ph-popover {
+  height: 0;
+  visibility: hidden;
+  font-size: 0.28rem;
+  color: #fff;
+  pointer-events: none;
+}
+.ph-popover.show {
+  position: static;
+  visibility: visible;
+  pointer-events: auto;
+}
+.ph-popover-top .ph-popover-arrow {
+  margin-top: -0.18rem;
+  -webkit-transform: translateX(-50%) rotate(225deg);
+  -ms-transform: translateX(-50%) rotate(225deg);
+  transform: translateX(-50%) rotate(225deg);
+}
+.ph-popover-bottom .ph-popover-arrow {
+  margin-top: 0.01rem;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
+}
+.ph-popover-left .ph-popover-arrow {
+  margin-left: -0.18rem;
+  -webkit-transform: translateY(-50%) rotate(135deg);
+  -ms-transform: translateY(-50%) rotate(135deg);
+  transform: translateY(-50%) rotate(135deg);
+}
+.ph-popover-left .ph-popover-main {
+  margin-left: 0.09rem;
+}
+.ph-popover-right .ph-popover-arrow {
+  margin-left: 0.01rem;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+  -ms-transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+}
+.ph-popover-right .ph-popover-main {
+  margin-left: calc(-0.23rem);
+}
+.ph-popover-arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 0.18rem;
+  height: 0.18rem;
+  background-color: #333;
+  -webkit-border-radius: 0.04rem;
+  -moz-border-radius: 0.04rem;
+  border-radius: 0.04rem;
+  background-clip: padding-box;
+}
+.ph-popover-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  padding: 0.09rem 0.32rem;
+}
+.ph-popover-content {
+  min-width: 1.6rem;
+  background-color: #333;
+  -webkit-border-radius: 0.08rem;
+  -moz-border-radius: 0.08rem;
+  border-radius: 0.08rem;
+  background-clip: padding-box;
+}
+.ph-popover-list {
+  padding: 0 0.08rem;
+  white-space: nowrap;
+}
+.ph-popover-item {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  padding: 0 0.32rem;
+  border-bottom: 1PX solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+.ph-popover-item:last-child {
+  border-bottom: none;
+}
+.ph-popover-text {
+  padding: 0.28rem 0.32rem;
+  line-height: 0.32rem;
+}

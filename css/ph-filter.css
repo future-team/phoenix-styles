@@ -1,0 +1,130 @@
+/*30pt*/
+/*18pt*/
+/*17pt*/
+/*16pt*/
+/*15pt*/
+/*14pt*/
+/*12pt*/
+.ph-filter-container {
+  position: relative;
+}
+.ph-filter-container-fixed,
+.ph-filter-container-shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+}
+.ph-filter-container-shadow {
+  height: 100%;
+}
+.ph-filter-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.ph-filter-header {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  background-color: #fff;
+  border-bottom: 1PX solid #e1e1e1;
+}
+.ph-filter-header .ph-filter-header-item {
+  position: relative;
+  height: 0.88rem;
+  padding: 0.24rem 0;
+  line-height: 0.4rem;
+  text-align: center;
+  font-size: 0.28rem;
+}
+.ph-filter-header .ph-filter-header-item a {
+  display: block;
+  border-right: 1PX solid #e1e1e1;
+  white-spac: nowrap;
+}
+.ph-filter-header .ph-filter-header-item:last-child a {
+  border-right: none;
+}
+.ph-filter-header .ph-filter-header-item .gfs-icon {
+  display: inline-block;
+  position: relative;
+  top: -0.08rem;
+  margin-left: 0.08rem;
+  line-height: 0.4rem;
+  font-size: 0.32rem;
+  color: #666;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.ph-filter-header .ph-filter-header-item.active .gfs-icon {
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.ph-filter-header .ph-filter-header-item.active:after {
+  content: "";
+  position: absolute;
+  bottom: -0.02rem;
+  left: 50%;
+  width: 0.18rem;
+  height: 0.18rem;
+  background-color: #fff;
+  border-top: 1PX solid #e1e1e1;
+  border-right: 1PX solid #e1e1e1;
+  -webkit-transform: rotate(-45deg) translateX(-50%);
+  -ms-transform: rotate(-45deg) translateX(-50%);
+  transform: rotate(-45deg) translateX(-50%);
+}
+.ph-filter-header .ph-filter-header-text {
+  display: inline-block;
+  overflow: hidden;
+  max-width: calc(100% -  0.72rem);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ph-filter-selector {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+.ph-filter-selector .ph-list,
+.ph-filter-selector .ph-tab-navs,
+.ph-filter-selector .ph-tab-bd {
+  overflow-y: auto;
+  max-height: 8.5rem;
+}
+.ph-filter-selector .ph-list::-webkit-scrollbar,
+.ph-filter-selector .ph-tab-navs::-webkit-scrollbar,
+.ph-filter-selector .ph-tab-bd::-webkit-scrollbar {
+  display: none;
+}
+.ph-filter-selector .ph-list-item.active {
+  color: #ff6633;
+}
+.ph-filter-selector-buttons .ph-list,
+.ph-filter-selector-buttons .ph-tab-navs,
+.ph-filter-selector-buttons .ph-tab-bd {
+  max-height: 7.2rem;
+}
+.ph-checkbox-filter .ph-filter-selector {
+  z-index: 9;
+  height: auto;
+}
+.ph-checkbox-filter .ph-submit-field {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 0.15rem;
+}
+.ph-checkbox-filter .ph-submit-field .ph-button {
+  margin: 0;
+}

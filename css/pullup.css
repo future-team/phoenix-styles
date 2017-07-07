@@ -1,0 +1,43 @@
+/*30pt*/
+/*18pt*/
+/*17pt*/
+/*16pt*/
+/*15pt*/
+/*14pt*/
+/*12pt*/
+.ph-pullup {
+  text-align: center;
+}
+.ph-pullup-tip {
+  padding: 0.24rem 0;
+  font-size: 0.28rem;
+  color: #999;
+}
+.ph-pullup-tip .gfs-icon-loading:before {
+  display: inline-block;
+  font-size: 0.32rem;
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
+}
+.ph-tip {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  font-size: 0.28rem;
+  color: #999;
+}
+.ph-tip .ph-tip-main {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.ph-tip .gfs-icon {
+  display: block;
+  line-height: 1;
+  margin-bottom: 0.24rem;
+  font-size: 0.76rem;
+  color: #ccc;
+}

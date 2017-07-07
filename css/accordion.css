@@ -1,0 +1,31 @@
+/*30pt*/
+/*18pt*/
+/*17pt*/
+/*16pt*/
+/*15pt*/
+/*14pt*/
+/*12pt*/
+.ph-accordion {
+  background-color: #fff;
+}
+.ph-accordion-header {
+  height: 0.88rem;
+  line-height: 0.88rem;
+  padding: 0 0.32rem 0 0.32rem;
+  border-bottom: 1PX solid #f0f0f0;
+  font-size: 0.28rem;
+}
+.ph-accordion-header .gfs-icon {
+  float: right;
+  line-height: 0.88rem;
+  font-size: 0.24rem;
+  color: #bbb;
+}
+.ph-accordion-header .gfs-icon.active {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.ph-accordion-body {
+  overflow: hidden;
+}

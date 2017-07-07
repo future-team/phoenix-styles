@@ -1,0 +1,62 @@
+/*30pt*/
+/*18pt*/
+/*17pt*/
+/*16pt*/
+/*15pt*/
+/*14pt*/
+/*12pt*/
+.ph-tabbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.ph-tabbar .ph-tabbar-list {
+  margin: 0;
+}
+.ph-tabbar .ph-tabbar-item {
+  padding: 0;
+  white-space: nowrap;
+  text-align: center;
+}
+.ph-tabbar {
+  overflow: hidden;
+  height: 0.98rem;
+  background-color: rgba(250, 250, 250, 0.9);
+  border-top: 1PX solid #e1e1e1;
+  padding-top: 0.14rem;
+}
+.ph-tabbar .ph-tabbar-item .gfs-icon {
+  position: relative;
+  display: inline-block;
+  font-size: 0.48rem;
+  margin-bottom: 0.05rem;
+  color: #69707e;
+}
+.ph-tabbar .ph-tabbar-item p {
+  line-height: 1;
+  font-size: 0.2rem;
+  color: #999;
+}
+.ph-tabbar .ph-tabbar-item .ph-badge {
+  position: absolute;
+  top: -0.08rem;
+  left: calc(50% + 0.08rem);
+}
+.ph-tabbar .ph-tabbar-active .gfs-icon,
+.ph-tabbar .ph-tabbar-active p {
+  color: #ff6633;
+}
+.ph-tabbar .ph-tabbar-dynamic .gfs-icon:after {
+  content: "";
+  position: absolute;
+  top: -0.08rem;
+  left: calc(50% + 0.12rem);
+  width: 0.24rem;
+  height: 0.24rem;
+  background-color: #f64e2d;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-clip: padding-box;
+}

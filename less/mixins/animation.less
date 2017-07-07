@@ -103,7 +103,6 @@
 }
 
 //淡入、淡出
-
 @fadeIn-args:{
     0% {
         opacity:0;
@@ -135,7 +134,7 @@
         .transform(rotate(360deg));
     }
 };
-.keyframes(rotate,@rotate-args);
+// .keyframes(rotate,@rotate-args);
 .fadein(@type:fadeIn){
     .keyframes(@type,@fadeIn-args);
     .fadein{
@@ -149,8 +148,8 @@
         .animation-name(@type);
     }
 }
+
 //晃动
-/**晃动*/
 @shake-args:{
     0%,100% {
         .transform(translate3d(0,0,0));
