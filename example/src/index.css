@@ -165,6 +165,10 @@ nav li.active a{
     margin-bottom: .20rem;
 }
 
+.ph-image img{
+    width: 100%;
+}
+
 .col-demo{
     background-color: #ccc;
     text-align: center;

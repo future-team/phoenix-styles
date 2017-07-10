@@ -80,7 +80,7 @@
         pointer-events: none;
     }
     .gfs-icon-close,
-    .gfs-icon-see,
+    .gfs-icon-visible,
     .gfs-icon-error{
         display: none;
     }
@@ -165,13 +165,13 @@
 }
 
 .@{listPrefixCls}-item .ph-input-clear,
-.@{listPrefixCls}-item .ph-input-see{
+.@{listPrefixCls}-item .ph-input-visible{
     input{
         padding-right: @list-input-padding-with-icon;
     }
 }
 
-.@{listPrefixCls}-item .ph-input-clear.ph-input-see{
+.@{listPrefixCls}-item .ph-input-clear.ph-input-visible{
     input{
         padding-right: @list-input-padding-with-second-icon;
     }
@@ -185,17 +185,7 @@
 }
 
 .@{listPrefixCls}-item .ph-image{
-    display: inline-block;
-    position:relative;
-    overflow: hidden;
     width: @list-image-width;
     height: @list-image-height;
     background-color: @list-image-bg;
-    img{
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 100%;
-        .transform(translateY(-50%));
-    }
 }

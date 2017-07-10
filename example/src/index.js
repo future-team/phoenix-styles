@@ -11,7 +11,10 @@
 		
 		for(var i=0; i< sections.length; i++){
 			if(scrollTop >= sections.eq(i).offset().top - 100 && scrollTop < sections.eq(i+1).offset().top){
-				if(!navs.eq(i).hasClass('active')) navs.eq(i).addClass('active').siblings().removeClass('active');
+				var id = sections.eq(i).attr('id')
+				// if(!navs.eq(i).hasClass('active')) 
+					$('.main-nav li').removeClass('active')
+					$('.main-nav li[data-href='+id+']').addClass('active');
 			}
 		}		
 	})

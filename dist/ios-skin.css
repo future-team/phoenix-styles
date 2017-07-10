@@ -1612,15 +1612,15 @@ input[type="color"] {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  height: 2.75rem;
-  padding-right: 0.9375rem;
+  height: 0.88rem;
+  padding-right: 0.32rem;
   background-color: #007aff;
-  line-height: 2.75rem;
+  line-height: 0.88rem;
   color: #fff;
 }
 .ph-menu-header .gfs-icon {
-  padding: 0 0.9375rem;
-  font-size: 0.24rem;
+  padding: 0 0.32rem;
+  font-size: 0.3rem;
   font-weight: 800;
 }
 .ph-menu-header-left > * {
@@ -1628,7 +1628,7 @@ input[type="color"] {
 }
 .ph-menu-header-right {
   padding-right: 0;
-  padding-left: 0.9375rem;
+  padding-left: 0.32rem;
 }
 .ph-menu-header-right .gfs-icon {
   float: right;
@@ -1642,13 +1642,13 @@ input[type="color"] {
 }
 .ph-menu-body-left,
 .ph-menu-body-right {
-  height: calc(100% -  2.75rem);
+  height: calc(100% -  0.88rem);
 }
 .ph-menu-close-button {
   position: absolute;
   right: 0;
   top: 0;
-  padding: 0.5rem;
+  padding: 0.2rem;
   font-size: 0.36rem;
   color: #007aff;
 }
@@ -1658,12 +1658,12 @@ input[type="color"] {
 }
 .ph-menu-nav .ph-menu-item a {
   display: block;
-  padding: 0.6875rem 0.9375rem;
+  padding: 0.24rem 0.32rem;
   font-size: 0.32rem;
   color: #666;
 }
 .ph-menu-nav .ph-menu-item .gfs-icon {
-  margin: 0 0.6875rem 0 0;
+  margin: 0 0.24rem 0 0;
 }
 .ph-menu-nav .ph-menu-item.active a {
   color: #007aff;

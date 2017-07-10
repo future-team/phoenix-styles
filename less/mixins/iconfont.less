@@ -6,3 +6,64 @@
 	-webkit-text-stroke-width: 0.2px;
 	-moz-osx-font-smoothing: grayscale;
 }
+
+.getSize(@size){
+	width: @size;
+	height: @size;
+	font-size: @size;
+}
+
+.icon-size(){
+	.ph-icon-xs{
+		.getSize(@icon-xs-size);
+	}
+	.ph-icon-sm{
+		.getSize(@icon-sm-size);
+	}
+	.ph-icon-md{
+		.getSize(@icon-md-size);
+	}
+	.ph-icon-lg{
+		.getSize(@icon-lg-size);
+	}
+	.ph-icon-xlg{
+		.getSize(@icon-xlg-size);
+	}
+	.ph-icon-xxlg{
+		.getSize(@icon-xxlg-size);
+	}
+}
+
+.icon-skin(){
+	.ph-icon-primary{
+		color: @brand-primary;
+    }
+
+    .ph-icon-success{
+    	color: @brand-success;
+    }
+
+    .ph-icon-tip{
+    	color: @brand-tip;
+    }
+
+    .ph-icon-info{
+    	color: @brand-info;
+    }
+
+    .ph-icon-error{
+    	color: @brand-error;
+    }
+
+    .ph-icon-warning{
+    	color: @brand-warning;
+    }
+
+    .ph-icon-danger{
+    	color: @brand-danger;
+    }
+
+    .ph-icon-gray{
+    	color: @gray-bb;
+    }
+}

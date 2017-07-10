@@ -69,8 +69,8 @@ gulp.task('less', function(){
 }); */
 
 gulp.task('default', ['min-styles','pxtorem']);
-gulp.task('dev',['webpack'], function() {
+gulp.task('dev',['webpack','pxtorem'], function() {
   // 本地文件监听
-  gulp.watch('./less/**/*.less', ['webpack']);
+  gulp.watch('./less/**/*.less', ['pxtorem']);
 });
 
