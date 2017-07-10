@@ -72,5 +72,6 @@ gulp.task('default', ['min-styles','pxtorem']);
 gulp.task('dev',['webpack','pxtorem'], function() {
   // 本地文件监听
   gulp.watch('./less/**/*.less', ['pxtorem']);
+  gulp.watch('./less/**/*.less', ['webpack']);
 });
 

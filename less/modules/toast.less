@@ -37,10 +37,7 @@
 	color: @white;
 }
 
-.@{toastPrefixCls}-success .@{toastPrefixCls}-content,
-.@{toastPrefixCls}-fail .@{toastPrefixCls}-content,
-.@{toastPrefixCls}-tip .@{toastPrefixCls}-content,
-.@{toastPrefixCls}-loading .@{toastPrefixCls}-content{
+.@{toastPrefixCls}-rect{
 	position: relative;
 	width: @toast-rect-width;
 	height: @toast-rect-height;
@@ -55,33 +52,14 @@
 	.transform(translate(-50%, -50%));
 }
 
-.@{toastPrefixCls}-body:before{
-	display: block;
-	width: @toast-icon-size;
-	height: @toast-icon-size;
-	margin: @toast-icon-margin;
-	font-family:"iconfont" !important;
-	font-size: @toast-icon-size;
-	color: @white;
-	-webkit-font-smoothing: antialiased;
-    -webkit-text-stroke-width: .2PX;
-    -moz-osx-font-smoothing: grayscale;
-}
+.@{toastPrefixCls}-body{
+	.gfs-icon{
+		display: block;
+		margin: 0 auto;
+	}
 
-.@{toastPrefixCls}-success .@{toastPrefixCls}-body:before{
-	content: "\e65a";
-}
-
-.@{toastPrefixCls}-fail .@{toastPrefixCls}-body:before{
-	content: "\e659";
-}
-
-.@{toastPrefixCls}-tip .@{toastPrefixCls}-body:before{
-	content: "\e659";
-}
-
-.@{toastPrefixCls}-loading .@{toastPrefixCls}-body:before{
-	content: "\e64d";
-	.animation(rotate 1s linear infinite);
-	.transform-origin(center 55.4%);
+	p{
+		margin-top: @toast-icon-margin;
+		line-height: 1;
+	}
 }

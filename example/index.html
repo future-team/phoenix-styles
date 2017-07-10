@@ -1185,15 +1185,15 @@
                         </div>
                     </li>
                     <li>
-                        <h3>带按钮的情况</h3>
+                        <h3>带icon的情况</h3>
                         <div class="demo-frame">
                             <div class="ph-page">
                                 <div class="content">
                                     <button class="ph-button ph-button-block ph-button-primary">
-                                        <span class="gfs-icon icon-loading"></span>整体居中
+                                        <span class="gfs-icon icon-loading-white ph-icon-sm"></span>整体居中
                                     </button> 
                                     <button class="ph-button ph-button-block ph-button-primary ph-button-stable">
-                                        <span class="gfs-icon icon-loading"></span>仅文字居中
+                                        <span class="gfs-icon icon-loading-white ph-icon-sm"></span>仅文字居中
                                     </button>                  
                                 </div>
                             </div>
@@ -1202,10 +1202,10 @@
                             <pre>
                                 <code data-language="html">
                                     <button class="ph-button ph-button-block ph-button-primary">
-                                        <span class="gfs-icon icon-loading"></span>整体居中
+                                        <span class="gfs-icon icon-loading-white ph-icon-sm"></span>整体居中
                                     </button> 
                                     <button class="ph-button ph-button-block ph-button-primary ph-button-stable">
-                                        <span class="gfs-icon icon-loading"></span>仅文字居中
+                                        <span class="gfs-icon icon-loading-white ph-icon-sm"></span>仅文字居中
                                     </button> 
                                 </code>
                             </pre>
@@ -1794,9 +1794,10 @@
                                 <div class="ph-toast ph-toast-success">
                                     <div class="ph-toast-shadow"></div>
                                     <div class="ph-toast-main">
-                                        <div class="ph-toast-content">
+                                        <div class="ph-toast-content ph-toast-rect">
                                             <div class="ph-toast-body">
-                                                操作成功
+                                                <span class="gfs-icon icon-success ph-icon-lg"></span>
+                                                <p>操作成功</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1809,9 +1810,10 @@
                                     <div class="ph-toast ph-toast-success">
                                         <div class="ph-toast-shadow"></div>
                                         <div class="ph-toast-main">
-                                            <div class="ph-toast-content">
+                                            <div class="ph-toast-content ph-toast-rect">
                                                 <div class="ph-toast-body">
-                                                    操作成功
+                                                    <span class="gfs-icon icon-success ph-icon-lg"></span>
+                                                    <p>操作成功</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1826,9 +1828,10 @@
                                 <div class="ph-toast ph-toast-fail">
                                     <div class="ph-toast-shadow"></div>
                                     <div class="ph-toast-main">
-                                        <div class="ph-toast-content">
+                                        <div class="ph-toast-content ph-toast-rect">
                                             <div class="ph-toast-body">
-                                                操作失败
+                                                <span class="gfs-icon icon-fail ph-icon-lg"></span>
+                                                <p>操作失败</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1841,9 +1844,10 @@
                                     <div class="ph-toast ph-toast-fail">
                                         <div class="ph-toast-shadow"></div>
                                         <div class="ph-toast-main">
-                                            <div class="ph-toast-content">
+                                            <div class="ph-toast-content ph-toast-rect">
                                                 <div class="ph-toast-body">
-                                                    操作失败
+                                                    <span class="gfs-icon icon-fail ph-icon-lg"></span>
+                                                    <p>操作失败</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1858,9 +1862,10 @@
                                 <div class="ph-toast ph-toast-tip">
                                     <div class="ph-toast-shadow"></div>
                                     <div class="ph-toast-main">
-                                        <div class="ph-toast-content">
+                                        <div class="ph-toast-content ph-toast-rect">
                                             <div class="ph-toast-body">
-                                                提示
+                                                <span class="gfs-icon icon-tip ph-icon-lg"></span>
+                                                <p>提示</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1873,9 +1878,10 @@
                                     <div class="ph-toast ph-toast-tip">
                                         <div class="ph-toast-shadow"></div>
                                         <div class="ph-toast-main">
-                                            <div class="ph-toast-content">
+                                            <div class="ph-toast-content ph-toast-rect">
                                                 <div class="ph-toast-body">
-                                                    提示
+                                                    <span class="gfs-icon icon-tip ph-icon-lg"></span>
+                                                    <p>提示</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1890,9 +1896,9 @@
                                 <div class="ph-toast ph-toast-loading">
                                     <div class="ph-toast-shadow"></div>
                                     <div class="ph-toast-main">
-                                        <div class="ph-toast-content">
+                                        <div class="ph-toast-content ph-toast-rect">
                                             <div class="ph-toast-body">
-                                                加载中
+                                                <span class="gfs-icon icon-loading-white ph-icon-sm"></span>
                                             </div>
                                         </div>
                                     </div>
@@ -1905,9 +1911,9 @@
                                     <div class="ph-toast ph-toast-loading">
                                         <div class="ph-toast-shadow"></div>
                                         <div class="ph-toast-main">
-                                            <div class="ph-toast-content">
+                                            <div class="ph-toast-content ph-toast-rect">
                                                 <div class="ph-toast-body">
-                                                    加载中
+                                                    <span class="gfs-icon icon-loading-white ph-icon-sm"></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -3234,11 +3240,10 @@
                 </ul>
             </section>
 
-            <section id="tip">
-                <h2>提示 Tip</h2>
+            <section id="pullup">
+                <h2>上拉刷新 PullUp</h2>
                 <ul class="demo-list">
                     <li>
-                        <h3>列表提示 tip</h3>
                         <div class="demo-frame">
                             <div class="ph-page full-line">
                                 <div>
@@ -3283,7 +3288,60 @@
                         </div>
                     </li>
                     <li>
-                        <h3>没有内容的提示 Tip</h3>
+                        <div class="demo-frame">
+                            <div class="ph-page full-line">
+                                <div>
+                                    <ul class="ph-list">
+                                        <li class="ph-row ph-list-item">
+                                            <div class="ph-col ph-list-col">1</div>
+                                        </li>
+                                        <li class="ph-row ph-list-item">
+                                            <div class="ph-col ph-list-col">2</div>
+                                        </li>
+                                        <li class="ph-row ph-list-item">
+                                            <div class="ph-col ph-list-col">3</div>
+                                        </li>
+                                    </ul>
+                                    <div class="ph-pullup">
+                                        <div class="ph-pullup-tip">
+                                            <span class="gfs-icon icon-loading-gray ph-icon-sm"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module-code code-frame">
+                            <pre>
+                                <code data-language="html">
+                                    <div>
+                                        <ul class="ph-list">
+                                            <li class="ph-row ph-list-item">
+                                                <div class="ph-col ph-list-col">1</div>
+                                            </li>
+                                            <li class="ph-row ph-list-item">
+                                                <div class="ph-col ph-list-col">2</div>
+                                            </li>
+                                            <li class="ph-row ph-list-item">
+                                                <div class="ph-col ph-list-col">3</div>
+                                            </li>
+                                        </ul>
+                                        <div class="ph-pullup">
+                                            <div class="ph-pullup-tip">
+                                                <span class="gfs-icon icon-loading-gray ph-icon-sm"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </code>
+                            </pre>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="tip">
+                <h2>提示 Tip</h2>
+                <ul class="demo-list">
+                    <li>
                         <div class="demo-frame middle-height">
                             <div class="ph-page full-line">
                                 <div class="ph-tip">

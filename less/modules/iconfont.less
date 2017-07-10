@@ -27,8 +27,9 @@
 	}
 };
 
-.icon-loading-white,
-.icon-loading-gray{
+.icon-loading-white:before,
+.icon-loading-gray:before{
+	content:"";
 	display: inline-block;
 	width: @icon-loading-size;
 	height: @icon-loading-size;
@@ -40,7 +41,7 @@
 	.keyframes(loading, @loadingKeyFrames)
 }
 
-.icon-loading-gray{
+.icon-loading-gray:before{
 	background-image: url(@base64GrayLoading);
 }
 

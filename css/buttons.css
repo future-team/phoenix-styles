@@ -59,6 +59,14 @@
   margin-right: 0;
   margin-left: -0.44rem;
 }
+.ph-button .gfs-icon.icon-loading-white:before,
+.ph-button .gfs-icon.icon-loading-gray:before {
+  margin-bottom: -0.06rem;
+}
+.ph-button-stable .gfs-icon.icon-loading-white,
+.ph-button-stable .gfs-icon.icon-loading-gray {
+  margin-left: -0.52rem;
+}
 .ph-button-primary {
   color: #fff;
   background-color: #ff6633;

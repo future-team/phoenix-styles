@@ -39,10 +39,7 @@
   font-size: 0.32rem;
   color: #fff;
 }
-.ph-toast-success .ph-toast-content,
-.ph-toast-fail .ph-toast-content,
-.ph-toast-tip .ph-toast-content,
-.ph-toast-loading .ph-toast-content {
+.ph-toast-rect {
   position: relative;
   width: 2.4rem;
   height: 2.4rem;
@@ -57,32 +54,11 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-.ph-toast-body:before {
+.ph-toast-body .gfs-icon {
   display: block;
-  width: 0.8rem;
-  height: 0.8rem;
-  margin: 0 auto 0.28rem;
-  font-family: "iconfont" !important;
-  font-size: 0.8rem;
-  color: #fff;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: .2PX;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0 auto;
 }
-.ph-toast-success .ph-toast-body:before {
-  content: "\e65a";
-}
-.ph-toast-fail .ph-toast-body:before {
-  content: "\e659";
-}
-.ph-toast-tip .ph-toast-body:before {
-  content: "\e659";
-}
-.ph-toast-loading .ph-toast-body:before {
-  content: "\e64d";
-  -webkit-animation: rotate 1s linear infinite;
-  animation: rotate 1s linear infinite;
-  -webkit-transform-origin: center 55.4%;
-  -ms-transform-origin: center 55.4%;
-  transform-origin: center 55.4%;
+.ph-toast-body p {
+  margin-top: 0.28rem;
+  line-height: 1;
 }
