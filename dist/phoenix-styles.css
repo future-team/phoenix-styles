@@ -4181,10 +4181,16 @@ dl.ph-image-item dd p:last-child {
 .ph-filter-selector .ph-list-item.active {
   color: #ff6633;
 }
+.ph-checkbox-filter .ph-filter-selector .ph-list,
+.ph-checkbox-filter .ph-filter-selector .ph-tab-navs,
+.ph-checkbox-filter .ph-filter-selector .ph-tab-bd {
+  max-height: none;
+  height: 100vh;
+}
 .ph-filter-selector-buttons .ph-list,
 .ph-filter-selector-buttons .ph-tab-navs,
 .ph-filter-selector-buttons .ph-tab-bd {
-  max-height: 7.2rem;
+  max-height: 7.22rem;
 }
 .ph-checkbox-filter .ph-filter-selector {
   z-index: 9;

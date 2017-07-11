@@ -116,11 +116,22 @@
 	}
 }
 
+.ph-checkbox-filter{
+	.@{filterPrefixCls}-selector{
+		.ph-list,
+		.ph-tab-navs,
+		.ph-tab-bd{
+			max-height: none;
+			height: 100vh;
+		}
+	}
+}
+
 .@{filterPrefixCls}-selector-buttons{
 	.ph-list,
 	.ph-tab-navs,
 	.ph-tab-bd{
-		max-height: 720px;
+		max-height: 850px - 40px - 88px;
 	}
 }
 

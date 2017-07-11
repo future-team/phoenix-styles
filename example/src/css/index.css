@@ -34,7 +34,7 @@ header::-webkit-scrollbar{
     padding: .32rem 0;
     margin-bottom: .24rem;
     font-size: .36rem;
-    background-color: #1d8fe3;
+    background-color: #ff6633;
     text-align: center;
     color: #fff;
 }
@@ -48,15 +48,15 @@ nav h2{
 }
 
 nav li{
-    line-height: .60rem;
+    line-height: .48rem;
     font-size: .28rem;
 }
 nav li.active{
-    border-right: .06rem solid #1d8fe3;
+    border-right: .06rem solid #ff6633;
 }
 nav li:hover a,
 nav li.active a{
-    color: #1d8fe3;
+    color: #ff6633;
 }
 
 .main-nav{
