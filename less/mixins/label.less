@@ -3,6 +3,13 @@
     background-color: @bg-color;
 };
 
+.label-size(@size: @label-sm-size, @fontSize: @label-sm-font-size){
+    width: @size;
+    height: @size;
+    line-height: @size;
+    font-size: @fontSize;
+}
+
 .label-skin(){
     .ph-label-primary{
         .generate-diff-label(@brand-primary);

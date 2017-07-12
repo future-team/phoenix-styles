@@ -93,15 +93,6 @@
 .color-error {
   color: #f64e2d;
 }
-.icon.color-gray {
+.color-gray {
   color: #666;
-}
-.icon.icon-sm {
-  font-size: 0.16rem !important;
-}
-.icon.icon-md {
-  font-size: 0.32rem !important;
-}
-.icon.icon-lg {
-  font-size: 0.5rem !important;
 }

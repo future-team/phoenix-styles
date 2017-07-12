@@ -2,6 +2,10 @@
 
 @filterPrefixCls: ph-filter;
 
+.@{filterPrefixCls}-occupy{
+	height: @filter-header-item-height;
+}
+
 .@{filterPrefixCls}-container{
 	position: relative;
 }
@@ -56,11 +60,11 @@
 		.gfs-icon{
 			display: inline-block;
 			position: relative;
-			top:-8px;
-			margin-left: 8px;
-			line-height: 40px;
-			font-size: 32px;
-			color: @gray-66;
+			top:@filter-icon-top;
+			margin-left: @filter-icon-margin;
+			line-height: @filter-icon-line-height;
+			font-size: @filter-icon-font-size;
+			color: @filter-icon-color;
 			.transition(all .2s);
 		}
 
@@ -72,13 +76,13 @@
 			&:after{
 				content: "";
 				position: absolute;
-				bottom: -2px;
+				bottom: @filter-arrow-bottom;
 				left: 50%;
-				width: 18px;
-				height: 18px;
-				background-color: #fff;
-				border-top: 1PX solid @gray-e1;
-				border-right: 1PX solid @gray-e1;
+				width: @filter-arrow-size;
+				height: @filter-arrow-size;
+				background-color: @filter-arrow-background;
+				border-top: @filter-arrow-border;
+				border-right: @filter-arrow-border;
 				.transform(rotate(-45deg) translateX(-50%));
 			}
 		}
@@ -87,15 +91,13 @@
 	.@{filterPrefixCls}-header-text{
 		display: inline-block;
 		overflow: hidden;
-		max-width: calc(~'100% - '72px);
+		max-width: @filter-header-item-max-width;
 		white-space: nowrap;
 		text-overflow: ellipsis;
 	}
 }
 
 .@{filterPrefixCls}-selector{
-	// position: absolute;
-	// z-index: 100;
 	position: relative;
 	z-index: 2;
 	width: 100%;
@@ -104,7 +106,7 @@
 	.ph-tab-navs,
 	.ph-tab-bd{
 	    overflow-y: auto;
-		max-height: 850px;
+		max-height: @filter-panel-max-height;
 
 		&::-webkit-scrollbar{
 			display:none;
@@ -113,6 +115,11 @@
 
 	.ph-list-item.active{
 		color: @brand-primary;
+	}
+
+	.ph-button-group{
+		position: relative;
+		z-index: 1;
 	}
 }
 
@@ -131,8 +138,13 @@
 	.ph-list,
 	.ph-tab-navs,
 	.ph-tab-bd{
-		max-height: 850px - 40px - 88px;
+		padding-bottom: @filter-footer-height;
 	}
+	
+	.ph-button-group{
+		margin-top: -@filter-footer-height;
+	}
+	
 }
 
 // checkbox filter
@@ -140,47 +152,5 @@
 	.@{filterPrefixCls}-selector{
 		z-index: 9;
 		height: auto;
-
-		// .menu{
-		// 	min-height: 100vh;
-
-		// 	&.main{
-		// 		width: 35%;
-		// 	}
-
-		// 	&.sub{
-		// 		left: 35%;
-		// 		width: 65%;
-		// 		padding-bottom: 25%;
-		// 		.item{
-		// 			border-bottom: 1px solid #e1e1e1;
-		// 		}
-		// 	}
-
-		// 	.item{
-		// 		height: 44px;
-		// 		line-height: 44px;
-		// 		white-space: nowrap;
-		// 		font-size: 15px;
-
-		// 		&.disabled{
-		// 			color: #e2e2e2;
-		// 			pointer-events:none;
-		// 		}
-		// 	}
-		// }
-	}
-
-	.ph-submit-field{
-		position: absolute;
-		z-index: 10;
-		bottom: 0;
-		width: 100%;
-		background-color: #fff;
-		padding: 15px;
-
-		.ph-button{
-			margin: 0;
-		}
 	} 
 }

@@ -6,8 +6,8 @@
 /*14pt*/
 /*12pt*/
 * {
-  padding: 0rem;
-  margin: 0rem;
+  padding: 0;
+  margin: 0;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-backface-visibility: hidden;
   -webkit-box-sizing: border-box;
@@ -96,7 +96,7 @@ a:hover {
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
 abbr[title] {
-  border-bottom: 0.01rem dotted;
+  border-bottom: 1PX dotted;
 }
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
@@ -154,7 +154,7 @@ svg:not(:root) {
  * Address margin not present in IE 8/9 and Safari.
  */
 figure {
-  margin: 1em 0.4rem;
+  margin: 1em .40rem;
 }
 /**
  * Address differences between Firefox and other browsers.
@@ -303,8 +303,8 @@ input[type="search"]::-webkit-search-decoration {
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 0.01rem solid #c0c0c0;
-  margin: 0 0.02rem;
+  border: 1PX solid #c0c0c0;
+  margin: 0 2PX;
   padding: 0.35em 0.625em 0.75em;
 }
 /**
@@ -407,7 +407,7 @@ h6 .small,
   font-weight: normal;
   color: #777;
   font-size: 65%;
-  margin-left: 0.1rem;
+  margin-left: .1rem;
 }
 small,
 .small {
@@ -416,20 +416,20 @@ small,
   font-size: 65%;
 }
 h1 {
-  font-size: 0.36rem;
+  font-size: .72rem;
 }
 h2 {
-  font-size: 0.3rem;
+  font-size: .6rem;
 }
 h3 {
-  font-size: 0.24rem;
+  font-size: .48rem;
 }
 h4 {
-  font-size: 0.18rem;
+  font-size: 0.36rem;
 }
 h5 {
-  font-size: 0.14rem;
+  font-size: 0.28rem;
 }
 h6 {
-  font-size: 0.12rem;
+  font-size: 0.24rem;
 }

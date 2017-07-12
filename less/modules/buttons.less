@@ -56,20 +56,20 @@
 .@{buttonPrefixCls}-stable .gfs-icon{
     position: absolute;
     margin-right: 0;
-    margin-left: -44px;
+    margin-left: @btn-stable-icon-margin;
 }
 
 .@{buttonPrefixCls} .gfs-icon{
     &.icon-loading-white:before,
     &.icon-loading-gray:before{
-        margin-bottom: -6px;
+        margin-bottom: @btn-loading-margin;
     }
 }
 
 .@{buttonPrefixCls}-stable .gfs-icon{
     &.icon-loading-white,
     &.icon-loading-gray{
-        margin-left: -52px;
+        margin-left: @btn-stable-loading-margin;
     }
 }
 

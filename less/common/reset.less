@@ -1,8 +1,8 @@
 @import "../variable.less";
 
 *{
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     -webkit-backface-visibility: hidden;
     -webkit-box-sizing: border-box;
@@ -19,7 +19,7 @@ html {
 
 body {
     margin: 0;
-    font-size: 32px;
+    font-size: @font-size-subtitle;
     font-family: @font-family-default;
 }
 
@@ -103,7 +103,7 @@ a:hover {
  */
 
 abbr[title] {
-    border-bottom: 1px dotted;
+    border-bottom: 1PX dotted;
 }
 
 /**
@@ -178,7 +178,7 @@ svg:not(:root) {
  */
 
 figure {
-    margin: 1em 40px;
+    margin: 1em .40rem;
 }
 
 /**
@@ -354,8 +354,8 @@ input[type="search"]::-webkit-search-decoration {
  */
 
 fieldset {
-    border: 1px solid #c0c0c0;
-    margin: 0 2px;
+    border: 1PX solid #c0c0c0;
+    margin: 0 2PX;
     padding: 0.35em 0.625em 0.75em;
 }
 
@@ -436,7 +436,7 @@ h1, h2, h3, h4, h5, h6,
         font-weight: normal;
         color: #777;
         font-size: 65%;
-        margin-left: 10px;
+        margin-left: .1rem;
     }
 }
 
@@ -449,20 +449,20 @@ small,
 }
 
 h1{
-    font-size: 36px;
+    font-size: .72rem;
 }
 h2{
-    font-size: 30px;
+    font-size: .6rem;
 }
 h3{
-    font-size: 24px;
+    font-size: .48rem;
 }
 h4{
-    font-size: 18px;
+    font-size: @font-size-headline;
 }
 h5{
-    font-size: 14px;
+    font-size: @font-size-text;
 }
 h6{
-    font-size: 12px;
+    font-size: @font-size-tip;
 }

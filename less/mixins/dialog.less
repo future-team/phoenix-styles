@@ -12,8 +12,8 @@
 
 		.@{dialogPrefixCls}-close{
 			position: absolute;
-			width: 28px;
-			height: 28px;
+			width: @dialog-close-size;
+			height: @dialog-close-size;
 			top: @dialog-close-top;
 			right: @dialog-close-right;
 			font-size: 100%;
@@ -99,9 +99,9 @@
 			margin: @prompt-body-margin;
 		}
 		.ph-input{
-			margin-top: @prompt-input-margin;
-			&:first-child{
-				margin-top: 0;
+			margin-bottom: @prompt-input-margin;
+			&:last-child{
+				margin-bottom: 0;
 			}
 		}
 	}

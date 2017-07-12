@@ -6,8 +6,8 @@
 /*14pt*/
 /*12pt*/
 * {
-  padding: 0rem;
-  margin: 0rem;
+  padding: 0;
+  margin: 0;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-backface-visibility: hidden;
   -webkit-box-sizing: border-box;
@@ -96,7 +96,7 @@ a:hover {
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
 abbr[title] {
-  border-bottom: 0.01rem dotted;
+  border-bottom: 1PX dotted;
 }
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
@@ -154,7 +154,7 @@ svg:not(:root) {
  * Address margin not present in IE 8/9 and Safari.
  */
 figure {
-  margin: 1em 0.4rem;
+  margin: 1em .40rem;
 }
 /**
  * Address differences between Firefox and other browsers.
@@ -303,8 +303,8 @@ input[type="search"]::-webkit-search-decoration {
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 0.01rem solid #c0c0c0;
-  margin: 0 0.02rem;
+  border: 1PX solid #c0c0c0;
+  margin: 0 2PX;
   padding: 0.35em 0.625em 0.75em;
 }
 /**
@@ -407,7 +407,7 @@ h6 .small,
   font-weight: normal;
   color: #777;
   font-size: 65%;
-  margin-left: 0.1rem;
+  margin-left: .1rem;
 }
 small,
 .small {
@@ -416,22 +416,22 @@ small,
   font-size: 65%;
 }
 h1 {
-  font-size: 0.36rem;
+  font-size: .72rem;
 }
 h2 {
-  font-size: 0.3rem;
+  font-size: .6rem;
 }
 h3 {
-  font-size: 0.24rem;
+  font-size: .48rem;
 }
 h4 {
-  font-size: 0.18rem;
+  font-size: 0.36rem;
 }
 h5 {
-  font-size: 0.14rem;
+  font-size: 0.28rem;
 }
 h6 {
-  font-size: 0.12rem;
+  font-size: 0.24rem;
 }
 .text-left {
   text-align: left;
@@ -521,17 +521,8 @@ h6 {
 .color-error {
   color: #f64e2d;
 }
-.icon.color-gray {
+.color-gray {
   color: #666;
-}
-.icon.icon-sm {
-  font-size: 0.16rem !important;
-}
-.icon.icon-md {
-  font-size: 0.32rem !important;
-}
-.icon.icon-lg {
-  font-size: 0.5rem !important;
 }
 .animated {
   -webkit-animation-duration: 0.3s;
@@ -1376,7 +1367,7 @@ h6 {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 0.1rem;
+  margin-top: .10rem;
 }
 .ph-grid-row:first-child {
   margin-top: 0;
@@ -2530,8 +2521,8 @@ input[type="search"] + .ph-input-placeholder-hide {
   position: relative;
   margin-right: 0.24rem;
 }
-.ph-button-group-default .ph-button:nth-child(even),
-.ph-button-group-footer .ph-button:nth-child(even) {
+.ph-button-group-default .ph-button:last-child,
+.ph-button-group-footer .ph-button:last-child {
   margin-right: 0;
 }
 .ph-button-group-justify .ph-button,
@@ -2923,7 +2914,7 @@ input[type="search"] + .ph-input-placeholder-hide {
   width: 0.4rem;
   height: 0.4rem;
   background-color: #fff;
-  box-shadow: 0 0.01rem 0.08rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1PX 8PX rgba(0, 0, 0, 0.2);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -2943,7 +2934,7 @@ input[type="search"] + .ph-input-placeholder-hide {
   color: #fff;
 }
 .ph-slider-tip-top .ph-slider-tip {
-  bottom: calc(100% + 0.2rem);
+  bottom: calc(100% + .20rem);
 }
 .ph-slider-tip-top .ph-slider-tip:after {
   bottom: -0.08rem;
@@ -2951,7 +2942,7 @@ input[type="search"] + .ph-input-placeholder-hide {
   border-top-color: #666;
 }
 .ph-slider-tip-bottom .ph-slider-tip {
-  top: calc(100% + 0.2rem);
+  top: calc(100% + .20rem);
 }
 .ph-slider-tip-bottom .ph-slider-tip:after {
   top: -0.08rem;
@@ -3089,10 +3080,10 @@ input[type="search"] + .ph-input-placeholder-hide {
   margin: 0.48rem 0.4rem 0.4rem;
 }
 .ph-dialog-prompt .ph-input {
-  margin-top: 0.2rem;
+  margin-bottom: 0.16rem;
 }
-.ph-dialog-prompt .ph-input:first-child {
-  margin-top: 0;
+.ph-dialog-prompt .ph-input:last-child {
+  margin-bottom: 0;
 }
 .ph-dialog-explain .ph-dialog-title {
   margin: 0 0.4rem 0.4rem;
@@ -3243,13 +3234,13 @@ input[type="search"] + .ph-input-placeholder-hide {
 .ph-picker-header {
   overflow: hidden;
   padding: 0.75rem;
-  border-bottom: 0.01rem solid #bbb;
+  border-bottom: 1PX solid #bbb;
   text-align: center;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   .ph-picker-header {
     background-image: -webkit-linear-gradient(bottom, #bbb 50%, transparent 50%);
-    background-size: 100% 0.01rem;
+    background-size: 100% 1PX;
     background-repeat: no-repeat;
     background-position: bottom;
     border: none;
@@ -3332,7 +3323,7 @@ input[type="search"] + .ph-input-placeholder-hide {
   transform: translateX(-50%) rotate(225deg);
 }
 .ph-popover-bottom .ph-popover-arrow {
-  margin-top: 0.01rem;
+  margin-top: 1PX;
   -webkit-transform: translateX(-50%) rotate(45deg);
   -ms-transform: translateX(-50%) rotate(45deg);
   transform: translateX(-50%) rotate(45deg);
@@ -3347,7 +3338,7 @@ input[type="search"] + .ph-input-placeholder-hide {
   margin-left: 0.09rem;
 }
 .ph-popover-right .ph-popover-arrow {
-  margin-left: 0.01rem;
+  margin-left: 1PX;
   -webkit-transform: translateY(-50%) rotate(-45deg);
   -ms-transform: translateY(-50%) rotate(-45deg);
   transform: translateY(-50%) rotate(-45deg);
@@ -3762,7 +3753,7 @@ dl.ph-image-item dd p:last-child {
   font-size: 0.32rem;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.002rem;
+  -webkit-text-stroke-width: 0.2PX;
   -moz-osx-font-smoothing: grayscale;
   content: "\E625";
   font-size: 0.36rem;
@@ -3924,7 +3915,7 @@ dl.ph-image-item dd p:last-child {
   color: #999;
 }
 .ph-search-bar-focus .ph-input {
-  width: calc(100% - 0.92rem);
+  width: calc(100% - .92rem);
 }
 .ph-toolbar {
   overflow: hidden;
@@ -4019,7 +4010,7 @@ dl.ph-image-item dd p:last-child {
 .ph-tabbar .ph-tabbar-item .ph-badge {
   position: absolute;
   top: -0.08rem;
-  left: calc(50% + 0.08rem);
+  left: calc(50% + .8rem);
 }
 .ph-tabbar .ph-tabbar-active .gfs-icon,
 .ph-tabbar .ph-tabbar-active p {
@@ -4029,7 +4020,7 @@ dl.ph-image-item dd p:last-child {
   content: "";
   position: absolute;
   top: -0.08rem;
-  left: calc(50% + 0.12rem);
+  left: calc(50% + .12rem);
   width: 0.24rem;
   height: 0.24rem;
   background-color: #f64e2d;
@@ -4077,6 +4068,9 @@ dl.ph-image-item dd p:last-child {
   margin-bottom: 0.24rem;
   font-size: 0.76rem;
   color: #ccc;
+}
+.ph-filter-occupy {
+  height: 0.88rem;
 }
 .ph-filter-container {
   position: relative;
@@ -4158,7 +4152,7 @@ dl.ph-image-item dd p:last-child {
 .ph-filter-header .ph-filter-header-text {
   display: inline-block;
   overflow: hidden;
-  max-width: calc(100% -  0.72rem);
+  max-width: calc(100% - .72rem);
   white-space: nowrap;
   text-overflow: ellipsis;
 }
@@ -4181,6 +4175,10 @@ dl.ph-image-item dd p:last-child {
 .ph-filter-selector .ph-list-item.active {
   color: #ff6633;
 }
+.ph-filter-selector .ph-button-group {
+  position: relative;
+  z-index: 1;
+}
 .ph-checkbox-filter .ph-filter-selector .ph-list,
 .ph-checkbox-filter .ph-filter-selector .ph-tab-navs,
 .ph-checkbox-filter .ph-filter-selector .ph-tab-bd {
@@ -4190,20 +4188,12 @@ dl.ph-image-item dd p:last-child {
 .ph-filter-selector-buttons .ph-list,
 .ph-filter-selector-buttons .ph-tab-navs,
 .ph-filter-selector-buttons .ph-tab-bd {
-  max-height: 7.22rem;
+  padding-bottom: 1.28rem;
+}
+.ph-filter-selector-buttons .ph-button-group {
+  margin-top: -1.28rem;
 }
 .ph-checkbox-filter .ph-filter-selector {
   z-index: 9;
   height: auto;
-}
-.ph-checkbox-filter .ph-submit-field {
-  position: absolute;
-  z-index: 10;
-  bottom: 0;
-  width: 100%;
-  background-color: #fff;
-  padding: 0.15rem;
-}
-.ph-checkbox-filter .ph-submit-field .ph-button {
-  margin: 0;
 }

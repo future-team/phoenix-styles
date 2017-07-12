@@ -3,16 +3,17 @@
 
 .ph-label{
     display: inline-block;
-    vertical-align: middle;
-    padding: @label-padding;
-    font-size: @font-size-tip;
+    .label-size();
+    vertical-align: top;
+    text-align: center;
     .border-radius(@label-radius);
 }
+
 .ph-label-md{
-    font-size: @font-size-text;
+    .label-size(@label-md-size, @label-md-font-size);
 }
 .ph-label-lg{
-    font-size: @font-size-subtitle;
+    .label-size(@label-lg-size, @label-lg-font-size);
 }
 
 .label-skin();
