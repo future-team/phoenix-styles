@@ -1273,19 +1273,10 @@
   font-size: 0.36rem;
   color: #007aff;
 }
-.ph-menu-nav {
-  padding: 0;
-  margin: 0;
-}
-.ph-menu-nav .ph-menu-item a {
-  display: block;
-  padding: 0.24rem 0.32rem;
-  font-size: 0.32rem;
-  color: #666;
-}
 .ph-menu-nav .ph-menu-item .gfs-icon {
+  vertical-align: top;
   margin: 0 0.24rem 0 0;
 }
-.ph-menu-nav .ph-menu-item.active a {
+.ph-menu-nav .ph-menu-item.active .ph-col {
   color: #007aff;
 }

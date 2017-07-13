@@ -49,18 +49,18 @@ gulp.task('min-styles', ['webpack'], function() {
       .pipe(gulp.dest(dest)); // 输出all.min.css
 });
 
-gulp.task('pxtorem', ['less'], function () {
-    gulp.src(['./css/**/*.css'])
-      .pipe(postcss(processors))
-      .pipe(gulp.dest('./css/'))
-});
+// gulp.task('pxtorem', ['less'], function () {
+//     gulp.src(['./css/**/*.css'])
+//       .pipe(postcss(processors))
+//       .pipe(gulp.dest('./css/'))
+// });
 
-gulp.task('less', function(){
-    gulp.src(['./less/modules/*.less','./less/common/*.less'])
-      .pipe(less())
-      .pipe(postcss(processors))
-      .pipe(gulp.dest('./css/'))
-})
+// gulp.task('less', function(){
+//     gulp.src(['./less/modules/*.less','./less/common/*.less'])
+//       .pipe(less())
+//       .pipe(postcss(processors))
+//       .pipe(gulp.dest('./css/'))
+// })
 
 /* gulp.task('js', function() {
     gulp.src(['./js/*.js'])
@@ -68,10 +68,9 @@ gulp.task('less', function(){
         .pipe(gulp.dest(dest));
 }); */
 
-gulp.task('default', ['min-styles','pxtorem']);
-gulp.task('dev',['webpack','pxtorem'], function() {
+gulp.task('default', ['min-styles']);
+gulp.task('dev',['webpack'], function() {
   // 本地文件监听
-  gulp.watch('./less/**/*.less', ['pxtorem']);
   gulp.watch('./less/**/*.less', ['webpack']);
 });
 
