@@ -1,4 +1,6 @@
 @import "../public";
+@import "../mixins/iconfont";
+
 @pullUpPrefixCls: ph-pullup;
 
 .@{pullUpPrefixCls}{
@@ -10,9 +12,7 @@
     font-size: @loading-list-font-size;
     color: @loading-list-color;
 
-    .gfs-icon-loading:before{
-    	display: inline-block;
-        font-size: @loading-list-icon-size;
-        .animation(rotate 1s linear infinite);
+    .gfs-icon-loading{
+    	.getSize(@icon-sm-loading-size);
     }
 }

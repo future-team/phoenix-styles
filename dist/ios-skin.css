@@ -939,6 +939,7 @@
   margin-left: 0;
   margin-right: 0;
   border: none;
+  font-size: 0.32rem;
 }
 .ph-dialog-content .ph-dialog-footer .ph-button-group-default {
   border-top: 1PX solid #e1e1e1;
@@ -1241,7 +1242,7 @@
 }
 .ph-menu-header .gfs-icon {
   padding: 0 0.32rem;
-  font-size: 0.3rem;
+  font-size: 0.48rem;
   font-weight: 800;
 }
 .ph-menu-header-left > * {

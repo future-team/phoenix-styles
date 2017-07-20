@@ -1,5 +1,6 @@
 @import "../public";
 @import "../mixins/buttons";
+@import "../mixins/iconfont";
 
 @buttonPrefixCls: ph-button;
 
@@ -21,12 +22,20 @@
     font-weight: 400;
     outline: none;
     cursor: pointer;
+
+    .gfs-icon-loading{
+        .getSize(@font-size-text)
+    }
     
     &.@{buttonPrefixCls}-md{
         height: @btn-md-height;
         min-width: @btn-md-min-width;
         line-height: @btn-md-height;
         font-size: @font-size-subtitle;
+
+        .gfs-icon-loading{
+            .getSize(@font-size-subtitle)
+        }
     }
 
     &.@{buttonPrefixCls}-lg,
@@ -34,7 +43,11 @@
         height: @btn-lg-height;
         .border-radius(@btn-lg-radius);
         line-height: @btn-lg-height;
-        font-size: @font-size-subtitle;
+        font-size: @font-size-headline;
+
+        .gfs-icon-loading{
+            .getSize(@font-size-headline)
+        }
     }
 
     &.@{buttonPrefixCls}-lg{
@@ -59,17 +72,18 @@
     margin-left: @btn-stable-icon-margin;
 }
 
-.@{buttonPrefixCls} .gfs-icon{
-    &.icon-loading-white:before,
-    &.icon-loading-gray:before{
+.@{buttonPrefixCls}{
+    .icon-loading-white,
+    .icon-loading-gray{
         margin-bottom: @btn-loading-margin;
     }
 }
 
-.@{buttonPrefixCls}-stable .gfs-icon{
-    &.icon-loading-white,
-    &.icon-loading-gray{
-        margin-left: @btn-stable-loading-margin;
+.@{buttonPrefixCls}-stable{
+    .icon-loading-white,
+    .icon-loading-gray{
+        top: 50%;
+        .transform(translateY(-50%));
     }
 }
 

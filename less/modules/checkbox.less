@@ -1,0 +1,35 @@
+@import "../public";
+@import "../mixins/form";
+
+//checkbox & radio
+.ph-multi-group{
+    display: inline-block;
+    vertical-align: top;
+    height: @multi-group-height;
+    margin-right: @multi-group-margin;
+
+    span{
+        float: right;
+        margin-left: @checkbox-text-gap;
+        font-size: @font-size-text;
+    }
+
+    .ph-radio,.ph-checkbox{
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.ph-checkbox{
+    .ui-checkbox(@checkbox-size);
+}
+
+.ph-radio{
+    .ui-radio(@radio-size);
+}
+
+

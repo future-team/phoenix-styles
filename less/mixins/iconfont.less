@@ -1,6 +1,6 @@
 .iconfont(){
     font-family:"iconfont" !important;
-    font-size: @font-size-subtitle;
+    font-size: @icon-sm-size;
     font-style:normal;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-stroke-width: 0.2PX;
@@ -14,23 +14,40 @@
 }
 
 .icon-size(){
-	.ph-icon-xs:before{
-		.getSize(@icon-xs-size);
+	.ph-icon-xs{
+		font-size: @icon-xs-size;
+
+		&.gfs-icon-loading{
+			.getSize(@icon-xs-size);
+		}
 	}
-	.ph-icon-sm:before{
-		.getSize(@icon-sm-size);
+	.ph-icon-sm{
+		font-size: @icon-sm-size;
+
+		&.gfs-icon-loading{
+			.getSize(@icon-sm-size);
+		}
 	}
-	.ph-icon-md:before{
-		.getSize(@icon-md-size);
+	.ph-icon-md{
+		font-size: @icon-md-size;
+
+		&.gfs-icon-loading{
+			.getSize(@icon-md-size);
+		}
 	}
-	.ph-icon-lg:before{
-		.getSize(@icon-lg-size);
+	.ph-icon-lg{
+		font-size: @icon-lg-size;
+
+		&.gfs-icon-loading{
+			.getSize(@icon-lg-size);
+		}
 	}
-	.ph-icon-xlg:before{
-		.getSize(@icon-xlg-size);
-	}
-	.ph-icon-xxlg:before{
-		.getSize(@icon-xxlg-size);
+	.ph-icon-xlg{
+		font-size: @icon-xlg-size;
+
+		&.gfs-icon-loading{
+			.getSize(@icon-xlg-size);
+		}
 	}
 }
 
