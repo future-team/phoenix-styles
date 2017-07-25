@@ -1,12 +1,12 @@
-.generate-diff-label(@bg-color,@color:#fff){
+.generate-diff-label(@color:@gray-33){
     color: @color;
-    background-color: @bg-color;
+    // background-color: @bg-color;
 };
 
-.label-size(@size: @label-sm-size, @fontSize: @label-sm-font-size){
-    width: @size;
-    height: @size;
-    line-height: @size;
+.label-size(@fontSize: @label-sm-size){
+    // width: @size;
+    // height: @size;
+    // line-height: @size;
     font-size: @fontSize;
 }
 
@@ -15,18 +15,21 @@
         .generate-diff-label(@brand-primary);
     }
     .ph-label-success{
-        .generate-diff-label(@brand-success);
+        .generate-diff-label(@label-success);
     }
     .ph-label-info{
-        .generate-diff-label(@brand-info);
+        .generate-diff-label(@label-info);
     }
-    .ph-label-warning{
-        .generate-diff-label(@brand-warning);
+    .ph-label-tip{
+        .generate-diff-label(@label-tip);
     }
-    .ph-label-danger{
-        .generate-diff-label(@brand-danger);
+    .ph-label-calm{
+        .generate-diff-label(@label-calm);
     }
-    .ph-label-error{
-        .generate-diff-label(@brand-error);
+    .ph-label-light{
+        .generate-diff-label(@label-light);
     }
+    .ph-label-gray{
+        .generate-diff-label(@label-gray);
+    }    
 };

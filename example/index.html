@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Phoenix-styles</title>
-    <script type="text/javascript" src="https://www.dpfile.com/app/gfs-viewport/gfs-viewport.js"></script>
+    <script>
+        (function(baseFontSize,fontscale){var _baseFontSize=baseFontSize||100;var _fontscale=fontscale||1;var win=window;var doc=win.document;var ua=navigator.userAgent;var matches=ua.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i);var UCversion=ua.match(/U3\/((\d+|\.){5,})/i);var isUCHd=UCversion&&parseInt(UCversion[1].split(".").join(""),10)>=80;var isIos=navigator.appVersion.match(/(iphone|ipad|ipod)/gi);var dpr=win.devicePixelRatio||1;if(!isIos&&!(matches&&matches[1]>534)&&!isUCHd){dpr=1}var scale=1/dpr;var metaEl=doc.querySelector('meta[name="viewport"]');if(!metaEl){metaEl=doc.createElement("meta");metaEl.setAttribute("name","viewport");doc.head.appendChild(metaEl)}metaEl.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+scale+",maximum-scale="+scale+",minimum-scale="+scale);doc.documentElement.style.fontSize=_baseFontSize/2*dpr*_fontscale+"px"})();
+    </script>
+    <!-- <script type="text/javascript" src="https://www.dpfile.com/app/gfs-viewport/gfs-viewport.js"></script> -->
 
     <!-- basic style -->
     <link rel="stylesheet" href="../dist/phoenix-styles.css"/>
@@ -22,6 +25,7 @@
                     <li data-href="grid"><a href="#grid">基础布局</a></li>
                     <li data-href="list"><a href="#list">列表</a></li>
                     <li data-href="icon"><a href="#icon">Icon</a></li>
+                    <li data-href="label"><a href="#label">Label</a></li>
                     <li data-href="star"><a href="#star">星级</a></li>
                     <li data-href="button"><a href="#button">按钮</a></li>
                     <li data-href="buttonGroup"><a href="#buttonGroup">按钮组</a></li>
@@ -44,6 +48,7 @@
                     <li data-href="toolbar"><a href="#toolbar">顶部导航</a></li>
                     <li data-href="tabbar"><a href="#tabbar">底部导航</a></li>
                     <li data-href="slider"><a href="#slider">滑块</a></li>
+                    <li data-href="pullup"><a href="#pullup">上拉刷新</a></li>
                     <li data-href="tip"><a href="#tip">提示</a></li>
                 </ul>
                 <h2>控件</h2>
@@ -52,9 +57,7 @@
                 </ul>
                 <h2>其他</h2>
                 <ul class="main-nav">
-                    <li data-href="skin"><a href="#skin">换肤</a></li>
-                    <li data-href="upgrade"><a href="#upgrade">升级说明</a></li>
-                    <li data-href="intro"><a href="#intro">介绍</a></li>
+                    <li data-href="skin"><a href="#skin">样式说明</a></li>
                 </ul>
             </nav>
         </header>
@@ -351,7 +354,7 @@
                                             <div class="ph-input ph-input-clear ph-input-visible">
                                                 <input type="password" placeholder="请输入密码" value='12345'/>
                                                 <span class="gfs-icon gfs-icon-close icon-fail-fill"></span>
-                                                <span class="gfs-icon gfs-icon-active gfs-icon-see icon-camera-fill"></span>
+                                                <span class="gfs-icon gfs-icon-active gfs-icon-see icon-yinsi"></span>
                                             </div>
                                         </div>
                                     </li>
@@ -363,7 +366,7 @@
                                             <div class="ph-input ph-input-clear ph-input-visible">
                                                 <input type="text" placeholder='请输入密码' value='12345'/>
                                                 <span class="gfs-icon gfs-icon-close icon-fail-fill"></span>
-                                                <span class="gfs-icon gfs-icon-see icon-camera"></span>
+                                                <span class="gfs-icon gfs-icon-see icon-biyan"></span>
                                             </div>
                                         </div>
                                     </li>
@@ -393,7 +396,7 @@
                                                 <div class="ph-input ph-input-clear ph-input-visible">
                                                     <input type="password" placeholder="请输入密码" value='12345'/>
                                                     <span class="gfs-icon gfs-icon-close icon-fail-fill"></span>
-                                                    <span class="gfs-icon gfs-icon-active gfs-icon-see icon-camera-fill"></span>
+                                                    <span class="gfs-icon gfs-icon-active gfs-icon-see icon-yinsi"></span>
                                                 </div>
                                             </div>
                                         </li>
@@ -405,7 +408,7 @@
                                                 <div class="ph-input ph-input-clear ph-input-visible">
                                                     <input type="text" placeholder='请输入密码' value='12345'/>
                                                     <span class="gfs-icon gfs-icon-close icon-fail-fill"></span>
-                                                    <span class="gfs-icon gfs-icon-see icon-camera"></span>
+                                                    <span class="gfs-icon gfs-icon-see icon-biyan"></span>
                                                 </div>
                                             </div>
                                         </li>
@@ -483,7 +486,7 @@
                                         <div class="ph-col ph-list-col">
                                             <div class="ph-input ph-input-error">
                                                 <input type="text" value='输入有误' />
-                                                <span class="gfs-icon gfs-icon-error icon-tip-fill"></span>
+                                                <span class="gfs-icon gfs-icon-error icon-warning-fill"></span>
                                             </div>
                                         </div>
                                     </li>
@@ -511,7 +514,7 @@
                                             <div class="ph-col ph-list-col">
                                                 <div class="ph-input ph-input-error">
                                                     <input type="text" value='输入有误' />
-                                                    <span class="gfs-icon gfs-icon-error icon-tip-fill"></span>
+                                                    <span class="gfs-icon gfs-icon-error icon-warning-fill"></span>
                                                 </div>
                                             </div>
                                         </li>
@@ -910,10 +913,88 @@
                 <p><a class="link" href="https://future-team.github.io/gfs-icons/index.html">查看全部icon类型 <span class="gfs-icon icon-chevron-right"></span></a></p>
                 <ul class="demo-list">
                     <li>
+                        <h3>不同大小</h3>
                         <div class="demo-frame">
                             <div class="ph-page">
                                 <div class="content">
-                                    <span class="gfs-icon icon-modify"></span>
+                                    <span>24-筛选下拉、星星等</span><br/>
+                                    <span class="gfs-icon icon-search ph-icon-xs"></span>
+                                    <br/>
+                                    <span>32-表单等</span><br/>
+                                    <span class="gfs-icon icon-search ph-icon-sm"></span>
+                                    <br/>
+                                    <span>40-头部icon等</span><br/>
+                                    <span class="gfs-icon icon-search ph-icon-md"></span>
+                                    <br/>
+                                    <span>48-大loading等</span><br/>
+                                    <span class="gfs-icon icon-search ph-icon-lg"></span>
+                                    <br/>
+                                    <span>80-toast、满页的提示</span><br/>
+                                    <span class="gfs-icon icon-search ph-icon-xlg"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module-code code-frame">
+                            <pre>
+                                <code data-language="html">
+                                    <span>24-筛选下拉、星星等</span><br/>
+                                    <span class="gfs-icon icon-search ph-icon-xs"></span>
+                                    <br/>
+                                    <span>32-表单等</span><br/>
+                                    <span class="gfs-icon icon-search ph-icon-sm"></span>
+                                    <br/>
+                                    <span>40-头部icon等</span><br/>
+                                    <span class="gfs-icon icon-search ph-icon-md"></span>
+                                    <br/>
+                                    <span>48-大loading等</span><br/>
+                                    <span class="gfs-icon icon-search ph-icon-lg"></span>
+                                    <br/>
+                                    <span>80-toast、满页的提示</span><br/>
+                                    <span class="gfs-icon icon-search ph-icon-xlg"></span>
+                                </code>
+                            </pre>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>动态loading</h3>
+                        <div class="demo-frame">
+                            <div class="ph-page">
+                                <div class="content">
+                                    <span>默认大小：36</span><br/>
+                                    <span class="gfs-icon gfs-icon-loading icon-loading-white"></span>
+                                    <span class="gfs-icon gfs-icon-loading icon-loading-gray"></span>
+                                    <br/><br/>
+                                    <span>其他大小：48</span><br/>
+                                    <span class="gfs-icon gfs-icon-loading icon-loading-white ph-icon-lg"></span>
+                                    <span class="gfs-icon gfs-icon-loading icon-loading-gray ph-icon-lg"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module-code code-frame">
+                            <pre>
+                                <code data-language="html">
+                                    <span>默认大小：36</span><br/>
+                                    <span class="gfs-icon gfs-icon-loading icon-loading-white"></span>
+                                    <span class="gfs-icon gfs-icon-loading icon-loading-gray"></span>
+                                    <br/><br/>
+                                    <span>其他大小：48</span><br/>
+                                    <span class="gfs-icon gfs-icon-loading icon-loading-white ph-icon-lg"></span>
+                                    <span class="gfs-icon gfs-icon-loading icon-loading-gray ph-icon-lg"></span>
+                                </code>
+                            </pre>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="label">
+                <h2>Label</h2>
+                <ul class="demo-list">
+                    <li>
+                        <div class="demo-frame">
+                            <div class="ph-page">
+                                <div class="content">
+                                    <span class="gfs-icon icon-label-"></span>
                                 </div>
                             </div>
                         </div>
@@ -1415,7 +1496,7 @@
                                             <span class="ph-input-placeholder-text">请输入...</span>
                                         </label>
                                         <span class="gfs-icon gfs-icon-close icon-fail-fill"></span>
-                                        <span class="gfs-icon gfs-icon-active gfs-icon-see icon-camera-fill"></span>
+                                        <span class="gfs-icon gfs-icon-active gfs-icon-see icon-yinsi"></span>
                                     </div>
                                     <div class="ph-input ph-input-clear ph-input-visible">
                                         <input type="text" value='12345'/>
@@ -1423,7 +1504,7 @@
                                             <span class="ph-input-placeholder-text">请输入...</span>
                                         </label>
                                         <span class="gfs-icon gfs-icon-close icon-fail-fill"></span>
-                                        <span class="gfs-icon gfs-icon-see icon-camera"></span>
+                                        <span class="gfs-icon gfs-icon-see icon-biyan"></span>
                                     </div>
                                 </div>  
                             </div>
@@ -1437,7 +1518,7 @@
                                             <span class="ph-input-placeholder-text">请输入...</span>
                                         </label>
                                         <span class="gfs-icon gfs-icon-close icon-fail-fill"></span>
-                                        <span class="gfs-icon gfs-icon-active gfs-icon-see icon-camera-fill"></span>
+                                        <span class="gfs-icon gfs-icon-active gfs-icon-see icon-yinsi"></span>
                                     </div>
                                     <div class="ph-input ph-input-clear ph-input-visible">
                                         <input type="text" value='12345'/>
@@ -1445,7 +1526,7 @@
                                             <span class="ph-input-placeholder-text">请输入...</span>
                                         </label>
                                         <span class="gfs-icon gfs-icon-close icon-fail-fill"></span>
-                                        <span class="gfs-icon gfs-icon-see icon-camera"></span>
+                                        <span class="gfs-icon gfs-icon-see icon-biyan"></span>
                                     </div>
                                 </code>
                             </pre>
@@ -1765,7 +1846,7 @@
                                     <div class="ph-toast-main">
                                         <div class="ph-toast-content ph-toast-rect">
                                             <div class="ph-toast-body">
-                                                <span class="gfs-icon icon-success ph-icon-xlg"></span>
+                                                <span class="gfs-icon icon-success-circle ph-icon-xlg"></span>
                                                 <p>操作成功</p>
                                             </div>
                                         </div>
@@ -1781,7 +1862,7 @@
                                         <div class="ph-toast-main">
                                             <div class="ph-toast-content ph-toast-rect">
                                                 <div class="ph-toast-body">
-                                                    <span class="gfs-icon icon-success ph-icon-xlg"></span>
+                                                    <span class="gfs-icon icon-success-circle ph-icon-xlg"></span>
                                                     <p>操作成功</p>
                                                 </div>
                                             </div>
@@ -1799,7 +1880,7 @@
                                     <div class="ph-toast-main">
                                         <div class="ph-toast-content ph-toast-rect">
                                             <div class="ph-toast-body">
-                                                <span class="gfs-icon icon-fail ph-icon-xlg"></span>
+                                                <span class="gfs-icon icon-fail-circle ph-icon-xlg"></span>
                                                 <p>操作失败</p>
                                             </div>
                                         </div>
@@ -1815,7 +1896,7 @@
                                         <div class="ph-toast-main">
                                             <div class="ph-toast-content ph-toast-rect">
                                                 <div class="ph-toast-body">
-                                                    <span class="gfs-icon icon-fail ph-icon-xlg"></span>
+                                                    <span class="gfs-icon icon-fail-circle ph-icon-xlg"></span>
                                                     <p>操作失败</p>
                                                 </div>
                                             </div>
@@ -1833,7 +1914,7 @@
                                     <div class="ph-toast-main">
                                         <div class="ph-toast-content ph-toast-rect">
                                             <div class="ph-toast-body">
-                                                <span class="gfs-icon icon-tip ph-icon-xlg"></span>
+                                                <span class="gfs-icon icon-warning-circle ph-icon-xlg"></span>
                                                 <p>提示</p>
                                             </div>
                                         </div>
@@ -1849,7 +1930,7 @@
                                         <div class="ph-toast-main">
                                             <div class="ph-toast-content ph-toast-rect">
                                                 <div class="ph-toast-body">
-                                                    <span class="gfs-icon icon-tip ph-icon-xlg"></span>
+                                                    <span class="gfs-icon icon-warning-circle ph-icon-xlg"></span>
                                                     <p>提示</p>
                                                 </div>
                                             </div>
@@ -2835,7 +2916,7 @@
                                         <span class="ph-toolbar-title">标题</span>
                                     </div>
                                     <div class="ph-col ph-toolbar-right">
-                                        <span class="gfs-icon icon-more"></span>
+                                        <span class="gfs-icon icon-share"></span>
                                     </div>
                                 </div>
                             </div>
@@ -2851,7 +2932,7 @@
                                             <span class="ph-toolbar-title">标题</span>
                                         </div>
                                         <div class="ph-col ph-toolbar-right">
-                                            <span class="gfs-icon icon-more"></span>
+                                            <span class="gfs-icon icon-share"></span>
                                         </div>
                                     </div>
                                 </code>
@@ -2944,21 +3025,21 @@
                                 <div class="ph-tabbar">
                                     <ul class="ph-row ph-tabbar-list">
                                         <li class="ph-col ph-tabbar-item ph-tabbar-active">
-                                            <span class="gfs-icon icon-home"></span>
+                                            <span class="gfs-icon icon-meidianbao-fill"></span>
                                             <p>首页</p>
                                         </li>
                                         <li class="ph-col ph-tabbar-item ph-tabbar-dynamic">
-                                            <span class="gfs-icon icon-modify"></span>
+                                            <span class="gfs-icon icon-dingdanguanli-fill"></span>
                                             <p>订单</p>
                                         </li>
                                         <li class="ph-col ph-tabbar-item">
-                                            <span class="gfs-icon icon-setting">
+                                            <span class="gfs-icon icon-shanghuguanli-fill">
                                                 <span class="ph-badge">8</span>
                                             </span>
                                             <p>设置</p>
                                         </li>
                                         <li class="ph-col ph-tabbar-item">
-                                            <span class="gfs-icon icon-user"></span>
+                                            <span class="gfs-icon icon-gukeyingxiao-fill"></span>
                                             <p>个人</p>
                                         </li>
                                     </ul>
@@ -2971,21 +3052,21 @@
                                     <div class="ph-tabbar">
                                         <ul class="ph-row ph-tabbar-list">
                                             <li class="ph-col ph-tabbar-item ph-tabbar-active">
-                                                <span class="gfs-icon icon-home"></span>
+                                                <span class="gfs-icon icon-meidianbao-fill"></span>
                                                 <p>首页</p>
                                             </li>
                                             <li class="ph-col ph-tabbar-item ph-tabbar-dynamic">
-                                                <span class="gfs-icon icon-modify"></span>
+                                                <span class="gfs-icon icon-dingdanguanli-fill"></span>
                                                 <p>订单</p>
                                             </li>
                                             <li class="ph-col ph-tabbar-item">
-                                                <span class="gfs-icon icon-setting">
+                                                <span class="gfs-icon icon-shanghuguanli-fill">
                                                     <span class="ph-badge">8</span>
                                                 </span>
                                                 <p>设置</p>
                                             </li>
                                             <li class="ph-col ph-tabbar-item">
-                                                <span class="gfs-icon icon-user"></span>
+                                                <span class="gfs-icon icon-gukeyingxiao-fill"></span>
                                                 <p>个人</p>
                                             </li>
                                         </ul>
@@ -3316,7 +3397,7 @@
                                 <div class="ph-tip">
                                     <div class="ph-tip-main">
                                         <div class="ph-tip-content">
-                                            <span class="gfs-icon icon-tip-fill"></span>
+                                            <span class="gfs-icon icon-warning-fill"></span>
                                             没有信息
                                         </div>
                                     </div>
@@ -3329,7 +3410,7 @@
                                     <div class="ph-tip">
                                         <div class="ph-tip-main">
                                             <div class="ph-tip-content">
-                                                <span class="gfs-icon icon-tip-fill"></span>
+                                                <span class="gfs-icon icon-warning-fill"></span>
                                                 没有信息
                                             </div>
                                         </div>
@@ -3723,29 +3804,37 @@
             </section>
 
             <section id="skin">
+                <h2>样式说明</h2>
+                <h3><strong>link引入css</strong></h3>
+                <div class="code-content">
+                    &lt;link rel="stylesheet" href="http://future-team.github.io/phoenix-styles/dist/phoenix-styles.min.css" /&gt;
+                </div>
+
+                <h3><strong>引入less</strong></h3>
+                安装phoenix-styles:
+                <div class="code-content">
+                    $ npm install phoenix-styles --save
+                </div>
+                然后在主入口js|jsx文件中引入phoenix-styles.less:
+                <div class="code-content">
+                    import 'phoenix-styles/less/phoenix-styles.less'
+                </div>
+                或单独引入某个less:
+                <div class="code-content">
+                    import 'phoenix-styles/less/modules/buttons.less'
+                </div>
+
                 <h2>换肤</h2>
                 <p>目前提供2套皮肤可供选择，一套为默认的橙色主题，一套为IOS主题。</p>
-                <h3><strong>如何换肤？</strong></h3>
-                <ul>
-                    <li>
-                        
-                    </li>
-                </ul>
-            </section>
-
-            <section id="upgrade">
-                <h2>升级说明</h2>
-                <ul>
-                    <li>移除TableView和FormGroup，统一到新增的List中。</li>
-                    <li>输入框新增可清空文字、查看密码和隐藏密码的功能。</li>
-                </ul>
-            </section>
-
-            <section id="intro">
-                <h2>phoenix-styles介绍</h2>
-                <ul>
-                    <li></li>
-                </ul>
+                <h3><strong>如何换肤？</strong>直接覆盖</h3>
+                <div class="code-content">
+                    &lt;link rel="stylesheet" href="http://future-team.github.io/phoenix-styles/dist/phoenix-styles.min.css" /&gt;<br/>
+                    &lt;link rel="stylesheet" href="http://future-team.github.io/phoenix-styles/dist/ios-skin.min.css" /&gt;
+                </div>
+                <div class="code-content">
+                    import 'phoenix-styles/less/phoenix-styles.less'<br/>
+                    import 'phoenix-styles/less/ios-skin.less'
+                </div>
             </section>
 
             <footer>

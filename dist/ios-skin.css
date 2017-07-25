@@ -622,28 +622,25 @@
   color: #ccc;
 }
 .ph-label-primary {
-  color: #fff;
-  background-color: #007aff;
+  color: #007aff;
 }
 .ph-label-success {
-  color: #fff;
-  background-color: #49cb67;
+  color: #5EB22D;
 }
 .ph-label-info {
-  color: #fff;
-  background-color: #4ea3d4;
+  color: #518CCE;
 }
-.ph-label-warning {
-  color: #fff;
-  background-color: #ffad3e;
+.ph-label-tip {
+  color: #F0B928;
 }
-.ph-label-danger {
-  color: #fff;
-  background-color: #f54d2e;
+.ph-label-calm {
+  color: #CA92DF;
 }
-.ph-label-error {
-  color: #fff;
-  background-color: #f64e2d;
+.ph-label-light {
+  color: #4EA3D4;
+}
+.ph-label-gray {
+  color: #bbb;
 }
 .ph-badge-primary {
   color: #fff;
