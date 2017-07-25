@@ -2699,6 +2699,34 @@ input[type="search"] + .ph-input-placeholder-hide {
 .ph-badge-danger.ph-badge-inverted {
   color: #f54d2e;
 }
+.ph-label {
+  display: inline-block;
+  font-size: 0.32rem;
+}
+.ph-label-md {
+  font-size: 0.4rem;
+}
+.ph-label-primary {
+  color: #ff6633;
+}
+.ph-label-success {
+  color: #5EB22D;
+}
+.ph-label-info {
+  color: #518CCE;
+}
+.ph-label-tip {
+  color: #F0B928;
+}
+.ph-label-calm {
+  color: #CA92DF;
+}
+.ph-label-light {
+  color: #4EA3D4;
+}
+.ph-label-gray {
+  color: #bbb;
+}
 .ph-star {
   position: relative;
   display: inline-block;
