@@ -70,7 +70,7 @@ nav li.active a{
 
 .main > section{
     padding: .20rem;
-    border-bottom: 1PX solid #ccc;
+    // border-bottom: 1PX solid #ccc;
     font-size: .28rem;
 }
 
@@ -144,8 +144,43 @@ nav li.active a{
 .code-content{
     padding: .4rem .32rem;
     margin-bottom: .32rem;
-    background-color: #272822;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.list-show li{
+    list-style: inside disc;
+}
+
+table caption{
+    padding: .16rem 0;
+    font-size: .40rem;
+}
+table thead{
+    background-color: #333;
     color: #fff;
+}
+table thead th{
+    padding: .16rem .16rem;
+}
+table tr{
+    border: 1px solid #bbb;
+    text-align: left;
+}
+table tr:nth-child(even){
+    background-color: #f0f0f0;
+}
+table td{
+    padding: .16rem;
+}
+table td span{
+    display: inline-block;
+    padding: .08rem;
+}
+
+footer p{
+    padding: .32rem 0;
+    text-align: center;
 }
 
 /* extra */

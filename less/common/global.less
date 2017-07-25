@@ -1,14 +1,15 @@
 @import "../variable.less";
 
-.text-left           { text-align: left; }
-.text-right          { text-align: right; }
-.text-center         { text-align: center; }
-.text-justify        { text-align: justify; }
-.text-nowrap         { white-space: nowrap; }
+.tl   { text-align: left; }
+.tr   { text-align: right; }
+.tc   { text-align: center; }
+.tj   { text-align: justify; }
+.tn   { white-space: nowrap; }
 
 .text-lowercase      { text-transform: lowercase; }
 .text-uppercase      { text-transform: uppercase; }
 .text-capitalize     { text-transform: capitalize; }
+
 /**清除浮动*/
 .clearfix:before, .clearfix:after {
     display: table;
@@ -17,6 +18,13 @@
 }
 .clearfix:after {
     clear: both;
+}
+
+/**省略号*/
+.ellipsis{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 /**控制块级、内敛*/
@@ -32,7 +40,7 @@
 .show {
     .block;
 }
-.hidden,.hide,.eg-hide {
+.hidden,.hide {
     display: none !important;
 }
 .show-opacity{
@@ -44,14 +52,27 @@
 .invisible {
     visibility: hidden;
 }
-.float-l{
+
+.fl{
     float: left;
 }
-.float-r{
+.fr{
     float: right;
 }
+.pr{
+    position: relative;
+}
+.pa{
+    position: absolute;
+}
+.pf{
+    position: fixed;
+}
+.ps{
+    position: static;
+}
 
-//color
+// color
 .color-white{
     color: @white;
 }
@@ -73,11 +94,72 @@
 .color-error{
     color: @brand-error;
 }
+.color-tip{
+    color: @brand-tip;
+}
 .color-gray{
-    color: @gray-66;
+    color: @gray-33;
 }
 
-// 固定＋常用数值(待续。。。)
+// color-deep
+.color-success-dp{
+    color: @brand-success-deep;
+}
+.color-tip-dp{
+    color: @brand-tip-deep;
+}
+.color-error-dp{
+    color: @brand-error-deep;
+}
+
+// bg
+.bg-success{
+    background-color: @brand-success;
+}
+.bg-tip{
+    background-color: @brand-tip;
+}
+.bg-error{
+    background-color: @brand-error;
+}
+.bg-gray{
+    background-color: @gray-f0;
+}
+
+// bg-light
+.bg-success-lt{
+    background-color: @brand-success-light;
+}
+.bg-tip-lt{
+    background-color: @brand-tip-light;
+}
+.bg-error-lt{
+    background-color: @brand-error-light;
+}
+
+// font-size
+.font-symbol{
+    font-size: @font-size-symbol;
+}
+.font-headline{
+    font-size: @font-size-headline;
+}
+.font-title{
+    font-size: @font-size-title;
+}
+.font-subtitle{
+    font-size: @font-size-subtitle;
+}
+.font-mainbody{
+    font-size: @font-size-mainbody;
+}
+.font-text{
+    font-size: @font-size-text;
+}
+.font-tip{
+    font-size: @font-size-tip;
+}
+
 
 
 

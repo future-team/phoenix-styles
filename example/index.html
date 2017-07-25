@@ -25,7 +25,7 @@
                     <li data-href="grid"><a href="#grid">基础布局</a></li>
                     <li data-href="list"><a href="#list">列表</a></li>
                     <li data-href="icon"><a href="#icon">Icon</a></li>
-                    <li data-href="label"><a href="#label">Label</a></li>
+                    <li data-href="label"><a href="#label">标签</a></li>
                     <li data-href="star"><a href="#star">星级</a></li>
                     <li data-href="button"><a href="#button">按钮</a></li>
                     <li data-href="buttonGroup"><a href="#buttonGroup">按钮组</a></li>
@@ -57,8 +57,9 @@
                 </ul>
                 <h2>其他</h2>
                 <ul class="main-nav">
-                    <li data-href="skin"><a href="#skin">样式说明</a></li>
-                    <li data-href="common"><a href="#common">公共样式</a></li>
+                    <li data-href="intro"><a href="#intro">介绍</a></li>
+                    <li data-href="skin"><a href="#skin">使用</a></li>
+                    <li data-href="global"><a href="#global">公共样式</a></li>
                 </ul>
             </nav>
         </header>
@@ -989,7 +990,7 @@
             </section>
 
             <section id="label">
-                <h2>Label</h2>
+                <h2>标签</h2>
                 <ul class="demo-list">
                     <li>
                         <div class="demo-frame">
@@ -3882,6 +3883,17 @@
                 </ul>
             </section>
 
+            <section id="intro">
+                <h2>介绍</h2>
+                <p>phoenix-styles是纯样式的一个项目，使用less预编译语言。</p>
+                <ul class="list-show">
+                    <li>是一套移动端样式。</li>
+                    <li>以阿波罗/点评管家的橙色为主题。</li>
+                    <li>除橙色主题，还提供一套蓝色IOS主题色。</li>
+                    <li>phoenix-ui/swan-ui移动端UI库组件的样式支持。</li>
+                </ul>
+            </section>
+
             <section id="skin">
                 <h2>使用说明</h2>
                 <h3><strong>link引入css</strong></h3>
@@ -3916,8 +3928,302 @@
                 </div>
             </section>
 
-            <section id="common">
+            <section id="global">
                 <h2>公共样式</h2>
+                <table width="100%">
+                    <caption>布局类</caption>
+                    <thead>
+                        <tr>
+                            <th width="20%">类名</th>
+                            <th width="40%">源码</th>
+                            <th>说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.tl</td>
+                            <td>text-align: left;</td>
+                            <td>左对齐</td>
+                        </tr>
+                        <tr>
+                            <td>.tr</td>
+                            <td>text-align: right;</td>
+                            <td>右对齐</td>
+                        </tr>
+                        <tr>
+                            <td>.tc</td>
+                            <td>text-align: center;</td>
+                            <td>居中</td>
+                        </tr>
+                        <tr>
+                            <td>.tj</td>
+                            <td>text-align: justify;</td>
+                            <td>两边对齐(有兼容性问题)</td>
+                        </tr>
+                        <tr>
+                            <td>.tn</td>
+                            <td>white-space: nowrap;</td>
+                            <td>强制不换行</td>
+                        </tr>
+                        <tr>
+                            <td>.inline-block</td>
+                            <td>display: inline-block !important;</td>
+                            <td>行内块元素</td>
+                        </tr>
+                        <tr>
+                            <td>.inline</td>
+                            <td>display: inline !important;</td>
+                            <td>行内元素</td>
+                        </tr>
+                        <tr>
+                            <td>.block</td>
+                            <td>display: block !important;</td>
+                            <td>块元素</td>
+                        </tr>
+                        <tr>
+                            <td>.fl</td>
+                            <td>float: left;</td>
+                            <td>左浮动</td>
+                        </tr>
+                        <tr>
+                            <td>.fr</td>
+                            <td>float: right;</td>
+                            <td>右浮动</td>
+                        </tr>
+                        <tr>
+                            <td>.pr</td>
+                            <td>position: relative;</td>
+                            <td>相对定位</td>
+                        </tr>
+                        <tr>
+                            <td>.pa</td>
+                            <td>position: absolute;</td>
+                            <td>绝对定位</td>
+                        </tr>
+                        <tr>
+                            <td>.pf</td>
+                            <td>position: fixed;</td>
+                            <td>相对浏览器定位</td>
+                        </tr>
+                        <tr>
+                            <td>.ps</td>
+                            <td>position: static;</td>
+                            <td>无定位</td>
+                        </tr>
+                        <tr>
+                            <td>.fr</td>
+                            <td>float: right;</td>
+                            <td>右浮动</td>
+                        </tr>
+
+                        <tr>
+                            <td>.show</td>
+                            <td>display: block !important;</td>
+                            <td>显示</td>
+                        </tr>
+                        <tr>
+                            <td>.hidden,.hide</td>
+                            <td>display: none !important;</td>
+                            <td>隐藏</td>
+                        </tr>
+                        <tr>
+                            <td>.show-opacity</td>
+                            <td>opacity: 1 !important;</td>
+                            <td>透明度显示</td>
+                        </tr>
+                        <tr>
+                            <td>.hide-opacity</td>
+                            <td>opacity: 0.01 !important;</td>
+                            <td>透明度隐藏</td>
+                        </tr>
+                        <tr>
+                            <td>.invisible</td>
+                            <td>visibility: hidden;</td>
+                            <td>不可见(占取物理位置)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table width="100%">
+                    <caption>字体大小</caption>
+                    <thead>
+                        <tr>
+                            <th width="20%">类名</th>
+                            <th width="40%">源码</th>
+                            <th>说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.font-symbol</td>
+                            <td>font-size: .6rem;</td>
+                            <td>30pt</td>
+                        </tr>
+                        <tr>
+                            <td>.font-headline</td>
+                            <td>font-size: .36rem;</td>
+                            <td>18pt</td>
+                        </tr>
+                        <tr>
+                            <td>.font-title</td>
+                            <td>font-size: .34rem;</td>
+                            <td>17pt</td>
+                        </tr>
+                        <tr>
+                            <td>.font-subtitle</td>
+                            <td>font-size: .32rem;</td>
+                            <td>16pt</td>
+                        </tr>
+                        <tr>
+                            <td>.font-mainbody</td>
+                            <td>font-size: .30rem;</td>
+                            <td>15pt</td>
+                        </tr>
+                        <tr>
+                            <td>.font-text</td>
+                            <td>font-size: .28rem;</td>
+                            <td>14pt</td>
+                        </tr>
+                        <tr>
+                            <td>.font-tip</td>
+                            <td>font-size: .24rem;</td>
+                            <td>12pt</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table width="100%">
+                    <caption>颜色类</caption>
+                    <thead>
+                        <tr>
+                            <th width="20%">类名</th>
+                            <th width="40%">源码</th>
+                            <th>说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.color-white</td>
+                            <td>color: #fff;</td>
+                            <td><span class="color-white">字体白色</span></td>
+                        </tr>
+                        <tr>
+                            <td>.color-primary</td>
+                            <td>color: #ff6633;</td>
+                            <td><span class="color-primary">字体主色</span></td>
+                        </tr>
+                        <tr>
+                            <td>.color-success</td>
+                            <td>color: #49cb67;</td>
+                            <td><span class="color-success">字体成功色</span></td>
+                        </tr>
+                        <tr>
+                            <td>.color-success-dp</td>
+                            <td>color: #199235;</td>
+                            <td><span class="color-success-dp">字体成功深色</span></td>
+                        </tr>
+                        <tr>
+                            <td>.color-tip</td>
+                            <td>color: #ffad3e;</td>
+                            <td><span class="color-tip">字体提示色</span></td>
+                        </tr>
+                        <tr>
+                            <td>.color-tip-dp</td>
+                            <td>color: #e08f22;</td>
+                            <td><span class="color-tip-dp">字体提示深色</span></td>
+                        </tr>
+                        <tr>
+                            <td>.color-error</td>
+                            <td>color: #f64e2d;</td>
+                            <td><span class="color-error">字体错误色</span></td>
+                        </tr>
+                        <tr>
+                            <td>.color-error-dp</td>
+                            <td>color: #e2391a;</td>
+                            <td><span class="color-error-dp">字体错误深色</span></td>
+                        </tr>
+                        <tr>
+                            <td>.color-info</td>
+                            <td>color: #4ea3d4;</td>
+                            <td><span class="color-info">字体消息色</span></td>
+                        </tr>
+                        <tr>
+                            <td>.color-warning</td>
+                            <td>color: #e0690c;</td>
+                            <td><span class="color-warning">字体警示色</span></td>
+                        </tr>
+                        <tr>
+                            <td>.color-danger</td>
+                            <td>color: #ff3b30;</td>
+                            <td><span class="color-danger">字体危险色</span></td>
+                        </tr>
+                        <tr>
+                            <td>.color-gray</td>
+                            <td>color: #333;</td>
+                            <td><span class="color-gray">字体灰色</span></td>
+                        </tr>
+                        <tr>
+                            <td>.bg-success</td>
+                            <td>background-color: #49cb67;</td>
+                            <td><span class="bg-success color-white">背景成功色</span></td>
+                        </tr>
+                        <tr>
+                            <td>.bg-success-lt</td>
+                            <td>background-color: #d4f6dc;</td>
+                            <td><span class="bg-success-lt color-success-dp">背景成功浅色</span></td>
+                        </tr>
+                        <tr>
+                            <td>.bg-tip</td>
+                            <td>background-color: #ffad3e;</td>
+                            <td><span class="bg-tip color-white">背景提示色</span></td>
+                        </tr>
+                        <tr>
+                            <td>.bg-tip-lt</td>
+                            <td>background-color: #fcc9c0;</td>
+                            <td><span class="bg-tip-lt color-tip-dp">背景提示浅色</span></td>
+                        </tr>
+                        <tr>
+                            <td>.bg-error</td>
+                            <td>background-color: #f64d2e;</td>
+                            <td><span class="bg-error color-white">背景错误色</span></td>
+                        </tr>
+                        <tr>
+                            <td>.bg-error-lt</td>
+                            <td>background-color: #fcc9c0;</td>
+                            <td><span class="bg-error-lt color-error-dp">背景错误浅色</span></td>
+                        </tr>
+                        <tr>
+                            <td>.bg-gray</td>
+                            <td>background-color: #f0f0f0;</td>
+                            <td><span class="bg-gray color-gray">背景灰色</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table width="100%">
+                    <caption>复合类</caption>
+                    <thead>
+                        <tr>
+                            <th width="20%">类名</th>
+                            <th width="40%">源码</th>
+                            <th>说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.clearfix</td>
+                            <td>
+                                .clearfix:before,.clearfix:after{ display: table; line-height: 0; content:"";} <br> .clearfix:after{ clear: both;}
+                            </td>
+                            <td>清浮动</td>
+                        </tr>
+                        <tr>
+                            <td>.ellipsis</td>
+                            <td>overflow: hidden;<br>white-space: nowrap;<br>text-overflow: ellipsis;</td>
+                            <td>省略号</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
 
             <footer>
