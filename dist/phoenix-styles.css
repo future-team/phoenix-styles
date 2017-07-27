@@ -595,6 +595,9 @@ h6 {
 .font-tip {
   font-size: 0.24rem;
 }
+.clickable:active {
+  background-color: #f9f9f9;
+}
 .animated {
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
@@ -3851,6 +3854,9 @@ dl.ph-image-item dd p:last-child {
   -moz-align-items: center;
   align-items: center;
 }
+.ph-list-item.ph-navigate-right .ph-list-col-tail {
+  padding-right: 0.68rem;
+}
 .ph-navigate-right:after {
   display: inline-block;
   position: absolute;
@@ -3869,9 +3875,7 @@ dl.ph-image-item dd p:last-child {
   font-size: 0.32rem;
   color: #ccc;
 }
-.ph-list-item.ph-navigate-right .ph-list-col-tail {
-  padding-right: 0.68rem;
-}
+.ph-list-item.clickable:before,
 .ph-list-item.ph-navigate-right:before {
   content: "";
   position: absolute;
@@ -3881,9 +3885,11 @@ dl.ph-image-item dd p:last-child {
   height: 100%;
   background-color: transparent;
 }
+.ph-list-item.clickable:active,
 .ph-list-item.ph-navigate-right:active {
   background-color: #f9f9f9;
 }
+.ph-list-item.clickable:active:before,
 .ph-list-item.ph-navigate-right:active:before {
   background-color: #f9f9f9;
 }

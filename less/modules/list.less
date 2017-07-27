@@ -41,6 +41,12 @@
     }
 }
 
+.@{listPrefixCls}-item.ph-navigate-right{
+    .@{listPrefixCls}-col-tail{
+        padding-right: @list-col-tail-padding;
+    }
+}
+
 .ph-navigate-right:after{
     display: inline-block;
     position: absolute;
@@ -51,10 +57,8 @@
     .icon-navigate-right();
 }
 
+.@{listPrefixCls}-item.clickable,
 .@{listPrefixCls}-item.ph-navigate-right{
-	.@{listPrefixCls}-col-tail{
-        padding-right: @list-col-tail-padding;
-    }
     &:before{
         content:"";
         position: absolute;
