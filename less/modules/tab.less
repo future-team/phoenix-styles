@@ -1,49 +1,34 @@
-.ph-tabs {
-  .ph-row{
-    margin: 0;
-  }
-  .ph-tab-nav {
-    text-align: center;
-    //background: @white;
-    padding: @tab-nav-padding;
-    border-bottom: @tab-nav-border;
-    font-size: @font-size-base;
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    position: relative;
+@import "../public";
+@import "../mixins/tab";
 
-    &.active {
-      color: @tab-nav-active-color;
-      border-bottom: @tab-nav-active-border;
-      margin-bottom: @tab-nav-margin;
-      margin-right: 0;
-    }
-  }
-  .ph-tab-panel {
-    display: none;
-    padding: @tab-panel-padding;
-    width: 100%;
-    &.active {
-      display: block;
-    }
-  }
+.ph-tabs{
+	.ph-tab-nav{
+		position: relative;
+		-webkit-tap-highlight-color: transparent;
+		cursor: pointer;
+	}
+
+	.ph-tab-panel{
+		display: none;
+		width: 100%;
+		&.active {
+			display: block;
+		}
+	}		
 }
-.vertical{
-  &.ph-tabs{
-    margin: 0;
-    .ph-col{
-      padding: 0;
-    }
-  }
-  .ph-tab-nav{
-    position: relative;
-    padding: @vertical-tab-nav-padding;
-    margin-right: @tab-nav-margin;
-    text-align: left;
-    line-height: @vertical-tab-nav-line-height;
-    &.active{
-      margin-bottom: 0;
-      margin-right: @tab-nav-margin;
-    }
-  }
+
+.ph-tabs-vertical{
+	margin: 0;
+
+	.ph-tab-navs{
+		padding: 0;
+	}
+
+	.ph-tab-bd{
+		position: relative;
+		z-index: 1;
+		padding: 0;
+	}
 }
+
+.tab-skin();

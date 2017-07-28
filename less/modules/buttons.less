@@ -1,58 +1,97 @@
-.ph-button{
+@import "../public";
+@import "../mixins/buttons";
+@import "../mixins/iconfont";
+
+@buttonPrefixCls: ph-button;
+
+.@{buttonPrefixCls}{
     position: relative;
     display: inline-block;
+    min-width: @btn-sm-min-width;
+    height: @btn-sm-height;
+    padding: @btn-default-padding;
     margin-bottom: 0;
     text-align: center;
     white-space: nowrap;
-    vertical-align: top;
-    cursor: pointer;
-    line-height: 1;
     border: @btn-default-border;
-    border-radius: @btn-default-radius;
-    background-color: @btn-bg-color;
-    padding: @btn-default-padding;
+    .border-radius(@btn-default-radius);
+    background-color: @white;
+    vertical-align: top;
+    line-height: @btn-sm-height;
+    font-size: @font-size-text;
+    font-weight: 400;
     outline: none;
-    font-size: @btn-font-size;
-    &:active,
-    &.active,
-    &.ph-button-active {
-        color: inherit;
-        background-color: @btn-active-background;
-    }
-    &:disabled,
-    &.disabled,
-    &.ph-button-disabled{
-        opacity: .6;
-        pointer-events: none;
+    cursor: pointer;
+
+    .gfs-icon-loading{
+        .getSize(@font-size-text)
     }
     
-    &.ph-button-md{
-        padding: @btn-md-padding;
-        font-size: @font-size-base;
+    &.@{buttonPrefixCls}-md{
+        height: @btn-md-height;
+        min-width: @btn-md-min-width;
+        line-height: @btn-md-height;
+        font-size: @font-size-subtitle;
+
+        .gfs-icon-loading{
+            .getSize(@font-size-subtitle)
+        }
     }
-    &.ph-button-lg{
-        padding: @btn-lg-padding;
-        font-size: @font-size-base;
+
+    &.@{buttonPrefixCls}-lg,
+    &.@{buttonPrefixCls}-block{
+        height: @btn-lg-height;
+        .border-radius(@btn-lg-radius);
+        line-height: @btn-lg-height;
+        font-size: @font-size-headline;
+
+        .gfs-icon-loading{
+            .getSize(@font-size-headline)
+        }
+    }
+
+    &.@{buttonPrefixCls}-lg{
+        min-width: @btn-lg-min-width;
+    }
+
+    &.@{buttonPrefixCls}-block{
+        display: block;
+        width: 100%;
     }
 }
 
-.button-skin();
-
-.ph-button-block {
-    display: block;
-    width: 100%;
-    padding: @btn-block-padding;
-    margin: @btn-block-margin;
-    font-size: @font-size-base;
-}
-
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-    width: 100%;
-}
-
-.ph-button .gfs-icon {
-    margin-right: .3rem;
+// 带图标的按钮
+.@{buttonPrefixCls} .gfs-icon{
+    margin-right: @btn-icon-margin;
     font-size: inherit;
 }
+
+.@{buttonPrefixCls}-stable .gfs-icon{
+    position: absolute;
+    margin-right: 0;
+    margin-left: @btn-stable-icon-margin;
+}
+
+.@{buttonPrefixCls}{
+    .icon-loading-white,
+    .icon-loading-gray{
+        margin-bottom: @btn-loading-margin;
+    }
+}
+
+.@{buttonPrefixCls}-stable{
+    .icon-loading-white,
+    .icon-loading-gray{
+        top: 50%;
+        .transform(translateY(-50%));
+    }
+}
+
+
+// input[type="submit"],
+// input[type="reset"],
+// input[type="button"] {
+//     width: 100%;
+// }
+
+.button-skin();

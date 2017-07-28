@@ -1,0 +1,156 @@
+@import "../public";
+
+@filterPrefixCls: ph-filter;
+
+.@{filterPrefixCls}-occupy{
+	height: @filter-header-item-height;
+}
+
+.@{filterPrefixCls}-container{
+	position: relative;
+}
+
+.@{filterPrefixCls}-container-fixed,
+.@{filterPrefixCls}-container-shadow{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	width: 100%;
+}
+
+.@{filterPrefixCls}-container-shadow{
+	height: 100%;
+}	
+
+.@{filterPrefixCls}-shadow{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	background-color: @default-shadow-color;
+}
+
+.@{filterPrefixCls}-header{
+	position: relative;
+	z-index: 2;
+	margin: 0;
+	background-color: @filter-header-background;
+	border-bottom: @filter-header-border;
+
+	.@{filterPrefixCls}-header-item{
+		position: relative;
+		height: @filter-header-item-height;
+		padding: @filter-header-item-padding;
+		line-height: @filter-header-item-line-height;
+		text-align: center;
+		font-size: @filter-header-item-font-size;
+
+		a{
+			display: block;
+			border-right: @filter-header-border;
+			white-spac: nowrap;
+		}
+		&:last-child a{
+			border-right: none;
+		}
+
+		.gfs-icon{
+			display: inline-block;
+			position: relative;
+			top:@filter-icon-top;
+			margin-left: @filter-icon-margin;
+			line-height: @filter-icon-line-height;
+			font-size: @filter-icon-font-size;
+			color: @filter-icon-color;
+			.transition(all .2s);
+		}
+
+		&.active{
+			.gfs-icon{
+				.rotate(-180deg);
+			}
+
+			&:after{
+				content: "";
+				position: absolute;
+				bottom: @filter-arrow-bottom;
+				left: 50%;
+				width: @filter-arrow-size;
+				height: @filter-arrow-size;
+				background-color: @filter-arrow-background;
+				border-top: @filter-arrow-border;
+				border-right: @filter-arrow-border;
+				.transform(rotate(-45deg) translateX(-50%));
+			}
+		}
+	}
+
+	.@{filterPrefixCls}-header-text{
+		display: inline-block;
+		overflow: hidden;
+		max-width: @filter-header-item-max-width;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+}
+
+.@{filterPrefixCls}-selector{
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	
+	.ph-list,
+	.ph-tab-navs,
+	.ph-tab-bd{
+	    overflow-y: auto;
+		max-height: @filter-panel-max-height;
+
+		&::-webkit-scrollbar{
+			display:none;
+		}
+	}
+
+	.ph-list-item.active{
+		color: @brand-primary;
+	}
+
+	.ph-button-group{
+		position: relative;
+		z-index: 1;
+	}
+}
+
+.ph-checkbox-filter{
+	.@{filterPrefixCls}-selector{
+		.ph-list,
+		.ph-tab-navs,
+		.ph-tab-bd{
+			max-height: none;
+			height: 100vh;
+		}
+	}
+}
+
+.@{filterPrefixCls}-selector-buttons{
+	.ph-list,
+	.ph-tab-navs,
+	.ph-tab-bd{
+		padding-bottom: @filter-footer-height;
+	}
+	
+	.ph-button-group{
+		margin-top: -@filter-footer-height;
+	}
+	
+}
+
+// checkbox filter
+.ph-checkbox-filter{
+	.@{filterPrefixCls}-selector{
+		z-index: 9;
+		height: auto;
+	} 
+}

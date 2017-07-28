@@ -1,35 +1,124 @@
 // dialog skin
+@dialogPrefixCls: ph-dialog;
+
 .dialog-skin(){
-	.ph-dialog-content{
+	.@{dialogPrefixCls}-content{
 		width: @dialog-content-width;
 		padding: @dialog-content-padding;
 		margin: 0 auto;
 		background-color: @white;
-		border-radius: @dialog-content-radius;
+		.border-radius(@dialog-content-radius);
 		text-align: center;
-		.ph-dialog-close{
+
+		.@{dialogPrefixCls}-close{
 			position: absolute;
+			width: @dialog-close-size;
+			height: @dialog-close-size;
 			top: @dialog-close-top;
 			right: @dialog-close-right;
-			font-size: @dialog-close-font-size;
+			font-size: 100%;
 			color: @dialog-close-color;
 		}
-		.ph-dialog-title{
-			line-height: 1;
+
+		.@{dialogPrefixCls}-title,
+		.@{dialogPrefixCls}-body.@{dialogPrefixCls}-only{
+			line-height: @dialog-title-line-height;
 			font-size: @dialog-title-font-size;
 			color: @dialog-title-color;
 		}
-		.ph-dialog-body{
+
+		.@{dialogPrefixCls}-title{
+			margin: @dialog-title-margin;
+		}
+
+		.@{dialogPrefixCls}-body{
 			margin: @dialog-body-margin;
 			line-height: @dialog-body-line-height;
 			font-size: @dialog-body-font-size;
 			color: @dialog-body-color;
 		}
-		.ph-button:not(.ph-button-block){
-			// width: @dialog-btn-width;
-			margin-left: @dialog-btn-margin;
-			&:first-child{
-				margin-left: 0;
+
+		.@{dialogPrefixCls}-body.@{dialogPrefixCls}-only{
+			margin: @dialog-only-margin;
+		}
+
+		.@{dialogPrefixCls}-picture{
+			width: @dialog-picture-width;
+			padding-top: @dialog-picture-padding;
+			margin: @dialog-picture-margin;
+			img{
+				display: block;
+				width: 100%;
+			}
+		}
+
+		.@{dialogPrefixCls}-footer{
+			.ph-button-group{
+				.ph-button{
+					min-width: 0;
+					margin-left: 0;
+					margin-right: 0;
+					border: none;
+					font-size: @font-size-subtitle;
+				}	
+			}
+
+			.ph-button-group-default{
+				border-top: @dialog-btn-border;
+				.ph-button{
+			        border-right: @dialog-btn-border;
+			        border-radius: 0;
+			        &:first-child{
+						border-bottom-left-radius: @dialog-content-radius;
+			        }
+			        &:last-child{
+						border-bottom-right-radius: @dialog-content-radius;
+			        }
+			    }
+			}
+
+			.ph-button-group-tacked{
+				border-top: 0;
+				.ph-button{
+					border-top: @dialog-btn-border;
+					&:first-child{
+						border-radius: 0;
+					}
+					&:last-child{
+						.border-radius(0 0 @dialog-content-radius @dialog-content-radius);
+					}
+				}
+			}
+		}
+	}
+
+	.@{dialogPrefixCls}-prompt{
+		.@{dialogPrefixCls}-title{
+			margin: @prompt-title-margin;
+		}
+		.@{dialogPrefixCls}-body{
+			margin: @prompt-body-margin;
+		}
+		.ph-input{
+			margin-bottom: @prompt-input-margin;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.@{dialogPrefixCls}-explain{
+		.@{dialogPrefixCls}-title{
+			margin: @explain-title-margin;
+		}
+		.@{dialogPrefixCls}-body{
+			line-height: @dialog-body-line-height;
+			text-align: left;
+			ul{
+				padding-bottom: @explain-list-padding;
+			}
+			li{
+				margin-bottom: @explain-list-margin;
 			}
 		}
 	}

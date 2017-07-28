@@ -1,15 +1,16 @@
+@import "../public";
+@import "../mixins/label";
+
 .ph-label{
     display: inline-block;
-    vertical-align: middle;
-    padding: @label-padding;
-    font-size: @font-size-tiny;
-    border-radius: @label-radius;
+    .label-size();
+    // vertical-align: top;
+    // text-align: center;
+    // .border-radius(@label-radius);
 }
+
 .ph-label-md{
-    font-size: @font-size-small;
-}
-.ph-label-lg{
-    font-size: @font-size-base;
+    .label-size(@label-md-size);
 }
 
 .label-skin();

@@ -1,12 +1,6 @@
-/**
- * Grid
- * --------------------------------------------------
- * Using flexbox for the grid, inspired by Philip Walton:
- * http://philipwalton.github.io/solved-by-flexbox/demos/grids/
- * By default each .uc-col within a .uc-row will evenly take up
- * available width, and the height of each .uc-col with take
- * up the height of the tallest .uc-col in the same .uc-row.
- */
+@import "../public";
+@import "../mixins/grid";
+
 .ph-grid{
   overflow: hidden;
 }
@@ -19,7 +13,7 @@
 
 .ph-row {
   .display-flex();
-  margin: 0  -(@grid-padding-width + 5);
+  margin: 0  -(@grid-padding-width);
   /*width: 100%;*/
 }
 
@@ -34,15 +28,15 @@
     padding: 0;
   }
 }
-.ph-row-no-padding{
-  .ph-row{
-    padding: 0;
-    margin:0;
-    > .ph-col {
-      padding: 0;
-    }
-  }
-}
+// .ph-row-no-padding{
+//   .ph-row{
+//     padding: 0;
+//     margin:0;
+//     > .ph-col {
+//       padding: 0;
+//     }
+//   }
+// }
 /*.row + .row {
   margin-top: (@grid-padding-width / 2) * -1;
   padding-top: 0;
@@ -51,7 +45,8 @@
 .ph-col {
   .flex(1);
   display: block;
-  padding: (@grid-padding-width / 2) @grid-padding-width + 5;
+  // padding: (@grid-padding-width / 2) @grid-padding-width + 5;
+  padding: 0 @grid-padding-width;
   width: 100%;
 }
 
@@ -116,8 +111,6 @@
   .generate-columns(@n, (@i + 5));
 }
 
-
-
 .ph-col-33, .ph-col-34 {
   .flex(0, 0, 33.3333%);
   max-width: 33.3333%;
@@ -130,7 +123,7 @@
 
 .ph-grid-row{
   .display-flex();
-  margin-top: 10px;
+  margin-top: .10rem;
   &:first-child{
     margin-top:0;
   }

@@ -1,26 +1,29 @@
+@import "../public";
+@import "../mixins/popup";
+
 .ph-popup-shadow{
 	top: 0;
 	height: 100%;
-	background-color: rgba(0,0,0,.4);
+	background-color: @default-shadow-color;
 	z-index: 9;
 }
 
-.ph-popup-top .ph-popup-content{
+.ph-popup-top .ph-popup-main{
 	top: 0;
 }
 
-.ph-popup-bottom .ph-popup-content{
+.ph-popup-bottom .ph-popup-main{
 	bottom: 0;
 }
 
-.ph-popup-content, 
+.ph-popup-main, 
 .ph-popup-shadow{
 	position: fixed;
 	left: 0;
 	width: 100%;
 }
 
-.ph-popup-content{
+.ph-popup-main{
 	z-index: 10;
 }
 

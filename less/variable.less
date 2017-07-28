@@ -1,236 +1,431 @@
-// Color
+// 颜色
 // --------------------------------------------------
-@gray-base:                 #000;
-@gray-darker:               #222; // #222
-@gray-dark:                 #333;   // #333
-@gray:                      #555; // #555
-@gray-normal:               #666;
-@gray-light:                #777; // #777
-@gray-lighter:              #eee; // #eee
-
-@white:                     #fff;
-
-//语义化的颜色
+// 品牌色
 @brand-primary:             #ff6633;
-@brand-success:             #5cb85c;
-@brand-info:                #5bc0de;
+@brand-primary-active:      #f26130;
+@brand-primary-await:       #ffc2ad;
+@brand-primary-light:       #fff1ed;
+@brand-primary-deep:        #e35322;
+
+// 中立色
+@white:                     #fff;
+@gray-f9:                   #f9f9f9;
+@gray-f8:                   #f8f8f8;
+@gray-f0:                   #f0f0f0;
+@gray-e1:                   #e1e1e1;
+@gray-cc:                   #ccc;
+@gray-bb:                   #bbb;
+@gray-99:                   #999;
+@gray-66:                   #666;
+@gray-33:                   #333;
+@black:                     #000;
+
+// 功能色
+@brand-success:             #49cb67;
+@brand-success-light:       #d4f6dc;
+@brand-success-deep:        #199235;
+
+@brand-tip:                 #ffad3e;
+@brand-tip-light:           #fff4e3;
+@brand-tip-deep:            #e08f22;
+
+@brand-error:               #f64d2e;
+@brand-error-light:         #fcc9c0;
+@brand-error-deep:          #e2391a;
+
+@brand-info:                #4ea3d4;
+@brand-info-deep:           #518cce;
+
+// label
+@label-info:                @brand-info-deep;
+@label-success:             #5eb22d;
+@label-tip:                 #f0b928;
+@label-calm:                #ca92df;
+@label-light:               @brand-info;
+@label-gray:                @gray-bb;
+
+// 常用色(非规范)
 @brand-warning:             #e0690c;
-@brand-danger:              #d9534f;
-@brand-error:               #fc4e44;
-@brand-gray:                #ccc;
-@brand-await:               lighten(@brand-primary,25%);
+@brand-danger:              #ff3b30;
 
-// Common
+
+// 通用
 // --------------------------------------------------
-//默认body中字体颜色
-@text-color:                @gray-dark;
 //默认body背景色
-@body-bg:                   @white;
+@body-bg:                   @gray-f0;
 
-//链接颜色
+//链接
 @link-color:                #0066cc;
-//链接hover颜色
 @link-hover-color:          darken(@link-color,15%);
-//** Link hover decoration.
 @link-hover-decoration:     none;
 
-@line-height-default:       21px;
-
 // Borders
-@border-default-color:      #ddd;
-@border-default:            1px solid @border-default-color;
-@border-radius:             6px ;
-@border-color:              #dedede;
+@border-default-color:      #bbb;
+@border-default:            1PX solid @border-default-color;
 
-// Font
-@font-family-default:       "Helvetica Neue", Helvetica, sans-serif ;
-@font-family-sans-serif:    "helvetica regular", "Helvetica Neue","Microsoft YaHei", Arial, Helvetica, STHeiTi, sans-serif;
-@font-family-base:          @font-family-sans-serif;
+// 默认active背景色
+@default-active-color:      @gray-f9;
 
-@font-size-larger:          125%; // 20px
-@font-size-large:           112.5%; // 18px
-@font-size-base:            100%; // 16px
-@font-size-normal:          93.75%; // 15px
-@font-size-small:           87.5%; // 14px
-@font-size-smaller:         75%; // 12px
-@font-size-tiny:            62.5%; // 10px
+//默认遮罩的颜色
+@default-shadow-color:      rgba(0,0,0,.4);
+
+// 常用参数数值
+@spacing-x:                 .08rem;
+@spacing-2x:                @spacing-x*2;
+@spacing-3x:                @spacing-x*3;
+@spacing-4x:                @spacing-x*4;
+@spacing-5x:                @spacing-x*5;
+
+// 字体(英文Helvetica, Tahoma, Arial；中文'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei')
+@font-family-default:       Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei';
+
+// 文字大小
+@font-size-symbol:          .6rem; /*30pt*/
+@font-size-headline:        .36rem; /*18pt*/
+@font-size-title:           .34rem; /*17pt*/
+@font-size-subtitle:        .32rem; /*16pt*/
+@font-size-mainbody:        .30rem; /*15pt*/
+@font-size-text:            .28rem; /*14pt*/
+@font-size-tip:             .24rem; /*12pt*/
+
+// 文字行高
+@line-height-mainbody:      .40rem;
+@line-height-text:          .36rem;
+@line-height-tip:           .32rem;
+@line-height-default:       .21rem;
 
 
 // Accordion
 // --------------------------------------------------
-@accordion-padding:         0 0 0 .9375rem;
+@accordion-header-height:   .88rem;
+@accordion-header-padding:  0 .32rem 0 .32rem;
+@accordion-header-border:   1PX solid @gray-f0;
 
-@accordion-header-color:    @gray-normal;
-@accordion-header-padding:  .6875rem .9375rem .6875rem 0;
-@accordion-header-border:   @border-color;
-
-@accordion-icon-line-height: 16px;
-@accordion-icon-size:       @font-size-smaller;
+@accordion-icon-size:       @icon-xs-size;
 
 @accordion-item-padding:    @accordion-header-padding;
-@accordion-item-border:     @border-color;
+@accordion-item-border:     @border-default-color;
 
 
 // Badges
 // --------------------------------------------------
-@badges-padding:            2px 9px 3px;
-@badge-inverted-padding:    0 5px 0 0;
-@badges-radius:             100px;
-@badges-default-color:      @gray-dark;
-@badges-default-background: rgba(0,0,0,.15);
+@badge-height:              .36rem;
+@badge-min-width:           @badge-height;
+@badge-font-size:           @font-size-tip;
+@badge-radius:              @badge-height / 2;
+@badge-padding:             0 .12rem;
+@badge-default-background:  @brand-error;
+@badge-default-color:       @white;
+@badge-inverted-padding:    0 .10rem 0 0;
 
 
 // Buttons
 // --------------------------------------------------
-@btn-bg-color:              @white;
-@btn-font-size:             12px;
-@btn-default-border:        1px solid #ccc;
-@btn-default-radius:        3px;
-@btn-default-padding:       6px 8px 7px;
-@btn-active-background:     #ccc;
-@btn-md-padding:            8px 8px;
-@btn-lg-padding:            12px 8px;
-@btn-block-padding:         12px 0;
-@btn-block-margin:          0 0 10px 0;
+@btn-default-border:        1PX solid @gray-bb;
+@btn-default-padding:       0 @spacing-3x;
+@btn-default-radius:        .04rem;
+@btn-icon-margin:           .12rem;
+@btn-stable-icon-margin:    -.44rem;
+@btn-loading-margin:        -.06rem;
+@btn-stable-loading-margin: -.52rem;
+
+@btn-sm-height:             .6rem;
+@btn-sm-min-width:          1.20rem;
+
+@btn-md-height:             .80rem;
+@btn-md-min-width:          2.04rem;
+
+@btn-lg-height:             .88rem;
+@btn-lg-min-width:          3.33rem;
+@btn-lg-margin:             .24rem;
+@btn-lg-radius:             .08rem;
+
+
+// Button Group
+// --------------------------------------------------
+@button-group-default-width: 3.31rem;
+
+@button-group-justify-width: 1.52rem;
+@button-group-justify-height: .56rem;
+@button-group-justify-radius: .08rem;
+
+@button-group-footer-padding: .20rem .32rem;
+@button-group-footer-border: 1PX solid @gray-e1;
+@button-group-footer-background: @white;
 
 
 // Dialog
 // --------------------------------------------------
-@dialog-content-width:      90.625%;
-@dialog-content-padding:    1.75rem 1rem 1.875rem;
-@dialog-content-radius:     .5rem;
+@dialog-content-width:      72.2667%; // 540px
+@dialog-content-padding:    .48rem 0 0;
+@dialog-content-radius:     .12rem;
 
-@dialog-title-font-size:    @font-size-larger; // 20px
-@dialog-title-color:        @gray-dark;
+@dialog-title-margin:       0 .40rem .16rem;
+@dialog-title-line-height:  .48rem;
+@dialog-title-font-size:    @font-size-headline;
+@dialog-title-color:        @gray-33;
 
-@dialog-body-margin:        0.68rem 0 1.3rem;
-@dialog-body-line-height:   1.57;
-@dialog-body-font-size:     @font-size-small;
-@dialog-body-color:         @gray-normal;
+@dialog-body-margin:        0 .40rem .56rem;
+@dialog-body-line-height:   .40rem;
+@dialog-body-font-size:     @font-size-text;
+@dialog-body-color:         @gray-66;
 
-@dialog-close-top:          .5rem;
-@dialog-close-right:        .5rem;
-@dialog-close-font-size:    @font-size-larger;
-@dialog-close-color:        #bbb;
+@dialog-only-margin:        .40rem .40rem .56rem;
+
+@dialog-close-top:          .24rem;
+@dialog-close-right:        @dialog-close-top;
+@dialog-close-color:        @gray-cc;
+@dialog-close-size:         .28rem;
 
 @dialog-btn-width:          auto;
 @dialog-btn-margin:         2%;
+@dialog-btn-border:         1PX solid @gray-e1;
+
+// prompt
+@prompt-title-margin:       0 .40rem;
+@prompt-body-margin:        .48rem .40rem .40rem;
+@prompt-input-margin:       .16rem;
+
+// explain
+@explain-title-margin:      0 .40rem .40rem;
+@explain-list-padding:      .68rem;
+@explain-list-margin:       .36rem;
+
+// picture
+@dialog-picture-width:      60%;
+@dialog-picture-padding:    .20rem;
+@dialog-picture-margin:     0 auto .40rem;
 
 
-// Form 待续...
+// Form 
 // --------------------------------------------------
 // Checkbox & Radio
-@ui-checkbox-sm:            20px;
-@ui-checkbox-lg:            24px;
-@ui-checkbox-border-color:  @brand-primary;
-@ui-checkbox-disabled:      #e2e2e2;
+@multi-group-height:        .40rem;
+@multi-group-margin:        @spacing-4x;
 
-@ui-radio-sm:               @ui-checkbox-sm;
-@ui-radio-lg:               @ui-checkbox-lg;
-@ui-radio-border-color:     @ui-checkbox-border-color;
-@ui-radio-disabled:         @brand-gray;
-@ui-checkbox-color:         @brand-primary;
+@checkbox-size:             .40rem;
+@checkbox-border-radius:    .04rem;
+@checkbox-checked-border:   .02rem solid @brand-primary;
+@checkbox-checked-background: #fff1ed;
+@checkbox-disabled-border:  @gray-e1;
+@checkbox-text-gap:         @spacing-2x;
+@checkbox-text-top:         -.09rem;
+
+@checkbox-before-width:     .02rem;
+@checkbox-before-height:    .12rem;
+@checkbox-before-left:      .09rem;
+@checkbox-before-top:       .16rem;
+
+@checkbox-after-height:     .24rem;
+@checkbox-after-left:       .21rem;
+@checkbox-after-top:        .07rem;
+
+@radio-size:                .42rem;
 
 // Input Text
-@input-default-height:      40px;
-@input-default-padding:     0 15px;
-@input-default-margin:      0 0 15px 0;
-@input-default-radius:      3px;
+@input-default-height:      .6rem;
+@input-default-padding:     .10rem .16rem;
+@input-default-radius:      .04rem;
+@input-default-font-size:   @font-size-text;
+@input-default-color: @gray-66;
 
-@input-search-padding:      0 10px;
-@input-search-radius:       20px;
+@input-disabled-background: @gray-f8;
+@input-disabled-color:      @gray-cc;
+
+@input-search-background:   @gray-f0;
+@input-search-padding:      .10rem .16rem;
+@input-search-radius:       @input-default-height/2;
+
+@input-placeholder-padding: 0 .16rem;
+@input-placeholder-icon-margin: .08rem;
+
+@input-icon-color:          @gray-cc;
+@input-icon-size:           @icon-sm-size;
+@input-icon-right:          .16rem;
+@input-second-icon-right:   .64rem;
+@input-padding-width-icon:  .48rem;
+@input-padding-width-second-icon: .96rem;
+
+@input-heading-padding:     .64rem;
 
 // Select
-@select-box-shadow:         inset 0 1px 1px rgba(0, 0, 0, .1);
+@select-box-shadow:         inset 0 1PX 1PX rgba(0, 0, 0, .1);
 
 // Textarea
-@textarea-padding:          1rem;
-@textarea-color:            @gray-dark;
-@textarea-placeholder-color: #ccc;
+@textarea-padding:          @spacing-2x @spacing-3x;
+@textarea-border:           @border-default;
+@textarea-border-radius:    .04rem;
+@textarea-line-height:      .40rem;
+@textarea-font-size:        @font-size-text;
+@textarea-color:            @gray-33;
+@textarea-placeholder-color: @gray-cc;
+@textarea-min-height:       2.27rem;
 
-@textarea-count-position-right: 1rem;
-@textarea-count-position-bottom: 1rem;
-@textarea-count-color:       #ccc;
+@textarea-count-position-right: @spacing-2x;
+@textarea-count-position-bottom: @spacing-2x;
+@textarea-count-color:      @gray-99;
 
+// switch
+@switch-width:              1.04rem;
+@switch-height:             .64rem;
+@switch-background:         #e5e5e5;
+@switch-panel-width:        .96rem;
+@switch-panel-height:       .56rem;
+@awitch-panel-color:        #4bd863;
+@switch-button-size:        .56rem;
+@switch-button-shadow:      0 .04rem .10rem rgba(0, 0, 0, 0.4);
+@switch-button-checked-position: .44rem;
 
 // Grids
 // --------------------------------------------------
-@grid-padding-width:        10px;
-@grid-responsive-sm-break:  567px;  // smaller than landscape phone
-@grid-responsive-md-break:  767px;  // smaller than portrait tablet
-@grid-responsive-lg-break:  1023px; // smaller than landscape tablet
+@grid-fluid-padding:        .16rem;
+@grid-padding-width:        @spacing-x;
 
-@grid-fluid-padding:        15px;
+@grid-responsive-sm-break:  5.67rem;  // smaller than landscape phone
+@grid-responsive-md-break:  7.67rem;  // smaller than portrait tablet
+@grid-responsive-lg-break:  10.23rem; // smaller than landscape tablet
 
 
 // ImageList
 // --------------------------------------------------
-@image-item-margin:          2%;
-@image-item-padding:         .4rem;
+@image-list-margin:          0 .32rem;
+@image-item-margin:          .16rem;
+@image-item-padding:         .16rem;
 @image-desp-color:           #999;
 
 
 // Label
 // --------------------------------------------------
-@label-padding:             2px 5px;
-@label-radius:              2px;
+@label-sm-size:              .32rem;     
+@label-md-size:              .40rem;
+@label-radius:               .04rem;
+
+
+// List
+// --------------------------------------------------
+@list-header-padding:       .20rem .32rem;
+@list-header-bg:            @gray-f0;
+@list-header-color:         @gray-66;
+
+@list-item-margin:          @spacing-4x;
+@list-item-border:          1PX solid @gray-f0;
+@list-item-font-size:       @font-size-text;
+@list-item-active-bg:       @default-active-color;
+@list-item-disabled-color:  @gray-99;
+@list-item-error-color:     @brand-error-deep;
+@list-item-required-color:  @brand-error;
+@list-item-required-left:   -.20rem;
+@list-item-required-line-height: 1.04rem;
+
+@list-elem-height:          .40rem;
+@list-sub-elem-height:      .32rem;
+@list-sub-elem-font-size:   @font-size-tip;
+@list-sub-elem-color:       @gray-99;
+@list-switch-margin:        -.16rem;
+@list-image-width:          1.20rem;
+@list-image-height:         .90rem;
+@list-image-bg:             @gray-f0;
+
+@list-col-padding:          @spacing-3x @spacing-4x @spacing-3x 0;
+@list-col-heading-padding:  .56rem;
+@list-col-tail-padding:     .68rem;
+@list-col-icon-margin:      @spacing-2x;
+
+@list-input-padding-with-icon: .32rem;
+@list-input-padding-with-second-icon: .88rem;
+@list-input-second-icon-right: .56rem;
+
+@list-navigate-right-interval: .26rem;
+@list-navigate-right-size:   @icon-sm-size;
+@list-navigate-right-color:  @gray-cc;
+
+
+// Loading List
+// --------------------------------------------------
+@loading-list-padding:      .24rem 0;
+@loading-list-font-size:    @font-size-text;
+@loading-list-color:        @gray-99;
+
+@loading-list-icon-size:    @icon-sm-size;
+
+// Tip
+@tip-icon-margin:           .24rem;
+@tip-icon-size:             @icon-xlg-size;
+@tip-icon-color:            @gray-cc;
 
 
 // Menu
 // --------------------------------------------------
-@menu-header-height:        2.75rem;
-@menu-header-padding:       .9375rem;
+@menu-header-height:        .88rem;
+@menu-header-padding:       .32rem;
 
-@menu-icon-size:            24px;
-@menu-icon-padding:         0 @menu-header-padding;
+@menu-icon-size:            @icon-lg-size;
+@menu-icon-padding:         0 .32rem;
 
 @menu-body-padding:         0;
 
-@menu-close-button-padding: .5rem;
+@menu-close-button-padding: .20rem;
 @menu-close-button-color:   @brand-primary;
-@menu-close-button-size:    @font-size-larger;
+@menu-close-button-size:    @font-size-headline;
 
 @menu-list-padding:         0;
 @menu-list-margin:          0;
-@menu-item-padding:         .6875rem .9375rem;
-@menu-item-font-size:       @font-size-base;
-@menu-item-color:           @gray-normal;
+@menu-item-padding:         .24rem .32rem;
+@menu-item-font-size:       @font-size-subtitle;
+@menu-item-color:           @gray-66;
 @menu-item-active-color:    @brand-primary;
-@menu-item-icon-margin:     0 .6875rem 0 0;
+@menu-item-icon-margin:     0 .24rem 0 0;
+
+
+// Page
+// --------------------------------------------------
+@page-padding:              @spacing-4x;
+
 
 // Popover
 // --------------------------------------------------
 @popover-position:          10%;
-@popover-border:            1px solid @border-color;
-@popover-radius:            3px;
+@popover-min-width:         1.60rem;
+@popover-padding-value:     .32rem;
+@popover-padding:           @popover-arrow-size/2 @popover-padding-value;
+@popover-background:        @gray-33;
+@popover-radius:            .08rem;
+@popover-font-size:         .28rem;
+@popover-color:             @white;
 
-@popover-arrow-size:        .6rem;
+@popover-arrow-size:        .18rem;
+@popover-arrow-radius:      .04rem;
 
-@popover-item-padding:      8px 12px;
-@popover-item-border:       @border-default;
+@popover-list-padding:      0 .08rem;
+@popover-item-height:       .6rem;
+@popover-item-padding:      0 .32rem;
+@popover-item-border:       1PX solid rgba(255,255,255,.2);
+
+@popover-text-padding:      .28rem .32rem;
+@popover-text-line-height:  .32rem;
 
 
 // Popup
 // --------------------------------------------------
 // Filter
-@popup-main-list-padding:   0 0 0 1rem;
-
-@popup-list-color:          @gray-normal;
-@popup-list-padding:        .6875rem 0;
-@popup-list-border:         #e1e1e1;
 @popup-list-active-color:   @brand-primary;
-@popup-list-active-border:  @brand-primary;
+@popup-list-font-size: @font-size-text;
 
 // Action Sheet
-@action-sheet-width:        92%;
-@action-sheet-margin:       4% auto;
+@action-sheet-width:        94.6667%;
+@action-sheet-height:       1.12rem;
+@action-sheet-margin:       0 auto .16rem;
 
-@action-item-padding:       .6875rem 1rem;
-@action-item-radius:        3px;
+@action-item-radius:        .12rem;
+@action-item-font-size:     .40rem;
+@action-item-color:         @brand-primary;
+@action-item-border:        1PX solid @gray-e1;
 
-@action-tip-color:          #93999e;
-@action-operate-color:      #0ba4db;
-@action-operate-margin:     5px;
+@action-tip-color:          #8F8E94;
+@action-tip-font-size:      @font-size-subtitle;
+@action-delete-color:       @brand-error;
+@action-operate-color:      @gray-33;
+@action-operate-margin:     .16rem;
 
 // Picker
 @picker-header-padding:     .75rem;
@@ -244,91 +439,195 @@
 @picker-shadow-height:      @picker-item-line-height * 3;
 
 
-// Star
+// Search Bar
 // --------------------------------------------------
-@slider-padding:            1rem;
-@slider-range-padding:      2rem;
+@search-bar-height:         .88rem;
+@search-bar-padding:        .14rem .24rem;
+@search-bar-background:     @gray-f0;
 
-@slider-line-width:         80%;
-@slider-line-height:        4px;
-@slider-line-color:         #ddd;
-@slider-line-margin:        5px auto;
+@search-bar-input-background: @white;
+@search-bar-input-focus-width: calc(~"100% - .92rem");
+@search-bar-placeholder-color: @gray-99;
+@search-bar-button-font-size: @font-size-subtitle;
+
+
+// Slider
+// --------------------------------------------------
+@slider-padding:            .92rem .52rem .52rem;
+
+@slider-text-top:           .24rem;
+@slider-text-font-size:     @font-size-text;
+@slider-text-color:         @brand-primary;
+
+@slider-range-padding:      .92rem 1.05rem .52rem;
+@slider-range-top:          1rem;
+@slider-range-font-size:    @font-size-text;
+@slider-range-color:        @gray-99;
+@slider-range-interval:     .32rem;
+
+@slider-line-width:         100%;
+@slider-line-height:        .04rem;
+@slider-line-color:         @gray-bb;
+@slider-line-disabled-color: @gray-f0;
+@slider-line-margin:        .05rem auto;
 @slider-progress-color:     @brand-primary;
-@slider-progress-disabled-color: @brand-await;
+@slider-progress-disabled-color: #ffb299;
 
-@slider-btn-size:           1.5rem;
-@slider-btn-border:         4px solid @brand-primary;
-@slider-btn-disabled-border:4px solid @brand-await;
+@slider-btn-size:           .40rem;
+@slider-btn-box-shadow:     0 1PX 8PX rgba(0,0,0,.2); //设计：0 0 .04rem rgba(0,0,0,.1)
+@slider-btn-disabled-border: .04rem solid @brand-primary-await;
 
-@slider-tip-padding:        5px;
-@slider-tip-background:     rgba(0,0,0,.4);
-@slider-tip-radius:         3px;
+@slider-tip-padding:        .12rem .18rem;
+@slider-tip-background:     #666;
+@slider-tip-radius:         .08rem;
 @slider-tip-color:          @white;
+@slider-tip-interval:       calc(~"100% + .20rem");
+@slider-tip-arrow-size:     .08rem;
 
 
 // Star
 // --------------------------------------------------
-@start-default-width:       70px;
-@start-default-height:      13px;
+@start-default-height:      .24rem;
+@start-default-width:       6*@start-default-height;
 
+@start-md-height:           .30rem;
+@start-md-width:            6*@start-md-height;
+
+@start-lg-height:           .36rem;
+@start-lg-width:            6*@start-lg-height;
 
 // Steps
 // --------------------------------------------------
-@steps-width:               90%;
-@steps-padding:             1rem 0 2rem;
+@steps-width:               100%;
+@steps-height:              1.32rem;
+@steps-padding:             .40rem .80rem 0;
 @steps-margin:              0 auto;
 
-@steps-line-color:          #979797;
+@steps-color:               @gray-cc;
+@steps-active-color:        @brand-primary;
 
-@steps-dot-top:             .5rem;
-@steps-dot-size:            .9375rem;
-@steps-dot-margin:          0 auto .5rem;
-@steps-dot-background:      #d8d8d8;
-@steps-dot-active-background: @brand-primary;
+@steps-line-height:         2PX;
 
-@steps-text-color:          #878787;
-@steps-text-active-color:   @brand-primary;
+@steps-dot-size:            .16rem;
+@steps-dot-margin:          -@steps-line-height/2 auto 0;
+@steps-dot-background:      @steps-color;
+@steps-dot-active-background: @steps-active-color;
+@steps-dot-active-size:     .20rem;
+@steps-dot-active-border:   .05rem solid @steps-active-color;
+
+@steps-text-color:          @steps-color;
+@steps-text-margin:         .16rem;
+@steps-text-active-color:   @steps-active-color;
+@steps-text-done-margin:    .12rem;
 
 
 // Tab
 // --------------------------------------------------
-@tab-nav-padding:           5px;
-@tab-nav-border:            2px solid @white;
-@tab-nav-active-border:     2px solid @brand-primary;
+@tab-row-border:            1PX solid @gray-e1;
+
+@tab-nav-height:            .88rem;
+@tab-nav-min-width:         1.16rem;
+@tab-nav-line-height:       .84rem;
+@tab-nav-padding:           0 .32rem;
+@tab-nav-item-padding:      0 .16rem;
+@tab-nav-border-width:      .04rem;
+@tab-nav-border-color:      @white;
+@tab-nav-active-border-color: @brand-primary;
 @tab-nav-active-color:      @brand-primary;
-@tab-nav-margin:            -2px;
-@tab-panel-padding:         5px;
+@tab-nav-margin:            -.02rem;
 
-@vertical-tab-nav-padding:  10px 5px;
-@vertical-tab-nav-line-height: 1rem;
+@tab-panel-padding:         0;
+
+@vertical-tab-nav-background: @gray-f0;
 
 
-// TableView 待续...
+// Tabbar
 // --------------------------------------------------
-@table-margin:              0 0 15px;
-@table-background:          @white;
-@table-border:              @border-default-color;
+@tabbar-background:        rgba(250,250,250,.9);
+@tabbar-height:            .98rem;
+@tabbar-border:            1PX solid @gray-e1;
+@tabbar-padding:           .14rem;
+@tabbar-active-color:      @brand-primary;
 
-@table-cell-padding:        11px 65px 11px 15px;
-@table-cell-a-margin:       -11px -65px -11px -15px;
-@table-cell-a-active-background: #eee;
+@tabbar-icon-size:         .44rem;
+@tabbar-icon-margin:       .05rem;
+@tabbar-icon-color:        #69707e;
+
+@tabbar-text-font-size:    .20rem;
+@tabbar-text-color:        @gray-99;
+
+@tabbar-dynamic-size:      .24rem;
+@tabbar-dynamic-top:       -.08rem;
+@tabbar-dynamic-left:      calc(~"50% + .12rem");
+@tabbar-dynamic-color:     @brand-error;
+
+@tabbar-badge-top:         @tabbar-dynamic-top;
+@tabbar-badge-left:        calc(~"50% + .08rem");
 
 
 // Toast
 // --------------------------------------------------
-@toast-padding:             .75rem;
-@toast-background:          rgba(0,0,0,.5);
-@toast-radius:              5px;
+@toast-main-padding:        0 .32rem;
+@toast-min-width:           2.40rem;
+@toast-padding:             .28rem .48rem;
+@toast-background:          rgba(0,0,0,.7);
+@toast-radius:              .08rem;
+@toast-font-size:           @font-size-subtitle;
 
-@toast-icon-font-size:      200%;
-@toast-icon-margin:         0 auto .5rem;
+@toast-rect-width:          2.40rem;
+@toast-rect-height:         @toast-rect-width;
 
-// Iconfont
+@toast-icon-size:           @icon-xlg-size;
+@toast-icon-margin:         .28rem;
+
+// Toolbar
 // --------------------------------------------------
-@arrow-color:               #bbb;
+@toolbar-background:        @white;
+@toolbar-box-shadow:        0 .02rem .02rem rgba(0,0,0,.15);
+@toolbar-font-size:         @font-size-subtitle;
+@toolbar-color:             @brand-primary;
+@toolbar-padding:           .32rem;
+@toolbar-height:            .96rem;
+
+@toolbar-segmente-padding:  .20rem;
+
+@toolbar-title-font-size:   @font-size-headline;
+@toolbar-title-color:       #111;
+
+@toolbar-icon-size:         @icon-md-size;
+
+// Icon
+// --------------------------------------------------
+@icon-xs-size:              .24rem;
+@icon-sm-size:              .32rem;
+@icon-md-size:              .40rem;
+@icon-lg-size:              .48rem;
+@icon-xlg-size:             .80rem;
+@icon-sm-loading-size:      .36rem;
 
 
+// 控件 ph-filter
+// --------------------------------------------------
+@filter-header-background: @white;
+@filter-header-border:     1PX solid @gray-e1;
 
+@filter-header-item-height: .88rem;
+@filter-header-item-padding: .24rem 0;
+@filter-header-item-line-height: .40rem;
+@filter-header-item-font-size: @font-size-text;
+@filter-header-item-max-width: calc(~'100% - .72rem');
 
+@filter-icon-top:          -.1rem;
+@filter-icon-margin:       .08rem;
+@filter-icon-line-height:  .40rem;
+@filter-icon-font-size:    @icon-xs-size;
+@filter-icon-color:        @gray-66;
 
+@filter-arrow-bottom:      -.02rem;
+@filter-arrow-size:        .18rem;
+@filter-arrow-background:  @white;
+@filter-arrow-border:      1PX solid @gray-e1;
 
+@filter-panel-max-height:  8.50rem;
+
+@filter-footer-height:     1.28rem;

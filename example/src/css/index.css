@@ -1,0 +1,277 @@
+/* index */
+body{
+    background-color: #fff;
+}
+hr{
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-top: 1PX solid #f0f0f0;
+}
+
+.wrapper{
+    // overflow: hidden;
+    position: relative;
+    max-width: 1200PX;
+    margin: 0 auto;
+}
+
+header{
+    position: fixed;
+    overflow: auto;
+    width: 150PX;
+    height: 100%;
+    border-right: 1PX solid #ccc;
+    text-align: right;
+}
+
+header::-webkit-scrollbar{
+    display:none;
+}
+
+.logo{
+    padding: .32rem 0;
+    margin-bottom: .24rem;
+    font-size: .36rem;
+    background-color: #ff6633;
+    text-align: center;
+    color: #fff;
+}
+
+nav h2, nav h3, nav li{
+    padding-right: .48rem;
+}
+
+nav h2{
+    font-size: .36rem;
+}
+
+nav li{
+    line-height: .48rem;
+    font-size: .28rem;
+}
+nav li.active{
+    border-right: .06rem solid #ff6633;
+}
+nav li:hover a,
+nav li.active a{
+    color: #ff6633;
+}
+
+.main-nav{
+    margin-bottom: .32rem;
+}
+
+.main{
+    margin-left: 160PX;
+    padding: 0 .20rem;
+}
+
+.main > section{
+    padding: .20rem;
+    // border-bottom: 1PX solid #ccc;
+    font-size: .28rem;
+}
+
+.main > section > h2{
+    border-bottom: 1PX solid #ececec;
+    line-height: .48rem;
+    font-size: .32rem;
+}
+
+.main > section a.link{
+    line-height: .60rem;
+    text-decoration: underline;
+    color: #4ea3d4;
+}
+
+.demo-list > li{
+    overflow: hidden;
+    // position: relative;
+    margin-top: .20rem;
+}
+
+.demo-list > li h3,
+.main > section > h3{
+    line-height: .48rem;
+    font-size: .28rem;
+}
+
+.main > section > p{
+    line-height: .60rem;
+    color: #666;
+}
+
+.demo-frame{
+    float: left;
+    overflow: auto;
+    position: relative;
+    width: 377PX;
+    min-height: 150PX;
+    max-height: 667PX;
+    border: 1PX solid #ececec;
+    background-color: #f8f8f8;
+}
+.demo-frame.middle-height{
+    height: 200PX;
+}
+.demo-frame.large-height{
+    height: 400PX;
+}
+.demo-frame.full-height{
+    height: 599PX; /* 667-68 */
+}
+
+.content{
+    min-height: 80PX;
+    padding: .20rem 0 1PX;
+}
+
+.code-frame{
+    float: right;
+    width: 610PX;
+    overflow-x: hidden;
+}
+
+ .code-frame pre{
+    margin-left: -240PX;
+    padding: 0;
+    font-size: .24rem;
+    // background-color: #f7f7f7;
+}
+
+.code-content{
+    padding: .4rem .32rem;
+    margin-bottom: .32rem;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.list-show li{
+    list-style: inside disc;
+}
+
+table caption{
+    padding: .16rem 0;
+    font-size: .40rem;
+}
+table thead{
+    background-color: #333;
+    color: #fff;
+}
+table thead th{
+    padding: .16rem .16rem;
+}
+table tr{
+    border: 1px solid #bbb;
+    text-align: left;
+}
+table tr:nth-child(even){
+    background-color: #f0f0f0;
+}
+table td{
+    padding: .16rem;
+}
+table td span{
+    display: inline-block;
+    padding: .08rem;
+}
+
+footer p{
+    padding: .32rem 0;
+    text-align: center;
+}
+
+/* extra */
+.ph-page-white{
+    background-color: #fff;
+}
+.content>.ph-button:not(.ph-button-block){
+    margin: 0 .20rem .20rem 0;
+}
+
+.content .ph-button-lg,
+.content .ph-multi-group{
+    float: left;
+}
+.content .ph-button-lg:nth-child(even){
+    margin-right: 0;
+}
+
+.content>.ph-button-block,
+.content .ph-row,
+.content .ph-input,
+.content .ph-textarea-field,
+.ph-search-bar{
+    margin-bottom: .20rem;
+}
+
+.ph-image img{
+    width: 100%;
+}
+
+.col-demo{
+    background-color: #ccc;
+    text-align: center;
+}
+
+.ph-dialog-shadow,
+.ph-dialog-main,
+.ph-toast-shadow,
+.ph-toast-main,
+.ph-popup-shadow,
+.ph-popup-main,
+.ph-tabbar,
+.ph-filter-container-fixed,
+.ph-filter-container-shadow{
+    position: absolute;
+}
+
+.ph-filter-selector{
+    height: calc(100% - .90rem);
+}
+
+.ph-dialog-body ul{
+    padding-left: .32rem;
+}
+.ph-dialog-body li{
+    list-style: outside decimal;
+}
+
+@media (max-width: 1200px){
+    header{
+        display: none;
+    }
+    .main{
+        margin-left: 0;
+    }
+    .code-frame{
+        width: calc(100% - 387PX);
+    }
+}
+@media (max-width: 885px){
+    .demo-frame{
+        float: none;
+        margin-bottom: .20rem;
+    }
+    .code-frame{
+        float: none;
+        width: 100%;
+    }
+}
+@media (max-width: 750px){
+    .main, .main > section{
+        padding: 0;
+    }
+    .demo-frame{
+        width: 100%;
+        min-width: 320PX;
+    }
+    .main > section > h2, .demo-list > li h3{
+        padding-left: .20rem;
+    }
+    .content{
+        min-height: 1rem;
+    }
+}
