@@ -13,7 +13,7 @@ hr{
 .wrapper{
     // overflow: hidden;
     position: relative;
-    max-width: 1200PX;
+    width: 1200PX;
     margin: 0 auto;
 }
 
@@ -39,12 +39,16 @@ header::-webkit-scrollbar{
     color: #fff;
 }
 
-nav h2, nav h3, nav li{
+nav h2, nav h3{
     padding-right: .48rem;
 }
 
+.main-nav li{
+    padding-right: .72rem;
+}
+
 nav h2{
-    font-size: .36rem;
+    font-size: .40rem;
 }
 
 nav li{
@@ -76,8 +80,8 @@ nav li.active a{
 
 .main > section > h2{
     border-bottom: 1PX solid #ececec;
-    line-height: .48rem;
-    font-size: .32rem;
+    line-height: .8rem;
+    font-size: .40rem;
 }
 
 .main > section a.link{
@@ -94,8 +98,8 @@ nav li.active a{
 
 .demo-list > li h3,
 .main > section > h3{
-    line-height: .48rem;
-    font-size: .28rem;
+    line-height: .64rem;
+    font-size: .32rem;
 }
 
 .main > section > p{
@@ -239,39 +243,42 @@ footer p{
     list-style: outside decimal;
 }
 
-@media (max-width: 1200px){
-    header{
-        display: none;
-    }
-    .main{
-        margin-left: 0;
-    }
-    .code-frame{
-        width: calc(100% - 387PX);
-    }
-}
-@media (max-width: 885px){
-    .demo-frame{
-        float: none;
-        margin-bottom: .20rem;
-    }
-    .code-frame{
-        float: none;
-        width: 100%;
-    }
-}
-@media (max-width: 750px){
-    .main, .main > section{
-        padding: 0;
-    }
-    .demo-frame{
-        width: 100%;
-        min-width: 320PX;
-    }
-    .main > section > h2, .demo-list > li h3{
-        padding-left: .20rem;
-    }
-    .content{
-        min-height: 1rem;
-    }
-}
+// @media (max-width: 1200px){
+//     header{
+//         display: none;
+//     }
+//     .main{
+//         margin-left: 0;
+//     }
+//     .code-frame{
+//         width: calc(100% - 387PX);
+//     }
+// }
+// @media (max-width: 885px){
+//     .demo-frame{
+//         float: none;
+//         margin-bottom: .20rem;
+//     }
+//     .code-frame{
+//         float: none;
+//         width: 100%;
+//     }
+// }
+// @media (max-width: 750px){
+//     .main, .main > section{
+//         padding: 0;
+//     }
+//     .demo-frame{
+//         width: 100%;
+//         min-width: 320PX;
+//     }
+//     .code-frame{
+//         display: none;
+//     }
+//     .main > section > h2, .demo-list > li h3{
+//         padding-left: .20rem;
+//     }
+//     .content{
+//         min-height: 1rem;
+//     }
+// }

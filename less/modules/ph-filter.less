@@ -50,6 +50,7 @@
 
 		a{
 			display: block;
+			height: @filter-header-item-inner-height;
 			border-right: @filter-header-border;
 			white-spac: nowrap;
 		}
@@ -59,13 +60,14 @@
 
 		.gfs-icon{
 			display: inline-block;
-			position: relative;
-			top:@filter-icon-top;
+			// position: relative;
+			// top:@filter-icon-top;
 			margin-left: @filter-icon-margin;
 			line-height: @filter-icon-line-height;
 			font-size: @filter-icon-font-size;
 			color: @filter-icon-color;
 			.transition(all .2s);
+			vertical-align: top;
 		}
 
 		&.active{
