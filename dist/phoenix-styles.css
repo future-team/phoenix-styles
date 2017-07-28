@@ -3958,9 +3958,11 @@ dl.ph-image-item dd p:last-child {
 .ph-list-item .ph-list-col-tail {
   text-align: right;
 }
-.ph-list-item .ph-list-col-tail input {
+.ph-list-item .ph-list-col-tail input,
+.ph-list-item .ph-list-col-tail .ph-input-placeholder {
   text-align: right;
 }
+.ph-list-item .ph-list-col-tail .ph-input input,
 .ph-list-item .ph-list-col-tail input:disabled {
   background-color: transparent;
   color: #333;
