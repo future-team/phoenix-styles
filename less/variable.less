@@ -445,8 +445,9 @@
 @search-bar-padding:        .14rem .24rem;
 @search-bar-background:     @gray-f0;
 
+@search-bar-button-width:   .92rem;
 @search-bar-input-background: @white;
-@search-bar-input-focus-width: calc(~"100% - .92rem");
+@search-bar-input-focus-padding: @search-bar-button-width + .24rem;
 @search-bar-placeholder-color: @gray-99;
 @search-bar-button-font-size: @font-size-subtitle;
 
@@ -481,7 +482,7 @@
 @slider-tip-background:     #666;
 @slider-tip-radius:         .08rem;
 @slider-tip-color:          @white;
-@slider-tip-interval:       calc(~"100% + .20rem");
+@slider-tip-interval:       140%;
 @slider-tip-arrow-size:     .08rem;
 
 
@@ -558,11 +559,11 @@
 
 @tabbar-dynamic-size:      .24rem;
 @tabbar-dynamic-top:       -.08rem;
-@tabbar-dynamic-left:      calc(~"50% + .12rem");
+@tabbar-dynamic-right:     .12rem - .24rem;
 @tabbar-dynamic-color:     @brand-error;
 
 @tabbar-badge-top:         @tabbar-dynamic-top;
-@tabbar-badge-left:        calc(~"50% + .08rem");
+@tabbar-badge-right:       .08rem - .24rem;
 
 
 // Toast
@@ -629,6 +630,6 @@
 @filter-arrow-background:  @white;
 @filter-arrow-border:      1PX solid @gray-e1;
 
-@filter-panel-max-height:  8.50rem;
+@filter-panel-max-height:  72%;//8.50rem;
 
 @filter-footer-height:     1.28rem;

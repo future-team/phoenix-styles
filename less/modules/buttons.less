@@ -5,7 +5,6 @@
 @buttonPrefixCls: ph-button;
 
 .@{buttonPrefixCls}{
-    position: relative;
     display: inline-block;
     min-width: @btn-sm-min-width;
     height: @btn-sm-height;
@@ -22,6 +21,11 @@
     font-weight: 400;
     outline: none;
     cursor: pointer;
+
+    .@{buttonPrefixCls}-inner{
+        display: inline-block;
+        position: relative;
+    }
 
     .gfs-icon-loading{
         .getSize(@font-size-text)
@@ -68,6 +72,7 @@
 
 .@{buttonPrefixCls}-stable .gfs-icon{
     position: absolute;
+    left: none;
     margin-right: 0;
     margin-left: @btn-stable-icon-margin;
 }

@@ -912,6 +912,7 @@
 }
 .ph-dialog-content .ph-dialog-title {
   margin: 0 0.4rem 0.16rem;
+  text-align: center;
 }
 .ph-dialog-content .ph-dialog-body {
   margin: 0 0.4rem 0.56rem;
@@ -1120,7 +1121,7 @@
   font-size: 0.32rem;
 }
 .ph-slider {
-  padding: 0.92rem 0.52rem 0.52rem;
+  padding: 0.92rem 0.68rem 0.68rem;
 }
 .ph-slider.ph-keep-range {
   padding: 0.92rem 1.05rem 0.52rem;
@@ -1200,7 +1201,7 @@
   color: #fff;
 }
 .ph-slider-tip-top .ph-slider-tip {
-  bottom: calc(100% + .20rem);
+  bottom: 140%;
 }
 .ph-slider-tip-top .ph-slider-tip:after {
   bottom: -0.08rem;
@@ -1208,7 +1209,7 @@
   border-top-color: #666;
 }
 .ph-slider-tip-bottom .ph-slider-tip {
-  top: calc(100% + .20rem);
+  top: 140%;
 }
 .ph-slider-tip-bottom .ph-slider-tip:after {
   top: -0.08rem;

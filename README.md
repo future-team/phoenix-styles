@@ -26,6 +26,13 @@
 
 [http://future-team.github.io/phoenix-styles/example/index.html](http://future-team.github.io/phoenix-styles/example/index.html)
 
+## Browser Support
+Phoenix Styles is tested with the following browsers and mobile OS.
+
+- Android 4.4.2 +
+- IOS 8 +
+- Chrome
+
 ## Command
 
 ```
