@@ -50,6 +50,7 @@
 
 		a{
 			display: block;
+			height: @filter-header-item-inner-height;
 			border-right: @filter-header-border;
 			white-spac: nowrap;
 		}
@@ -59,13 +60,14 @@
 
 		.gfs-icon{
 			display: inline-block;
-			position: relative;
-			top:@filter-icon-top;
+			// position: relative;
+			// top:@filter-icon-top;
 			margin-left: @filter-icon-margin;
 			line-height: @filter-icon-line-height;
 			font-size: @filter-icon-font-size;
 			color: @filter-icon-color;
 			.transition(all .2s);
+			vertical-align: top;
 		}
 
 		&.active{
@@ -101,10 +103,13 @@
 	position: relative;
 	z-index: 2;
 	width: 100%;
+	height: 100%;
+	pointer-events: none;
 	
 	.ph-list,
 	.ph-tab-navs,
 	.ph-tab-bd{
+		pointer-events: auto;
 	    overflow-y: auto;
 		max-height: @filter-panel-max-height;
 
@@ -125,6 +130,8 @@
 
 .ph-checkbox-filter{
 	.@{filterPrefixCls}-selector{
+		z-index: 9;
+
 		.ph-list,
 		.ph-tab-navs,
 		.ph-tab-bd{
@@ -145,12 +152,4 @@
 		margin-top: -@filter-footer-height;
 	}
 	
-}
-
-// checkbox filter
-.ph-checkbox-filter{
-	.@{filterPrefixCls}-selector{
-		z-index: 9;
-		height: auto;
-	} 
 }
