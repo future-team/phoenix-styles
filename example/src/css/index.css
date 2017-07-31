@@ -112,19 +112,19 @@ nav li.active a{
     overflow: auto;
     position: relative;
     width: 377PX;
-    min-height: 1.5rem;
-    max-height: 6.67rem;
+    min-height: 150PX;
+    max-height: 667PX;
     border: 1PX solid #ececec;
     background-color: #f8f8f8;
 }
 .demo-frame.middle-height{
-    height: 20rem;
+    height: 200PX;
 }
 .demo-frame.large-height{
-    height: 4rem;
+    height: 400PX;
 }
 .demo-frame.full-height{
-    height: 5.99rem; /* 667-68 */
+    height: 599PX; /* 667-68 */
 }
 
 .content{

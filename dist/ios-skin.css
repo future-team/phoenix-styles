@@ -698,7 +698,7 @@
   display: block;
   width: 0.4rem;
   height: 0.4rem;
-  border: 1PX solid #bbb;
+  border: 2PX solid #bbb;
   background-color: #fff;
   -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
   -moz-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
@@ -717,7 +717,7 @@
 .ph-checkbox input:checked + i {
   position: relative;
   background-color: #fff;
-  border: 0.02rem solid #007aff;
+  border: 2PX solid #007aff;
 }
 .ph-checkbox input:checked + i:before,
 .ph-checkbox input:checked + i:after {
@@ -729,7 +729,7 @@
 }
 .ph-checkbox input:checked + i:before {
   height: 0.12rem;
-  left: 0.09rem;
+  left: 0.085rem;
   top: 0.16rem;
   -webkit-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
@@ -761,7 +761,7 @@
   display: block;
   width: 0.42rem;
   height: 0.42rem;
-  border: 1PX solid #bbb;
+  border: 2PX solid #bbb;
   background-color: #fff;
   -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
   -moz-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
@@ -780,7 +780,7 @@
 .ph-radio input:checked + i {
   position: relative;
   background-color: #fff;
-  border: 0.02rem solid #007aff;
+  border: 2PX solid #007aff;
 }
 .ph-radio input:checked + i:before,
 .ph-radio input:checked + i:after {
@@ -792,7 +792,7 @@
 }
 .ph-radio input:checked + i:before {
   height: 0.12rem;
-  left: 0.09rem;
+  left: 0.085rem;
   top: 0.16rem;
   -webkit-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
@@ -1250,6 +1250,7 @@
   position: absolute;
   right: 0;
   top: 0;
+  z-index: 1;
   padding: 0.2rem;
   font-size: 0.36rem;
   color: #007aff;
