@@ -683,8 +683,8 @@ h6 {
   font-family: "iconfont";
   src: url(./iconfont/iconfont.eot);
   /* IE9*/
-  src: url(./iconfont/iconfont.svg#iconfont) format('svg'), url(./iconfont/iconfont.eot#iefix) format('embedded-opentype'),  url(./iconfont/iconfont.woff) format('woff'),  url(./iconfont/iconfont.ttf) format('truetype');
-  /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  src: url(./iconfont/iconfont.eot#iefix) format('embedded-opentype'),  url(./iconfont/iconfont.woff) format('woff'),  url(./iconfont/iconfont.ttf) format('truetype'),  url(./iconfont/iconfont.svg#iconfont) format('svg');
+  /* iOS 4.1- */
 }
 .gfs-icon {
   font-family: "iconfont" !important;
@@ -733,9 +733,6 @@ h6 {
 }
 .icon-success:before {
   content: "\E61D";
-}
-.icon-waiting-fill:before {
-  content: "\E622";
 }
 .icon-share:before {
   content: "\E624";
@@ -908,56 +905,11 @@ h6 {
 .icon-gukeyingxiao-fill:before {
   content: "\E669";
 }
-.icon-label-zu:before {
-  content: "\E66F";
-}
-.icon-label-tuan:before {
-  content: "\E674";
-}
-.icon-label-fu:before {
-  content: "\E675";
-}
-.icon-label-cu:before {
-  content: "\E676";
-}
-.icon-label-quan:before {
-  content: "\E677";
-}
-.icon-label-shou:before {
-  content: "\E678";
-}
-.icon-label-piao:before {
-  content: "\E679";
-}
-.icon-label-ding:before {
-  content: "\E67A";
-}
-.icon-label-jia:before {
-  content: "\E67B";
-}
-.icon-label-yin:before {
-  content: "\E67C";
-}
 .icon-label-ka:before {
   content: "\E67D";
 }
 .icon-label-wai:before {
   content: "\E67E";
-}
-.icon-label-dian:before {
-  content: "\E67F";
-}
-.icon-label-pin:before {
-  content: "\E680";
-}
-.icon-label-ke:before {
-  content: "\E681";
-}
-.icon-label-pai:before {
-  content: "\E682";
-}
-.icon-label-huo:before {
-  content: "\E683";
 }
 .icon-success-fill:before {
   content: "\E684";
@@ -985,6 +937,54 @@ h6 {
 }
 .icon-biyan:before {
   content: "\E690";
+}
+.icon-label-pin:before {
+  content: "\E6AD";
+}
+.icon-label-piao:before {
+  content: "\E6AE";
+}
+.icon-label-quan:before {
+  content: "\E6AF";
+}
+.icon-label-shou:before {
+  content: "\E6B0";
+}
+.icon-label-tuan:before {
+  content: "\E6B2";
+}
+.icon-label-zu:before {
+  content: "\E6B3";
+}
+.icon-label-cu:before {
+  content: "\E6B4";
+}
+.icon-label-ding:before {
+  content: "\E6B5";
+}
+.icon-label-fu:before {
+  content: "\E6B6";
+}
+.icon-label-jia:before {
+  content: "\E6B7";
+}
+.icon-label-pai:before {
+  content: "\E6B8";
+}
+.icon-label-dian:before {
+  content: "\E6B9";
+}
+.icon-label-yin:before {
+  content: "\E6BB";
+}
+.icon-label-huo:before {
+  content: "\E6BC";
+}
+.icon-label-ke:before {
+  content: "\E6BD";
+}
+.icon-waiting-fill:before {
+  content: "\E6BE";
 }
 .gfs-icon {
   display: inline-block;

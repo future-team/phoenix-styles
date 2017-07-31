@@ -20,7 +20,7 @@
     "email": "min.xiao@dianping.com"
   },
   "dependencies": {
-    "gfs-icons": "^1.0.0"
+    "gfs-icons": "^1.0.1"
   },
   "devDependencies": {
     "css-loader": "^0.26.1",
