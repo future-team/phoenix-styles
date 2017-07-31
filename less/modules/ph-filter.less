@@ -105,13 +105,17 @@
 	width: 100%;
 	height: 100%;
 	pointer-events: none;
+
+	&>*{
+		max-height: @filter-panel-max-height;
+		pointer-events: auto;
+	}
 	
 	.ph-list,
 	.ph-tab-navs,
 	.ph-tab-bd{
-		pointer-events: auto;
 	    overflow-y: auto;
-		max-height: @filter-panel-max-height;
+		
 
 		&::-webkit-scrollbar{
 			display:none;
