@@ -1,0 +1,18 @@
+@import "../public";
+@import "../mixins/iconfont";
+
+@pullUpPrefixCls: ph-pullup;
+
+.@{pullUpPrefixCls}{
+	text-align: center;
+}
+
+.@{pullUpPrefixCls}-tip{
+    padding: @loading-list-padding;
+    font-size: @loading-list-font-size;
+    color: @loading-list-color;
+
+    .gfs-icon-loading{
+    	.getSize(@icon-sm-loading-size);
+    }
+}

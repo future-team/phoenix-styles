@@ -1,13 +1,19 @@
+@import "../public";
+
 .ph-image-list{
     overflow: hidden;
     padding-top: @image-item-margin;
-    margin: 0 auto;
-    dl{
+    margin: @image-list-margin;
+    -webkit-overflow-scrolling: touch;
+
+    &>*{
         float: left;
-        margin: 0 0 @image-item-margin @image-item-margin;
+        margin: 0 @image-item-margin @image-item-margin 0;
         background-color: @white;
     }
+}
 
+dl.ph-image-item{
     dt{
         img{
             display: block;
@@ -20,12 +26,12 @@
         p{  
             margin-bottom: @image-item-padding;
             line-height: 1;
-            font-size: @font-size-small;
+            font-size: @font-size-text;
             &.ph-image-title{
                 font-weight: 800;
             }
             &.ph-image-desp{
-                font-size: @font-size-smaller;
+                font-size: @font-size-tip;
                 color:@image-desp-color;
             }
             &:last-child{
@@ -38,10 +44,12 @@
 .generate-image-columns(8);
 
 .generate-image-columns(@n, @i: 1) when (@i =< @n){
-    .ph-image-list{
-        &.ph-column-@{i}{
-            dl{
-                width: (100% - (@i+1) * @image-item-margin)/@i;
+    .ph-image-list.ph-column-@{i}{
+        &>*{
+            width: ~"calc((100% + @{image-item-margin})/@{i} -  @{image-item-margin})";
+
+            &:nth-child(@{i}n){
+                margin-right: 0;
             }
         }
     }

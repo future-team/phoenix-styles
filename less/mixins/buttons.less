@@ -1,78 +1,137 @@
 //generate different button
-.generate-diff-button(@color,@bg-color,@border-color:transparent){
+.generate-diff-button(@color,@bg-color,@border-color:transparent,
+    @brand-primary-active:darken(@bg-color,10%),
+    @brand-primary-await:lighten(@bg-color,25%)){
     color: @color;
     background-color: @bg-color;
-    border: 1px solid @border-color;
+    border: 1PX solid @border-color;
     &:active,
     &.active,
     &.ph-button-active {
+        background-color: @brand-primary-active;
+        border: 1PX solid @brand-primary-active;
         color: @color;
-        background-color: darken(@bg-color, 10%);
-        border: 1px solid darken(@border-color, 10%);
+    }
+    &.await,
+    &.ph-button-await {
+        background-color: @brand-primary-await;
+        border: 1PX solid @brand-primary-await;
+        color: @color;
+        pointer-events: none;
+    }
+    &:disabled,
+    &.disabled,
+    &.ph-button-disabled{
+        background-color: @gray-cc;
+        border: 1PX solid @gray-cc;
+        pointer-events: none;
     }
 };
 
-.generate-hollow-button(@color,@bg-color,@border-color){
-    .generate-diff-button(@color,@bg-color,@border-color);
+.generate-hollow-button(@color,@bg-color,@border-color,
+    @brand-primary-active:darken(@border-color,10%),
+    @brand-primary-await:lighten(@border-color,25%)){
+    .generate-diff-button(@color,@bg-color,@border-color,@brand-primary-active,@brand-primary-await);
     &:active,
     &.active,
     &.ph-button-active {
-        background: rgba(226,226,226,0.4);
+        background-color: @gray-f9;
+        border: 1PX solid @border-color;
+    }
+    &.await,
+    &.ph-button-await {
+        background-color: transparent;
+        border: 1PX solid @brand-primary-await;
+        color: @brand-primary-await;
+    }
+    &:disabled,
+    &.disabled,
+    &.ph-button-disabled{
+        background-color: transparent;
+        border: 1PX solid @gray-cc;
+        color: @gray-cc;
     }
 };
 
 .button-skin(){
     .ph-button-primary{
-        .generate-diff-button(@white,@brand-primary,@brand-primary);
+        .generate-diff-button(@white,@brand-primary,@brand-primary,@brand-primary-active,@brand-primary-await);
     }
     .ph-button-primary.ph-button-hollow{
-        .generate-hollow-button(@brand-primary,@white,@brand-primary);
+        .generate-hollow-button(@brand-primary,@white,@brand-primary,@brand-primary-active,@brand-primary-await);
     }
+
     .ph-button-success{
         .generate-diff-button(@white,@brand-success,@brand-success);
     }
     .ph-button-success.ph-button-hollow{
         .generate-hollow-button(@brand-success,@white,@brand-success);
     }
+
+    .ph-button-tip{
+        .generate-diff-button(@white,@brand-tip,@brand-tip);
+    }
+    .ph-button-tip.ph-button-hollow{
+        .generate-hollow-button(@brand-tip,@white,@brand-tip);
+    }
+
     .ph-button-info{
         .generate-diff-button(@white,@brand-info,@brand-info);
     }
     .ph-button-info.ph-button-hollow{
         .generate-hollow-button(@brand-info,@white,@brand-info);
     }
+
     .ph-button-error{
         .generate-diff-button(@white,@brand-error,@brand-error);
     }
     .ph-button-error.ph-button-hollow{
         .generate-hollow-button(@brand-error,@white,@brand-error);
     }
+
     .ph-button-warning{
         .generate-diff-button(@white,@brand-warning,@brand-warning);
     }
     .ph-button-warning.ph-button-hollow{
         .generate-hollow-button(@brand-warning,@white,@brand-warning);
     }
+
     .ph-button-danger{
         .generate-diff-button(@white,@brand-danger,@brand-danger);
     }
     .ph-button-danger.ph-button-hollow{
         .generate-hollow-button(@brand-danger,@white,@brand-danger);
     }
+
     .ph-button-gray{
-        .generate-diff-button(@white,@brand-gray,@brand-gray);
+        .generate-diff-button(@white,@gray-bb,@gray-bb,@gray-bb,@gray-cc);
     }
     .ph-button-gray.ph-button-hollow{
-        .generate-hollow-button(@gray-dark,@white,@brand-gray);
+        .generate-hollow-button(@gray-66,@white,@gray-bb,@gray-bb,@gray-cc);
     }
+
     .ph-button-link {
-        padding-top: 5px;
-        padding-bottom: 5px;
+        // padding-top: 5px;
+        // padding-bottom: 5px;
         .generate-diff-button(@brand-primary,transparent);
         &:active,
         &.active,
         &.ph-button-active {
             border-color: transparent;
             background-color: transparent;
+        }
+        &.await,
+        &.ph-button-await {
+            background-color: transparent;
+            border-color: transparent;
+            color: @brand-primary-await;
+        }
+        &:disabled,
+        &.disabled,
+        &.ph-button-disabled{
+            background-color: transparent;
+            border-color: transparent;
+            color: @gray-cc;
         }
     }
 };

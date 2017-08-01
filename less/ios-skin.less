@@ -2,7 +2,7 @@
 @import "mixins/animation";
 @import "mixins/border";
 @import "mixins/gradients";
-
+@import "mixins/prefix.less";
 @import "mixins/form";
 @import "mixins/buttons";
 @import "mixins/label";
@@ -15,73 +15,10 @@
 
 // common
 @brand-primary: #007aff;
-@brand-info:    #0ba4db;
-@brand-success: #4cd964;
-@brand-error:   #ff3b30;
+@brand-primary-active: darken(@brand-primary, 5%);
 
-// grid
-.ph-row{
-    margin: 0;
-}
-.ph-col{
-    padding: 5px 0;
-}
-
-.ph-table-view{
-    margin: 0;
-}
-
-// form
-select,
-textarea,
-.ph-input,
-input[type="text"],
-input[type="search"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="tel"],
-input[type="color"] {
-    margin: 0;
-}
-
-//input checkbox radio
-.ph-checkbox,.ph-radio{
-    .ph-icon{
-        color: @ui-checkbox-border-color;
-    }
-}
-
-.ph-color-white{
-    color: @white;
-}
 .ph-color-primary{
     color: @brand-primary;
-}
-.ph-color-success{
-    color: @brand-success;
-}
-.ph-color-info{
-    color: @brand-info;
-}
-.ph-color-warning{
-    color: @brand-warning;
-}
-.ph-color-danger{
-    color: @brand-danger;
-}
-.ph-color-error{
-    color: @brand-error;
-}
-.ph-color-gray{
-    color: @gray;
 }
 
 //button
@@ -94,101 +31,26 @@ input[type="color"] {
 .badges-skin();
 
 //checkbox radio
-.ph-checkbox,.ph-radio{
-    i{
-        border: 1px solid #bbb;
-        background: #fff;
-    }
-    input[type="radio"],input[type="checkbox"]{
-        &:checked + i{
-            background: @white;
-            border-color: @ui-checkbox-color;
-            &:before, &:after {
-                width: 1px;
-                background: @ui-checkbox-color;
-            }
-        }
-        &:disabled + i{
-            border-color: @ui-checkbox-disabled;
-        }
-    }
-
-    input[type="checkbox"]{
-        &:disabled {
-            +i{
-                border-color:@ui-checkbox-disabled ;
-            }
-            color: @ui-checkbox-disabled;
-        }
-    }
+@checkbox-checked-background: @white;
+.ph-checkbox{
+    .ui-checkbox(@checkbox-size);
 }
+
+.ph-radio{
+    .ui-radio(@radio-size);
+}
+
 //tab
 .tab-skin();
-//竖排
-.tab-skin2();
 
 // dialog
-@dialog-content-width:      84.375%;
-@dialog-content-padding:    1.4rem 0 0;
-@dialog-content-radius:     3px;
-
-@dialog-title-font-size:    @font-size-large; // 18px
-@dialog-title-color:        @gray-base;
-
-@dialog-body-margin:        0.75rem 1rem 1.125rem;
-@dialog-body-color:         @gray-base;
-
-@dialog-btn-width:          auto;
-@dialog-btn-margin:         0;
 .dialog-skin();
-
-.ph-dialog-footer{
-    .ph-button-primary{
-        .generate-hollow-button(@brand-primary,@white,@brand-primary);
-    }
-    .ph-button-success{
-        .generate-hollow-button(@brand-success,@white,@brand-success);
-    }
-    .ph-button-info{
-        .generate-hollow-button(@brand-info,@white,@brand-info);
-    }
-    .ph-button-error{
-        .generate-hollow-button(@brand-error,@white,@brand-error);
-    }
-    .ph-button-warning{
-        .generate-hollow-button(@brand-warning,@white,@brand-warning);
-    }
-    .ph-button-danger{
-        .generate-hollow-button(@brand-danger,@white,@brand-danger);
-    }
-    .ph-button-gray{
-        .generate-hollow-button(@gray-dark,@white,@brand-gray);
-    }
-    .ph-button, .ph-button:active{
-        border-color: @white;
-        border-top-color: @border-default-color;
-        border-left-color: @border-default-color;
-        border-top-right-radius: 0;
-        border-top-left-radius: 0;
-        &:first-child{
-            border-left-color: @white;
-        }
-    }
-}
 
 // popup
 .popup-skin();
 
 // slider
-@slider-line-height: 2px;
-@slider-line-color: #b2b3b2;
-@slider-btn-border: 1px solid rgba(0,0,0,.1);
-@slider-btn-disabled-border: 1px solid rgba(0,0,0,.1);
 .slider-skin();
-
-.ph-slider-btn{
-    box-shadow: 0 2px 5px rgba(0,0,0,.05);
-}
 
 // menu
 .menu-skin();

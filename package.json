@@ -1,7 +1,7 @@
 {
   "name": "phoenix-styles",
-  "version": "1.5.2",
-  "description": "",
+  "version": "2.0.0",
+  "description": "Styles for phoenix-ui.",
   "main": "dist/",
   "repository": "git@github.com:future-team/phoenix-styles.git",
   "keywords": [
@@ -20,25 +20,30 @@
     "email": "min.xiao@dianping.com"
   },
   "dependencies": {
-    "gfs-doc": "^0.1.35",
-    "gfs-icons": "^0.3.3"
+    "gfs-icons": "^1.0.1"
   },
   "devDependencies": {
     "css-loader": "^0.26.1",
     "extract-text-webpack-plugin": "^0.8.2",
     "file-loader": "^0.10.0",
+    "gfs-doc": "^0.1.35",
     "glob": "^5.0.14",
     "gulp": "^3.9.0",
     "gulp-clean": "^0.3.2",
     "gulp-concat": "^2.6.0",
     "gulp-css-base64": "^1.3.4",
+    "gulp-less": "^3.3.2",
     "gulp-load-plugins": "^1.0.0-rc.1",
     "gulp-minify-css": "^1.2.1",
+    "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-util": "^3.0.8",
     "gulp-webpack": "^1.5.0",
     "less": "^2.5.1",
     "less-loader": "^2.2.3",
+    "postcss": "^5.2.17",
+    "postcss-loader": "^1.3.3",
+    "postcss-pxtorem": "^3.3.1",
     "style-loader": "^0.13.1",
     "webpack": "^1.12.1"
   },

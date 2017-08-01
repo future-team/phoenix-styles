@@ -1,0 +1,196 @@
+@import "../public";
+@import "iconfont";
+
+@listPrefixCls: ph-list;
+
+.@{listPrefixCls}{
+	background-color: @white;
+    -webkit-overflow-scrolling: touch;
+}
+
+// reset
+.@{listPrefixCls} input[type=text],
+.@{listPrefixCls} input[type=password],
+.@{listPrefixCls} input[type=search],
+.@{listPrefixCls} textarea{
+    margin-bottom: 0;
+    background-color: transparent;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border: none;
+    border-radius: 0;
+    .box-shadow(none);
+}
+
+.@{listPrefixCls}-header{
+	padding: @list-header-padding;
+    background-color: @list-header-bg;
+    font-size: @list-item-font-size;
+    color: @list-header-color;
+}
+
+.@{listPrefixCls}-item.ph-row{
+	position: relative;
+	margin: 0;
+	margin-left: @list-item-margin;
+	border-bottom: @list-item-border;
+    font-size: @list-item-font-size;
+	.align-items(center);
+	&:last-child{
+        // border-bottom: none;
+    }
+}
+
+.@{listPrefixCls}-item.ph-navigate-right{
+    .@{listPrefixCls}-col-tail{
+        padding-right: @list-col-tail-padding;
+    }
+}
+
+.ph-navigate-right:after{
+    display: inline-block;
+    position: absolute;
+    right: @list-navigate-right-interval;
+    top: 50%;
+    line-height:1;
+    .transform(translateY(-50%));
+    .icon-navigate-right();
+}
+
+.@{listPrefixCls}-item.clickable,
+.@{listPrefixCls}-item.ph-navigate-right{
+    &:before{
+        content:"";
+        position: absolute;
+        top: 0;
+        left: -@list-item-margin;
+        width: @list-item-margin;
+        height: 100%;
+        background-color: transparent;
+    }
+    &:active{
+        background-color: @list-item-active-bg;
+        &:before{
+            background-color: @list-item-active-bg;
+        }
+
+    }
+}
+
+.@{listPrefixCls}-item-disabled{
+	.@{listPrefixCls}-col-heading, 
+    .@{listPrefixCls}-col input{
+        color: @list-item-disabled-color;
+        pointer-events: none;
+    }
+    .gfs-icon-close,
+    .gfs-icon-visible,
+    .gfs-icon-error{
+        display: none;
+    }
+}
+
+.@{listPrefixCls}-item-error{
+	.@{listPrefixCls}-col input{
+        color: @list-item-error-color;
+    }
+    .gfs-icon-error{
+        color: @brand-error;
+    }
+}
+
+.@{listPrefixCls}-item-error.ph-navigate-right{
+    .ph-col-heading{
+        color: @list-item-error-color;
+    }
+}
+
+.@{listPrefixCls}-item-required{
+    &:before{
+        content: '*';
+        position: absolute;
+        left: @list-item-required-left;
+        height: 100%;
+        color: @list-item-required-color;
+        line-height: @list-item-required-line-height;
+        font-size: @font-size-subtitle;
+    }
+}
+
+.@{listPrefixCls}-item .@{listPrefixCls}-col{
+	padding: @list-col-padding;
+    & > * {
+        vertical-align: top;
+    }
+}
+
+.@{listPrefixCls}-item .@{listPrefixCls}-col-heading{
+	.flex-inline();
+    .flex(none);
+    .flex-direction(column);
+    width: auto;
+    padding-right: @list-col-heading-padding;
+    .gfs-icon{
+        float: left;
+        margin-right: @list-col-icon-margin;
+        font-size: @font-size-subtitle;
+    }
+}
+
+.@{listPrefixCls}-item .@{listPrefixCls}-col-tail{
+	text-align: right;
+    input, .ph-input-placeholder{
+        text-align: right;
+    }
+    .ph-input input, input:disabled{
+        background-color: transparent;
+        color: @gray-33;
+    }
+}
+
+.@{listPrefixCls}-item label:not(.ph-multi-group){
+	height: @list-elem-height;
+    line-height: @list-elem-height;
+    &.ph-sub-heading{
+        height: @list-sub-elem-height;
+        font-size: @list-sub-elem-font-size;
+        color: @list-sub-elem-color;
+    }
+}
+
+.@{listPrefixCls}-item .ph-input{
+	input, .ph-input-placeholder{
+		height: @list-elem-height;
+    	padding: 0;
+	}
+	.gfs-icon{
+		right: 0;
+	}
+}
+
+.@{listPrefixCls}-item .ph-input-clear,
+.@{listPrefixCls}-item .ph-input-visible{
+    input{
+        padding-right: @list-input-padding-with-icon;
+    }
+}
+
+.@{listPrefixCls}-item .ph-input-clear.ph-input-visible{
+    input{
+        padding-right: @list-input-padding-with-second-icon;
+    }
+    .gfs-icon-close{
+        right: @list-input-second-icon-right;
+    }
+}
+
+.@{listPrefixCls}-item .ph-switch{
+    margin-top: @list-switch-margin;
+}
+
+.@{listPrefixCls}-item .ph-image{
+    width: @list-image-width;
+    height: @list-image-height;
+    background-color: @list-image-bg;
+}

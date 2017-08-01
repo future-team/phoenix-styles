@@ -5,9 +5,18 @@ var gulp = require('gulp'),
     gutil = require('gulp-util'),
     minifycss = require('gulp-minify-css'),
     clean = require('gulp-clean'),
-    webpackConfig = require('./webpack.config.js');
+    webpackConfig = require('./webpack.config.js'),
+    less = require('gulp-less'),
+    postcss = require('gulp-postcss'),
+    pxtorem = require('postcss-pxtorem');
 
 var dest = "./dist/";
+var processors = [
+    pxtorem({
+        rootValue: 100,
+        propWhiteList: []
+    })
+];
 
 var error = function(e){
   console.error(e);
@@ -31,6 +40,7 @@ gulp.task('webpack', ['clean'], function (done) {
 });
 
 gulp.task('min-styles', ['webpack'], function() {
+  
   gulp.src(['./dist/*.css'])
       // .pipe(concat(cssName+'.css') // 合并文件为all.css
       .pipe(gulp.dest(dest)) // 输出all.css文件
@@ -38,6 +48,19 @@ gulp.task('min-styles', ['webpack'], function() {
       .pipe(minifycss()) // 压缩css文件
       .pipe(gulp.dest(dest)); // 输出all.min.css
 });
+
+// gulp.task('pxtorem', ['less'], function () {
+//     gulp.src(['./css/**/*.css'])
+//       .pipe(postcss(processors))
+//       .pipe(gulp.dest('./css/'))
+// });
+
+// gulp.task('less', function(){
+//     gulp.src(['./less/modules/*.less','./less/common/*.less'])
+//       .pipe(less())
+//       .pipe(postcss(processors))
+//       .pipe(gulp.dest('./css/'))
+// })
 
 /* gulp.task('js', function() {
     gulp.src(['./js/*.js'])
@@ -47,5 +70,7 @@ gulp.task('min-styles', ['webpack'], function() {
 
 gulp.task('default', ['min-styles']);
 gulp.task('dev',['webpack'], function() {
+  // 本地文件监听
   gulp.watch('./less/**/*.less', ['webpack']);
 });
+

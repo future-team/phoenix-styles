@@ -26,6 +26,13 @@
 
 [http://future-team.github.io/phoenix-styles/example/index.html](http://future-team.github.io/phoenix-styles/example/index.html)
 
+## Browser Support
+Phoenix Styles is tested with the following browsers and mobile OS.
+
+- Android 4.4.2 +
+- IOS 8 +
+- Chrome
+
 ## Command
 
 ```
@@ -36,6 +43,7 @@
 
 ## Repair
 
+`version 2.0.0` 移除FormGroup和TableView,新增List；样式规范化 <br/>
 `version 1.5.2` button新增icon属性调整 <br/>
 `version 1.5.1` 新增image-list等组件的样式 <br/>
 `version 1.4.1` 新增menu组件样式 <br/>

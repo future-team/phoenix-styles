@@ -1,16 +1,50 @@
-.ph-button-group{
+@import "../public";
+
+@buttonGroupPrefixCls: ph-button-group;
+
+.@{buttonGroupPrefixCls}{
     position: relative;
     display: inline-block;
     vertical-align: middle;
+
+    .ph-button{
+        border-width: @button-group-border-width;
+    }
+}
+
+.@{buttonGroupPrefixCls}-default,
+.@{buttonGroupPrefixCls}-footer,
+.@{buttonGroupPrefixCls}-justify{
+    width: 100%;
+    .display-flex();
+
+    .ph-button{
+        .flex(1);
+        min-width: 0;
+    }
+}
+
+.@{buttonGroupPrefixCls}-default,
+.@{buttonGroupPrefixCls}-footer{
     .ph-button{
         position: relative;
-        float: left;
-        margin-left: -1px;
+        margin-right: @btn-lg-margin;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
 
-        &:not(:first-child):not(:last-child) {
+.@{buttonGroupPrefixCls}-justify,
+.@{buttonGroupPrefixCls}-segmente{
+    .ph-button{
+        min-width: 0;
+        &:not(:first-child){
+            border-left: none;
+        }
+        &:not(:first-child):not(:last-child){
             border-radius: 0;
         }
-
         &:first-child:not(:last-child){
             border-bottom-right-radius: 0;
             border-top-right-radius: 0;
@@ -20,39 +54,44 @@
             border-top-left-radius: 0;
         }
     }
-
 }
-.ph-button-group-tacked{
+
+.@{buttonGroupPrefixCls}-tacked{
     width: 100%;
     .ph-button{
         float: none;
         display: block;
         margin-left: 0;
-        margin-top: -1px;
-        margin-bottom: 1px;
+        
+        &:not(:first-child){
+            border-top: none;
+        }
+        &:not(:first-child):not(:last-child){
+            border-radius: 0;
+        }
         &:first-child:not(:last-child) {
-            border-top-right-radius: 3px;
             border-bottom-right-radius: 0;
             border-bottom-left-radius: 0;
         }
         &:last-child:not(:first-child) {
-            border-bottom-left-radius: 3px;
             border-top-right-radius: 0;
             border-top-left-radius: 0;
         }
     }
 }
-.ph-button-group-justify{
+
+.@{buttonGroupPrefixCls}-footer{
     width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    padding: @button-group-footer-padding;
+    border-top: @button-group-footer-border;
+    background-color: @button-group-footer-background;
+}
+
+.@{buttonGroupPrefixCls}-segmente{
     .ph-button{
-        float: none;
-        -webkit-box-flex: 1;
-        -webkit-flex: 1;
-        -ms-flex: 1;
-        flex: 1;
+        width: @button-group-justify-width;
+        height: @button-group-justify-height;
+        .border-radius(@button-group-justify-radius);
+        line-height: @button-group-justify-height;
     }
 }
