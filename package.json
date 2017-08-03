@@ -1,6 +1,6 @@
 {
   "name": "phoenix-styles",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Styles for phoenix-ui.",
   "main": "dist/",
   "repository": "git@github.com:future-team/phoenix-styles.git",
