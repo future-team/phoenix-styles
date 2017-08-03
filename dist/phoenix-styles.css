@@ -4351,6 +4351,9 @@ dl.ph-image-item dd p:last-child {
 .ph-checkbox-filter .ph-filter-selector {
   z-index: 9;
 }
+.ph-checkbox-filter .ph-filter-selector > * {
+  max-height: none;
+}
 .ph-checkbox-filter .ph-filter-selector .ph-list,
 .ph-checkbox-filter .ph-filter-selector .ph-tab-navs,
 .ph-checkbox-filter .ph-filter-selector .ph-tab-bd {
