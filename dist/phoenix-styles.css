@@ -608,6 +608,12 @@ h6 {
   -webkit-user-select: none;
   user-select: none;
 }
+.noscroll {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
 .animated {
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
