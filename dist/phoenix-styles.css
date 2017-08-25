@@ -994,6 +994,15 @@ h6 {
 .icon-waiting-fill:before {
   content: "\E6BE";
 }
+.icon-xingxing:before {
+  content: "\E6C0";
+}
+.icon-liuyan:before {
+  content: "\E6C1";
+}
+.icon-pinglun:before {
+  content: "\E6C4";
+}
 .gfs-icon {
   display: inline-block;
   font-size: 0.32rem;
