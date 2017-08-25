@@ -608,6 +608,12 @@ h6 {
   -webkit-user-select: none;
   user-select: none;
 }
+.noscroll {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
 .animated {
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
@@ -987,6 +993,15 @@ h6 {
 }
 .icon-waiting-fill:before {
   content: "\E6BE";
+}
+.icon-xingxing:before {
+  content: "\E6C0";
+}
+.icon-liuyan:before {
+  content: "\E6C1";
+}
+.icon-pinglun:before {
+  content: "\E6C4";
 }
 .gfs-icon {
   display: inline-block;
