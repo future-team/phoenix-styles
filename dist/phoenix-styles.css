@@ -612,6 +612,7 @@ h6 {
   overflow: hidden;
   width: 100%;
   height: 100vh;
+  pointer-events: none;
 }
 .animated {
   -webkit-animation-duration: 0.3s;
@@ -4280,6 +4281,7 @@ dl.ph-image-item dd p:last-child {
   bottom: 0;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.4);
+  pointer-events: auto;
 }
 .ph-filter-header {
   position: relative;
