@@ -609,10 +609,10 @@ h6 {
   user-select: none;
 }
 .noscroll {
-  position: fixed;
   overflow: hidden;
   width: 100%;
   height: 100vh;
+  pointer-events: none;
 }
 .animated {
   -webkit-animation-duration: 0.3s;
@@ -2959,19 +2959,19 @@ textarea::-webkit-input-placeholder {
   display: none;
 }
 .ph-tabs .ph-tab-nav {
+  flex-basis: 0%;
   padding: 0;
   text-align: center;
 }
 .ph-tabs .ph-tab-nav a {
   display: block;
   min-width: 1.16rem;
-  height: 0.88rem;
-  padding: 0 0.32rem;
+  min-height: 0.88rem;
+  padding: 0.24rem 0.32rem;
   border-bottom-width: 0.04rem;
   border-bottom-style: solid;
   border-bottom-color: #fff;
-  line-height: 0.84rem;
-  white-space: nowrap;
+  line-height: 0.4rem;
   font-size: 0.28rem;
 }
 .ph-tabs .ph-tab-nav.active a {
@@ -2983,12 +2983,18 @@ textarea::-webkit-input-placeholder {
 .ph-tabs .ph-tab-panel {
   padding: 0;
 }
+.ph-tabs-nowrap .ph-tab-nav a {
+  white-space: nowrap;
+}
 .ph-tabs-short .ph-tab-nav {
   padding: 0 0.32rem;
 }
 .ph-tabs-short .ph-tab-nav a {
   display: inline-block;
-  padding: 0 0.16rem;
+  padding: 0.24rem 0.16rem;
+}
+.ph-tabs-vertical.ph-tabs {
+  margin: 0;
 }
 .ph-tabs-vertical .ph-tab-navs {
   background-color: #f0f0f0;
@@ -2999,9 +3005,9 @@ textarea::-webkit-input-placeholder {
   text-align: left;
 }
 .ph-tabs-vertical .ph-tab-nav a {
-  padding: 0 0.32rem;
+  padding: 0.24rem 0.32rem;
   border: none;
-  line-height: 0.88rem;
+  line-height: 0.4rem;
 }
 .ph-tabs-vertical .ph-tab-nav.active a {
   background-color: #fff;
@@ -4275,6 +4281,7 @@ dl.ph-image-item dd p:last-child {
   bottom: 0;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.4);
+  pointer-events: auto;
 }
 .ph-filter-header {
   position: relative;
