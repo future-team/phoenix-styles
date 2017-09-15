@@ -1003,6 +1003,18 @@ h6 {
 .icon-pinglun:before {
   content: "\E6C4";
 }
+.icon-dianzan:before {
+  content: "\E607";
+}
+.icon-dianzan-fill:before {
+  content: "\E608";
+}
+.icon-shoucang-fill:before {
+  content: "\E60F";
+}
+.icon-liuyan-fill:before {
+  content: "\E610";
+}
 .gfs-icon {
   display: inline-block;
   font-size: 0.32rem;
