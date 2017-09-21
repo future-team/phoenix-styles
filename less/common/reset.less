@@ -19,8 +19,13 @@ html {
 
 body {
     margin: 0;
-    font-size: @font-size-subtitle;
+    font-weight: normal;
     font-family: @font-family-default;
+    font-size: @font-size-subtitle;
+    color: @gray-33;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    background-color:@body-bg;
 }
 
 article,
@@ -401,14 +406,6 @@ table {
 td,
 th {
     padding: 0;
-}
-
-body {
-    font: normal @font-family-default;
-    color: @gray-33;
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
-    background-color:@body-bg;
 }
 
 ul, ol {
