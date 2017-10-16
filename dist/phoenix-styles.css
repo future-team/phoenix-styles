@@ -3371,10 +3371,14 @@ textarea::-webkit-input-placeholder {
 .ph-toast-body {
   padding: 0.4rem 0.16rem;
 }
+.ph-toast-loading {
+  margin-top: .3rem;
+}
 .ph-toast-only-icon {
   position: absolute;
   top: 50%;
   left: 50%;
+  margin-top: 0;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
