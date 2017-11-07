@@ -14,7 +14,7 @@ html {
     font-family: sans-serif; /* 1 */
     -ms-text-size-adjust: 100%; /* 2 */
     -webkit-text-size-adjust: 100%; /* 2 */
-    font-size: 50PX;
+    font-size: @font-size-base;
 }
 
 body {
@@ -60,11 +60,6 @@ video {
     vertical-align: baseline; /* 2 */
 }
 
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-
 audio:not([controls]) {
     display: none;
     height: 0;
@@ -82,10 +77,6 @@ template {
 
 /* Links
    ========================================================================== */
-
-/**
- * Remove the gray background color from active links in IE 10.
- */
 
 a {
     background-color: transparent;
@@ -159,10 +150,6 @@ sub {
 /* Embedded content
    ========================================================================== */
 
-/**
- * Remove border when inside `a` element in IE 8/9/10.
- */
-
 img {
     border: 0;
 }
@@ -183,7 +170,7 @@ svg:not(:root) {
  */
 
 figure {
-    margin: 1em .40rem;
+    margin: 1em 40px;
 }
 
 /**
@@ -286,10 +273,6 @@ html input[disabled] {
     cursor: default;
 }
 
-/**
- * Remove inner padding and border in Firefox 4+.
- */
-
 button::-moz-focus-inner,
 input::-moz-focus-inner {
     border: 0;
@@ -305,25 +288,11 @@ input {
     line-height: normal;
 }
 
-/**
- * It's recommended that you don't attempt to style these elements.
- * Firefox's implementation doesn't respect box-sizing, padding, or width.
- *
- * 1. Address box sizing set to `content-box` in IE 8/9/10.
- * 2. Remove excess padding in IE 8/9/10.
- */
-
 input[type="checkbox"],
 input[type="radio"] {
     box-sizing: border-box; /* 1 */
     padding: 0; /* 2 */
 }
-
-/**
- * Fix the cursor style for Chrome's increment/decrement buttons. For certain
- * `font-size` values of the `input`, it causes the cursor style of the
- * decrement button to change from `default` to `text`.
- */
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -343,12 +312,6 @@ input[type="search"] {
     // box-sizing: content-box;
 }
 
-/**
- * Remove inner padding and search cancel button in Safari and Chrome on OS X.
- * Safari (but not Chrome) clips the cancel button when the search input has
- * padding (and `textfield` appearance).
- */
-
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
@@ -364,19 +327,10 @@ fieldset {
     padding: 0.35em 0.625em 0.75em;
 }
 
-/**
- * 1. Correct `color` not being inherited in IE 8/9/10/11.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
-
 legend {
     border: 0; /* 1 */
     padding: 0; /* 2 */
 }
-
-/**
- * Remove default vertical scrollbar in IE 8/9/10/11.
- */
 
 textarea {
     overflow: auto;
@@ -393,10 +347,6 @@ optgroup {
 
 /* Tables
    ========================================================================== */
-
-/**
- * Remove most spacing between table cells.
- */
 
 table {
     border-collapse: collapse;
@@ -433,7 +383,7 @@ h1, h2, h3, h4, h5, h6,
         font-weight: normal;
         color: #777;
         font-size: 65%;
-        margin-left: .1rem;
+        margin-left: 10px;
     }
 }
 
@@ -446,13 +396,13 @@ small,
 }
 
 h1{
-    font-size: .72rem;
+    font-size: @font-size-h1;
 }
 h2{
-    font-size: .6rem;
+    font-size: @font-size-symbol;
 }
 h3{
-    font-size: .48rem;
+    font-size: @font-size-h3;
 }
 h4{
     font-size: @font-size-headline;

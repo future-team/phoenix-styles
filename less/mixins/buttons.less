@@ -1,21 +1,26 @@
+@import 'border';
 //generate different button
 .generate-diff-button(@color,@bg-color,@border-color:transparent,
     @brand-primary-active:darken(@bg-color,10%),
     @brand-primary-await:lighten(@bg-color,25%)){
     color: @color;
     background-color: @bg-color;
-    border: 1PX solid @border-color;
+    // border: 1PX solid @border-color;
+    .onepx(border, 1PX solid @border-color);
+    
     &:active,
     &.active,
     &.ph-button-active {
         background-color: @brand-primary-active;
-        border: 1PX solid @brand-primary-active;
+        // border: 1PX solid @brand-primary-active;
+        .onepx(border, 1PX solid @brand-primary-active);
         color: @color;
     }
     &.await,
     &.ph-button-await {
         background-color: @brand-primary-await;
-        border: 1PX solid @brand-primary-await;
+        // border: 1PX solid @brand-primary-await;
+        .onepx(border, 1PX solid @brand-primary-await);
         color: @color;
         pointer-events: none;
     }
@@ -23,7 +28,8 @@
     &.disabled,
     &.ph-button-disabled{
         background-color: @gray-cc;
-        border: 1PX solid @gray-cc;
+        // border: 1PX solid @gray-cc;
+        .onepx(border, 1PX solid @gray-cc);
         pointer-events: none;
     }
 };
@@ -36,19 +42,22 @@
     &.active,
     &.ph-button-active {
         background-color: @gray-f9;
-        border: 1PX solid @border-color;
+        // border: 1PX solid @border-color;
+        .onepx(border, 1PX solid @border-color);
     }
     &.await,
     &.ph-button-await {
         background-color: transparent;
-        border: 1PX solid @brand-primary-await;
+        // border: 1PX solid @brand-primary-await;
+        .onepx(border, 1PX solid @brand-primary-await);
         color: @brand-primary-await;
     }
     &:disabled,
     &.disabled,
     &.ph-button-disabled{
         background-color: transparent;
-        border: 1PX solid @gray-cc;
+        // border: 1PX solid @gray-cc;
+        .onepx(border, 1PX solid @gray-cc);
         color: @gray-cc;
     }
 };

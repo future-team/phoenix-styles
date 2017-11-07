@@ -18,7 +18,7 @@ module.exports = {
         loaders:[
             {
                 test:/\.less$/,
-                loader: ExtractTextPlugin.extract("style-loader", "css-loader!postcss-loader!less-loader", {publicPath: './iconfont/'})
+                loader: ExtractTextPlugin.extract("style-loader", "css-loader!less-loader", {publicPath: './iconfont/'})
             },
             {
                 test:/\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
@@ -26,12 +26,12 @@ module.exports = {
             }
         ]
     },
-    postcss: [
-        pxtorem({
-            rootValue: 100,
-            propWhiteList: []
-        })
-    ],
+    // postcss: [
+    //     pxtorem({
+    //         rootValue: 100,
+    //         propWhiteList: []
+    //     })
+    // ],
     plugins: [
         new ExtractTextPlugin('[name].css')
     ]

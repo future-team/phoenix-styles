@@ -31,32 +31,32 @@ header::-webkit-scrollbar{
 }
 
 .logo{
-    padding: .32rem 0;
-    margin-bottom: .24rem;
-    font-size: .36rem;
+    padding: 16px 0;
+    margin-bottom: 12px;
+    font-size: 18px;
     background-color: #ff6633;
     text-align: center;
     color: #fff;
 }
 
 nav h2, nav h3{
-    padding-right: .48rem;
+    padding-right: 24px;
 }
 
 .main-nav li{
-    padding-right: .72rem;
+    padding-right: 36px;
 }
 
 nav h2{
-    font-size: .40rem;
+    font-size: 20px;
 }
 
 nav li{
-    line-height: .48rem;
-    font-size: .28rem;
+    line-height: 24px;
+    font-size: 14px;
 }
 nav li.active{
-    border-right: .06rem solid #ff6633;
+    border-right: 3px solid #ff6633;
 }
 nav li:hover a,
 nav li.active a{
@@ -64,46 +64,44 @@ nav li.active a{
 }
 
 .main-nav{
-    margin-bottom: .32rem;
+    margin-bottom: 16px;
 }
 
 .main{
     margin-left: 160PX;
-    padding: 0 .20rem;
+    padding: 0 10px;
 }
 
 .main > section{
-    padding: .20rem;
-    // border-bottom: 1PX solid #ccc;
-    font-size: .28rem;
+    padding: 10px;
+    font-size: 14px;
 }
 
 .main > section > h2{
     border-bottom: 1PX solid #ececec;
-    line-height: .8rem;
-    font-size: .40rem;
+    line-height: 40px;
+    font-size: 20px;
 }
 
 .main > section a.link{
-    line-height: .60rem;
+    line-height: 30px;
     text-decoration: underline;
     color: #4ea3d4;
 }
 
 .demo-list > li{
     overflow: hidden;
-    // position: relative;
-    margin-top: .20rem;
+    margin-top: 10px;
 }
 
 .demo-list > li h3,
 .main > section > h3{
-    line-height: .64rem;
-    font-size: .32rem;
+    line-height: 32px;
+    font-size: 16px;
 }
 
 .main > section > p{
-    line-height: .60rem;
+    line-height: 30px;
     color: #666;
 }
 
@@ -129,7 +127,7 @@ nav li.active a{
 
 .content{
     min-height: 80PX;
-    padding: .20rem 0 1PX;
+    padding: 10px 0 1PX;
 }
 
 .code-frame{
@@ -141,13 +139,12 @@ nav li.active a{
  .code-frame pre{
     margin-left: -240PX;
     padding: 0;
-    font-size: .24rem;
-    // background-color: #f7f7f7;
+    font-size: 12px;
 }
 
 .code-content{
-    padding: .4rem .32rem;
-    margin-bottom: .32rem;
+    padding: 10px 16px;
+    margin-bottom: 16px;
     background-color: #f0f0f0;
     color: #333;
 }
@@ -157,15 +154,15 @@ nav li.active a{
 }
 
 table caption{
-    padding: .16rem 0;
-    font-size: .40rem;
+    padding: 8px 0;
+    font-size: 20px;
 }
 table thead{
     background-color: #333;
     color: #fff;
 }
 table thead th{
-    padding: .16rem .16rem;
+    padding: 8px;
 }
 table tr{
     border: 1px solid #bbb;
@@ -175,15 +172,15 @@ table tr:nth-child(even){
     background-color: #f0f0f0;
 }
 table td{
-    padding: .16rem;
+    padding: 8px;
 }
 table td span{
     display: inline-block;
-    padding: .08rem;
+    padding: 4px;
 }
 
 footer p{
-    padding: .32rem 0;
+    padding: 16px 0;
     text-align: center;
 }
 
@@ -192,7 +189,7 @@ footer p{
     background-color: #fff;
 }
 .content>.ph-button:not(.ph-button-block){
-    margin: 0 .20rem .20rem 0;
+    margin: 0 10px 10px 0;
 }
 
 .content .ph-button-lg,
@@ -208,7 +205,7 @@ footer p{
 .content .ph-input,
 .content .ph-textarea-field,
 .ph-search-bar{
-    margin-bottom: .20rem;
+    margin-bottom: 10px;
 }
 
 .ph-image img{
@@ -233,11 +230,11 @@ footer p{
 }
 
 .ph-filter-selector{
-    height: calc(100% - .90rem);
+    height: calc(100% - 45px);
 }
 
 .ph-dialog-body ul{
-    padding-left: .32rem;
+    padding-left: 16px;
 }
 .ph-dialog-body li{
     list-style: outside decimal;
@@ -266,9 +263,9 @@ footer p{
         display: none;
     }
     .main > section > h2, .demo-list > li h3{
-        padding-left: .20rem;
+        padding-left: 10px;
     }
     .content{
-        min-height: 1rem;
+        min-height: 50px;
     }
 }
