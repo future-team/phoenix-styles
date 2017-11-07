@@ -23,12 +23,13 @@
 			}
 		}
 		.ph-popup-item{
-			border-bottom: @action-item-border;
+			.border-bottom(@gray-e1);
+			
 			&:first-child{
 				.border-radius(@action-item-radius @action-item-radius 0 0);
 			}
 			&:last-child{
-				border-bottom: none;
+				border: none;
 				.border-radius(0 0 @action-item-radius @action-item-radius);
 			}
 		}

@@ -1,4 +1,11 @@
-// 1px border
+@import 'prefix';
+@import 'animation';
+
+/**
+ * 方案一 background-image: linear-gradient(...)
+ * 调用: .border-top(#000);
+ * 缺点: 无法设置圆角; 占用背景色的属性; 代码量大
+ **/
 .border(@color){
     border:1PX solid @color;
     @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -72,10 +79,33 @@
     }
 }
 
-// 伪类和transform
-._prefixDpr(){
+/**
+ * 方案二 伪类和transform
+ * 调用: .onepx(border-top, 1px solid #000);
+ * 缺点: 占用after伪类; 仅适用于有after伪元素的元素
+ **/
 
+.onepx(@property: border; @value: 1px solid #000){
+    position: relative;
+    @{property}: @value;
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2){
+        border: none;
+        
+        &:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 200%;
+            @{property}: @value;
+            .transform(scale(0.5));
+            .box-sizing(border-box);
+            .transform-origin(left top);
+            pointer-events: none;
+        }
+    }
 }
-.onepx(@args){    
-    
-}
+

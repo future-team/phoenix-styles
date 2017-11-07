@@ -43,6 +43,7 @@ Phoenix Styles is tested with the following browsers and mobile OS.
 
 ## Repair
 
+`version 3.0.0` 移除2.0中建议的viewport以及rem布局，调整1px边线，新增公共类。 <br/>
 `version 2.0.5` Tab新增可换行的样式 <br/>
 `version 2.0.0` 移除FormGroup和TableView,新增List；样式规范化 <br/>
 `version 1.5.2` button新增icon属性调整 <br/>

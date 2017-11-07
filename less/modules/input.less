@@ -28,8 +28,7 @@ input[type="tel"]{
     // margin: @input-default-margin;
     line-height: 1;
     background-color: @white;
-    border: @border-default;
-    .border-radius(@input-default-radius);
+    border: none;
     font-size: @input-default-font-size;
     -webkit-appearance: none;
     outline: none;
@@ -71,6 +70,15 @@ input::-webkit-input-placeholder,
 
 .ph-input{
     position: relative;
+    .onepx(border, @border-default);
+    .border-radius(@input-default-radius);
+    &:after{
+        .border-radius(@input-default-radius);
+    }
+
+    &.ph-input-search{
+        .onepx(border, none);
+    }
 
     input{
         color: @input-default-color;

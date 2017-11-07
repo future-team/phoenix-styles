@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Phoenix-styles</title>
-    <script>
-        (function(baseFontSize,fontscale){var _baseFontSize=baseFontSize||100;var _fontscale=fontscale||1;var win=window;var doc=win.document;var ua=navigator.userAgent;var matches=ua.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i);var UCversion=ua.match(/U3\/((\d+|\.){5,})/i);var isUCHd=UCversion&&parseInt(UCversion[1].split(".").join(""),10)>=80;var isIos=navigator.appVersion.match(/(iphone|ipad|ipod)/gi);var dpr=win.devicePixelRatio||1;if(!isIos&&!(matches&&matches[1]>534)&&!isUCHd){dpr=1}var scale=1/dpr;var metaEl=doc.querySelector('meta[name="viewport"]');if(!metaEl){metaEl=doc.createElement("meta");metaEl.setAttribute("name","viewport");doc.head.appendChild(metaEl)}metaEl.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+scale+",maximum-scale="+scale+",minimum-scale="+scale);doc.documentElement.style.fontSize=_baseFontSize/2*dpr*_fontscale+"px"})();
-    </script>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, minimal-ui">
     <!-- <script type="text/javascript" src="https://www.dpfile.com/app/gfs-viewport/gfs-viewport.js"></script> -->
 
     <!-- basic style -->
@@ -919,19 +918,19 @@
                         <div class="demo-frame">
                             <div class="ph-page">
                                 <div class="content">
-                                    <span>24-筛选下拉、星星等</span><br/>
+                                    <span>12-筛选下拉、星星等</span><br/>
                                     <span class="gfs-icon icon-search ph-icon-xs"></span>
                                     <br/>
-                                    <span>32-表单等</span><br/>
+                                    <span>16-表单等</span><br/>
                                     <span class="gfs-icon icon-search ph-icon-sm"></span>
                                     <br/>
-                                    <span>40-头部icon等</span><br/>
+                                    <span>20-头部icon等</span><br/>
                                     <span class="gfs-icon icon-search ph-icon-md"></span>
                                     <br/>
-                                    <span>48-大loading等</span><br/>
+                                    <span>24-大loading等</span><br/>
                                     <span class="gfs-icon icon-search ph-icon-lg"></span>
                                     <br/>
-                                    <span>80-toast、满页的提示</span><br/>
+                                    <span>40-toast、满页的提示</span><br/>
                                     <span class="gfs-icon icon-search ph-icon-xlg"></span>
                                 </div>
                             </div>
@@ -939,19 +938,19 @@
                         <div class="module-code code-frame">
                             <pre>
                                 <code data-language="html">
-                                    <span>24-筛选下拉、星星等</span><br/>
+                                    <span>12-筛选下拉、星星等</span><br/>
                                     <span class="gfs-icon icon-search ph-icon-xs"></span>
                                     <br/>
-                                    <span>32-表单等</span><br/>
+                                    <span>16-表单等</span><br/>
                                     <span class="gfs-icon icon-search ph-icon-sm"></span>
                                     <br/>
-                                    <span>40-头部icon等</span><br/>
+                                    <span>20-头部icon等</span><br/>
                                     <span class="gfs-icon icon-search ph-icon-md"></span>
                                     <br/>
-                                    <span>48-大loading等</span><br/>
+                                    <span>24-大loading等</span><br/>
                                     <span class="gfs-icon icon-search ph-icon-lg"></span>
                                     <br/>
-                                    <span>80-toast、满页的提示</span><br/>
+                                    <span>40-toast、满页的提示</span><br/>
                                     <span class="gfs-icon icon-search ph-icon-xlg"></span>
                                 </code>
                             </pre>
@@ -962,11 +961,11 @@
                         <div class="demo-frame">
                             <div class="ph-page">
                                 <div class="content">
-                                    <span>默认大小：36</span><br/>
+                                    <span>默认大小：18</span><br/>
                                     <span class="gfs-icon gfs-icon-loading icon-loading-white"></span>
                                     <span class="gfs-icon gfs-icon-loading icon-loading-gray"></span>
                                     <br/><br/>
-                                    <span>其他大小：48</span><br/>
+                                    <span>其他大小：24</span><br/>
                                     <span class="gfs-icon gfs-icon-loading icon-loading-white ph-icon-lg"></span>
                                     <span class="gfs-icon gfs-icon-loading icon-loading-gray ph-icon-lg"></span>
                                 </div>
@@ -975,11 +974,11 @@
                         <div class="module-code code-frame">
                             <pre>
                                 <code data-language="html">
-                                    <span>默认大小：36</span><br/>
+                                    <span>默认大小：18</span><br/>
                                     <span class="gfs-icon gfs-icon-loading icon-loading-white"></span>
                                     <span class="gfs-icon gfs-icon-loading icon-loading-gray"></span>
                                     <br/><br/>
-                                    <span>其他大小：48</span><br/>
+                                    <span>其他大小：24</span><br/>
                                     <span class="gfs-icon gfs-icon-loading icon-loading-white ph-icon-lg"></span>
                                     <span class="gfs-icon gfs-icon-loading icon-loading-gray ph-icon-lg"></span>
                                 </code>
@@ -1621,25 +1620,25 @@
                         <div class="demo-frame">
                             <div class="ph-page ph-page-white">
                                 <div class="content">
-                                    <div class="ph-input">
+                                    <div class="ph-input ph-input-search">
                                         <input type="search" />
                                         <label class="ph-input-placeholder">
                                             <span class="ph-input-placeholder-text">请输入...</span>
                                         </label>
                                     </div>
-                                    <div class="ph-input">
+                                    <div class="ph-input ph-input-search">
                                         <input type="search" value='搜索输入框'/>
                                         <label class="ph-input-placeholder ph-input-placeholder-hide">
                                             <span class="ph-input-placeholder-text">请输入...</span>
                                         </label>
                                     </div>
-                                    <div class="ph-input ph-input-disabled">
+                                    <div class="ph-input ph-input-disabled ph-input-search">
                                         <input type="search" disabled/>
                                         <label class="ph-input-placeholder">
                                             <span class="ph-input-placeholder-text">请输入...</span>
                                         </label>
                                     </div>
-                                    <div class="ph-input ph-input-disabled">
+                                    <div class="ph-input ph-input-disabled ph-input-search">
                                         <input type="search" value='搜索输入框' disabled/>
                                         <label class="ph-input-placeholder ph-input-placeholder-hide">
                                             <span class="ph-input-placeholder-text">请输入...</span>
@@ -1651,25 +1650,25 @@
                         <div class="module-code code-frame">
                             <pre>
                                 <code data-language="html">
-                                    <div class="ph-input">
+                                    <div class="ph-input ph-input-search">
                                         <input type="search" />
                                         <label class="ph-input-placeholder">
                                             <span class="ph-input-placeholder-text">请输入...</span>
                                         </label>
                                     </div>
-                                    <div class="ph-input">
+                                    <div class="ph-input ph-input-search">
                                         <input type="search" value='搜索输入框'/>
                                         <label class="ph-input-placeholder ph-input-placeholder-hide">
                                             <span class="ph-input-placeholder-text">请输入...</span>
                                         </label>
                                     </div>
-                                    <div class="ph-input ph-input-disabled">
+                                    <div class="ph-input ph-input-disabled ph-input-search">
                                         <input type="search" disabled/>
                                         <label class="ph-input-placeholder">
                                             <span class="ph-input-placeholder-text">请输入...</span>
                                         </label>
                                     </div>
-                                    <div class="ph-input ph-input-disabled">
+                                    <div class="ph-input ph-input-disabled ph-input-search">
                                         <input type="search" value='搜索输入框' disabled/>
                                         <label class="ph-input-placeholder ph-input-placeholder-hide">
                                             <span class="ph-input-placeholder-text">请输入...</span>
@@ -2027,11 +2026,11 @@
                     <li>
                         <div class="demo-frame middle-height">
                             <div class="ph-page full-line">
-                                <div class="ph-toast ph-toast-loading">
+                                <div class="ph-toast">
                                     <div class="ph-toast-shadow"></div>
                                     <div class="ph-toast-main">
                                         <div class="ph-toast-content ph-toast-rect">
-                                            <div class="ph-toast-body">
+                                            <div class="ph-toast-body ph-toast-loading ph-toast-only-icon">
                                                 <span class="gfs-icon gfs-icon-loading icon-loading-white ph-icon-lg"></span>
                                             </div>
                                         </div>
@@ -2943,7 +2942,7 @@
                         <div class="demo-frame middle-height">
                             <div class="ph-page full-line">
                                 <div class="ph-search-bar">
-                                    <div class="ph-input ph-input-clear ph-input-heading">
+                                    <div class="ph-input ph-input-clear ph-input-heading ph-input-search">
                                         <input type="search"  />
                                         <label class="ph-input-placeholder">
                                             <span class="gfs-icon gfs-icon-search icon-search"></span><!--
@@ -2953,7 +2952,7 @@
                                     --><button class="ph-button ph-button-link">取消</button>
                                 </div>
                                 <div class="ph-search-bar ph-search-bar-focus">
-                                    <div class="ph-input ph-input-clear ph-input-heading">
+                                    <div class="ph-input ph-input-clear ph-input-heading ph-input-search">
                                         <input type="search" value="关键字" />
                                         <label class="ph-input-placeholder ph-input-placeholder-hide">
                                             <span class="gfs-icon gfs-icon-search icon-search"></span><!--
@@ -2968,13 +2967,13 @@
                             <pre>
                                 <code data-language="html">
                                     <div class="ph-search-bar">
-                                        <div class="ph-input ph-input-clear">
+                                        <div class="ph-input ph-input-clear ph-input-search">
                                             <input type="search" placeholder="搜索" />
                                         </div><!--
                                         --><button class="ph-button ph-button-link">取消</button>
                                     </div>
                                     <div class="ph-search-bar ph-search-bar-focus">
-                                        <div class="ph-input ph-input-clear">
+                                        <div class="ph-input ph-input-clear ph-input-search">
                                             <input type="search" placeholder="搜索" />
                                         </div><!--
                                         --><button class="ph-button ph-button-link">取消</button>
@@ -4204,6 +4203,69 @@
                             <td>.bg-gray</td>
                             <td>background-color: #f0f0f0;</td>
                             <td><span class="bg-gray color-gray">背景灰色</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table width="100%">
+                    <caption>1px线条</caption>
+                    <thead>
+                        <tr>
+                            <th width="20%">类名</th>
+                            <th width="40%">说明</th>
+                            <th>展示</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>.onepx-primary</td>
+                            <td>1px的主色border</td>
+                            <td><span class="onepx-primary">1px边框</span></td>
+                        </tr>
+                        <tr>
+                            <td>.onepx-top-primary</td>
+                            <td>1px的主色border-top</td>
+                            <td><span class="onepx-top-primary">1px上边框</span></td>
+                        </tr>
+                        <tr>
+                            <td>.onepx-bottom-primary</td>
+                            <td>1px的主色border-bottom</td>
+                            <td><span class="onepx-bottom-primary">1px下边框</span></td>
+                        </tr>
+                        <tr>
+                            <td>.onepx-left-primary</td>
+                            <td>1px的主色border-left</td>
+                            <td><span class="onepx-left-primary">1px左边框</span></td>
+                        </tr>
+                        <tr>
+                            <td>.onepx-right-primary</td>
+                            <td>1px的主色border-right</td>
+                            <td><span class="onepx-right-primary">1px右边框</span></td>
+                        </tr>
+                        <tr>
+                            <td>.onepx-gray</td>
+                            <td>1px的灰色border</td>
+                            <td><span class="onepx-gray">1px边框</span></td>
+                        </tr>
+                        <tr>
+                            <td>.onepx-top-gray</td>
+                            <td>1px的灰色border-top</td>
+                            <td><span class="onepx-top-gray">1px上边框</span></td>
+                        </tr>
+                        <tr>
+                            <td>.onepx-bottom-gray</td>
+                            <td>1px的灰色border-bottom</td>
+                            <td><span class="onepx-bottom-gray">1px下边框</span></td>
+                        </tr>
+                        <tr>
+                            <td>.onepx-left-gray</td>
+                            <td>1px的灰色border-left</td>
+                            <td><span class="onepx-left-gray">1px左边框</span></td>
+                        </tr>
+                        <tr>
+                            <td>.onepx-right-gray</td>
+                            <td>1px的灰色border-right</td>
+                            <td><span class="onepx-right-gray">1px右边框</span></td>
                         </tr>
                     </tbody>
                 </table>
