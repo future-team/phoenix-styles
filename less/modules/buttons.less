@@ -12,7 +12,7 @@
     margin-bottom: 0;
     text-align: center;
     white-space: nowrap;
-    border: @btn-default-border;
+    // border: @btn-default-border;
     .border-radius(@btn-default-radius);
     background-color: @white;
     vertical-align: top;
@@ -21,6 +21,10 @@
     font-weight: 400;
     outline: none;
     cursor: pointer;
+
+    &:after{
+        .border-radius(@btn-default-radius);
+    }
 
     .@{buttonPrefixCls}-inner{
         display: inline-block;
@@ -48,6 +52,10 @@
         .border-radius(@btn-lg-radius);
         line-height: @btn-lg-height;
         font-size: @font-size-headline;
+
+        &:after{
+            .border-radius(@btn-lg-radius);
+        }
 
         .gfs-icon-loading{
             .getSize(@font-size-headline)

@@ -9,6 +9,8 @@
 }
 
 // reset
+.@{listPrefixCls} .ph-input:after,
+.@{listPrefixCls} .ph-textarea-field:after,
 .@{listPrefixCls} input[type=text],
 .@{listPrefixCls} input[type=password],
 .@{listPrefixCls} input[type=search],
@@ -34,7 +36,8 @@
 	position: relative;
 	margin: 0;
 	margin-left: @list-item-margin;
-	border-bottom: @list-item-border;
+	// border-bottom: @list-item-border;
+    .border-bottom(@gray-f0);
     font-size: @list-item-font-size;
 	.align-items(center);
 	&:last-child{

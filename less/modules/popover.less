@@ -81,10 +81,11 @@
 	height: @popover-item-height;
 	line-height: @popover-item-height;
 	padding: @popover-item-padding;
-	border-bottom: @popover-item-border;
+	.onepx(border-bottom, @popover-item-border);
 	text-align:center;
 	&:last-child{
-		border-bottom: none;
+		.onepx(border-bottom, none);
+		// border-bottom: none;
 	}
 }
 

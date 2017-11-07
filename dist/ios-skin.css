@@ -5,602 +5,3162 @@
 /*15pt*/
 /*14pt*/
 /*12pt*/
+/**
+ * 方案一 background-image: linear-gradient(...)
+ * 调用: .border-top(#000);
+ * 缺点: 无法设置圆角; 占用背景色的属性; 代码量大
+ **/
+/**
+ * 方案二 伪类和transform
+ * 调用: .onepx(border-top, 1px solid #000);
+ * 缺点: 占用after伪类; 仅适用于有after伪元素的元素
+ **/
 .ph-color-primary {
   color: #007aff;
 }
 .ph-button-primary {
   color: #fff;
   background-color: #007aff;
+  position: relative;
   border: 1PX solid #007aff;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-primary {
+    border: none;
+  }
+  .ph-button-primary:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #007aff;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-primary:active,
 .ph-button-primary.active,
 .ph-button-primary.ph-button-active {
   background-color: #006ee6;
+  position: relative;
   border: 1PX solid #006ee6;
   color: #fff;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-primary:active,
+  .ph-button-primary.active,
+  .ph-button-primary.ph-button-active {
+    border: none;
+  }
+  .ph-button-primary:active:after,
+  .ph-button-primary.active:after,
+  .ph-button-primary.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #006ee6;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-primary.await,
 .ph-button-primary.ph-button-await {
   background-color: #ffc2ad;
+  position: relative;
   border: 1PX solid #ffc2ad;
   color: #fff;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-primary.await,
+  .ph-button-primary.ph-button-await {
+    border: none;
+  }
+  .ph-button-primary.await:after,
+  .ph-button-primary.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ffc2ad;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-primary:disabled,
 .ph-button-primary.disabled,
 .ph-button-primary.ph-button-disabled {
   background-color: #ccc;
+  position: relative;
   border: 1PX solid #ccc;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-primary:disabled,
+  .ph-button-primary.disabled,
+  .ph-button-primary.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-primary:disabled:after,
+  .ph-button-primary.disabled:after,
+  .ph-button-primary.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-primary.ph-button-hollow {
   color: #007aff;
   background-color: #fff;
+  position: relative;
   border: 1PX solid #007aff;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-primary.ph-button-hollow {
+    border: none;
+  }
+  .ph-button-primary.ph-button-hollow:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #007aff;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-primary.ph-button-hollow:active,
 .ph-button-primary.ph-button-hollow.active,
 .ph-button-primary.ph-button-hollow.ph-button-active {
   background-color: #006ee6;
+  position: relative;
   border: 1PX solid #006ee6;
   color: #007aff;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-primary.ph-button-hollow:active,
+  .ph-button-primary.ph-button-hollow.active,
+  .ph-button-primary.ph-button-hollow.ph-button-active {
+    border: none;
+  }
+  .ph-button-primary.ph-button-hollow:active:after,
+  .ph-button-primary.ph-button-hollow.active:after,
+  .ph-button-primary.ph-button-hollow.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #006ee6;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-primary.ph-button-hollow.await,
 .ph-button-primary.ph-button-hollow.ph-button-await {
   background-color: #ffc2ad;
+  position: relative;
   border: 1PX solid #ffc2ad;
   color: #007aff;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-primary.ph-button-hollow.await,
+  .ph-button-primary.ph-button-hollow.ph-button-await {
+    border: none;
+  }
+  .ph-button-primary.ph-button-hollow.await:after,
+  .ph-button-primary.ph-button-hollow.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ffc2ad;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-primary.ph-button-hollow:disabled,
 .ph-button-primary.ph-button-hollow.disabled,
 .ph-button-primary.ph-button-hollow.ph-button-disabled {
   background-color: #ccc;
+  position: relative;
   border: 1PX solid #ccc;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-primary.ph-button-hollow:disabled,
+  .ph-button-primary.ph-button-hollow.disabled,
+  .ph-button-primary.ph-button-hollow.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-primary.ph-button-hollow:disabled:after,
+  .ph-button-primary.ph-button-hollow.disabled:after,
+  .ph-button-primary.ph-button-hollow.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-primary.ph-button-hollow:active,
 .ph-button-primary.ph-button-hollow.active,
 .ph-button-primary.ph-button-hollow.ph-button-active {
   background-color: #f9f9f9;
+  position: relative;
   border: 1PX solid #007aff;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-primary.ph-button-hollow:active,
+  .ph-button-primary.ph-button-hollow.active,
+  .ph-button-primary.ph-button-hollow.ph-button-active {
+    border: none;
+  }
+  .ph-button-primary.ph-button-hollow:active:after,
+  .ph-button-primary.ph-button-hollow.active:after,
+  .ph-button-primary.ph-button-hollow.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #007aff;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-primary.ph-button-hollow.await,
 .ph-button-primary.ph-button-hollow.ph-button-await {
   background-color: transparent;
+  position: relative;
   border: 1PX solid #ffc2ad;
   color: #ffc2ad;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-primary.ph-button-hollow.await,
+  .ph-button-primary.ph-button-hollow.ph-button-await {
+    border: none;
+  }
+  .ph-button-primary.ph-button-hollow.await:after,
+  .ph-button-primary.ph-button-hollow.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ffc2ad;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-primary.ph-button-hollow:disabled,
 .ph-button-primary.ph-button-hollow.disabled,
 .ph-button-primary.ph-button-hollow.ph-button-disabled {
   background-color: transparent;
+  position: relative;
   border: 1PX solid #ccc;
   color: #ccc;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-primary.ph-button-hollow:disabled,
+  .ph-button-primary.ph-button-hollow.disabled,
+  .ph-button-primary.ph-button-hollow.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-primary.ph-button-hollow:disabled:after,
+  .ph-button-primary.ph-button-hollow.disabled:after,
+  .ph-button-primary.ph-button-hollow.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-success {
   color: #fff;
   background-color: #49cb67;
+  position: relative;
   border: 1PX solid #49cb67;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-success {
+    border: none;
+  }
+  .ph-button-success:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #49cb67;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-success:active,
 .ph-button-success.active,
 .ph-button-success.ph-button-active {
   background-color: #32af4f;
+  position: relative;
   border: 1PX solid #32af4f;
   color: #fff;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-success:active,
+  .ph-button-success.active,
+  .ph-button-success.ph-button-active {
+    border: none;
+  }
+  .ph-button-success:active:after,
+  .ph-button-success.active:after,
+  .ph-button-success.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #32af4f;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-success.await,
 .ph-button-success.ph-button-await {
   background-color: #ace7ba;
+  position: relative;
   border: 1PX solid #ace7ba;
   color: #fff;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-success.await,
+  .ph-button-success.ph-button-await {
+    border: none;
+  }
+  .ph-button-success.await:after,
+  .ph-button-success.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ace7ba;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-success:disabled,
 .ph-button-success.disabled,
 .ph-button-success.ph-button-disabled {
   background-color: #ccc;
+  position: relative;
   border: 1PX solid #ccc;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-success:disabled,
+  .ph-button-success.disabled,
+  .ph-button-success.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-success:disabled:after,
+  .ph-button-success.disabled:after,
+  .ph-button-success.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-success.ph-button-hollow {
   color: #49cb67;
   background-color: #fff;
+  position: relative;
   border: 1PX solid #49cb67;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-success.ph-button-hollow {
+    border: none;
+  }
+  .ph-button-success.ph-button-hollow:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #49cb67;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-success.ph-button-hollow:active,
 .ph-button-success.ph-button-hollow.active,
 .ph-button-success.ph-button-hollow.ph-button-active {
   background-color: #32af4f;
+  position: relative;
   border: 1PX solid #32af4f;
   color: #49cb67;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-success.ph-button-hollow:active,
+  .ph-button-success.ph-button-hollow.active,
+  .ph-button-success.ph-button-hollow.ph-button-active {
+    border: none;
+  }
+  .ph-button-success.ph-button-hollow:active:after,
+  .ph-button-success.ph-button-hollow.active:after,
+  .ph-button-success.ph-button-hollow.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #32af4f;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-success.ph-button-hollow.await,
 .ph-button-success.ph-button-hollow.ph-button-await {
   background-color: #ace7ba;
+  position: relative;
   border: 1PX solid #ace7ba;
   color: #49cb67;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-success.ph-button-hollow.await,
+  .ph-button-success.ph-button-hollow.ph-button-await {
+    border: none;
+  }
+  .ph-button-success.ph-button-hollow.await:after,
+  .ph-button-success.ph-button-hollow.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ace7ba;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-success.ph-button-hollow:disabled,
 .ph-button-success.ph-button-hollow.disabled,
 .ph-button-success.ph-button-hollow.ph-button-disabled {
   background-color: #ccc;
+  position: relative;
   border: 1PX solid #ccc;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-success.ph-button-hollow:disabled,
+  .ph-button-success.ph-button-hollow.disabled,
+  .ph-button-success.ph-button-hollow.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-success.ph-button-hollow:disabled:after,
+  .ph-button-success.ph-button-hollow.disabled:after,
+  .ph-button-success.ph-button-hollow.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-success.ph-button-hollow:active,
 .ph-button-success.ph-button-hollow.active,
 .ph-button-success.ph-button-hollow.ph-button-active {
   background-color: #f9f9f9;
+  position: relative;
   border: 1PX solid #49cb67;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-success.ph-button-hollow:active,
+  .ph-button-success.ph-button-hollow.active,
+  .ph-button-success.ph-button-hollow.ph-button-active {
+    border: none;
+  }
+  .ph-button-success.ph-button-hollow:active:after,
+  .ph-button-success.ph-button-hollow.active:after,
+  .ph-button-success.ph-button-hollow.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #49cb67;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-success.ph-button-hollow.await,
 .ph-button-success.ph-button-hollow.ph-button-await {
   background-color: transparent;
+  position: relative;
   border: 1PX solid #ace7ba;
   color: #ace7ba;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-success.ph-button-hollow.await,
+  .ph-button-success.ph-button-hollow.ph-button-await {
+    border: none;
+  }
+  .ph-button-success.ph-button-hollow.await:after,
+  .ph-button-success.ph-button-hollow.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ace7ba;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-success.ph-button-hollow:disabled,
 .ph-button-success.ph-button-hollow.disabled,
 .ph-button-success.ph-button-hollow.ph-button-disabled {
   background-color: transparent;
+  position: relative;
   border: 1PX solid #ccc;
   color: #ccc;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-success.ph-button-hollow:disabled,
+  .ph-button-success.ph-button-hollow.disabled,
+  .ph-button-success.ph-button-hollow.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-success.ph-button-hollow:disabled:after,
+  .ph-button-success.ph-button-hollow.disabled:after,
+  .ph-button-success.ph-button-hollow.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-tip {
   color: #fff;
   background-color: #ffad3e;
+  position: relative;
   border: 1PX solid #ffad3e;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-tip {
+    border: none;
+  }
+  .ph-button-tip:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ffad3e;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-tip:active,
 .ph-button-tip.active,
 .ph-button-tip.ph-button-active {
   background-color: #ff970b;
+  position: relative;
   border: 1PX solid #ff970b;
   color: #fff;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-tip:active,
+  .ph-button-tip.active,
+  .ph-button-tip.ph-button-active {
+    border: none;
+  }
+  .ph-button-tip:active:after,
+  .ph-button-tip.active:after,
+  .ph-button-tip.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ff970b;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-tip.await,
 .ph-button-tip.ph-button-await {
   background-color: #ffe3be;
+  position: relative;
   border: 1PX solid #ffe3be;
   color: #fff;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-tip.await,
+  .ph-button-tip.ph-button-await {
+    border: none;
+  }
+  .ph-button-tip.await:after,
+  .ph-button-tip.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ffe3be;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-tip:disabled,
 .ph-button-tip.disabled,
 .ph-button-tip.ph-button-disabled {
   background-color: #ccc;
+  position: relative;
   border: 1PX solid #ccc;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-tip:disabled,
+  .ph-button-tip.disabled,
+  .ph-button-tip.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-tip:disabled:after,
+  .ph-button-tip.disabled:after,
+  .ph-button-tip.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-tip.ph-button-hollow {
   color: #ffad3e;
   background-color: #fff;
+  position: relative;
   border: 1PX solid #ffad3e;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-tip.ph-button-hollow {
+    border: none;
+  }
+  .ph-button-tip.ph-button-hollow:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ffad3e;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-tip.ph-button-hollow:active,
 .ph-button-tip.ph-button-hollow.active,
 .ph-button-tip.ph-button-hollow.ph-button-active {
   background-color: #ff970b;
+  position: relative;
   border: 1PX solid #ff970b;
   color: #ffad3e;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-tip.ph-button-hollow:active,
+  .ph-button-tip.ph-button-hollow.active,
+  .ph-button-tip.ph-button-hollow.ph-button-active {
+    border: none;
+  }
+  .ph-button-tip.ph-button-hollow:active:after,
+  .ph-button-tip.ph-button-hollow.active:after,
+  .ph-button-tip.ph-button-hollow.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ff970b;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-tip.ph-button-hollow.await,
 .ph-button-tip.ph-button-hollow.ph-button-await {
   background-color: #ffe3be;
+  position: relative;
   border: 1PX solid #ffe3be;
   color: #ffad3e;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-tip.ph-button-hollow.await,
+  .ph-button-tip.ph-button-hollow.ph-button-await {
+    border: none;
+  }
+  .ph-button-tip.ph-button-hollow.await:after,
+  .ph-button-tip.ph-button-hollow.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ffe3be;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-tip.ph-button-hollow:disabled,
 .ph-button-tip.ph-button-hollow.disabled,
 .ph-button-tip.ph-button-hollow.ph-button-disabled {
   background-color: #ccc;
+  position: relative;
   border: 1PX solid #ccc;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-tip.ph-button-hollow:disabled,
+  .ph-button-tip.ph-button-hollow.disabled,
+  .ph-button-tip.ph-button-hollow.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-tip.ph-button-hollow:disabled:after,
+  .ph-button-tip.ph-button-hollow.disabled:after,
+  .ph-button-tip.ph-button-hollow.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-tip.ph-button-hollow:active,
 .ph-button-tip.ph-button-hollow.active,
 .ph-button-tip.ph-button-hollow.ph-button-active {
   background-color: #f9f9f9;
+  position: relative;
   border: 1PX solid #ffad3e;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-tip.ph-button-hollow:active,
+  .ph-button-tip.ph-button-hollow.active,
+  .ph-button-tip.ph-button-hollow.ph-button-active {
+    border: none;
+  }
+  .ph-button-tip.ph-button-hollow:active:after,
+  .ph-button-tip.ph-button-hollow.active:after,
+  .ph-button-tip.ph-button-hollow.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ffad3e;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-tip.ph-button-hollow.await,
 .ph-button-tip.ph-button-hollow.ph-button-await {
   background-color: transparent;
+  position: relative;
   border: 1PX solid #ffe3be;
   color: #ffe3be;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-tip.ph-button-hollow.await,
+  .ph-button-tip.ph-button-hollow.ph-button-await {
+    border: none;
+  }
+  .ph-button-tip.ph-button-hollow.await:after,
+  .ph-button-tip.ph-button-hollow.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ffe3be;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-tip.ph-button-hollow:disabled,
 .ph-button-tip.ph-button-hollow.disabled,
 .ph-button-tip.ph-button-hollow.ph-button-disabled {
   background-color: transparent;
+  position: relative;
   border: 1PX solid #ccc;
   color: #ccc;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-tip.ph-button-hollow:disabled,
+  .ph-button-tip.ph-button-hollow.disabled,
+  .ph-button-tip.ph-button-hollow.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-tip.ph-button-hollow:disabled:after,
+  .ph-button-tip.ph-button-hollow.disabled:after,
+  .ph-button-tip.ph-button-hollow.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-info {
   color: #fff;
   background-color: #4ea3d4;
+  position: relative;
   border: 1PX solid #4ea3d4;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-info {
+    border: none;
+  }
+  .ph-button-info:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #4ea3d4;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-info:active,
 .ph-button-info.active,
 .ph-button-info.ph-button-active {
   background-color: #2f8bc0;
+  position: relative;
   border: 1PX solid #2f8bc0;
   color: #fff;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-info:active,
+  .ph-button-info.active,
+  .ph-button-info.ph-button-active {
+    border: none;
+  }
+  .ph-button-info:active:after,
+  .ph-button-info.active:after,
+  .ph-button-info.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #2f8bc0;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-info.await,
 .ph-button-info.ph-button-await {
   background-color: #b5d8ed;
+  position: relative;
   border: 1PX solid #b5d8ed;
   color: #fff;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-info.await,
+  .ph-button-info.ph-button-await {
+    border: none;
+  }
+  .ph-button-info.await:after,
+  .ph-button-info.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #b5d8ed;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-info:disabled,
 .ph-button-info.disabled,
 .ph-button-info.ph-button-disabled {
   background-color: #ccc;
+  position: relative;
   border: 1PX solid #ccc;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-info:disabled,
+  .ph-button-info.disabled,
+  .ph-button-info.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-info:disabled:after,
+  .ph-button-info.disabled:after,
+  .ph-button-info.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-info.ph-button-hollow {
   color: #4ea3d4;
   background-color: #fff;
+  position: relative;
   border: 1PX solid #4ea3d4;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-info.ph-button-hollow {
+    border: none;
+  }
+  .ph-button-info.ph-button-hollow:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #4ea3d4;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-info.ph-button-hollow:active,
 .ph-button-info.ph-button-hollow.active,
 .ph-button-info.ph-button-hollow.ph-button-active {
   background-color: #2f8bc0;
+  position: relative;
   border: 1PX solid #2f8bc0;
   color: #4ea3d4;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-info.ph-button-hollow:active,
+  .ph-button-info.ph-button-hollow.active,
+  .ph-button-info.ph-button-hollow.ph-button-active {
+    border: none;
+  }
+  .ph-button-info.ph-button-hollow:active:after,
+  .ph-button-info.ph-button-hollow.active:after,
+  .ph-button-info.ph-button-hollow.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #2f8bc0;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-info.ph-button-hollow.await,
 .ph-button-info.ph-button-hollow.ph-button-await {
   background-color: #b5d8ed;
+  position: relative;
   border: 1PX solid #b5d8ed;
   color: #4ea3d4;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-info.ph-button-hollow.await,
+  .ph-button-info.ph-button-hollow.ph-button-await {
+    border: none;
+  }
+  .ph-button-info.ph-button-hollow.await:after,
+  .ph-button-info.ph-button-hollow.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #b5d8ed;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-info.ph-button-hollow:disabled,
 .ph-button-info.ph-button-hollow.disabled,
 .ph-button-info.ph-button-hollow.ph-button-disabled {
   background-color: #ccc;
+  position: relative;
   border: 1PX solid #ccc;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-info.ph-button-hollow:disabled,
+  .ph-button-info.ph-button-hollow.disabled,
+  .ph-button-info.ph-button-hollow.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-info.ph-button-hollow:disabled:after,
+  .ph-button-info.ph-button-hollow.disabled:after,
+  .ph-button-info.ph-button-hollow.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-info.ph-button-hollow:active,
 .ph-button-info.ph-button-hollow.active,
 .ph-button-info.ph-button-hollow.ph-button-active {
   background-color: #f9f9f9;
+  position: relative;
   border: 1PX solid #4ea3d4;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-info.ph-button-hollow:active,
+  .ph-button-info.ph-button-hollow.active,
+  .ph-button-info.ph-button-hollow.ph-button-active {
+    border: none;
+  }
+  .ph-button-info.ph-button-hollow:active:after,
+  .ph-button-info.ph-button-hollow.active:after,
+  .ph-button-info.ph-button-hollow.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #4ea3d4;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-info.ph-button-hollow.await,
 .ph-button-info.ph-button-hollow.ph-button-await {
   background-color: transparent;
+  position: relative;
   border: 1PX solid #b5d8ed;
   color: #b5d8ed;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-info.ph-button-hollow.await,
+  .ph-button-info.ph-button-hollow.ph-button-await {
+    border: none;
+  }
+  .ph-button-info.ph-button-hollow.await:after,
+  .ph-button-info.ph-button-hollow.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #b5d8ed;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-info.ph-button-hollow:disabled,
 .ph-button-info.ph-button-hollow.disabled,
 .ph-button-info.ph-button-hollow.ph-button-disabled {
   background-color: transparent;
+  position: relative;
   border: 1PX solid #ccc;
   color: #ccc;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-info.ph-button-hollow:disabled,
+  .ph-button-info.ph-button-hollow.disabled,
+  .ph-button-info.ph-button-hollow.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-info.ph-button-hollow:disabled:after,
+  .ph-button-info.ph-button-hollow.disabled:after,
+  .ph-button-info.ph-button-hollow.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-error {
   color: #fff;
   background-color: #f64d2e;
+  position: relative;
   border: 1PX solid #f64d2e;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-error {
+    border: none;
+  }
+  .ph-button-error:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #f64d2e;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-error:active,
 .ph-button-error.active,
 .ph-button-error.ph-button-active {
   background-color: #e72c0a;
+  position: relative;
   border: 1PX solid #e72c0a;
   color: #fff;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-error:active,
+  .ph-button-error.active,
+  .ph-button-error.ph-button-active {
+    border: none;
+  }
+  .ph-button-error:active:after,
+  .ph-button-error.active:after,
+  .ph-button-error.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #e72c0a;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-error.await,
 .ph-button-error.ph-button-await {
   background-color: #fbb5a8;
+  position: relative;
   border: 1PX solid #fbb5a8;
   color: #fff;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-error.await,
+  .ph-button-error.ph-button-await {
+    border: none;
+  }
+  .ph-button-error.await:after,
+  .ph-button-error.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #fbb5a8;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-error:disabled,
 .ph-button-error.disabled,
 .ph-button-error.ph-button-disabled {
   background-color: #ccc;
+  position: relative;
   border: 1PX solid #ccc;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-error:disabled,
+  .ph-button-error.disabled,
+  .ph-button-error.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-error:disabled:after,
+  .ph-button-error.disabled:after,
+  .ph-button-error.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-error.ph-button-hollow {
   color: #f64d2e;
   background-color: #fff;
+  position: relative;
   border: 1PX solid #f64d2e;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-error.ph-button-hollow {
+    border: none;
+  }
+  .ph-button-error.ph-button-hollow:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #f64d2e;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-error.ph-button-hollow:active,
 .ph-button-error.ph-button-hollow.active,
 .ph-button-error.ph-button-hollow.ph-button-active {
   background-color: #e72c0a;
+  position: relative;
   border: 1PX solid #e72c0a;
   color: #f64d2e;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-error.ph-button-hollow:active,
+  .ph-button-error.ph-button-hollow.active,
+  .ph-button-error.ph-button-hollow.ph-button-active {
+    border: none;
+  }
+  .ph-button-error.ph-button-hollow:active:after,
+  .ph-button-error.ph-button-hollow.active:after,
+  .ph-button-error.ph-button-hollow.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #e72c0a;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-error.ph-button-hollow.await,
 .ph-button-error.ph-button-hollow.ph-button-await {
   background-color: #fbb5a8;
+  position: relative;
   border: 1PX solid #fbb5a8;
   color: #f64d2e;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-error.ph-button-hollow.await,
+  .ph-button-error.ph-button-hollow.ph-button-await {
+    border: none;
+  }
+  .ph-button-error.ph-button-hollow.await:after,
+  .ph-button-error.ph-button-hollow.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #fbb5a8;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-error.ph-button-hollow:disabled,
 .ph-button-error.ph-button-hollow.disabled,
 .ph-button-error.ph-button-hollow.ph-button-disabled {
   background-color: #ccc;
+  position: relative;
   border: 1PX solid #ccc;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-error.ph-button-hollow:disabled,
+  .ph-button-error.ph-button-hollow.disabled,
+  .ph-button-error.ph-button-hollow.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-error.ph-button-hollow:disabled:after,
+  .ph-button-error.ph-button-hollow.disabled:after,
+  .ph-button-error.ph-button-hollow.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-error.ph-button-hollow:active,
 .ph-button-error.ph-button-hollow.active,
 .ph-button-error.ph-button-hollow.ph-button-active {
   background-color: #f9f9f9;
+  position: relative;
   border: 1PX solid #f64d2e;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-error.ph-button-hollow:active,
+  .ph-button-error.ph-button-hollow.active,
+  .ph-button-error.ph-button-hollow.ph-button-active {
+    border: none;
+  }
+  .ph-button-error.ph-button-hollow:active:after,
+  .ph-button-error.ph-button-hollow.active:after,
+  .ph-button-error.ph-button-hollow.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #f64d2e;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-error.ph-button-hollow.await,
 .ph-button-error.ph-button-hollow.ph-button-await {
   background-color: transparent;
+  position: relative;
   border: 1PX solid #fbb5a8;
   color: #fbb5a8;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-error.ph-button-hollow.await,
+  .ph-button-error.ph-button-hollow.ph-button-await {
+    border: none;
+  }
+  .ph-button-error.ph-button-hollow.await:after,
+  .ph-button-error.ph-button-hollow.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #fbb5a8;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-error.ph-button-hollow:disabled,
 .ph-button-error.ph-button-hollow.disabled,
 .ph-button-error.ph-button-hollow.ph-button-disabled {
   background-color: transparent;
+  position: relative;
   border: 1PX solid #ccc;
   color: #ccc;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-error.ph-button-hollow:disabled,
+  .ph-button-error.ph-button-hollow.disabled,
+  .ph-button-error.ph-button-hollow.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-error.ph-button-hollow:disabled:after,
+  .ph-button-error.ph-button-hollow.disabled:after,
+  .ph-button-error.ph-button-hollow.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-warning {
   color: #fff;
   background-color: #e0690c;
+  position: relative;
   border: 1PX solid #e0690c;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-warning {
+    border: none;
+  }
+  .ph-button-warning:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #e0690c;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-warning:active,
 .ph-button-warning.active,
 .ph-button-warning.ph-button-active {
   background-color: #b05209;
+  position: relative;
   border: 1PX solid #b05209;
   color: #fff;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-warning:active,
+  .ph-button-warning.active,
+  .ph-button-warning.ph-button-active {
+    border: none;
+  }
+  .ph-button-warning:active:after,
+  .ph-button-warning.active:after,
+  .ph-button-warning.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #b05209;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-warning.await,
 .ph-button-warning.ph-button-await {
   background-color: #f8ae74;
+  position: relative;
   border: 1PX solid #f8ae74;
   color: #fff;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-warning.await,
+  .ph-button-warning.ph-button-await {
+    border: none;
+  }
+  .ph-button-warning.await:after,
+  .ph-button-warning.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #f8ae74;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-warning:disabled,
 .ph-button-warning.disabled,
 .ph-button-warning.ph-button-disabled {
   background-color: #ccc;
+  position: relative;
   border: 1PX solid #ccc;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-warning:disabled,
+  .ph-button-warning.disabled,
+  .ph-button-warning.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-warning:disabled:after,
+  .ph-button-warning.disabled:after,
+  .ph-button-warning.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-warning.ph-button-hollow {
   color: #e0690c;
   background-color: #fff;
+  position: relative;
   border: 1PX solid #e0690c;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-warning.ph-button-hollow {
+    border: none;
+  }
+  .ph-button-warning.ph-button-hollow:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #e0690c;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-warning.ph-button-hollow:active,
 .ph-button-warning.ph-button-hollow.active,
 .ph-button-warning.ph-button-hollow.ph-button-active {
   background-color: #b05209;
+  position: relative;
   border: 1PX solid #b05209;
   color: #e0690c;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-warning.ph-button-hollow:active,
+  .ph-button-warning.ph-button-hollow.active,
+  .ph-button-warning.ph-button-hollow.ph-button-active {
+    border: none;
+  }
+  .ph-button-warning.ph-button-hollow:active:after,
+  .ph-button-warning.ph-button-hollow.active:after,
+  .ph-button-warning.ph-button-hollow.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #b05209;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-warning.ph-button-hollow.await,
 .ph-button-warning.ph-button-hollow.ph-button-await {
   background-color: #f8ae74;
+  position: relative;
   border: 1PX solid #f8ae74;
   color: #e0690c;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-warning.ph-button-hollow.await,
+  .ph-button-warning.ph-button-hollow.ph-button-await {
+    border: none;
+  }
+  .ph-button-warning.ph-button-hollow.await:after,
+  .ph-button-warning.ph-button-hollow.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #f8ae74;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-warning.ph-button-hollow:disabled,
 .ph-button-warning.ph-button-hollow.disabled,
 .ph-button-warning.ph-button-hollow.ph-button-disabled {
   background-color: #ccc;
+  position: relative;
   border: 1PX solid #ccc;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-warning.ph-button-hollow:disabled,
+  .ph-button-warning.ph-button-hollow.disabled,
+  .ph-button-warning.ph-button-hollow.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-warning.ph-button-hollow:disabled:after,
+  .ph-button-warning.ph-button-hollow.disabled:after,
+  .ph-button-warning.ph-button-hollow.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-warning.ph-button-hollow:active,
 .ph-button-warning.ph-button-hollow.active,
 .ph-button-warning.ph-button-hollow.ph-button-active {
   background-color: #f9f9f9;
+  position: relative;
   border: 1PX solid #e0690c;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-warning.ph-button-hollow:active,
+  .ph-button-warning.ph-button-hollow.active,
+  .ph-button-warning.ph-button-hollow.ph-button-active {
+    border: none;
+  }
+  .ph-button-warning.ph-button-hollow:active:after,
+  .ph-button-warning.ph-button-hollow.active:after,
+  .ph-button-warning.ph-button-hollow.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #e0690c;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-warning.ph-button-hollow.await,
 .ph-button-warning.ph-button-hollow.ph-button-await {
   background-color: transparent;
+  position: relative;
   border: 1PX solid #f8ae74;
   color: #f8ae74;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-warning.ph-button-hollow.await,
+  .ph-button-warning.ph-button-hollow.ph-button-await {
+    border: none;
+  }
+  .ph-button-warning.ph-button-hollow.await:after,
+  .ph-button-warning.ph-button-hollow.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #f8ae74;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-warning.ph-button-hollow:disabled,
 .ph-button-warning.ph-button-hollow.disabled,
 .ph-button-warning.ph-button-hollow.ph-button-disabled {
   background-color: transparent;
+  position: relative;
   border: 1PX solid #ccc;
   color: #ccc;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-warning.ph-button-hollow:disabled,
+  .ph-button-warning.ph-button-hollow.disabled,
+  .ph-button-warning.ph-button-hollow.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-warning.ph-button-hollow:disabled:after,
+  .ph-button-warning.ph-button-hollow.disabled:after,
+  .ph-button-warning.ph-button-hollow.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-danger {
   color: #fff;
   background-color: #ff3b30;
+  position: relative;
   border: 1PX solid #ff3b30;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-danger {
+    border: none;
+  }
+  .ph-button-danger:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ff3b30;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-danger:active,
 .ph-button-danger.active,
 .ph-button-danger.ph-button-active {
   background-color: #fc0d00;
+  position: relative;
   border: 1PX solid #fc0d00;
   color: #fff;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-danger:active,
+  .ph-button-danger.active,
+  .ph-button-danger.ph-button-active {
+    border: none;
+  }
+  .ph-button-danger:active:after,
+  .ph-button-danger.active:after,
+  .ph-button-danger.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #fc0d00;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-danger.await,
 .ph-button-danger.ph-button-await {
   background-color: #ffb4b0;
+  position: relative;
   border: 1PX solid #ffb4b0;
   color: #fff;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-danger.await,
+  .ph-button-danger.ph-button-await {
+    border: none;
+  }
+  .ph-button-danger.await:after,
+  .ph-button-danger.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ffb4b0;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-danger:disabled,
 .ph-button-danger.disabled,
 .ph-button-danger.ph-button-disabled {
   background-color: #ccc;
+  position: relative;
   border: 1PX solid #ccc;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-danger:disabled,
+  .ph-button-danger.disabled,
+  .ph-button-danger.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-danger:disabled:after,
+  .ph-button-danger.disabled:after,
+  .ph-button-danger.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-danger.ph-button-hollow {
   color: #ff3b30;
   background-color: #fff;
+  position: relative;
   border: 1PX solid #ff3b30;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-danger.ph-button-hollow {
+    border: none;
+  }
+  .ph-button-danger.ph-button-hollow:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ff3b30;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-danger.ph-button-hollow:active,
 .ph-button-danger.ph-button-hollow.active,
 .ph-button-danger.ph-button-hollow.ph-button-active {
   background-color: #fc0d00;
+  position: relative;
   border: 1PX solid #fc0d00;
   color: #ff3b30;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-danger.ph-button-hollow:active,
+  .ph-button-danger.ph-button-hollow.active,
+  .ph-button-danger.ph-button-hollow.ph-button-active {
+    border: none;
+  }
+  .ph-button-danger.ph-button-hollow:active:after,
+  .ph-button-danger.ph-button-hollow.active:after,
+  .ph-button-danger.ph-button-hollow.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #fc0d00;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-danger.ph-button-hollow.await,
 .ph-button-danger.ph-button-hollow.ph-button-await {
   background-color: #ffb4b0;
+  position: relative;
   border: 1PX solid #ffb4b0;
   color: #ff3b30;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-danger.ph-button-hollow.await,
+  .ph-button-danger.ph-button-hollow.ph-button-await {
+    border: none;
+  }
+  .ph-button-danger.ph-button-hollow.await:after,
+  .ph-button-danger.ph-button-hollow.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ffb4b0;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-danger.ph-button-hollow:disabled,
 .ph-button-danger.ph-button-hollow.disabled,
 .ph-button-danger.ph-button-hollow.ph-button-disabled {
   background-color: #ccc;
+  position: relative;
   border: 1PX solid #ccc;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-danger.ph-button-hollow:disabled,
+  .ph-button-danger.ph-button-hollow.disabled,
+  .ph-button-danger.ph-button-hollow.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-danger.ph-button-hollow:disabled:after,
+  .ph-button-danger.ph-button-hollow.disabled:after,
+  .ph-button-danger.ph-button-hollow.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-danger.ph-button-hollow:active,
 .ph-button-danger.ph-button-hollow.active,
 .ph-button-danger.ph-button-hollow.ph-button-active {
   background-color: #f9f9f9;
+  position: relative;
   border: 1PX solid #ff3b30;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-danger.ph-button-hollow:active,
+  .ph-button-danger.ph-button-hollow.active,
+  .ph-button-danger.ph-button-hollow.ph-button-active {
+    border: none;
+  }
+  .ph-button-danger.ph-button-hollow:active:after,
+  .ph-button-danger.ph-button-hollow.active:after,
+  .ph-button-danger.ph-button-hollow.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ff3b30;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-danger.ph-button-hollow.await,
 .ph-button-danger.ph-button-hollow.ph-button-await {
   background-color: transparent;
+  position: relative;
   border: 1PX solid #ffb4b0;
   color: #ffb4b0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-danger.ph-button-hollow.await,
+  .ph-button-danger.ph-button-hollow.ph-button-await {
+    border: none;
+  }
+  .ph-button-danger.ph-button-hollow.await:after,
+  .ph-button-danger.ph-button-hollow.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ffb4b0;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-danger.ph-button-hollow:disabled,
 .ph-button-danger.ph-button-hollow.disabled,
 .ph-button-danger.ph-button-hollow.ph-button-disabled {
   background-color: transparent;
+  position: relative;
   border: 1PX solid #ccc;
   color: #ccc;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-danger.ph-button-hollow:disabled,
+  .ph-button-danger.ph-button-hollow.disabled,
+  .ph-button-danger.ph-button-hollow.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-danger.ph-button-hollow:disabled:after,
+  .ph-button-danger.ph-button-hollow.disabled:after,
+  .ph-button-danger.ph-button-hollow.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-gray {
   color: #fff;
   background-color: #bbb;
+  position: relative;
   border: 1PX solid #bbb;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-gray {
+    border: none;
+  }
+  .ph-button-gray:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #bbb;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-gray:active,
 .ph-button-gray.active,
 .ph-button-gray.ph-button-active {
   background-color: #bbb;
+  position: relative;
   border: 1PX solid #bbb;
   color: #fff;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-gray:active,
+  .ph-button-gray.active,
+  .ph-button-gray.ph-button-active {
+    border: none;
+  }
+  .ph-button-gray:active:after,
+  .ph-button-gray.active:after,
+  .ph-button-gray.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #bbb;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-gray.await,
 .ph-button-gray.ph-button-await {
   background-color: #ccc;
+  position: relative;
   border: 1PX solid #ccc;
   color: #fff;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-gray.await,
+  .ph-button-gray.ph-button-await {
+    border: none;
+  }
+  .ph-button-gray.await:after,
+  .ph-button-gray.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-gray:disabled,
 .ph-button-gray.disabled,
 .ph-button-gray.ph-button-disabled {
   background-color: #ccc;
+  position: relative;
   border: 1PX solid #ccc;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-gray:disabled,
+  .ph-button-gray.disabled,
+  .ph-button-gray.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-gray:disabled:after,
+  .ph-button-gray.disabled:after,
+  .ph-button-gray.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-gray.ph-button-hollow {
   color: #666;
   background-color: #fff;
+  position: relative;
   border: 1PX solid #bbb;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-gray.ph-button-hollow {
+    border: none;
+  }
+  .ph-button-gray.ph-button-hollow:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #bbb;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-gray.ph-button-hollow:active,
 .ph-button-gray.ph-button-hollow.active,
 .ph-button-gray.ph-button-hollow.ph-button-active {
   background-color: #bbb;
+  position: relative;
   border: 1PX solid #bbb;
   color: #666;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-gray.ph-button-hollow:active,
+  .ph-button-gray.ph-button-hollow.active,
+  .ph-button-gray.ph-button-hollow.ph-button-active {
+    border: none;
+  }
+  .ph-button-gray.ph-button-hollow:active:after,
+  .ph-button-gray.ph-button-hollow.active:after,
+  .ph-button-gray.ph-button-hollow.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #bbb;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-gray.ph-button-hollow.await,
 .ph-button-gray.ph-button-hollow.ph-button-await {
   background-color: #ccc;
+  position: relative;
   border: 1PX solid #ccc;
   color: #666;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-gray.ph-button-hollow.await,
+  .ph-button-gray.ph-button-hollow.ph-button-await {
+    border: none;
+  }
+  .ph-button-gray.ph-button-hollow.await:after,
+  .ph-button-gray.ph-button-hollow.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-gray.ph-button-hollow:disabled,
 .ph-button-gray.ph-button-hollow.disabled,
 .ph-button-gray.ph-button-hollow.ph-button-disabled {
   background-color: #ccc;
+  position: relative;
   border: 1PX solid #ccc;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-gray.ph-button-hollow:disabled,
+  .ph-button-gray.ph-button-hollow.disabled,
+  .ph-button-gray.ph-button-hollow.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-gray.ph-button-hollow:disabled:after,
+  .ph-button-gray.ph-button-hollow.disabled:after,
+  .ph-button-gray.ph-button-hollow.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-gray.ph-button-hollow:active,
 .ph-button-gray.ph-button-hollow.active,
 .ph-button-gray.ph-button-hollow.ph-button-active {
   background-color: #f9f9f9;
+  position: relative;
   border: 1PX solid #bbb;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-gray.ph-button-hollow:active,
+  .ph-button-gray.ph-button-hollow.active,
+  .ph-button-gray.ph-button-hollow.ph-button-active {
+    border: none;
+  }
+  .ph-button-gray.ph-button-hollow:active:after,
+  .ph-button-gray.ph-button-hollow.active:after,
+  .ph-button-gray.ph-button-hollow.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #bbb;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-gray.ph-button-hollow.await,
 .ph-button-gray.ph-button-hollow.ph-button-await {
   background-color: transparent;
+  position: relative;
   border: 1PX solid #ccc;
   color: #ccc;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-gray.ph-button-hollow.await,
+  .ph-button-gray.ph-button-hollow.ph-button-await {
+    border: none;
+  }
+  .ph-button-gray.ph-button-hollow.await:after,
+  .ph-button-gray.ph-button-hollow.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-gray.ph-button-hollow:disabled,
 .ph-button-gray.ph-button-hollow.disabled,
 .ph-button-gray.ph-button-hollow.ph-button-disabled {
   background-color: transparent;
+  position: relative;
   border: 1PX solid #ccc;
   color: #ccc;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-gray.ph-button-hollow:disabled,
+  .ph-button-gray.ph-button-hollow.disabled,
+  .ph-button-gray.ph-button-hollow.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-gray.ph-button-hollow:disabled:after,
+  .ph-button-gray.ph-button-hollow.disabled:after,
+  .ph-button-gray.ph-button-hollow.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-link {
   color: #007aff;
   background-color: transparent;
+  position: relative;
   border: 1PX solid transparent;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-link {
+    border: none;
+  }
+  .ph-button-link:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid transparent;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-link:active,
 .ph-button-link.active,
 .ph-button-link.ph-button-active {
   background-color: rgba(0, 0, 0, 0);
+  position: relative;
   border: 1PX solid rgba(0, 0, 0, 0);
   color: #007aff;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-link:active,
+  .ph-button-link.active,
+  .ph-button-link.ph-button-active {
+    border: none;
+  }
+  .ph-button-link:active:after,
+  .ph-button-link.active:after,
+  .ph-button-link.ph-button-active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid rgba(0, 0, 0, 0);
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-link.await,
 .ph-button-link.ph-button-await {
   background-color: rgba(64, 64, 64, 0);
+  position: relative;
   border: 1PX solid rgba(64, 64, 64, 0);
   color: #007aff;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-link.await,
+  .ph-button-link.ph-button-await {
+    border: none;
+  }
+  .ph-button-link.await:after,
+  .ph-button-link.ph-button-await:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid rgba(64, 64, 64, 0);
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-link:disabled,
 .ph-button-link.disabled,
 .ph-button-link.ph-button-disabled {
   background-color: #ccc;
+  position: relative;
   border: 1PX solid #ccc;
   pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-button-link:disabled,
+  .ph-button-link.disabled,
+  .ph-button-link.ph-button-disabled {
+    border: none;
+  }
+  .ph-button-link:disabled:after,
+  .ph-button-link.disabled:after,
+  .ph-button-link.ph-button-disabled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: 1PX solid #ccc;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-button-link:active,
 .ph-button-link.active,
@@ -686,19 +3246,19 @@
 }
 .ph-checkbox {
   position: relative;
-  width: 0.4rem;
-  height: 0.4rem;
+  width: 20px;
+  height: 20px;
 }
 .ph-checkbox i {
-  -webkit-border-radius: 0.04rem;
-  -moz-border-radius: 0.04rem;
-  border-radius: 0.04rem;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
   background-clip: padding-box;
   position: relative;
   display: block;
-  width: 0.4rem;
-  height: 0.4rem;
-  border: 2PX solid #bbb;
+  width: 20px;
+  height: 20px;
+  border: 1PX solid #bbb;
   background-color: #fff;
   -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
   -moz-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
@@ -717,31 +3277,25 @@
 .ph-checkbox input:checked + i {
   position: relative;
   background-color: #fff;
-  border: 2PX solid #007aff;
-}
-.ph-checkbox input:checked + i:before,
-.ph-checkbox input:checked + i:after {
-  display: inline-block;
-  position: absolute;
-  content: "";
-  width: 0.02rem;
-  background-color: #007aff;
+  border: 1PX solid #007aff;
 }
 .ph-checkbox input:checked + i:before {
-  height: 0.12rem;
-  left: 0.085rem;
-  top: 0.16rem;
-  -webkit-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
-  transform: rotate(135deg);
-}
-.ph-checkbox input:checked + i:after {
-  height: 0.24rem;
-  left: 0.21rem;
-  top: 0.07rem;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 6px;
+  border: none;
+  border: 1PX solid #007aff;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
 }
 .ph-checkbox input:disabled + i {
   background-color: #f8f8f8;
@@ -749,19 +3303,19 @@
 }
 .ph-radio {
   position: relative;
-  width: 0.42rem;
-  height: 0.42rem;
+  width: 21px;
+  height: 21px;
 }
 .ph-radio i {
-  -webkit-border-radius: 0.04rem;
-  -moz-border-radius: 0.04rem;
-  border-radius: 0.04rem;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
   background-clip: padding-box;
   position: relative;
   display: block;
-  width: 0.42rem;
-  height: 0.42rem;
-  border: 2PX solid #bbb;
+  width: 21px;
+  height: 21px;
+  border: 1PX solid #bbb;
   background-color: #fff;
   -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
   -moz-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
@@ -780,31 +3334,25 @@
 .ph-radio input:checked + i {
   position: relative;
   background-color: #fff;
-  border: 2PX solid #007aff;
-}
-.ph-radio input:checked + i:before,
-.ph-radio input:checked + i:after {
-  display: inline-block;
-  position: absolute;
-  content: "";
-  width: 0.02rem;
-  background-color: #007aff;
+  border: 1PX solid #007aff;
 }
 .ph-radio input:checked + i:before {
-  height: 0.12rem;
-  left: 0.085rem;
-  top: 0.16rem;
-  -webkit-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
-  transform: rotate(135deg);
-}
-.ph-radio input:checked + i:after {
-  height: 0.24rem;
-  left: 0.21rem;
-  top: 0.07rem;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 6px;
+  border: none;
+  border: 1PX solid #007aff;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
 }
 .ph-radio input:disabled + i {
   background-color: #f8f8f8;
@@ -822,7 +3370,32 @@
 .ph-tabs .ph-tab-navs {
   overflow-y: auto;
   margin: 0;
+  position: relative;
   border-bottom: 1PX solid #e1e1e1;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-tabs .ph-tab-navs {
+    border: none;
+  }
+  .ph-tabs .ph-tab-navs:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border-bottom: 1PX solid #e1e1e1;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-tabs .ph-tab-navs::-webkit-scrollbar {
   display: none;
@@ -834,18 +3407,18 @@
 }
 .ph-tabs .ph-tab-nav a {
   display: block;
-  min-width: 1.16rem;
-  min-height: 0.88rem;
-  padding: 0.24rem 0.32rem;
-  border-bottom-width: 0.04rem;
+  min-width: 58px;
+  min-height: 44px;
+  padding: 12px 16px;
+  border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: #fff;
-  line-height: 0.4rem;
-  font-size: 0.28rem;
+  line-height: 20px;
+  font-size: 14px;
 }
 .ph-tabs .ph-tab-nav.active a {
   border-bottom-color: #007aff;
-  margin-bottom: -0.02rem;
+  margin-bottom: -2px;
   margin-right: 0;
   color: #007aff;
 }
@@ -856,11 +3429,11 @@
   white-space: nowrap;
 }
 .ph-tabs-short .ph-tab-nav {
-  padding: 0 0.32rem;
+  padding: 0 16px;
 }
 .ph-tabs-short .ph-tab-nav a {
   display: inline-block;
-  padding: 0.24rem 0.16rem;
+  padding: 12px 8px;
 }
 .ph-tabs-vertical.ph-tabs {
   margin: 0;
@@ -874,9 +3447,9 @@
   text-align: left;
 }
 .ph-tabs-vertical .ph-tab-nav a {
-  padding: 0.24rem 0.32rem;
+  padding: 12px 16px;
   border: none;
-  line-height: 0.4rem;
+  line-height: 20px;
 }
 .ph-tabs-vertical .ph-tab-nav.active a {
   background-color: #fff;
@@ -888,51 +3461,51 @@
   border: none;
   border-right-color: #fff;
   margin-bottom: 0;
-  margin-right: -0.02rem;
+  margin-right: -2px;
 }
 .ph-dialog-content {
   width: 72.2667%;
-  padding: 0.48rem 0 0;
+  padding: 24px 0 0;
   margin: 0 auto;
   background-color: #fff;
-  -webkit-border-radius: 0.12rem;
-  -moz-border-radius: 0.12rem;
-  border-radius: 0.12rem;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
   background-clip: padding-box;
   text-align: center;
 }
 .ph-dialog-content .ph-dialog-close {
   position: absolute;
-  width: 0.28rem;
-  height: 0.28rem;
-  top: 0.24rem;
-  right: 0.24rem;
+  width: 14px;
+  height: 14px;
+  top: 12px;
+  right: 12px;
   font-size: 100%;
   color: #ccc;
 }
 .ph-dialog-content .ph-dialog-title,
 .ph-dialog-content .ph-dialog-body.ph-dialog-only {
-  line-height: 0.48rem;
-  font-size: 0.36rem;
+  line-height: 24px;
+  font-size: 18px;
   color: #333;
 }
 .ph-dialog-content .ph-dialog-title {
-  margin: 0 0.4rem 0.16rem;
+  margin: 0 20px 8px;
   text-align: center;
 }
 .ph-dialog-content .ph-dialog-body {
-  margin: 0 0.4rem 0.56rem;
-  line-height: 0.4rem;
-  font-size: 0.28rem;
+  margin: 0 20px 28px;
+  line-height: 20px;
+  font-size: 14px;
   color: #666;
 }
 .ph-dialog-content .ph-dialog-body.ph-dialog-only {
-  margin: 0.4rem 0.4rem 0.56rem;
+  margin: 20px 20px 28px;
 }
 .ph-dialog-content .ph-dialog-picture {
   width: 60%;
-  padding-top: 0.2rem;
-  margin: 0 auto 0.4rem;
+  padding-top: 10px;
+  margin: 0 auto 20px;
 }
 .ph-dialog-content .ph-dialog-picture img {
   display: block;
@@ -942,75 +3515,234 @@
   min-width: 0;
   margin-left: 0;
   margin-right: 0;
+  font-size: 16px;
+  position: relative;
   border: none;
-  font-size: 0.32rem;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-dialog-content .ph-dialog-footer .ph-button-group .ph-button {
+    border: none;
+  }
+  .ph-dialog-content .ph-dialog-footer .ph-button-group .ph-button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border: none;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-dialog-content .ph-dialog-footer .ph-button-group-default {
+  position: relative;
   border-top: 1PX solid #e1e1e1;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-dialog-content .ph-dialog-footer .ph-button-group-default {
+    border: none;
+  }
+  .ph-dialog-content .ph-dialog-footer .ph-button-group-default:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border-top: 1PX solid #e1e1e1;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-dialog-content .ph-dialog-footer .ph-button-group-default .ph-button {
+  position: relative;
   border-right: 1PX solid #e1e1e1;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-dialog-content .ph-dialog-footer .ph-button-group-default .ph-button {
+    border: none;
+  }
+  .ph-dialog-content .ph-dialog-footer .ph-button-group-default .ph-button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border-right: 1PX solid #e1e1e1;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
+}
+.ph-dialog-content .ph-dialog-footer .ph-button-group-default .ph-button:after {
   border-radius: 0;
 }
-.ph-dialog-content .ph-dialog-footer .ph-button-group-default .ph-button:first-child {
-  border-bottom-left-radius: 0.12rem;
+.ph-dialog-content .ph-dialog-footer .ph-button-group-default .ph-button:first-child,
+.ph-dialog-content .ph-dialog-footer .ph-button-group-default .ph-button:first-child:after {
+  border-bottom-left-radius: 6px;
 }
-.ph-dialog-content .ph-dialog-footer .ph-button-group-default .ph-button:last-child {
-  border-bottom-right-radius: 0.12rem;
+.ph-dialog-content .ph-dialog-footer .ph-button-group-default .ph-button:last-child,
+.ph-dialog-content .ph-dialog-footer .ph-button-group-default .ph-button:last-child:after {
+  position: relative;
+  border-right: 0;
+  border-bottom-right-radius: 6px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-dialog-content .ph-dialog-footer .ph-button-group-default .ph-button:last-child,
+  .ph-dialog-content .ph-dialog-footer .ph-button-group-default .ph-button:last-child:after {
+    border: none;
+  }
+  .ph-dialog-content .ph-dialog-footer .ph-button-group-default .ph-button:last-child:after,
+  .ph-dialog-content .ph-dialog-footer .ph-button-group-default .ph-button:last-child:after:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border-right: 0;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
 }
 .ph-dialog-content .ph-dialog-footer .ph-button-group-tacked {
+  position: relative;
   border-top: 0;
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-dialog-content .ph-dialog-footer .ph-button-group-tacked {
+    border: none;
+  }
+  .ph-dialog-content .ph-dialog-footer .ph-button-group-tacked:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border-top: 0;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
+}
 .ph-dialog-content .ph-dialog-footer .ph-button-group-tacked .ph-button {
+  position: relative;
   border-top: 1PX solid #e1e1e1;
 }
-.ph-dialog-content .ph-dialog-footer .ph-button-group-tacked .ph-button:first-child {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-dialog-content .ph-dialog-footer .ph-button-group-tacked .ph-button {
+    border: none;
+  }
+  .ph-dialog-content .ph-dialog-footer .ph-button-group-tacked .ph-button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border-top: 1PX solid #e1e1e1;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: none;
+  }
+}
+.ph-dialog-content .ph-dialog-footer .ph-button-group-tacked .ph-button:first-child,
+.ph-dialog-content .ph-dialog-footer .ph-button-group-tacked .ph-button:first-child:after {
   border-radius: 0;
 }
-.ph-dialog-content .ph-dialog-footer .ph-button-group-tacked .ph-button:last-child {
-  -webkit-border-radius: 0 0 0.12rem 0.12rem;
-  -moz-border-radius: 0 0 0.12rem 0.12rem;
-  border-radius: 0 0 0.12rem 0.12rem;
+.ph-dialog-content .ph-dialog-footer .ph-button-group-tacked .ph-button:last-child,
+.ph-dialog-content .ph-dialog-footer .ph-button-group-tacked .ph-button:last-child:after {
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
   background-clip: padding-box;
 }
 .ph-dialog-prompt .ph-dialog-title {
-  margin: 0 0.4rem;
+  margin: 0 20px;
 }
 .ph-dialog-prompt .ph-dialog-body {
-  margin: 0.48rem 0.4rem 0.4rem;
+  margin: 24px 20px 20px;
 }
 .ph-dialog-prompt .ph-input {
-  margin-bottom: 0.16rem;
+  margin-bottom: 8px;
 }
 .ph-dialog-prompt .ph-input:last-child {
   margin-bottom: 0;
 }
 .ph-dialog-explain .ph-dialog-title {
-  margin: 0 0.4rem 0.4rem;
+  margin: 0 20px 20px;
 }
 .ph-dialog-explain .ph-dialog-body {
-  line-height: 0.4rem;
+  line-height: 20px;
   text-align: left;
 }
 .ph-dialog-explain .ph-dialog-body ul {
-  padding-bottom: 0.68rem;
+  padding-bottom: 34px;
 }
 .ph-dialog-explain .ph-dialog-body li {
-  margin-bottom: 0.36rem;
+  margin-bottom: 18px;
 }
 .ph-list .ph-list-item-active {
   color: #007aff;
 }
 .ph-action-sheet {
   width: 94.6667%;
-  margin: 0 auto 0.16rem;
+  margin: 0 auto 8px;
 }
 .ph-action-sheet .ph-popup-item,
 .ph-action-sheet .ph-popup-operate {
-  height: 1.12rem;
-  line-height: 1.12rem;
+  height: 56px;
+  line-height: 56px;
   background-color: #fff;
-  font-size: 0.4rem;
+  font-size: 20px;
   text-align: center;
   color: #007aff;
 }
@@ -1021,21 +3753,30 @@
 .ph-action-sheet .ph-popup-item {
   border-bottom: 1PX solid #e1e1e1;
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .ph-action-sheet .ph-popup-item {
+    background-image: -webkit-linear-gradient(bottom, #e1e1e1 50%, transparent 50%);
+    background-size: 100% 1PX;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border: none;
+  }
+}
 .ph-action-sheet .ph-popup-item:first-child {
-  -webkit-border-radius: 0.12rem 0.12rem 0 0;
-  -moz-border-radius: 0.12rem 0.12rem 0 0;
-  border-radius: 0.12rem 0.12rem 0 0;
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 0 0;
   background-clip: padding-box;
 }
 .ph-action-sheet .ph-popup-item:last-child {
-  border-bottom: none;
-  -webkit-border-radius: 0 0 0.12rem 0.12rem;
-  -moz-border-radius: 0 0 0.12rem 0.12rem;
-  border-radius: 0 0 0.12rem 0.12rem;
+  border: none;
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
   background-clip: padding-box;
 }
 .ph-action-sheet .ph-popup-tip {
-  font-size: 0.32rem;
+  font-size: 16px;
   color: #8F8E94;
   pointer-events: none;
 }
@@ -1043,10 +3784,10 @@
   color: #f64d2e;
 }
 .ph-action-sheet .ph-popup-operate {
-  margin-top: 0.16rem;
-  -webkit-border-radius: 0.12rem;
-  -moz-border-radius: 0.12rem;
-  border-radius: 0.12rem;
+  margin-top: 8px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
   background-clip: padding-box;
   color: #333;
 }
@@ -1055,7 +3796,7 @@
 }
 .ph-picker-header {
   overflow: hidden;
-  padding: 0.75rem;
+  padding: 37px;
   border-bottom: 1PX solid #bbb;
   text-align: center;
 }
@@ -1069,12 +3810,12 @@
   }
 }
 .ph-picker-header .ph-picker-title {
-  font-size: 0.36rem;
+  font-size: 18px;
 }
 .ph-picker-header .ph-picker-cancel,
 .ph-picker-header .ph-picker-confirm {
   line-height: 1.25;
-  font-size: 0.32rem;
+  font-size: 16px;
   color: #0ba4db;
 }
 .ph-picker-header .ph-picker-cancel {
@@ -1085,7 +3826,7 @@
 }
 .ph-picker-body {
   position: relative;
-  padding: 0.5rem 0;
+  padding: 25px 0;
 }
 .ph-picker-body:before,
 .ph-picker-body:after {
@@ -1093,7 +3834,7 @@
   position: absolute;
   left: 0;
   width: 100%;
-  height: 5.4rem;
+  height: 270px;
   background-color: rgba(255, 255, 255, 0);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.9)), color-stop(100% rgba(255, 255, 255, 0.4)));
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.4) 100%);
@@ -1104,88 +3845,88 @@
   pointer-events: none;
 }
 .ph-picker-body:before {
-  top: 0.5rem;
+  top: 25px;
 }
 .ph-picker-body:after {
-  bottom: 0.5rem;
+  bottom: 25px;
   -webkit-transform: scaleY(-1);
   -ms-transform: scaleY(-1);
   transform: scaleY(-1);
 }
 .ph-picker-body .ph-picker-drag {
   overflow: hidden;
-  height: 12.6rem;
+  height: 630px;
 }
 .ph-picker-body .ph-picker-drag .ph-picker-select {
   text-align: center;
 }
 .ph-picker-body .ph-picker-drag .ph-picker-select li {
-  line-height: 1.8rem;
-  font-size: 0.28rem;
+  line-height: 90px;
+  font-size: 14px;
 }
 .ph-picker-body .ph-picker-drag .ph-picker-select li.selected {
-  font-size: 0.32rem;
+  font-size: 16px;
 }
 .ph-slider {
-  padding: 0.92rem 0.68rem 0.68rem;
+  padding: 46px 34px 34px;
 }
 .ph-slider.ph-keep-range {
-  padding: 0.92rem 1.05rem 0.52rem;
+  padding: 46px 52px 26px;
 }
 .ph-slider-line {
   position: relative;
-  height: 0.04rem;
-  margin: 0.05rem auto;
+  height: 2px;
+  margin: 3px auto;
   background-color: #bbb;
 }
 .ph-slider-progress {
   width: 0;
-  height: 0.04rem;
+  height: 2px;
   background-color: #007aff;
 }
 .ph-slider-text {
   position: absolute;
   width: 100%;
-  top: 0.24rem;
+  top: 12px;
   left: 0;
   text-align: center;
   line-height: 1;
-  font-size: 0.28rem;
+  font-size: 14px;
   color: #007aff;
 }
 .ph-slider-range .ph-slider-range-start,
 .ph-slider-range .ph-slider-range-end {
   position: absolute;
   display: inline-block;
-  top: 1rem;
+  top: 50px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   font-weight: normal;
-  font-size: 0.28rem;
+  font-size: 14px;
   color: #999;
 }
 .ph-slider-range .ph-slider-range-start {
-  left: 0.32rem;
+  left: 16px;
   text-align: left;
 }
 .ph-slider-range .ph-slider-range-end {
-  right: 0.32rem;
+  right: 16px;
   text-align: right;
 }
 .ph-slider-line {
   position: relative;
-  height: 0.04rem;
+  height: 2px;
   background-color: #bbb;
 }
 .ph-slider-progress {
   width: 0;
-  height: 0.04rem;
+  height: 2px;
   background-color: #007aff;
 }
 .ph-slider-content .ph-slider-btn {
-  width: 0.4rem;
-  height: 0.4rem;
+  width: 20px;
+  height: 20px;
   background-color: #fff;
   box-shadow: 0 1PX 8PX rgba(0, 0, 0, 0.2);
   -webkit-border-radius: 50%;
@@ -1198,28 +3939,28 @@
 }
 .ph-slider-content .ph-slider-tip {
   position: absolute;
-  padding: 0.12rem 0.18rem;
+  padding: 6px 9px;
   background-color: #666;
-  -webkit-border-radius: 0.08rem;
-  -moz-border-radius: 0.08rem;
-  border-radius: 0.08rem;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
   background-clip: padding-box;
   color: #fff;
 }
 .ph-slider-tip-top .ph-slider-tip {
-  bottom: 140%;
+  bottom: 70%;
 }
 .ph-slider-tip-top .ph-slider-tip:after {
-  bottom: -0.08rem;
-  border-width: 0.08rem 0.08rem 0;
+  bottom: -4px;
+  border-width: 4px 4px 0;
   border-top-color: #666;
 }
 .ph-slider-tip-bottom .ph-slider-tip {
-  top: 140%;
+  top: 70%;
 }
 .ph-slider-tip-bottom .ph-slider-tip:after {
-  top: -0.08rem;
-  border-width: 0 0.08rem 0.08rem;
+  top: -4px;
+  border-width: 0 4px 4px;
   border-bottom-color: #666;
 }
 .ph-slider-disabled .ph-slider-text {
@@ -1238,10 +3979,10 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
-  height: 0.88rem;
-  padding: 0 0.32rem;
+  height: 44px;
+  padding: 0 16px;
   background-color: #007aff;
-  line-height: 0.88rem;
+  line-height: 44px;
   color: #fff;
 }
 .ph-menu-body {
@@ -1250,20 +3991,20 @@
 }
 .ph-menu-body-left,
 .ph-menu-body-right {
-  height: calc(100% -  0.88rem);
+  height: calc(100% -  44px);
 }
 .ph-menu-close-button {
   position: absolute;
   right: 0;
   top: 0;
   z-index: 1;
-  padding: 0.2rem;
-  font-size: 0.36rem;
+  padding: 10px;
+  font-size: 18px;
   color: #007aff;
 }
 .ph-menu-list .ph-menu-item .gfs-icon {
   vertical-align: top;
-  margin: 0 0.24rem 0 0;
+  margin: 0 12px 0 0;
 }
 .ph-menu-list .ph-menu-item.active .ph-col {
   color: #007aff;

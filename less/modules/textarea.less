@@ -10,13 +10,6 @@ textarea {
 textarea{
     width: 100%;
     height: @input-default-height;
-    padding: @input-default-padding;
-    // margin: @input-default-margin;
-    line-height: 1;
-    background-color: @white;
-    border: @border-default;
-    .border-radius(@input-default-radius);
-    font-size: @input-default-font-size;
     -webkit-appearance: none;
     outline: none;
     .box-sizing(border-box);
@@ -38,13 +31,18 @@ textarea::-webkit-input-placeholder{
 .ph-textarea-field{
     position: relative;
     padding: 0;
+    .onepx(border, @textarea-border);
+
+    &:after{
+        .border-radius(@input-default-radius);
+    }
 }
 .ph-textarea{
     display: block;
     min-height: @textarea-min-height;
     padding: @textarea-padding;
     background-color: @white;
-    // border: @textarea-border;
+    border: none;
     .border-radius(@textarea-border-radius);
     line-height: @textarea-line-height;
     font-size: @textarea-font-size;
