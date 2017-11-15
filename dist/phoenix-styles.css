@@ -4298,6 +4298,9 @@ dl.ph-image-item dd p:last-child {
   background-color: rgba(0, 0, 0, 0.4);
   pointer-events: auto;
 }
+.ph-filter-container-noshadow .ph-filter-shadow {
+  background-color: transparent;
+}
 .ph-filter-header {
   position: relative;
   z-index: 2;
@@ -4398,12 +4401,8 @@ dl.ph-image-item dd p:last-child {
 .ph-checkbox-filter .ph-filter-selector .ph-tab-bd {
   max-height: none;
   height: 100vh;
-}
-.ph-filter-selector-buttons .ph-list,
-.ph-filter-selector-buttons .ph-tab-navs,
-.ph-filter-selector-buttons .ph-tab-bd {
   padding-bottom: 1.28rem;
 }
-.ph-filter-selector-buttons .ph-button-group {
+.ph-checkbox-filter .ph-filter-selector .ph-button-group {
   margin-top: -1.28rem;
 }

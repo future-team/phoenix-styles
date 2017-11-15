@@ -33,6 +33,11 @@
 	background-color: @default-shadow-color;
 	pointer-events: auto;
 }
+.@{filterPrefixCls}-container-noshadow{
+	.@{filterPrefixCls}-shadow{
+		background-color: transparent;
+	}
+}
 
 .@{filterPrefixCls}-header{
 	position: relative;
@@ -146,19 +151,23 @@
 		.ph-tab-bd{
 			max-height: none;
 			height: 100vh;
+			padding-bottom: @filter-footer-height;
+		}
+		.ph-button-group{
+			margin-top: -@filter-footer-height;
 		}
 	}
 }
 
-.@{filterPrefixCls}-selector-buttons{
-	.ph-list,
-	.ph-tab-navs,
-	.ph-tab-bd{
-		padding-bottom: @filter-footer-height;
-	}
+// .@{filterPrefixCls}-selector-buttons{
+// 	.ph-list,
+// 	.ph-tab-navs,
+// 	.ph-tab-bd{
+// 		padding-bottom: @filter-footer-height;
+// 	}
 	
-	.ph-button-group{
-		margin-top: -@filter-footer-height;
-	}
+// 	.ph-button-group{
+// 		margin-top: -@filter-footer-height;
+// 	}
 	
-}
+// }
