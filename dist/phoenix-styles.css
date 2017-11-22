@@ -3722,15 +3722,23 @@ textarea::-webkit-input-placeholder {
 .ph-menu-list .ph-menu-item.active .ph-col {
   color: #ff6633;
 }
-.ph-pullup {
+.ph-pullup,
+.ph-pulldown {
   text-align: center;
 }
-.ph-pullup-tip {
+.ph-pulldown {
+  position: relative;
+  margin-top: -0.88rem;
+  z-index: -1;
+}
+.ph-pullup-tip,
+.ph-pulldown-tip {
   padding: 0.24rem 0;
   font-size: 0.28rem;
   color: #999;
 }
-.ph-pullup-tip .gfs-icon-loading {
+.ph-pullup-tip .gfs-icon-loading,
+.ph-pulldown-tip .gfs-icon-loading {
   width: 0.36rem;
   height: 0.36rem;
   font-size: 0.36rem;
@@ -4377,11 +4385,6 @@ dl.ph-image-item dd p:last-child {
 .ph-filter-selector .ph-tab-navs,
 .ph-filter-selector .ph-tab-bd {
   overflow-y: auto;
-}
-.ph-filter-selector .ph-list::-webkit-scrollbar,
-.ph-filter-selector .ph-tab-navs::-webkit-scrollbar,
-.ph-filter-selector .ph-tab-bd::-webkit-scrollbar {
-  display: none;
 }
 .ph-filter-selector .ph-list-item.active {
   color: #ff6633;
