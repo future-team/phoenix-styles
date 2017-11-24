@@ -58,7 +58,7 @@
 			display: block;
 			height: @filter-header-item-inner-height;
 			border-right: @filter-header-border;
-			white-spac: nowrap;
+			white-space: nowrap;
 		}
 		&:last-child a{
 			border-right: none;
@@ -120,7 +120,8 @@
 	.ph-list,
 	.ph-tab-navs,
 	.ph-tab-bd{
-	    overflow-y: auto;
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
 		
 
 		// &::-webkit-scrollbar{
