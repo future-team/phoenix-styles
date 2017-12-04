@@ -33,13 +33,18 @@
 	background-color: @default-shadow-color;
 	pointer-events: auto;
 }
+.@{filterPrefixCls}-container-noshadow{
+	.@{filterPrefixCls}-shadow{
+		background-color: transparent;
+	}
+}
 
 .@{filterPrefixCls}-header{
 	position: relative;
 	z-index: 2;
 	margin: 0;
 	background-color: @filter-header-background;
-	.onepx(border-bottom, @filter-header-border);
+	border-bottom: @filter-header-border;
 
 	.@{filterPrefixCls}-header-item{
 		position: relative;
@@ -52,13 +57,11 @@
 		a{
 			display: block;
 			height: @filter-header-item-inner-height;
-			.onepx(border-right, @filter-header-border);
-			// border-right: @filter-header-border;
-			white-spac: nowrap;
+			border-right: @filter-header-border;
+			white-space: nowrap;
 		}
 		&:last-child a{
-			.onepx(border-right, none);
-			// border-right: none;
+			border-right: none;
 		}
 
 		.gfs-icon{
@@ -83,20 +86,12 @@
 				position: absolute;
 				bottom: @filter-arrow-bottom;
 				left: 50%;
-				z-index: 1;
-				width: @filter-arrow-size*2;
-				height: @filter-arrow-size*2;
+				width: @filter-arrow-size;
+				height: @filter-arrow-size;
 				background-color: @filter-arrow-background;
 				border-top: @filter-arrow-border;
 				border-right: @filter-arrow-border;
-				.transform(rotate(-45deg) translateX(-50%) scale(.5));
-
-				@media only screen and (-webkit-min-device-pixel-ratio: 2),
-			    only screen and (min-device-pixel-ratio: 2){
-			        width: @filter-arrow-size*2;
-					height: @filter-arrow-size*2;
-		            .transform(rotate(-45deg) translateX(-50%) scale(.5));
-			    }
+				.transform(rotate(-45deg) translateX(-50%));
 			}
 		}
 	}
@@ -125,12 +120,13 @@
 	.ph-list,
 	.ph-tab-navs,
 	.ph-tab-bd{
-	    overflow-y: auto;
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
 		
 
-		&::-webkit-scrollbar{
-			display:none;
-		}
+		// &::-webkit-scrollbar{
+		// 	display:none;
+		// }
 	}
 
 	.ph-list-item.active{
@@ -156,19 +152,23 @@
 		.ph-tab-bd{
 			max-height: none;
 			height: 100vh;
+			padding-bottom: @filter-footer-height;
+		}
+		.ph-button-group{
+			margin-top: -@filter-footer-height;
 		}
 	}
 }
 
-.@{filterPrefixCls}-selector-buttons{
-	.ph-list,
-	.ph-tab-navs,
-	.ph-tab-bd{
-		padding-bottom: @filter-footer-height;
-	}
+// .@{filterPrefixCls}-selector-buttons{
+// 	.ph-list,
+// 	.ph-tab-navs,
+// 	.ph-tab-bd{
+// 		padding-bottom: @filter-footer-height;
+// 	}
 	
-	.ph-button-group{
-		margin-top: -@filter-footer-height;
-	}
+// 	.ph-button-group{
+// 		margin-top: -@filter-footer-height;
+// 	}
 	
-}
+// }

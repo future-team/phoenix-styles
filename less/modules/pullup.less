@@ -2,12 +2,24 @@
 @import "../mixins/iconfont";
 
 @pullUpPrefixCls: ph-pullup;
+@pullDownPrefixCls: ph-pulldown;
 
-.@{pullUpPrefixCls}{
+.@{pullUpPrefixCls},
+.@{pullDownPrefixCls}{
 	text-align: center;
 }
 
-.@{pullUpPrefixCls}-tip{
+.@{pullDownPrefixCls}{
+    position: relative;
+    width: 100%;
+    margin-top: -88px;
+    z-index: -1;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.@{pullUpPrefixCls}-tip,
+.@{pullDownPrefixCls}-tip{
     padding: @loading-list-padding;
     font-size: @loading-list-font-size;
     color: @loading-list-color;
