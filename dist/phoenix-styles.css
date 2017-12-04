@@ -599,8 +599,6 @@ h6 {
 .hardware {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
 }
 .user-none {
   -webkit-user-select: none;
@@ -3726,8 +3724,11 @@ textarea::-webkit-input-placeholder {
 }
 .ph-pulldown {
   position: relative;
+  width: 100%;
   margin-top: -0.88rem;
   z-index: -1;
+  background-color: transparent;
+  pointer-events: none;
 }
 .ph-pullup-tip,
 .ph-pulldown-tip {
