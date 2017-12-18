@@ -6692,7 +6692,7 @@ textarea::-webkit-input-placeholder {
 .ph-pulldown {
   position: relative;
   width: 100%;
-  margin-top: -88px;
+  margin-top: -44px;
   z-index: -1;
   background-color: transparent;
   pointer-events: none;
