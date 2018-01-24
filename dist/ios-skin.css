@@ -3301,6 +3301,9 @@
   background-color: #f8f8f8;
   border-color: #e1e1e1;
 }
+.ph-checkbox input:disabled + i:before {
+  border-color: #e1e1e1;
+}
 .ph-radio {
   position: relative;
   width: 21px;
@@ -3356,6 +3359,9 @@
 }
 .ph-radio input:disabled + i {
   background-color: #f8f8f8;
+  border-color: #e1e1e1;
+}
+.ph-radio input:disabled + i:before {
   border-color: #e1e1e1;
 }
 .ph-radio i {
