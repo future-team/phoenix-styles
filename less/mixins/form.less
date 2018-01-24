@@ -162,13 +162,15 @@
             //     .transform(rotate(45deg));
             // }
         }
-        
+
         &:disabled + i{
             background-color: @gray-f8;
             border-color: @checkbox-disabled-border;
 
             &:before{
                 border-color: @checkbox-disabled-border;
+                border-right-color: transparent;
+                border-top-color: transparent;
             }
         }
     }

@@ -1961,6 +1961,8 @@ textarea::-webkit-input-placeholder {
 }
 .ph-checkbox input:disabled + i:before {
   border-color: #e1e1e1;
+  border-right-color: transparent;
+  border-top-color: transparent;
 }
 .ph-radio {
   position: relative;
@@ -2021,6 +2023,8 @@ textarea::-webkit-input-placeholder {
 }
 .ph-radio input:disabled + i:before {
   border-color: #e1e1e1;
+  border-right-color: transparent;
+  border-top-color: transparent;
 }
 .ph-radio i {
   -webkit-border-radius: 50%;
