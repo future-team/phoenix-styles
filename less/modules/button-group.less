@@ -114,17 +114,29 @@
 }
 
 .@{buttonGroupPrefixCls}-extra{
-    padding: @button-group-extra-padding;
-    background-color: @white;
-    text-align: center;
-    font-size: @font-size-tip;
+    padding-top: @button-group-extra-padding;
+    
+    .@{buttonGroupPrefixCls}-text{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: @button-group-text-padding;
+        line-height: @button-group-text-line-height;
+        font-size: @font-size-tip;
 
-    a{
-        color: @brand-info-deep;
-    }
+        .ph-multi-group label{
+            font-size: @font-size-tip;
+        }
 
-    i{
-        font-style: normal;
-        color: @brand-primary;
+        a{
+            color: @brand-info-deep;
+        }
+
+        i{
+            font-style: normal;
+            color: @brand-primary;
+        }
     }
+    
 }
