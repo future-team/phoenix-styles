@@ -55,6 +55,13 @@
             border-bottom-left-radius: 0;
             border-top-left-radius: 0;
         }
+
+        &:not(.ph-button-hollow){
+            background-color: @brand-primary;
+            &:after{
+                border-color: @brand-primary;
+            }
+        }
     }
 }
 // hack

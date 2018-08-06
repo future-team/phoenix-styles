@@ -5457,6 +5457,14 @@ textarea::-webkit-input-placeholder {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
+.ph-button-group-justify .ph-button:not(.ph-button-hollow),
+.ph-button-group-segmente .ph-button:not(.ph-button-hollow) {
+  background-color: #ff6633;
+}
+.ph-button-group-justify .ph-button:not(.ph-button-hollow):after,
+.ph-button-group-segmente .ph-button:not(.ph-button-hollow):after {
+  border-color: #ff6633;
+}
 .ph-button-group-justify .ph-button:not(:first-child) {
   margin-left: -1px;
 }
@@ -5566,7 +5574,7 @@ textarea::-webkit-input-placeholder {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 8px 0;
+  padding: 8px 16px;
   line-height: 16px;
   font-size: 12px;
 }
@@ -6783,10 +6791,16 @@ textarea::-webkit-input-placeholder {
 .ph-pulldown {
   position: relative;
   width: 100%;
-  margin-top: -44px;
+  margin-top: 0;
   z-index: -1;
   background-color: transparent;
   pointer-events: none;
+  height: 0;
+}
+.ph-pulldown .ph-pulldown-tip {
+  position: absolute;
+  bottom: 100%;
+  width: 100%;
 }
 .ph-pullup-tip,
 .ph-pulldown-tip {

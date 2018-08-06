@@ -1,6 +1,6 @@
 {
   "name": "phoenix-styles",
-  "version": "3.2.0",
+  "version": "3.2.2",
   "description": "Styles for phoenix-ui.",
   "main": "dist/",
   "repository": "git@github.com:future-team/phoenix-styles.git",
@@ -12,7 +12,8 @@
   "scripts": {
     "build": "node_modules/.bin/gulp",
     "less": "node_modules/.bin/gulp less",
-    "dev": "node_modules/.bin/gulp dev"
+    "dev": "node_modules/.bin/gulp dev",
+    "prepublish": "npm run build"
   },
   "license": "MIT",
   "author": {
