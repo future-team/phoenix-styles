@@ -8,12 +8,6 @@
     height: @multi-group-height;
     margin-right: @multi-group-margin;
 
-    span{
-        float: right;
-        margin-left: @checkbox-text-gap;
-        font-size: @font-size-text;
-    }
-
     .ph-radio,.ph-checkbox{
         display: inline-block;
         vertical-align: top;
@@ -22,10 +16,26 @@
     &:last-child{
         margin-right: 0;
     }
+
+    label{
+        float: right;
+        margin-left: @checkbox-text-gap;
+        font-size: @font-size-text;
+    }
+
+    .ph-checkbox-sm + label,
+    .ph-radio-sm + label{
+        line-height: @checkbox-sm-size;
+        font-size: @font-size-tip;
+    }
 }
 
 .ph-checkbox{
     .ui-checkbox(@checkbox-size);
+}
+
+.ph-checkbox-sm{
+    .ui-checkbox(@checkbox-sm-size, 6px, 3px, 2px, 2px);
 }
 
 .ph-radio{

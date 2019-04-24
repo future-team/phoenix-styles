@@ -160,15 +160,22 @@
 	}
 }
 
-// .@{filterPrefixCls}-selector-buttons{
-// 	.ph-list,
-// 	.ph-tab-navs,
-// 	.ph-tab-bd{
-// 		padding-bottom: @filter-footer-height;
-// 	}
+.ph-checkbox-filter-extra{
+	.@{filterPrefixCls}-selector{
+		.ph-list,
+		.ph-tab-navs,
+		.ph-tab-bd{
+			padding-bottom: @filter-footer-height + 24px;
+		}
+
+		.ph-button-group{
+			margin-top: -@filter-footer-height - 24px;
 	
-// 	.ph-button-group{
-// 		margin-top: -@filter-footer-height;
-// 	}
-	
-// }
+			.ph-button-group-text{
+				text-align: center;
+			}
+		}
+	}	
+}
+
+

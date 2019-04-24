@@ -5,7 +5,8 @@
 		.ph-tab-navs{
 			overflow-y: auto;
 			margin: 0;
-			.onepx(border-bottom, @tab-row-border);
+			// .onepx(border-bottom, @tab-row-border);
+			.border-bottom(@gray-e1);
 
 			&::-webkit-scrollbar{
 			    display:none;
@@ -23,7 +24,7 @@
 				padding: @tab-nav-padding;
 				border-bottom-width: @tab-nav-border-width;
 				border-bottom-style: solid;
-				border-bottom-color: @tab-nav-border-color;
+				border-bottom-color: transparent;
 				line-height: @tab-nav-line-height;
 		    	font-size: @font-size-text;
 	    	}
@@ -68,6 +69,7 @@
 
 		.ph-tab-navs{
 			background-color: @vertical-tab-nav-background;
+			background-image: none;
 			border-bottom: none;
 		}
 

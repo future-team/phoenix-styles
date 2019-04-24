@@ -55,6 +55,13 @@
             border-bottom-left-radius: 0;
             border-top-left-radius: 0;
         }
+
+        &:not(.ph-button-hollow){
+            background-color: @brand-primary;
+            &:after{
+                border-color: @brand-primary;
+            }
+        }
     }
 }
 // hack
@@ -111,4 +118,32 @@
             .border-radius(@button-group-justify-radius);
         }
     }
+}
+
+.@{buttonGroupPrefixCls}-extra{
+    padding-top: @button-group-extra-padding;
+    
+    .@{buttonGroupPrefixCls}-text{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: @button-group-text-padding;
+        line-height: @button-group-text-line-height;
+        font-size: @font-size-tip;
+
+        .ph-multi-group label{
+            font-size: @font-size-tip;
+        }
+
+        a{
+            color: @brand-info-deep;
+        }
+
+        i{
+            font-style: normal;
+            color: @brand-primary;
+        }
+    }
+    
 }
